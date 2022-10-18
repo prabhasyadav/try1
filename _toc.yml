@@ -1,0 +1,11 @@
+root: intro
+format: jb-book
+defaults:
+  numbered: true
+parts:
+
+- caption: Background
+  chapters:
+  - file: contents/basic
+  
+  

@@ -1,0 +1,139 @@
+[
+    {
+        "question": "Hydrogeology is NOT the study of",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "the laws governing the movement of subterranean water",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "The mechanical, chemical and thermal interaction of this water with the porous solid ",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "the transport of energy and chemical constituents by the flow",
+                "correct": false,
+                "feedback": "false."
+            },
+            {
+                "answer": "none of the above",
+                "correct": true,
+                "feedback": "Correct"
+             }   
+        ]
+    },
+
+    {
+        "question": "The hydrological balance is based on the conservation of water volume",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "False ",
+                "correct": true,
+                "feedback": "Correct."
+            }
+ 
+        ]
+    },
+    
+    {
+        "question": "The hydrologic balance equation expressed as: \n\n$P = ET + R + \\Delta S$\n\nis at the **steady-state** when",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "change in storage, $ \\Delta S $> 0",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "change in storages, $ \\Delta S = 0 $ ",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "change in storages,$ \\Delta S < 0 $ ",
+                "correct": false,
+                "feedback": "false."
+            },
+            {
+                "answer": "When P = 0",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+
+
+    {
+        "question": "Volume budget equation given as:\n$\\Delta V = Q_{in} \\cdot \\Delta t - Q_{out}  \\cdot \\Delta t$\n\nIs $\\Delta V$  **time** dependent when the system is at steady-state?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "False ",
+                "correct": false,
+                "feedback": "Correct."
+            }
+ 
+        ]
+    },
+     
+    {
+        "question": "Mass and volume budgets are equivalent :",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "if there is NO change of density with time",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "if there IS change of density with time ",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "they can NEVER be equivalent",
+                "correct": false,
+                "feedback": "false."
+            },
+            {
+                "answer": "they are ALWAYS equivalent",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+ 
+
+   {
+        "question": "Today's lecture made me feel that I should not be Absent from the Groundwater Lectures.",
+        "type": "multiple_choice",
+        "answers": [
+               {
+                "answer": "True",
+                "correct": true,
+                "feedback": ""
+            },
+            {
+                "answer": "False ",
+                "correct": false,
+                "feedback": ""
+            }
+ 
+        ]
+    }
+
+]
