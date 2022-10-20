@@ -1,12 +1,10 @@
-root: intro
 format: jb-book
-defaults:
-  numbered: true
-parts:
-
-- caption: Background
-  chapters:
-  - file: contents/basic
-  - file: contents/general
-  
-  
+root: intro
+chapters:
+- file: content/background/00_general
+- file: content/background/03_basic_hydrogeology
+- file: content/flow/12_subsurface_structure
+- file: content/background/01_python
+- file: content/background/02_jupyter
+- file: content/tools/decay
+- file: content/tools/sieve_analysis

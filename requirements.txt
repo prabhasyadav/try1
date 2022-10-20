@@ -1,14 +1,7 @@
 jupyter-book
-nbsphinx
 matplotlib
 numpy
-pandas
-panel
-ipywidgets
-scipy
-jupyter-contrib-nbextensions
 jupyterquiz
 ghp-import
-jupytext>=0.16 
-
-
+pandas
+panel
