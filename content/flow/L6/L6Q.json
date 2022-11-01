@@ -1,0 +1,198 @@
+[  
+    {
+        "question": "Hydraulic head is",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "In both 2D and 3D: Sum of hydrostatic pressure  head and elevation head",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "In 2D only it is: Sum of hydrostatic pressure  head and elevation head",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "Hydraulic head is independent of domain dimensions",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "In 3D only it is: Sum of hydrostatic pressure  head and elevation head",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+ 
+        ]
+    },
+    {
+        "question": "Isolines are",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "only for 2D problems",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "for 1D problems",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "is similar to isosurface",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "based on map of ground water travel time.",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+
+    {
+        "question": "Streamlines are ",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "parallel to head isolines",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "are perpendicular to head isolines",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "are neither parallel nor perpendicular to isolines",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "are isolines",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+
+         ]
+        
+    },
+    
+    {
+        "question": "Flow net",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "are independent of boundary condition",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "contains curves of head isolines",
+                "correct": false,
+                "feedback": "correct."
+            },
+            {
+                "answer": "are stream lines",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "requires information of boundary condition",
+                "correct": true,
+                "feedback": "correct"
+            }
+ 
+        ]
+    },
+    
+    {
+        "question": "Isochrones are",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "curves of streamlines",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "curves of head isolines",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "curves of identical travel times",
+                "correct": true,
+                "feedback": "Correct"
+            },
+            {
+                "answer": "are flow lines.",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+    
+
+    
+        {
+        "question": "Effective Hydraulic Conductivty in flow parallel to layers can be estimated from the relation: $K$ = $\\frac{\\sum_{i=1}^n m_iK_i}{m}$",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "as the largest K value among the layer",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "as the lowest K value among the layer",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "as the reciprocal of the largest K value among the layer",
+                "correct": false,
+                "feedback": "false."
+            },
+            {
+                "answer": "as a ratio of largest and lowest K value among the layer",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+
+        {
+        "question": "Hydraulic conductivity in the anisotropic aquifer is",
+        "type" : "multiple_choice"  ,  
+        "answers": [
+            {
+                "answer": "always a scalar",
+                "correct": false,
+                "feedback": "Inorrect."
+            },
+           {
+                "answer": "a tensor similar to isotropic case",
+                "correct": true,
+                "feedback": "correct."
+            } ,
+
+            {
+                "answer": "is direction independent quantity",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+ 
+        ]
+    }
+    
+ ]
+
+
+
+    
+

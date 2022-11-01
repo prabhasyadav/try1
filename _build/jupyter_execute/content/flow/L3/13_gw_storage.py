@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import numpy as np
@@ -36,7 +36,7 @@ pn.extension("katex", "mathjax")
 # 
 # The difference between the international and the German definition of groundwater is the consideration of the adhesive water. Adhesive water does not participate in water movement. The same is true for water in isolated pores or in dead-end pores. All subterranean water not participating in water movement is summarized as immobile water. In contrast, the mobile water is the subterranean water participating in water movement.
 
-# In[4]:
+# In[2]:
 
 
 p1 = pn.pane.Markdown("""
@@ -95,7 +95,7 @@ pn.Row(p4, pn.Spacer(width=50), video1)
 # 
 # Find, total porosity, void ratio, water content, degree of saturation and effective porosity.
 
-# In[35]:
+# In[3]:
 
 
 # solution
@@ -128,7 +128,7 @@ print("Moisture content is {0:0.2f}%".format(w))
 print("Degree of saturation is {0:0.2f}%".format(S))  
 
 
-# In[5]:
+# In[4]:
 
 
 p5 = pn.pane.Markdown(""" ###Aquifer Classifications """)
@@ -159,7 +159,7 @@ p8 = pn.Column(p5, p6)
 pn.Row(p8, pn.Spacer(width=25), p7) 
 
 
-# In[71]:
+# In[5]:
 
 
 p9 = pn.pane.Markdown(""" ### Unconfined Aquifer """)
@@ -245,7 +245,7 @@ pn.Column(p9, p10, p11, p12, p13, p14, p15, p16, p17)
 # 
 # **Example:** Compare the pressure difference for an experimental setup (pipe length 50 cm) in which water and diesel are the two liquids.
 
-# In[23]:
+# In[6]:
 
 
 # solution
@@ -376,7 +376,7 @@ print("The pressure difference due to water is {0:2.2f} g/cm.s\u00b2,".format(Dp
 # 
 # **Example:** The 45 m thick aquifer under the change of pressure 245 KPa compacts 0.20 m. What is the compressibility of porous media.
 
-# In[1]:
+# In[7]:
 
 
 # Available information
@@ -439,7 +439,7 @@ print("The compressibility of porous media in aquifer {0:0.2e} m\u00b2/KN.".form
 # 
 # In **confined** aquifers all voids remain filled with groundwater during pressure changes and storage properties depend on the compressibilities of water and the porous medium.
 
-# In[17]:
+# In[8]:
 
 
 from jupyterquiz import display_quiz

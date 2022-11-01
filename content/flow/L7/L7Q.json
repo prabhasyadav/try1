@@ -1,0 +1,318 @@
+[  
+    {
+        "question": "A control volume ",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "has a size similar to region of investigation",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "Darcy's law may be valid",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "represents the real aquifer",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "is a fictitious portion of an aquifer in which Darcy's law is absolutely valid",
+                "correct": true,
+                "feedback": "Correct."
+            }
+ 
+        ]
+    },
+    {
+        "question": "Which is NOT a representative of Groundwater flow problem",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "1D, 2D or 3D transport of chemical",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "steady-state or transient",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "homogeneous or heterogeneous",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "isotropic or anisotropic in confined or unconfined aquifer",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+
+    {
+        "question": "Groundwater flow problems are described by which of the following principles : ",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": " conservation of volume",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "Both of the above",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "Darcy‘s law",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+
+
+         ]
+        
+    },
+    
+    {
+        "question": "In the equation water volume budget equation $ \\frac{\\Delta V_w}{\\Delta x \\Delta y \\Delta z} \\propto \\Delta h $ the proportionality constant is given by",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "porosity",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "specific storage",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "coefficient of conductivity",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "aquifer thickness",
+                "correct": false,
+                "feedback": "Incorrect"
+            }
+ 
+        ]
+    },
+    
+    {
+        "question": "The Ground Water Flow Equation does not represent : ",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "the aquifer is heterogeneous",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "has the source and sink term",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "flow is at steady-state",
+                "correct": true,
+                "feedback": "Correct"
+            },
+            {
+                "answer": "for an anisotropic aquifer",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+    
+
+    
+        {
+        "question": "In the equation $ S\\frac{\\partial h}{\\partial t} = \\frac{\\partial }{\\partial x}\\bigg(T_x\\frac{\\partial h}{\\partial x}\\bigg) + \\frac{\\partial }{\\partial y}\\bigg(T_y\\frac{\\partial h}{\\partial y}\\bigg) $ $S_s$ is replaced by $S$ because",
+        
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Vertical flow is neglected",
+                "correct": true,
+                "feedback": "correct."
+            },
+            {
+                "answer": "aquifer has no source/sinks",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "aquifer is 2D",
+                "correct": false,
+                "feedback": "false."
+            },
+            {
+                "answer": "Transmissivity (T) has to be used",
+                "correct": false,
+                "feedback": "Incorrect"
+             }   
+        ]
+    },
+
+        {
+        "question": "The Transmissivity in equation $ T_x = K_x \\cdot (h-z_{bot}) $ where $Z_{bot}$ is bottom of the aquifer, represents a",
+        "type" : "multiple_choice"  ,  
+        "answers": [
+            {
+                "answer": "transmissivity in a confined aquifer",
+                "correct": false,
+                "feedback": "Inorrect."
+            },
+           {
+                "answer": "transmissivity  in homogeneous aquifer",
+                "correct": false,
+                "feedback": "Incorrect."
+            } ,
+            {
+                "answer": "transmissivity  in unconfined aquifer",
+                "correct": true,
+                "feedback": "correct."
+            } ,
+
+            {
+                "answer": "transmissivity in 3D aquifer",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+ 
+        ]
+    },
+    
+    
+        {
+        "question": "Which among the below are **VALID** Dupuit Assumptions, which are valid only in unconfined aquifer:",
+        "type" : "multiple_choice"  ,  
+        "answers": [
+            {
+                "answer": "Groundwater flow is almost horizontal",
+                "correct": true,
+                "feedback": "Correct."
+            },
+           {
+                "answer": "No vertical flow component exist",
+                "correct": false,
+                "feedback": "Incorrect"
+            } ,
+            {
+                "answer": "Darcy's law is not valid at the water table",
+                "correct": false,
+                "feedback": "Incorrect."
+            } ,
+
+            {
+                "answer": "All above are valid",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+ 
+        ]
+    },
+    
+        
+        {
+        "question": "The initial condition (IC) in the groundwater flow problem is NOT required for",
+        "type" : "multiple_choice"  ,  
+        "answers": [
+            {
+                "answer": "Anisotropic flow problems",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+           {
+                "answer": "Steady-State problems",
+                "correct": true,
+                "feedback": "correct."
+            } ,
+            {
+                "answer": "3D flow problems",
+                "correct": false,
+                "feedback": "Incorrect."
+            } ,
+
+            {
+                "answer": "Transient problems",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+ 
+        ]
+    },
+    
+    
+            {
+        "question": "In the Dirichlet boundary condition",
+        "type" : "multiple_choice"  ,  
+        "answers": [
+            {
+                "answer": "head gradient is specified",
+                "correct": true,
+                "feedback": "Correct."
+            },
+           {
+                "answer": "time dependent head gradient is specified",
+                "correct": false,
+                "feedback": "Incorrect."
+            } ,
+            {
+                "answer": "head is specified",
+                "correct": false,
+                "feedback": "Incorrect."
+            } ,
+
+            {
+                "answer": "no flow is defined",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+ 
+        ]
+    },
+    
+                {
+        "question": "The special case of Neumann boundary condition is",
+        "type" : "multiple_choice"  ,  
+        "answers": [
+            {
+                "answer": "the no flow boundary condition",
+                "correct": true,
+                "feedback": "Correct."
+            },
+           {
+                "answer": "the head specfied boundary condition",
+                "correct": false,
+                "feedback": "Incorrect."
+            } ,
+            {
+                "answer": "the Cauchy boundary condition",
+                "correct": false,
+                "feedback": "Incorrect."
+            } ,
+
+            {
+                "answer": "the specified non-zero head gradient ",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+ 
+        ]
+    }
+ ]
+
+
+
+    
+
