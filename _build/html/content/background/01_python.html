@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Python Programming language &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -33,7 +34,6 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -51,13 +51,13 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="JUPYTER Notebook Interface for Python" href="02_jupyter.html" />
     <link rel="prev" title="Lecture 2 - Subsurface Structure" href="../flow/12_subsurface_structure.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
@@ -149,6 +149,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../tools/sieve_analysis.html">
    Simulating Seive Analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../flow/L3/13_gw_storage.html">
+   Lecture 3-  Groundwater as a reservoir
   </a>
  </li>
 </ul>
@@ -436,19 +441,19 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="python-programming-language">
-<h1>Python Programming language<a class="headerlink" href="#python-programming-language" title="Permalink to this heading">#</a></h1>
-<div class="section" id="what-is-it">
-<h2>What is it?<a class="headerlink" href="#what-is-it" title="Permalink to this heading">#</a></h2>
+  <section id="python-programming-language">
+<h1>Python Programming language<a class="headerlink" href="#python-programming-language" title="Permalink to this headline">#</a></h1>
+<section id="what-is-it">
+<h2>What is it?<a class="headerlink" href="#what-is-it" title="Permalink to this headline">#</a></h2>
 <p>Python is an open-source interpreted, high-level, general-purpose programming language. This means:</p>
 <ul class="simple">
 <li><p>Interpreted/high-level language: This makes we avoid the nuances of fundamental coding as done by computer programmers/engineers.</p></li>
 <li><p>General purpose programming language and <em>Open-source</em> ecosystem: This means it is extensible. Already over 200,000 Python packages are available (<a class="reference external" href="https://pypi.org/">Check Here</a>). Also, it means being <strong>free</strong> of cost.</p></li>
 <li><p>For Groundwater: We can use Python packages such as <strong>Numpy</strong> (for numerical computing), <strong>Scipy</strong> (for scientific computing), <strong>Sympy</strong> (for symbolic computing), <strong>Matplotlib</strong> (for plotting) etc. for our computing and modelling in the course.</p></li>
 </ul>
-</div>
-<div class="section" id="a-bit-of-history-of-python-programming-language">
-<h2>A bit of history of Python Programming language<a class="headerlink" href="#a-bit-of-history-of-python-programming-language" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="a-bit-of-history-of-python-programming-language">
+<h2>A bit of history of Python Programming language<a class="headerlink" href="#a-bit-of-history-of-python-programming-language" title="Permalink to this headline">#</a></h2>
 <p>Python is now over 15 years old programming language. Its development can be traced from:</p>
 <ul class="simple">
 <li><p><strong>Guido van Rossum</strong> began developing Python in 1980 at Centrum Wiskunde &amp; Informatica (CWI), the Netherlands. Its implementation (<em>Python v.1</em>) was released in 1994.</p></li>
@@ -456,9 +461,9 @@ title="Print to PDF"
 <li><p><em>Python 3.0</em> will be used in our class. It is <em>not</em> 100% compatible with earlier versions of <em>Python.</em></p></li>
 <li><p><em>Python</em> name comes from the British comedy group Monty Python (Van Rossum enjoyed their show). The official <em>Python</em> documentation <a class="reference external" href="https://www.python.org/doc/">(Check here)</a> also contains various references to Monty Python routines.</p></li>
 </ul>
-</div>
-<div class="section" id="why-use-python-programming-language">
-<h2>Why use Python Programming Language<a class="headerlink" href="#why-use-python-programming-language" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="why-use-python-programming-language">
+<h2>Why use Python Programming Language<a class="headerlink" href="#why-use-python-programming-language" title="Permalink to this headline">#</a></h2>
 <p>Many reasons but to put a few points here:</p>
 <ul class="simple">
 <li><p><em>Python</em> is a common tool among engineers, experts and researchers at universities and industry.</p></li>
@@ -521,9 +526,9 @@ if (root.Bokeh !== undefined) {
   }
 })(window);</script></div></div>
 </div>
-</div>
-<div class="section" id="very-basics-of-python-programming">
-<h2>Very basics of Python Programming<a class="headerlink" href="#very-basics-of-python-programming" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="very-basics-of-python-programming">
+<h2>Very basics of Python Programming<a class="headerlink" href="#very-basics-of-python-programming" title="Permalink to this headline">#</a></h2>
 <p><em>Python</em> is a very extensive language. To get started we learn the very fundamentals of the language.</p>
 <p><strong>Fundamentals of Python Programming Language</strong></p>
 <a class="reference internal image-reference" href="../../_images/bg1_f2.png" id="very-basic-of-python-language"><img alt="../../_images/bg1_f2.png" class="align-center" id="very-basic-of-python-language" src="../../_images/bg1_f2.png" style="width: 600px;" /></a>
@@ -541,17 +546,17 @@ if (root.Bokeh !== undefined) {
 :name: Defining a FUNCTION
 ```
 <p>Semicolon (:) in line 1 and <em>Indentation</em> after line 1 are required. <strong>def</strong>, <strong>return</strong> are <em>Python</em> keywords. There are quite few of them.</p>
-</div>
-<div class="section" id="how-much-python-programming-should-we-know">
-<h2>How much Python Programming should we know?<a class="headerlink" href="#how-much-python-programming-should-we-know" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="how-much-python-programming-should-we-know">
+<h2>How much Python Programming should we know?<a class="headerlink" href="#how-much-python-programming-should-we-know" title="Permalink to this headline">#</a></h2>
 <p>This is probably the most important question. The <strong>clear</strong> answer at least for this course is that <strong>no</strong> programming has to be learned.
 This course do not expect any pre-coding skills. This course is intended for Basic Groundwater teaching, and that is the focus.
 But, how about learning groundwater by coding?</p>
 <p>Eventually, the depth of programming to learn is an individual choice. This course considers programming as a tool to learn better.</p>
 <p>In this course the <em>codes</em> can are written in a way so that it can be easily read. In addition, this interactive book will allow quite many of the <em>code</em> to be edited and executed in the book itself. For more advanced learning the popular notebook interface <strong>JUPYTER</strong> is to be used.</p>
 <p><strong>JUPYTER</strong> interface, on which interface this book is developed, is very briefly explained in the next section.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
