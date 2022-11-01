@@ -1,0 +1,68 @@
+Traceback (most recent call last):
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\vibhu\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+r2_2 = pn.pane.LaTeX(r"""
+
+From the analysis of laboratory results the unsaturated hydraulic conductivity fits the following exponential 
+model as a function of pressure head ($\psi$): $K(\psi) = K_s \exp(\alpha\cdot \psi)$, 
+with $K_s$ [LT$^{-1}$] the saturated hydraulic conductivity and $\alpha$ [L$^{-1}$] a fit parameter. 
+For the pressure head measurements and the data provided in the figure below, find $K(\psi)$. 
+Also, find the Darcy velocity for this case.
+""", width = 900, style={'font-size': '13pt'}) 
+
+r2_3 =pn.pane.PNG("images/T05_TP15.png", width=400)
+
+
+pn.Column(r2_2, r2_3) 
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mValueError[0m                                Traceback (most recent call last)
+Input [1;32mIn [6][0m, in [0;36m<cell line: 10>[1;34m()[0m
+[0;32m      1[0m r2_2 [38;5;241m=[39m pn[38;5;241m.[39mpane[38;5;241m.[39mLaTeX([38;5;124mr[39m[38;5;124m"""[39m
+[0;32m      2[0m 
+[0;32m      3[0m [38;5;124mFrom the analysis of laboratory results the unsaturated hydraulic conductivity fits the following exponential [39m
+[1;32m   (...)[0m
+[0;32m      7[0m [38;5;124mAlso, find the Darcy velocity for this case.[39m
+[0;32m      8[0m [38;5;124m"""[39m, width [38;5;241m=[39m [38;5;241m900[39m, style[38;5;241m=[39m{[38;5;124m'[39m[38;5;124mfont-size[39m[38;5;124m'[39m: [38;5;124m'[39m[38;5;124m13pt[39m[38;5;124m'[39m}) 
+[1;32m---> 10[0m r2_3 [38;5;241m=[39m[43mpn[49m[38;5;241;43m.[39;49m[43mpane[49m[38;5;241;43m.[39;49m[43mPNG[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mimages/T05_TP15.png[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[43mwidth[49m[38;5;241;43m=[39;49m[38;5;241;43m400[39;49m[43m)[49m
+[0;32m     13[0m pn[38;5;241m.[39mColumn(r2_2, r2_3)
+
+File [1;32m~\AppData\Local\Programs\Python\Python310\lib\site-packages\panel\pane\image.py:36[0m, in [0;36mFileBase.__init__[1;34m(self, object, **params)[0m
+[0;32m     34[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m([38;5;28mobject[39m, PurePath):
+[0;32m     35[0m     [38;5;28mobject[39m [38;5;241m=[39m [38;5;28mstr[39m([38;5;28mobject[39m)
+[1;32m---> 36[0m [38;5;28msuper[39m()[38;5;241m.[39m[38;5;21m__init__[39m([38;5;28mobject[39m[38;5;241m=[39m[38;5;28mobject[39m, [38;5;241m*[39m[38;5;241m*[39mparams)
+
+File [1;32m~\AppData\Local\Programs\Python\Python310\lib\site-packages\panel\pane\base.py:143[0m, in [0;36mPaneBase.__init__[1;34m(self, object, **params)[0m
+[0;32m    141[0m applies [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39mapplies([38;5;28mobject[39m, [38;5;241m*[39m[38;5;241m*[39m(params [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39m_applies_kw [38;5;28;01melse[39;00m {}))
+[0;32m    142[0m [38;5;28;01mif[39;00m ([38;5;28misinstance[39m(applies, [38;5;28mbool[39m) [38;5;129;01mand[39;00m [38;5;129;01mnot[39;00m applies) [38;5;129;01mand[39;00m [38;5;28mobject[39m [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m :
+[1;32m--> 143[0m     [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_type_error[49m[43m([49m[38;5;28;43mobject[39;49m[43m)[49m
+[0;32m    145[0m [38;5;28msuper[39m()[38;5;241m.[39m[38;5;21m__init__[39m([38;5;28mobject[39m[38;5;241m=[39m[38;5;28mobject[39m, [38;5;241m*[39m[38;5;241m*[39mparams)
+[0;32m    146[0m kwargs [38;5;241m=[39m {k: v [38;5;28;01mfor[39;00m k, v [38;5;129;01min[39;00m params[38;5;241m.[39mitems() [38;5;28;01mif[39;00m k [38;5;129;01min[39;00m Layoutable[38;5;241m.[39mparam}
+
+File [1;32m~\AppData\Local\Programs\Python\Python310\lib\site-packages\panel\pane\image.py:40[0m, in [0;36mFileBase._type_error[1;34m(self, object)[0m
+[0;32m     38[0m [38;5;28;01mdef[39;00m [38;5;21m_type_error[39m([38;5;28mself[39m, [38;5;28mobject[39m):
+[0;32m     39[0m     [38;5;28;01mif[39;00m [38;5;28misinstance[39m([38;5;28mobject[39m, [38;5;28mstr[39m):
+[1;32m---> 40[0m         [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m([38;5;124m"[39m[38;5;132;01m%s[39;00m[38;5;124m pane cannot parse string that is not a filename [39m[38;5;124m"[39m
+[0;32m     41[0m                          [38;5;124m"[39m[38;5;124mor URL.[39m[38;5;124m"[39m [38;5;241m%[39m [38;5;28mtype[39m([38;5;28mself[39m)[38;5;241m.[39m[38;5;18m__name__[39m)
+[0;32m     42[0m     [38;5;28msuper[39m()[38;5;241m.[39m_type_error([38;5;28mobject[39m)
+
+[1;31mValueError[0m: PNG pane cannot parse string that is not a filename or URL.
+ValueError: PNG pane cannot parse string that is not a filename or URL.
+
