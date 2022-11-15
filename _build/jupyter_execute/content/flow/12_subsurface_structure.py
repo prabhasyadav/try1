@@ -358,6 +358,8 @@ h_c=(2*sigma)/(rho*g)
 print("The maximum water rise in this tube is: {0:0.2f} 1/R cm".format(h_c))
 
 
+# ### Chapter Quiz 
+
 # In[5]:
 
 

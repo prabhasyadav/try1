@@ -640,6 +640,8 @@ print("travel time of water = {} s\nLength = {} m\u00b2\neffective porosity = {}
 print("The linear velocity is {} m/h \nthe pore volume is {} s, and \nthe darcy velocity is {} m/h".format(vs, PV, v))
 
 
+# ## Chapter Quiz
+
 # In[9]:
 
 

@@ -462,6 +462,8 @@ print("\033[1mSolution:\033[0m\n\nThe resulting hydraulic conductivity is \033[1
 # Heterogeneity and Anisotropy in aquifer
 # ```
 
+# ## Chapter Quiz
+
 # In[5]:
 
 

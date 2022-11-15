@@ -32,7 +32,7 @@ pn.extension('katex', 'mathjax')
 
 # ### Homework Problem 3 ###
 
-# In[2]:
+# In[3]:
 
 
 #
@@ -53,7 +53,7 @@ pn.Row(r3_1,spacer2, r3_2)
 
 # ### Solution of the Homework Problem 3 ###
 
-# In[3]:
+# In[6]:
 
 
 #
@@ -101,7 +101,7 @@ r3_2.object = "images/T06_TH3a.png"
 pn.Column(r3_3, r3_4, C1, r3_7)  
 
 
-# In[4]:
+# In[2]:
 
 
 # Problem 3b, Given are:
@@ -133,7 +133,7 @@ pn.Row(r3_8)
 
 # ### Homework Problem 4 ###
 
-# In[5]:
+# In[10]:
 
 
 # given data - you may change the number
@@ -159,7 +159,7 @@ spacer2=pn.Spacer(width=50)
 pn.Column(r_h4,spacer2, df1)
 
 
-# In[6]:
+# In[11]:
 
 
 #
@@ -180,7 +180,7 @@ pn.Row(r_h4c, spacer2, r_h4e)
 
 # ### Solution of Homework Problem 4 ### 
 
-# In[7]:
+# In[5]:
 
 
 #
@@ -199,7 +199,7 @@ r4_1
  
 
 
-# In[8]:
+# In[12]:
 
 
 #Caclulation
@@ -230,7 +230,7 @@ r4_2 = pn.pane.Matplotlib(fig, dpi=300)
 pn.Row(df2,spacer2,r4_2)  
 
 
-# In[9]:
+# In[13]:
 
 
 #Solution of 4C
@@ -265,7 +265,7 @@ print("The permeability of the media in Darcy's unit is: {0:1.2f}".format(k_D), 
 # 
 # ### Tutorial Problem 16- flow in confined aquifer ###
 
-# In[10]:
+# In[14]:
 
 
 #
@@ -292,7 +292,7 @@ pn.Row(r16_2, r16_3)
 
 # ### Solution of Problem 16 ###
 
-# In[11]:
+# In[15]:
 
 
 # solution
@@ -316,7 +316,7 @@ where $x$ is the distance from $h_1$
 r16_6
 
 
-# In[12]:
+# In[21]:
 
 
 # Given are:
@@ -350,7 +350,7 @@ print("The head at 0.5 Km from well 1 is : {0:1.2f}".format(h_y1), "m")
 
 # ### Tutorial Problem 17- flow in unconfined aquifer ###
 
-# In[13]:
+# In[22]:
 
 
 #
@@ -367,7 +367,7 @@ pn.Row(r17_1, r17_2)
 
 # ### Solution Tutorial Problem 17 ###
 
-# In[14]:
+# In[23]:
 
 
 #
@@ -402,7 +402,7 @@ $$
 r17_4
 
 
-# In[15]:
+# In[29]:
 
 
 #Solution of Tutorial Problem 22:
@@ -438,7 +438,7 @@ print(K4)
 # 
 # ### Homework Problem 8 - confined aquifer ###
 
-# In[16]:
+# In[31]:
 
 
 #
@@ -456,7 +456,7 @@ pn.Row(rh8_2, rh8_3)
 # ### Homework Problem 9 - unconfined aquifer ### 
 # 
 
-# In[17]:
+# In[33]:
 
 
 #

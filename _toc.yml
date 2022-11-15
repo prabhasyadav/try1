@@ -17,6 +17,11 @@ parts:
   - file: content/flow/L7/17_quantify_flow
   - file: content/flow/L8/18_wells
   
+- caption: Flow
+  chapters:
+  - file: content/transport/L9/21_conservative_transport
+  - file: content/transport/L10/22_reactive_transport
+  
 - caption: Tutorials
   chapters:
   - file: content/background/01_python
@@ -39,3 +44,4 @@ parts:
   - file: content/tools/1D_advection_dispersion
   - file: content/tools/Kinetics_degradation
   - file: content/tools/1D_ditchflow
+  - file: content/testcodeer

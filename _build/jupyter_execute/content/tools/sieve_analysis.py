@@ -82,7 +82,7 @@ Inter=widgets.interact_manual(SA,
 
 # **The plot shown is interactive use the pointer and others tools in the graph to obtain d10 and d60 for the next step**
 
-# In[2]:
+# In[3]:
 
 
 def SA2(d10, d60, t):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import numpy as np
@@ -32,7 +32,7 @@ pn.extension('katex')
 # 
 # ## Homework Problem 8: Flow in confined aquifer ##
 
-# In[3]:
+# In[2]:
 
 
 rh8_1 = pn.pane.LaTeX(r""" 
@@ -48,7 +48,7 @@ pn.Row(rh8_1, rh8_2)
 
 # ### Solution Homework Problem 8 ###
 
-# In[10]:
+# In[3]:
 
 
 #solution Homework problem 8
@@ -86,7 +86,7 @@ Differential equation Eq. (2D) has to be solved to obtain the discharge.
 rh8_3 
 
 
-# In[6]:
+# In[4]:
 
 
 #Homework problem 8 – Continued
@@ -122,7 +122,7 @@ q' = K \frac{h_1- h_3}{L}\cdot\frac{m_3 - m_1}{\ln\frac{m_3}{m_1}}
 rh8_4 
 
 
-# In[9]:
+# In[5]:
 
 
 #Homework Problem 8 – Continued
@@ -147,7 +147,7 @@ print("Discharge from the given width of aquifer is: {0:1.2e}".format(Q8), "m\u0
 
 # ### Homework Problem 9 - Unconfined aquifer ### 
 
-# In[12]:
+# In[6]:
 
 
 rh9_1 = pn.pane.LaTeX(r"""
@@ -167,7 +167,7 @@ pn.Column(rh9_1, rh9_2)
 
 # ### Solution of Homework Problem 9 ###
 
-# In[18]:
+# In[7]:
 
 
 # Solution of Homework Problem 9
@@ -199,7 +199,7 @@ $$
 rh9_3 
 
 
-# In[20]:
+# In[8]:
 
 
 #Solution of Homework Problem 9
@@ -238,7 +238,7 @@ print("The water table at the required  location (x) without recharge is: {0:1.5
 
 # ### Solution of Tutorial Problem 20 ###
 
-# In[44]:
+# In[9]:
 
 
 # Solution Tutorial Problem 20 A.
@@ -286,7 +286,7 @@ print("The required advective mass flow is{0:0.2f}".format(J_adv), "Kg/m\u00b2-s
 # 
 # The concentration at the **outlet = inlet = 10 mg/L**. 
 
-# In[49]:
+# In[10]:
 
 
 # solution Tutorial Problem 20 C.
@@ -304,7 +304,7 @@ print("\n The required dispersion coefficent is {0:0.2e}".format(Dis), "m\u00b2/
 # 
 # A 1 m long column ($\oslash$ = 5 cm) is packed ($n_e= 30\%$). The NaCl solution with concentration 70 mg/L is introduced to the column at the flow rate of 100 mL/min. The following NaCl concentrations were measured at the outlet at different times:
 
-# In[55]:
+# In[11]:
 
 
 t_m = np.array([60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720])
@@ -333,7 +333,7 @@ df #
 # 
 # To normalize with initial concentration, we divide the outlet concentration with the initial concentration = 70 mg/L, we get:
 
-# In[96]:
+# In[12]:
 
 
 #solution 21.A & B
@@ -376,7 +376,7 @@ df2
 # N_{Pv} = V_{vol}\times t/V 
 # $$
 
-# In[99]:
+# In[13]:
 
 
 #solution 21.C
@@ -405,7 +405,7 @@ df3 # display top 5 data
 
 # **Solution 21.E** 
 
-# In[115]:
+# In[14]:
 
 
 fig = plt.figure()
@@ -432,7 +432,7 @@ plt.axhline(y=.5)
 # 
 # **Homework Problem 11** - Conservative transport 
 
-# In[120]:
+# In[15]:
 
 
 rh11_1 = pn.pane.Markdown("""
@@ -467,8 +467,4 @@ rh11_3= pn.Column(rh11_1, rh11_2 )
 pn.Row(rh11_3, spacer, dfh11)
 
 
-# In[ ]:
-
-
-
-
+# ### Chapter Quiz 

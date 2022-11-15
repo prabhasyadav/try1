@@ -439,6 +439,8 @@ print("The compressibility of porous media in aquifer {0:0.2e} m\u00b2/KN.".form
 # 
 # In **confined** aquifers all voids remain filled with groundwater during pressure changes and storage properties depend on the compressibilities of water and the porous medium.
 
+# ### Chapter Quiz  
+
 # In[8]:
 
 

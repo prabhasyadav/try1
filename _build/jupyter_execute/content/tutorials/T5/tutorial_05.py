@@ -143,7 +143,7 @@ print("The conductivity of media increases very rapidly with increase of moistur
 
 # ### Tutorial Problem 15 ###
 
-# In[10]:
+# In[6]:
 
 
 r2_2 = pn.pane.LaTeX(r"""
@@ -163,7 +163,7 @@ pn.Column(r2_2, r2_3)
 
 # ### Solution Tutorial Problem 15 ###
 
-# In[11]:
+# In[7]:
 
 
 # Given
