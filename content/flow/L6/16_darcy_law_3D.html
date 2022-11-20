@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>7. Lecture 6: Steady-State Groundwater flow in 3D &#8212; Groundwater I</title>
+    <title>5. Lecture 6: Steady-State Groundwater flow in 3D &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -42,7 +42,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
-    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -57,8 +56,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="8. Lecture 07 - Quantifying 3D Groundwater Flow" href="../L7/17_quantify_flow.html" />
-    <link rel="prev" title="6. Lecture 5. Aquifer Heterogeneity and Anisotropy" href="../L5/15_het_iso.html" />
+    <link rel="next" title="6. Lecture 07 - Quantifying 3D Groundwater Flow" href="../L7/17_quantify_flow.html" />
+    <link rel="prev" title="4. Lecture 5. Aquifer Heterogeneity and Anisotropy" href="../L5/15_het_iso.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -143,54 +142,54 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../12_subsurface_structure.html">
-   3. Lecture 2 - Subsurface Structure
+   1. Lecture 2 - Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L3/13_gw_storage.html">
-   4. Lecture 3-  Groundwater as a reservoir
+   2. Lecture 3-  Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L4/14_darcy_law_K.html">
-   5. Lecture 4 - Darcy’s Law and Conductivity
+   3. Lecture 4 - Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L5/15_het_iso.html">
-   6. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   7. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Lecture 6: Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L7/17_quantify_flow.html">
-   8. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Lecture 07 - Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L8/18_wells.html">
-   9. Lecture 08 - Wells*
+   7. Lecture 08 - Wells*
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Flow
+  Transport
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L9/21_conservative_transport.html">
-   10. Lecture 9-  Conservative Transport
+   1. Lecture 9-  Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L10/22_reactive_transport.html">
-   11. Lecture 10:  Reactive Mass Transport
+   2. Lecture 10:  Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -202,47 +201,47 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../background/01_python.html">
-   12. Python Programming language
+   1. Python Programming language
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../background/02_jupyter.html">
-   13. JUPYTER Notebook Interface for Python
+   2. JUPYTER Notebook Interface for Python
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T3/tutorial_03.html">
-   14. Tutorial 3 - Darcy Law and Conductivity
+   3. Tutorial 3 - Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T4/tutorial_04.html">
-   15. Tutorial 4 - Effective K &amp; Recitation
+   4. Tutorial 4 - Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T5/tutorial_05.html">
-   16. Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
+   5. Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T6/tutorial_06.html">
-   17. Tutorial 6 - Tutorial Problems on Flow in Confined/Unconfined Aquifer
+   6. Tutorial 6 - Tutorial Problems on Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T7/tutorial_07.html">
-   18. Tutorial 7 - Wells
+   7. Tutorial 7 - Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T8/tutorial_08.html">
-   19. Tutorial 8 - Conservative transport
+   8. Tutorial 8 - Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T9/tutorial_09.html">
-   20. Tutorial 9 - Reactive transport
+   9. Tutorial 9 - Reactive transport
   </a>
  </li>
 </ul>
@@ -254,52 +253,52 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/decay.html">
-   21. Simulating Mass Budget
+   1. Simulating Mass Budget
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/sieve_analysis.html">
-   22. Simulating Seive Analysis
+   2. Simulating Seive Analysis
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/effective_K.html">
-   23. Simulating Effective hydraulic conductivity
+   3. Simulating Effective hydraulic conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/uniform_flow_and_well.html">
-   24. Uniform Flow and Well*
+   4. Uniform Flow and Well*
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/aniso2D.html">
-   25. Simulating the Anisotropy and flow direction
+   5. Simulating the Anisotropy and flow direction
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/type_curve_fit.html">
-   26. Type curve and fitting pumping data tool
+   6. Type curve and fitting pumping data tool
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/1D_advection_dispersion.html">
-   27. Tool for simulating 1D Conservative Transport (Laboratory Column)
+   7. Tool for simulating 1D Conservative Transport (Laboratory Column)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/Kinetics_degradation.html">
-   28. Simulating Kinetics and Degradation
+   8. Simulating Kinetics and Degradation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/1D_ditchflow.html">
-   29. Simulating 1D Trench Flow*
+   9. Simulating 1D Trench Flow*
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../testcodeer.html">
-   30. Testing the code for run
+   10. Testing the code for run
   </a>
  </li>
 </ul>
@@ -501,144 +500,144 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#motivation">
-   7.1. Motivation
+   5.1. Motivation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#darcy-s-law-in-isotropic-aquifers">
-   7.2. Darcy’s Law in Isotropic Aquifers
+   5.2. Darcy’s Law in Isotropic Aquifers
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#summarizing-hydraulic-head">
-     7.2.1. Summarizing Hydraulic Head
+     5.2.1. Summarizing Hydraulic Head
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#isolines-and-isosurfaces">
-   7.3. Isolines and Isosurfaces
+   5.3. Isolines and Isosurfaces
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#hydrologic-triangle">
-   7.4. Hydrologic Triangle
+   5.4. Hydrologic Triangle
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#applying-the-hydrologic-triangle">
-     7.4.1. Applying the Hydrologic Triangle
+     5.4.1. Applying the Hydrologic Triangle
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#flow-direction">
-     7.4.2. Flow Direction
+     5.4.2. Flow Direction
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#hydraulic-gradient-in-2d-and-3d-systems">
-   7.5. Hydraulic Gradient in 2D and 3D systems
+   5.5. Hydraulic Gradient in 2D and 3D systems
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#darcy-s-law-isotropic-aquifer">
-     7.5.1. Darcy’s Law (Isotropic Aquifer)
+     5.5.1. Darcy’s Law (Isotropic Aquifer)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#example-problem">
-     7.5.2. Example problem
+     5.5.2. Example problem
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#streamlines-and-flow-nets">
-   7.6. Streamlines and Flow Nets
+   5.6. Streamlines and Flow Nets
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#basics">
-     7.6.1. Basics
+     5.6.1. Basics
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#radial-flow-near-a-well">
-     7.6.2. Radial Flow Near a Well
+     5.6.2. Radial Flow Near a Well
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#superposition-of-uniform-and-radial-flow">
-     7.6.3. Superposition of Uniform and Radial Flow
+     5.6.3. Superposition of Uniform and Radial Flow
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#some-rules-for-drawing-flow-nets">
-     7.6.4. Some Rules for Drawing Flow Nets
+     5.6.4. Some Rules for Drawing Flow Nets
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     7.6.5. Example problem
+     5.6.5. Example problem
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#isochrones-and-protection-zones">
-   7.7. Isochrones and Protection Zones.
+   5.7. Isochrones and Protection Zones.
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#ischrones">
-     7.7.1. Ischrones
+     5.7.1. Ischrones
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#example-of-protection-zones">
-     7.7.2. Example of Protection Zones
+     5.7.2. Example of Protection Zones
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#well-capture-zones-in-natural-aquifers">
-     7.7.3. Well Capture Zones in Natural Aquifers
+     5.7.3. Well Capture Zones in Natural Aquifers
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#darcy-s-law-in-anisotropic">
-   7.8. Darcy’s Law in Anisotropic
+   5.8. Darcy’s Law in Anisotropic
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#principal-axes-of-hydraulic-conductivity">
-     7.8.1. Principal Axes of Hydraulic Conductivity
+     5.8.1. Principal Axes of Hydraulic Conductivity
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#formulation-of-darcy-s-law-in-anisotropic-aquifers">
-     7.8.2. Formulation of Darcy’s Law in Anisotropic Aquifers
+     5.8.2. Formulation of Darcy’s Law in Anisotropic Aquifers
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#direction-of-flow">
-     7.8.3. Direction of flow
+     5.8.3. Direction of flow
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#examples-for-flow-nets-in-anisotropic-aquifers">
-     7.8.4. Examples for Flow Nets in Anisotropic Aquifers
+     5.8.4. Examples for Flow Nets in Anisotropic Aquifers
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#chapter-quiz">
-   7.9. Chapter Quiz
+   5.9. Chapter Quiz
   </a>
  </li>
 </ul>
@@ -662,144 +661,144 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#motivation">
-   7.1. Motivation
+   5.1. Motivation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#darcy-s-law-in-isotropic-aquifers">
-   7.2. Darcy’s Law in Isotropic Aquifers
+   5.2. Darcy’s Law in Isotropic Aquifers
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#summarizing-hydraulic-head">
-     7.2.1. Summarizing Hydraulic Head
+     5.2.1. Summarizing Hydraulic Head
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#isolines-and-isosurfaces">
-   7.3. Isolines and Isosurfaces
+   5.3. Isolines and Isosurfaces
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#hydrologic-triangle">
-   7.4. Hydrologic Triangle
+   5.4. Hydrologic Triangle
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#applying-the-hydrologic-triangle">
-     7.4.1. Applying the Hydrologic Triangle
+     5.4.1. Applying the Hydrologic Triangle
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#flow-direction">
-     7.4.2. Flow Direction
+     5.4.2. Flow Direction
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#hydraulic-gradient-in-2d-and-3d-systems">
-   7.5. Hydraulic Gradient in 2D and 3D systems
+   5.5. Hydraulic Gradient in 2D and 3D systems
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#darcy-s-law-isotropic-aquifer">
-     7.5.1. Darcy’s Law (Isotropic Aquifer)
+     5.5.1. Darcy’s Law (Isotropic Aquifer)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#example-problem">
-     7.5.2. Example problem
+     5.5.2. Example problem
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#streamlines-and-flow-nets">
-   7.6. Streamlines and Flow Nets
+   5.6. Streamlines and Flow Nets
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#basics">
-     7.6.1. Basics
+     5.6.1. Basics
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#radial-flow-near-a-well">
-     7.6.2. Radial Flow Near a Well
+     5.6.2. Radial Flow Near a Well
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#superposition-of-uniform-and-radial-flow">
-     7.6.3. Superposition of Uniform and Radial Flow
+     5.6.3. Superposition of Uniform and Radial Flow
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#some-rules-for-drawing-flow-nets">
-     7.6.4. Some Rules for Drawing Flow Nets
+     5.6.4. Some Rules for Drawing Flow Nets
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     7.6.5. Example problem
+     5.6.5. Example problem
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#isochrones-and-protection-zones">
-   7.7. Isochrones and Protection Zones.
+   5.7. Isochrones and Protection Zones.
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#ischrones">
-     7.7.1. Ischrones
+     5.7.1. Ischrones
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#example-of-protection-zones">
-     7.7.2. Example of Protection Zones
+     5.7.2. Example of Protection Zones
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#well-capture-zones-in-natural-aquifers">
-     7.7.3. Well Capture Zones in Natural Aquifers
+     5.7.3. Well Capture Zones in Natural Aquifers
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#darcy-s-law-in-anisotropic">
-   7.8. Darcy’s Law in Anisotropic
+   5.8. Darcy’s Law in Anisotropic
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#principal-axes-of-hydraulic-conductivity">
-     7.8.1. Principal Axes of Hydraulic Conductivity
+     5.8.1. Principal Axes of Hydraulic Conductivity
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#formulation-of-darcy-s-law-in-anisotropic-aquifers">
-     7.8.2. Formulation of Darcy’s Law in Anisotropic Aquifers
+     5.8.2. Formulation of Darcy’s Law in Anisotropic Aquifers
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#direction-of-flow">
-     7.8.3. Direction of flow
+     5.8.3. Direction of flow
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#examples-for-flow-nets-in-anisotropic-aquifers">
-     7.8.4. Examples for Flow Nets in Anisotropic Aquifers
+     5.8.4. Examples for Flow Nets in Anisotropic Aquifers
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#chapter-quiz">
-   7.9. Chapter Quiz
+   5.9. Chapter Quiz
   </a>
  </li>
 </ul>
@@ -813,17 +812,17 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="lecture-6-steady-state-groundwater-flow-in-3d">
-<h1><span class="section-number">7. </span>Lecture 6: Steady-State Groundwater flow in 3D<a class="headerlink" href="#lecture-6-steady-state-groundwater-flow-in-3d" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">5. </span>Lecture 6: Steady-State Groundwater flow in 3D<a class="headerlink" href="#lecture-6-steady-state-groundwater-flow-in-3d" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="motivation">
-<h2><span class="section-number">7.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
 <p>This lecture shows how Darcy’s law can be used for variety of groundwater problems, e.g., in isotropic and anisotropic aquifers, multiple dimension problems - 2D and 3D. The lecture will also introduce the basic concepts on visualizing groundwater flow, e.g., using streamlines, flow-nets, and present their uses for example using isochrones and delineating protection zones.</p>
 </section>
 <section id="darcy-s-law-in-isotropic-aquifers">
-<h2><span class="section-number">7.2. </span>Darcy’s Law in Isotropic Aquifers<a class="headerlink" href="#darcy-s-law-in-isotropic-aquifers" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.2. </span>Darcy’s Law in Isotropic Aquifers<a class="headerlink" href="#darcy-s-law-in-isotropic-aquifers" title="Permalink to this headline">#</a></h2>
 <section id="summarizing-hydraulic-head">
-<h3><span class="section-number">7.2.1. </span>Summarizing Hydraulic Head<a class="headerlink" href="#summarizing-hydraulic-head" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.2.1. </span>Summarizing Hydraulic Head<a class="headerlink" href="#summarizing-hydraulic-head" title="Permalink to this headline">#</a></h3>
 <p>The Darcy’s column experiment is associated with one-dimensional (1D) steady-state or time independent flow system. In addition, the experiments as we discussed in lecture 4, dealt with homogeneous (space dependency) and isotropic (direction dependency)  porous media. The consequence of these is that the hydraulic head <span class="math notranslate nohighlight">\(h\)</span> in a Darcy column therefore depends on a single space coordinate, say <span class="math notranslate nohighlight">\(x\)</span> that is oriented along the column length. Therefore <span class="math notranslate nohighlight">\(h = h(x)\)</span> in this case.</p>
 <p>Now considering the real/natural aquifer, which is inherently three dimensional (3D), the hydraulic head is then a function of three space coordinates, i.e., <span class="math notranslate nohighlight">\(h = h(x,y,z)\)</span>. But the 3D natural problem can be simplified to 2D problems based on the fact that vertical flow components (e.g., the aquifer depth) is very much smaller than horizontal flow components (the aquifer width or its length), i.e., <span class="math notranslate nohighlight">\(h = h(x,y)\)</span> considering <span class="math notranslate nohighlight">\(z\)</span> as vertical components. The 2D approach, instead of 3D, has been found to appropriately quantify groundwater flow systems. The application of 2D or 1D for quantifying in groundwater flow system have be justified for each case.  For example the layered aquifers, that was discussed in lecture 5, can be easily treated as a 2D system.</p>
 <div class="admonition note">
@@ -837,7 +836,7 @@ h = \psi + z
 </section>
 </section>
 <section id="isolines-and-isosurfaces">
-<h2><span class="section-number">7.3. </span>Isolines and Isosurfaces<a class="headerlink" href="#isolines-and-isosurfaces" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.3. </span>Isolines and Isosurfaces<a class="headerlink" href="#isolines-and-isosurfaces" title="Permalink to this headline">#</a></h2>
 <p>We make a slight detour from the Darcy’s law and quantifying groundwater flow system to <strong>visualizing</strong> the groundwater flow. As can be expected, visualizing groundwater is a challenging task. This is largely because sub-surface, compared to surface, cannot be mapped with very high resolution. However, it is possible to connect aquifer properties such as <span class="math notranslate nohighlight">\(h\)</span> hydraulic head to visualize groundwater flow system. Particularly used to visualize groundwater are:</p>
 <blockquote>
 <div><p><strong>Isolines</strong>: The curves (in 2D space) where a physical quantity (e.g., <span class="math notranslate nohighlight">\(h\)</span>) assumes a certain value. Isolines are thus suitable for visualizing 2D problems.</p>
@@ -845,46 +844,46 @@ h = \psi + z
 <blockquote>
 <div><p><strong>Isosurface</strong>: The surfaces (in 3D space) where a physical quantity assumes a certain value. Isosurface addresses the 3D groundwater problems.</p>
 </div></blockquote>
-<p>The representation of <em>isolines</em> yields a <em>map.</em> Isolines are therefore frequently superimposed on an already existing geographical map, e.g., the topographical map (see <a class="reference internal" href="#isolines"><span class="std std-numref">Fig. 7.1</span></a>). The simultaneous representation of several isolines/isosurfaces can be confusing. Thus intervals between values represented by these representations are constant.</p>
+<p>The representation of <em>isolines</em> yields a <em>map.</em> Isolines are therefore frequently superimposed on an already existing geographical map, e.g., the topographical map (see <a class="reference internal" href="#isolines"><span class="std std-numref">Fig. 5.1</span></a>). The simultaneous representation of several isolines/isosurfaces can be confusing. Thus intervals between values represented by these representations are constant.</p>
 <p>Isosurfaces are in general confusing to interpret due to presence of the third dimensions. As such often 2D cross-section through isosurfaces are depicted.</p>
 <figure class="align-center" id="isolines">
 <a class="reference internal image-reference" href="../../../_images/L06_f1.png"><img alt="../../../_images/L06_f1.png" src="../../../_images/L06_f1.png" style="width: 608.4px; height: 327.9px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">Head Isolines</span><a class="headerlink" href="#isolines" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Head Isolines</span><a class="headerlink" href="#isolines" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="hydrologic-triangle">
-<h2><span class="section-number">7.4. </span>Hydrologic Triangle<a class="headerlink" href="#hydrologic-triangle" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.4. </span>Hydrologic Triangle<a class="headerlink" href="#hydrologic-triangle" title="Permalink to this headline">#</a></h2>
 <p>The <strong>hydrologic triangle</strong> is a method that is used to approximate head isolines when head values are available at some distinct locations. As the name suggests, at least three head data are required to be known for approximating isolines. The process used in approximating is as follows:</p>
 <ul class="simple">
-<li><p>First the known head data points are connected with straight lines (dashed lines in the figure <a class="reference internal" href="#hydro-tri"><span class="std std-numref">Fig. 7.2</span></a>).</p></li>
+<li><p>First the known head data points are connected with straight lines (dashed lines in the figure <a class="reference internal" href="#hydro-tri"><span class="std std-numref">Fig. 5.2</span></a>).</p></li>
 <li><p>Linear interpolation is then performed with pre-defined head intervals (<span class="math notranslate nohighlight">\( \Delta h = 1 m \)</span> in the figure).</p></li>
 <li><p>Finally, points with identical head values are connected to obtain the isolines (solid lines in the figure).</p></li>
 </ul>
 <figure class="align-center" id="hydro-tri">
 <a class="reference internal image-reference" href="../../../_images/L06_f2.png"><img alt="../../../_images/L06_f2.png" src="../../../_images/L06_f2.png" style="width: 324.5px; height: 250.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">Hydrologic Triangle</span><a class="headerlink" href="#hydro-tri" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">Hydrologic Triangle</span><a class="headerlink" href="#hydro-tri" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="applying-the-hydrologic-triangle">
-<h3><span class="section-number">7.4.1. </span>Applying the Hydrologic Triangle<a class="headerlink" href="#applying-the-hydrologic-triangle" title="Permalink to this headline">#</a></h3>
-<p>In practical cases more than the just three observation points are available. This implies a triangulation of the investigation area as shown in the figure (<a class="reference internal" href="#hydro-tri2"><span class="std std-numref">Fig. 7.3</span></a>). Linear interpolation of heads is again performed along the dashed lines. Points with identical head values are connected to obtain the isolines. The connection lines do not have to be strictly a straight line as was the case in <a class="reference internal" href="#hydro-tri"><span class="std std-numref">Fig. 7.2</span></a>. In addition to straight line segments, the connected line can be <em>smooth</em> curves as shown in the <a class="reference internal" href="#hydro-tri2"><span class="std std-numref">Fig. 7.3</span></a>.</p>
+<h3><span class="section-number">5.4.1. </span>Applying the Hydrologic Triangle<a class="headerlink" href="#applying-the-hydrologic-triangle" title="Permalink to this headline">#</a></h3>
+<p>In practical cases more than the just three observation points are available. This implies a triangulation of the investigation area as shown in the figure (<a class="reference internal" href="#hydro-tri2"><span class="std std-numref">Fig. 5.3</span></a>). Linear interpolation of heads is again performed along the dashed lines. Points with identical head values are connected to obtain the isolines. The connection lines do not have to be strictly a straight line as was the case in <a class="reference internal" href="#hydro-tri"><span class="std std-numref">Fig. 5.2</span></a>. In addition to straight line segments, the connected line can be <em>smooth</em> curves as shown in the <a class="reference internal" href="#hydro-tri2"><span class="std std-numref">Fig. 5.3</span></a>.</p>
 <figure class="align-center" id="hydro-tri2">
 <a class="reference internal image-reference" href="../../../_images/L06_f3.png"><img alt="../../../_images/L06_f3.png" src="../../../_images/L06_f3.png" style="width: 397.25px; height: 296.79999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Applying the Hydrologic Triangle</span><a class="headerlink" href="#hydro-tri2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.3 </span><span class="caption-text">Applying the Hydrologic Triangle</span><a class="headerlink" href="#hydro-tri2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="flow-direction">
-<h3><span class="section-number">7.4.2. </span>Flow Direction<a class="headerlink" href="#flow-direction" title="Permalink to this headline">#</a></h3>
-<p>Based on Darcy’s law it is known that the flow is directed from the higher head towards the lower head. Though Darcy’s law is based on 1D, the same concept can be extended to the 2D and 3D flow. Thus in the figure, (<a class="reference internal" href="#hydro-tri3"><span class="std std-numref">Fig. 7.4</span></a>), the flow direction can be assumed to be directed from the top towards the base of the triangle (red arrow in the figure). But this remains assumptions so far.</p>
+<h3><span class="section-number">5.4.2. </span>Flow Direction<a class="headerlink" href="#flow-direction" title="Permalink to this headline">#</a></h3>
+<p>Based on Darcy’s law it is known that the flow is directed from the higher head towards the lower head. Though Darcy’s law is based on 1D, the same concept can be extended to the 2D and 3D flow. Thus in the figure, (<a class="reference internal" href="#hydro-tri3"><span class="std std-numref">Fig. 5.4</span></a>), the flow direction can be assumed to be directed from the top towards the base of the triangle (red arrow in the figure). But this remains assumptions so far.</p>
 <figure class="align-center" id="hydro-tri3">
 <a class="reference internal image-reference" href="../../../_images/L06_f4.png"><img alt="../../../_images/L06_f4.png" src="../../../_images/L06_f4.png" style="width: 328.40000000000003px; height: 253.60000000000002px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Flow Direction in Hydrologic Triangle</span><a class="headerlink" href="#hydro-tri3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.4 </span><span class="caption-text">Flow Direction in Hydrologic Triangle</span><a class="headerlink" href="#hydro-tri3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition attention">
@@ -894,7 +893,7 @@ h = \psi + z
 </section>
 </section>
 <section id="hydraulic-gradient-in-2d-and-3d-systems">
-<h2><span class="section-number">7.5. </span>Hydraulic Gradient in 2D and 3D systems<a class="headerlink" href="#hydraulic-gradient-in-2d-and-3d-systems" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.5. </span>Hydraulic Gradient in 2D and 3D systems<a class="headerlink" href="#hydraulic-gradient-in-2d-and-3d-systems" title="Permalink to this headline">#</a></h2>
 <p>The hydraulic gradient appears as a major constituent of Darcy’s law for 1D flow. In the 1D case the hydraulic gradient is given as the ratio of difference of heads at two points in the space and the distance between those points. This distance measures also the flow length. Since head is direction oriented, the hydraulic gradient in the 2D or the 3D flow must be a vector quantity. This combines both magnitude and direction that fits the definition of hydraulic gradient. Therefore hydraulic gradient in 2D or 3D is achieved by employing partial derivatives of hydraulic head with respect to Cartesian coordinates. Mathematically, this can be represented as:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -906,9 +905,9 @@ h = \psi + z
 \frac{\partial h}{\partial z}
 \end{bmatrix}   
 \end{split}\]</div>
-<p><span class="math notranslate nohighlight">\(\text{grad}h\)</span> in the equation above is a vector pointing in the direction of the steepest <strong>increase</strong> of <span class="math notranslate nohighlight">\(h\)</span>. In groundwater/hydrogeology study, in contrast to the mathematical definition, <span class="math notranslate nohighlight">\(\text{grad}h\)</span> refer to the direction of steepest <strong>decrease</strong> of hydraulic head. This can be observed in <a class="reference internal" href="#isolines"><span class="std std-numref">Fig. 7.1</span></a></p>
+<p><span class="math notranslate nohighlight">\(\text{grad}h\)</span> in the equation above is a vector pointing in the direction of the steepest <strong>increase</strong> of <span class="math notranslate nohighlight">\(h\)</span>. In groundwater/hydrogeology study, in contrast to the mathematical definition, <span class="math notranslate nohighlight">\(\text{grad}h\)</span> refer to the direction of steepest <strong>decrease</strong> of hydraulic head. This can be observed in <a class="reference internal" href="#isolines"><span class="std std-numref">Fig. 5.1</span></a></p>
 <section id="darcy-s-law-isotropic-aquifer">
-<h3><span class="section-number">7.5.1. </span>Darcy’s Law (Isotropic Aquifer)<a class="headerlink" href="#darcy-s-law-isotropic-aquifer" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.5.1. </span>Darcy’s Law (Isotropic Aquifer)<a class="headerlink" href="#darcy-s-law-isotropic-aquifer" title="Permalink to this headline">#</a></h3>
 <p>The concept used for hydraulic gradient for 2D/3D discussed above can be extended to specific discharge or Darcy velocity <span class="math notranslate nohighlight">\(v_f\)</span>. Similar to hydraulic gradient, <span class="math notranslate nohighlight">\(v_f\)</span> is a vector with two or three components for 2D and 3D systems, respectively. Thus the 3D Darcy velocity vector is</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -935,7 +934,7 @@ v_f = - K \cdot \text{grad}h
 <p>For <strong>isotropic</strong> aquifers the Darcy velocity is oriented opposite to the hydraulic gradient vector (due to minus sign in Darcy’s law). This is explained further below.</p>
 </section>
 <section id="example-problem">
-<h3><span class="section-number">7.5.2. </span>Example problem<a class="headerlink" href="#example-problem" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.5.2. </span>Example problem<a class="headerlink" href="#example-problem" title="Permalink to this headline">#</a></h3>
 <div class="admonition-hydraulic-gradient-in-2d admonition">
 <p class="admonition-title">Hydraulic gradient in 2D</p>
 <p>Obtain the hydraulic gradients of the following 2D system shown in the figure below</p>
@@ -943,7 +942,7 @@ v_f = - K \cdot \text{grad}h
 <figure class="align-center" id="ex-1">
 <a class="reference internal image-reference" href="../../../_images/L06_f5.png"><img alt="../../../_images/L06_f5.png" src="../../../_images/L06_f5.png" style="width: 306.0px; height: 262.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Example 1</span><a class="headerlink" href="#ex-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.5 </span><span class="caption-text">Example 1</span><a class="headerlink" href="#ex-1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Solution</strong></p>
@@ -1004,46 +1003,46 @@ Hydraulic gradient along y-axis is 0.200
 </section>
 </section>
 <section id="streamlines-and-flow-nets">
-<h2><span class="section-number">7.6. </span>Streamlines and Flow Nets<a class="headerlink" href="#streamlines-and-flow-nets" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.6. </span>Streamlines and Flow Nets<a class="headerlink" href="#streamlines-and-flow-nets" title="Permalink to this headline">#</a></h2>
 <section id="basics">
-<h3><span class="section-number">7.6.1. </span>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.6.1. </span>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h3>
 <p><strong>Streamlines</strong> or <strong>flowlines</strong> are curves which are in each point tangential to the flow direction. There is no flow component perpendicular to the streamlines. As a consequence, streamlines are perpendicular to head iso-surface of head isolines if the aquifer is <strong>isotropic</strong></p>
 <figure class="align-center" id="streamlines">
 <a class="reference internal image-reference" href="../../../_images/L06_f6.png"><img alt="../../../_images/L06_f6.png" src="../../../_images/L06_f6.png" style="width: 518.1px; height: 233.39999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.6 </span><span class="caption-text">Streamlines and equipotential lines</span><a class="headerlink" href="#streamlines" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.6 </span><span class="caption-text">Streamlines and equipotential lines</span><a class="headerlink" href="#streamlines" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Flow nets</strong> consist of a set of isolines (or isosurfaces) and a set of streamlines. Flow nets are ususally employed for 2D flow scenarios only. The flow behaviour is illustrated by covering the investigation area with a  mesh of isolines and streamlines.</p>
 <figure class="align-center" id="flownets">
 <a class="reference internal image-reference" href="../../../_images/L06_f7.png"><img alt="../../../_images/L06_f7.png" src="../../../_images/L06_f7.png" style="width: 630.45px; height: 339.3px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.7 </span><span class="caption-text">Flow nets</span><a class="headerlink" href="#flownets" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.7 </span><span class="caption-text">Flow nets</span><a class="headerlink" href="#flownets" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="radial-flow-near-a-well">
-<h3><span class="section-number">7.6.2. </span>Radial Flow Near a Well<a class="headerlink" href="#radial-flow-near-a-well" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.6.2. </span>Radial Flow Near a Well<a class="headerlink" href="#radial-flow-near-a-well" title="Permalink to this headline">#</a></h3>
 <p>In this example steady-state water abstraction from a pumping well, e.g., for drinking water supply, is considered. The hydraulic conductivity is assumed to be spatially constant, i.e., the aquifer is <em>homogeneous</em>. Now assuming that there are no other hydraulic impacts in the system, the pumping of water from the groundwater will lead to a radially symmetric <strong>drawdown</strong> of <em>hydraulic heads</em> (this will be further discussed in future lecture 8). In this case the <em>streamlines</em> radially approaches the pumping well, and the <em>head isolines</em> are circles with the well in the centre.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../../_images/L06_f8.png"><img alt="../../../_images/L06_f8.png" src="../../../_images/L06_f8.png" style="width: 761.4px; height: 335.7px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.8 </span><span class="caption-text">Radial flow near a well</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.8 </span><span class="caption-text">Radial flow near a well</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="superposition-of-uniform-and-radial-flow">
-<h3><span class="section-number">7.6.3. </span>Superposition of Uniform and Radial Flow<a class="headerlink" href="#superposition-of-uniform-and-radial-flow" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.6.3. </span>Superposition of Uniform and Radial Flow<a class="headerlink" href="#superposition-of-uniform-and-radial-flow" title="Permalink to this headline">#</a></h3>
 <p>The <strong>dividing streamline</strong> (solid black line) represents the boundary of the <strong>well capture zone</strong>. The flow velocities of the uniform flow and the radial flow exactly compensate each other at the <strong>stagnation point.</strong> The resulting flow velocity equal zero.</p>
 <figure class="align-center" id="radial-flow">
 <a class="reference internal image-reference" href="../../../_images/L06_f9.png"><img alt="../../../_images/L06_f9.png" src="../../../_images/L06_f9.png" style="width: 641.75px; height: 294.75px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.9 </span><span class="caption-text">Superposition of Radial flow near a well</span><a class="headerlink" href="#radial-flow" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Superposition of Radial flow near a well</span><a class="headerlink" href="#radial-flow" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="some-rules-for-drawing-flow-nets">
-<h3><span class="section-number">7.6.4. </span>Some Rules for Drawing Flow Nets<a class="headerlink" href="#some-rules-for-drawing-flow-nets" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.6.4. </span>Some Rules for Drawing Flow Nets<a class="headerlink" href="#some-rules-for-drawing-flow-nets" title="Permalink to this headline">#</a></h3>
 <p>Drawing a flow net for a certain domain requires information about domain boundaries.</p>
 <blockquote>
 <div><p><strong>Impermeable</strong> boundaries represents a <em>streamline.</em></p>
@@ -1051,7 +1050,7 @@ Hydraulic gradient along y-axis is 0.200
 <figure class="align-center" id="flow-net">
 <a class="reference internal image-reference" href="../../../_images/L06_f10a.png"><img alt="../../../_images/L06_f10a.png" src="../../../_images/L06_f10a.png" style="width: 161.25px; height: 165.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.10 </span><span class="caption-text">No flow boundary</span><a class="headerlink" href="#flow-net" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.10 </span><span class="caption-text">No flow boundary</span><a class="headerlink" href="#flow-net" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <blockquote>
@@ -1060,7 +1059,7 @@ Hydraulic gradient along y-axis is 0.200
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../../_images/L06_f10b.png"><img alt="../../../_images/L06_f10b.png" src="../../../_images/L06_f10b.png" style="width: 153.9px; height: 175.95000000000002px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.11 </span><span class="caption-text">Constant head boundary</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.11 </span><span class="caption-text">Constant head boundary</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <blockquote>
@@ -1069,7 +1068,7 @@ Hydraulic gradient along y-axis is 0.200
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../../_images/L06_f10c.png"><img alt="../../../_images/L06_f10c.png" src="../../../_images/L06_f10c.png" style="width: 605.5px; height: 209.64999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.12 </span><span class="caption-text">Water table as boundary</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Water table as boundary</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <blockquote>
@@ -1083,7 +1082,7 @@ Hydraulic gradient along y-axis is 0.200
 </div></blockquote>
 </section>
 <section id="id4">
-<h3><span class="section-number">7.6.5. </span>Example problem<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.6.5. </span>Example problem<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <div class="admonition-flow-parallel-to-layering admonition">
 <p class="admonition-title">Flow parallel to layering</p>
 <p>Considering <span class="math notranslate nohighlight">\(K = 6\)</span> cm/s and <span class="math notranslate nohighlight">\(w = 50 \)</span>cm, the width normal to plane, find the total discharge from the flow net provided in figure below: <br>
@@ -1091,7 +1090,7 @@ Hydraulic gradient along y-axis is 0.200
 <figure class="align-center" id="ex2">
 <a class="reference internal image-reference" href="../../../_images/L06_f17.png"><img alt="../../../_images/L06_f17.png" src="../../../_images/L06_f17.png" style="width: 620.8000000000001px; height: 310.8px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.13 </span><span class="caption-text">Example problem 2<br />
+<p><span class="caption-number">Fig. 5.13 </span><span class="caption-text">Example problem 2<br />
 <code class="docutils literal notranslate"> </code></span><a class="headerlink" href="#ex2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
@@ -1125,9 +1124,9 @@ Hydraulic gradient along y-axis is 0.200
 </section>
 </section>
 <section id="isochrones-and-protection-zones">
-<h2><span class="section-number">7.7. </span>Isochrones and Protection Zones.<a class="headerlink" href="#isochrones-and-protection-zones" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.7. </span>Isochrones and Protection Zones.<a class="headerlink" href="#isochrones-and-protection-zones" title="Permalink to this headline">#</a></h2>
 <section id="ischrones">
-<h3><span class="section-number">7.7.1. </span>Ischrones<a class="headerlink" href="#ischrones" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.7.1. </span>Ischrones<a class="headerlink" href="#ischrones" title="Permalink to this headline">#</a></h3>
 <p>The <strong>isochrones</strong> are curves of identical travel times. This is analogous to head isolines, in which the curves provides point of identical head. Similar to isolines, isochrones and streamlines do not <em>necessarily</em> intersect each other at an angle of 90<span class="math notranslate nohighlight">\(^\circ\)</span>, i.e., curvilinear intersection between these curves are also possible.Isochrones are mostly used for delineating water protection zones. These zones are mostly part of the local water-use regulations.</p>
 <div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
@@ -1506,7 +1505,7 @@ Hydraulic gradient along y-axis is 0.200
 </div>
 </section>
 <section id="example-of-protection-zones">
-<h3><span class="section-number">7.7.2. </span>Example of Protection Zones<a class="headerlink" href="#example-of-protection-zones" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.7.2. </span>Example of Protection Zones<a class="headerlink" href="#example-of-protection-zones" title="Permalink to this headline">#</a></h3>
 <p>The figure below show a schematic of a well protection zone. The main goals of the protection zones are:</p>
 <blockquote>
 <div><p>To protect aquifers against pollution</p>
@@ -1520,7 +1519,7 @@ Hydraulic gradient along y-axis is 0.200
 <figure class="align-center" id="pzones">
 <a class="reference internal image-reference" href="../../../_images/L06_f13.png"><img alt="../../../_images/L06_f13.png" src="../../../_images/L06_f13.png" style="width: 555.75px; height: 319.15000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.14 </span><span class="caption-text">A schematic of the groundwater protection zone.</span><a class="headerlink" href="#pzones" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.14 </span><span class="caption-text">A schematic of the groundwater protection zone.</span><a class="headerlink" href="#pzones" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>As can be observed in the figure, the zones are based on the travel time, and each travel time is divided into protection of groundwater resources against different activities.</p>
@@ -1537,29 +1536,29 @@ Hydraulic gradient along y-axis is 0.200
 <figure class="align-center" id="pzones-de">
 <a class="reference internal image-reference" href="../../../_images/L06_f14.png"><img alt="../../../_images/L06_f14.png" src="../../../_images/L06_f14.png" style="width: 457.45px; height: 311.15px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.15 </span><span class="caption-text">Groundwater protection zone in Germany</span><a class="headerlink" href="#pzones-de" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.15 </span><span class="caption-text">Groundwater protection zone in Germany</span><a class="headerlink" href="#pzones-de" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="well-capture-zones-in-natural-aquifers">
-<h3><span class="section-number">7.7.3. </span>Well Capture Zones in Natural Aquifers<a class="headerlink" href="#well-capture-zones-in-natural-aquifers" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.7.3. </span>Well Capture Zones in Natural Aquifers<a class="headerlink" href="#well-capture-zones-in-natural-aquifers" title="Permalink to this headline">#</a></h3>
 <figure class="align-center" id="pzones-nat">
 <a class="reference internal image-reference" href="../../../_images/L06_f15.png"><img alt="../../../_images/L06_f15.png" src="../../../_images/L06_f15.png" style="width: 579.7px; height: 494.45000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.16 </span><span class="caption-text">Groundwater protection zone natural aquifers</span><a class="headerlink" href="#pzones-nat" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.16 </span><span class="caption-text">Groundwater protection zone natural aquifers</span><a class="headerlink" href="#pzones-nat" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="darcy-s-law-in-anisotropic">
-<h2><span class="section-number">7.8. </span>Darcy’s Law in Anisotropic<a class="headerlink" href="#darcy-s-law-in-anisotropic" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.8. </span>Darcy’s Law in Anisotropic<a class="headerlink" href="#darcy-s-law-in-anisotropic" title="Permalink to this headline">#</a></h2>
 <section id="principal-axes-of-hydraulic-conductivity">
-<h3><span class="section-number">7.8.1. </span>Principal Axes of Hydraulic Conductivity<a class="headerlink" href="#principal-axes-of-hydraulic-conductivity" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.8.1. </span>Principal Axes of Hydraulic Conductivity<a class="headerlink" href="#principal-axes-of-hydraulic-conductivity" title="Permalink to this headline">#</a></h3>
 <p>In anisotropic aquifer refers to those aquifers whose properties vary with direction. This means that properties such as hydraulic conductivity will have maximum value along a direction and the minimum value along the other direction. It has been found that (also depicted in fig <a href="#id5"><span class="problematic" id="id6">:refnum:`axes_an`</span></a>) these two directions are perpendicular to each other. This is true in general, not only for the layered systems that was covered in the previous lecture</p>
 <figure class="align-center" id="axes-an">
 <a class="reference internal image-reference" href="../../../_images/L06_f16.png"><img alt="../../../_images/L06_f16.png" src="../../../_images/L06_f16.png" style="width: 477.9px; height: 316.2px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.17 </span><span class="caption-text">Hydraulic conductivity in anisotropic aquifers</span><a class="headerlink" href="#axes-an" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Hydraulic conductivity in anisotropic aquifers</span><a class="headerlink" href="#axes-an" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The three <em>principal axes</em> of hydraulic conductivity are oriented</p>
@@ -1570,7 +1569,7 @@ Hydraulic gradient along y-axis is 0.200
 </ul>
 </section>
 <section id="formulation-of-darcy-s-law-in-anisotropic-aquifers">
-<h3><span class="section-number">7.8.2. </span>Formulation of Darcy’s Law in Anisotropic Aquifers<a class="headerlink" href="#formulation-of-darcy-s-law-in-anisotropic-aquifers" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.8.2. </span>Formulation of Darcy’s Law in Anisotropic Aquifers<a class="headerlink" href="#formulation-of-darcy-s-law-in-anisotropic-aquifers" title="Permalink to this headline">#</a></h3>
 <p>If the <em>principal axes</em> of conductivity coincide with the axes of a Cartesian coordinate system, Darcy’s law for anisotropic aquifer is given as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1623,7 +1622,7 @@ K_{xz}, K_{yz}, K_{zz}
 <p>From this, one may easily conclude that it is advantageous to arrange coordinate axes in parallel with <em>principal axes</em> of <span class="math notranslate nohighlight">\(K\)</span>. Unfortunately, this is not always possible, e.g., when layers are folded.</p>
 </section>
 <section id="direction-of-flow">
-<h3><span class="section-number">7.8.3. </span>Direction of flow<a class="headerlink" href="#direction-of-flow" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.8.3. </span>Direction of flow<a class="headerlink" href="#direction-of-flow" title="Permalink to this headline">#</a></h3>
 <p>With directional dependence on conductivity also affects the direction of the flow. This is summarized in the figure below. Basically we have</p>
 <blockquote>
 <div><p><strong>Isotropic aquifer</strong>: <span class="math notranslate nohighlight">\(K\)</span> can be represented by a scalar and the direction of flow is opposite to the direction of the gradient.</p>
@@ -1634,17 +1633,17 @@ K_{xz}, K_{yz}, K_{zz}
 <figure class="align-center" id="aniso-dir">
 <a class="reference internal image-reference" href="../../../_images/L06_f12.png"><img alt="../../../_images/L06_f12.png" src="../../../_images/L06_f12.png" style="width: 955.2px; height: 182.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.18 </span><span class="caption-text">Direction of flow in anisotropic aquifer</span><a class="headerlink" href="#aniso-dir" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.18 </span><span class="caption-text">Direction of flow in anisotropic aquifer</span><a class="headerlink" href="#aniso-dir" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="examples-for-flow-nets-in-anisotropic-aquifers">
-<h3><span class="section-number">7.8.4. </span>Examples for Flow Nets in Anisotropic Aquifers<a class="headerlink" href="#examples-for-flow-nets-in-anisotropic-aquifers" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">5.8.4. </span>Examples for Flow Nets in Anisotropic Aquifers<a class="headerlink" href="#examples-for-flow-nets-in-anisotropic-aquifers" title="Permalink to this headline">#</a></h3>
 <p>The figure provides flow nets for different ratios of anisotropy but for the identical conditions at domain boundaries (i.e., inflow from the top, outflow to a pipe on the left). As can be observed isolines and streamlines intersect each other at right angles only if the aquifer is isotropic.</p>
 <figure class="align-center" id="flow-net-aniso">
 <a class="reference internal image-reference" href="../../../_images/L06_f11.png"><img alt="../../../_images/L06_f11.png" src="../../../_images/L06_f11.png" style="width: 474.0px; height: 485.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.19 </span><span class="caption-text">Flow nets in anisotropic aquifer</span><a class="headerlink" href="#flow-net-aniso" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.19 </span><span class="caption-text">Flow nets in anisotropic aquifer</span><a class="headerlink" href="#flow-net-aniso" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The interactive simulation on effect of anisotropy on flux and gradient can be found in:
@@ -1767,7 +1766,7 @@ K_{xz}, K_{yz}, K_{zz}
 </section>
 </section>
 <section id="chapter-quiz">
-<h2><span class="section-number">7.9. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.9. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id="sEvJOwlyuZND" data-shufflequestions="False"
@@ -2710,13 +2709,13 @@ if (typeof version == 'undefined') {
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">6. </span>Lecture 5. Aquifer Heterogeneity and Anisotropy</p>
+            <p class="prev-next-title"><span class="section-number">4. </span>Lecture 5. Aquifer Heterogeneity and Anisotropy</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../L7/17_quantify_flow.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">8. </span>Lecture 07 - Quantifying 3D Groundwater Flow</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Lecture 07 - Quantifying 3D Groundwater Flow</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
