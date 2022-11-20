@@ -53,7 +53,12 @@ r9_1
 # 
 # The given problem can be visualized as:
 # 
-# <img src= "images/T07_fH5.png" alt="HW-P5" class="bg-primary" width="350px">
+# 
+# ```{image} images/T07_fH5.png
+# :width: 350px
+# :align: center
+# :name: Wells 1
+# ```
 # 
 # We will use Darcy's law for the homogeneous system, which is given as
 # 
@@ -208,8 +213,11 @@ pn.Column(r11_1, r11_2, r11_3)
 # #### Solution of Homework Problem 7 ####
 # 
 # The flow-net of the above scenario can be as shown in the figure below:
+# ```{image} images/T07_fH8.png
+# :width: 600px
+# :align: center
+# :name: wells2
 # 
-# <img src= "images/T07_fH8.png" alt="HW-P7" class="bg-primary" width="550px">
 
 # ## Tutorial Problems on Wells ##
 # 
@@ -527,7 +535,7 @@ plt.loglog(u_1, w_u) # typ curve
 plt.loglog(i_u, W_u, "ro" ) # your data
 plt.title("The typ curve"); plt.ylim((0.1, 10)); plt.xlim(1, 1e5)
 plt.grid(True, which="both",ls="-"); plt.ylabel(r"W(u)");plt.xlabel(r"1/u"); plt.close()
-rx_2 = pn.pane.Matplotlib(figs, dpi=300); pn.Row(dfx_a, rx_2) 
+rx_2 = pn.pane.Matplotlib(figs, dpi=150); pn.Row(dfx_a, rx_2) 
 
 
 # In[ ]:

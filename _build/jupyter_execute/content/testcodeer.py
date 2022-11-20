@@ -47,7 +47,8 @@
 #    document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
 # </script>
 # 
-# 
+# <div class="thebe-activate"></div>
+# <div class="thebe-status"></div>
 # 
 #    <pre data-executable="true" data-language="python">
 #    %matplotlib widget

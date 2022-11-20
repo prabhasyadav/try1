@@ -236,8 +236,15 @@
 # 
 # 
 # ```{margin} 
-# <img src=" images/L07_f3a.png" alt="Poisson_pic" class="bg-primary" width="150px">
+# ```{image} images/L07_f3a.png
+# :width: 100px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
 # ```
+# ```
+# 
+# 
+# 
 # + Steady-state
 # + Homogeneous
 # + Isotropic
@@ -257,7 +264,11 @@
 # 
 # 
 # ```{margin} 
-# <img src=" images/L07_f3b.png" alt="Laplace_pic" class="bg-primary" width="150px">
+# ```{image} images/L07_f3b.png
+# :width: 100px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # 
 # + Steady-state
@@ -376,7 +387,11 @@ print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m
 # ```
 # 
 # ```{margin} 
-# <img src=" images/L07_f6.png" alt="Boussinesq_pic" class="bg-primary" width="200px">
+# ```{image} images/L07_f6.png
+# :width: 100px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # 
 # Since the height of the control volume depends on the flow behaviour, the transmissivities are defined by using hydraulic head $h$ to account for the saturated thickness:
@@ -417,7 +432,11 @@ print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m
 # ```
 # 
 # ```{margin} 
-# <img src=" images/L07_f8.png" alt="Dupuit_pic" class="bg-primary" width="150px">
+# ```{image} images/L07_f8.png
+# :width: 100px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # 
 # **The Dupuit's assumptions are**:

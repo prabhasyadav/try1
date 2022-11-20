@@ -121,7 +121,11 @@ print("The required transmissivity is {0:1.2e}".format(T_a), "m\u00b2/s")
 # Wells are very extensively used around the globe. The contents below only highlights few of the use of wells.
 # 
 # ```{margin} 
-# <img src=" images/L08_f4.png" alt="gw-sediment" class="bg-primary" width="300px">
+# ```{image} images/L08_f4.png
+# :width: 300px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # 
 # > Water supply: e.g., for households, agriculture, industry
@@ -315,7 +319,11 @@ pn.Row(video1, spacer, image)
 # $$
 # 
 # ```{margin} 
-# <img src="images/L08_f8.png" alt="Confined Aquifer" class="bg-primary" width="400px">
+# ```{image} images/L08_f.png
+# :width: 600px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # 
 # Eq (C5) is a first-order differential equation for hydraulic head $h(r)$. It can be solved by separation of variable. Doing that eq. (C5) becomes
@@ -417,7 +425,11 @@ print("The transmissivity in the aquifer is {0:0.2f} m\u00b2/d".format(T))
 # $$
 # 
 # ```{margin} 
-# <img src="images/L08_f9.png" alt="Unconfined Aquifer" class="bg-primary" width="400px">
+# ```{image} images/L08_f.png
+# :width: 600px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # Also in this case, the cross section area $A$ also is dependent on $r$, i.e.,
 # 
@@ -537,7 +549,11 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # Pumping tests are used to estimate aquifer properties such as hydraulic conductivity $(K)$, transmissivity $(T)$ or storativity $(S)$. Pumping results in an evolving cone of depression as was discussed earlier (see {numref}`cone-con-un`). The decrease in hydraulic head (or increase in drawdown) with time is recorded in one or more observation wells (and sometimes also in the pumping well itself).
 # 
 # ```{margin}
-# <img src="images/L08_f13.png" alt="Theis" class="bg-primary" width="200px">
+# ```{image} images/L08_f13.png
+# :width:200px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # 
 # A variety of different schemes exist to evaluate pumping test data. The appropriate method has to be selected according to the specific setting (confined or unconfined, layered system, horizontal or inclined aquifer bottom etc.). A well known approach to derive $T$ and $S$ from pumping test data was developed by Theis (1935)<sup>[^Theis]</sup>
@@ -618,7 +634,11 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # + The logarithm of the well function $(\log W(u))$ is plotted against $\log (1/u)$ in a type curve sheet. 
 # 
 # ```{sidebar} Type Curve and Data sheet
-# <img src="images/L08_f11.png" alt="Type-Curve" class="bg-primary" width="1000px">
+# ```{image} images/L08_f11.png
+# :width: 600px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # ```
 # 
 # + Both sheets are put on top of each other such that the data coincide with some part of the type curve.
@@ -652,7 +672,12 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # The practical application of the Theis method is facilitated by selecting a match point in the range of the data such that corresponding values $W_A$
 # and $1/u_A$ are "simple".
 # 
-# <img src="images/L08_f14.png" alt="Type-Curve-Example" class="bg-primary" width="600px">
+# 
+# ```{image} images/L08_f14.png
+# :width: 600px
+# :align: center
+# :name: Difference between international and German definition of groundwater.
+# ```
 # 
 # In the example:
 # 

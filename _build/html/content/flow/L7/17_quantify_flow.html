@@ -569,11 +569,6 @@ title="Print to PDF"
        6.2.8.1. The Poisson equation
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-laplace-equation">
-       6.2.8.2. The Laplace equation
-      </a>
-     </li>
     </ul>
    </li>
   </ul>
@@ -727,11 +722,6 @@ title="Print to PDF"
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#the-poisson-equation">
        6.2.8.1. The Poisson equation
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-laplace-equation">
-       6.2.8.2. The Laplace equation
       </a>
      </li>
     </ul>
@@ -1029,40 +1019,50 @@ S_s\frac{\partial h}{\partial t} = \frac{\partial }{\partial x} \bigg(K_x \frac{
 <p>The Poisson equation deals with groundwater problem with the following condition:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<img src=" images/L07_f3a.png" alt="Poisson_pic" class="bg-primary" width="150px">
+<a class="reference internal image-reference" href="../../../_images/L07_f3a.png" id="difference-between-international-and-german-definition-of-groundwater"><img alt="../../../_images/L07_f3a.png" class="align-center" id="difference-between-international-and-german-definition-of-groundwater" src="../../../_images/L07_f3a.png" style="width: 100px;" /></a>
 </aside>
-<ul class="simple">
-<li><p>Steady-state</p></li>
-<li><p>Homogeneous</p></li>
-<li><p>Isotropic</p></li>
-<li><p>Confined</p></li>
-<li><p>Sources/sinks</p></li>
-</ul>
-<p>The equation is given as</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+
++ Steady-state
++ Homogeneous
++ Isotropic
++ Confined
++ Sources/sinks
+
+The equation is given as
+
+$$
 \frac{\partial^2 h }{\partial x^2} + \frac{\partial^2 h}{\partial y^2} + \frac{\partial^2 h}{\partial z^2} = -\frac{q}{K} 
-\]</div>
-</section>
-<section id="the-laplace-equation">
-<h4><span class="section-number">6.2.8.2. </span>The Laplace equation<a class="headerlink" href="#the-laplace-equation" title="Permalink to this headline">#</a></h4>
-<p>The Laplace equation deals with groundwater problem with the following condition:</p>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<img src=" images/L07_f3b.png" alt="Laplace_pic" class="bg-primary" width="150px">
-</aside>
-<ul class="simple">
-<li><p>Steady-state</p></li>
-<li><p>Homogeneous</p></li>
-<li><p>Isotropic</p></li>
-<li><p>Confined</p></li>
-<li><p>Without sources/sinks</p></li>
-</ul>
-<p>The equation is given as</p>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+
+#### The Laplace equation ####
+
+The Laplace equation deals with groundwater problem with the following condition:
+
+
+```{margin} 
+```{image} images/L07_f3b.png
+:width: 100px
+:align: center
+:name: Difference between international and German definition of groundwater.
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
++ Steady-state
++ Homogeneous
++ Isotropic
++ Confined
++ Without sources/sinks
+
+The equation is given as
+
+$$
 \frac{\partial^2 h }{\partial x^2} + \frac{\partial^2 h}{\partial y^2} + \frac{\partial^2 h}{\partial z^2} = 0 
-\]</div>
+$$
+</pre></div>
+</div>
 </section>
 </section>
 </section>
@@ -1186,26 +1186,35 @@ S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\par
 </figure>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<img src=" images/L07_f6.png" alt="Boussinesq_pic" class="bg-primary" width="200px">
+<a class="reference internal image-reference" href="../../../_images/L07_f6.png" id="id3"><img alt="../../../_images/L07_f6.png" class="align-center" id="id3" src="../../../_images/L07_f6.png" style="width: 100px;" /></a>
 </aside>
-<p>Since the height of the control volume depends on the flow behaviour, the transmissivities are defined by using hydraulic head <span class="math notranslate nohighlight">\(h\)</span> to account for the saturated thickness:</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+Since the height of the control volume depends on the flow behaviour, the transmissivities are defined by using hydraulic head $h$ to account for the saturated thickness:
+
+$$
 T_x = K_x \cdot (h-z_{bot})
-\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+$$
 T_y = K_y \cdot (h-z_{bot})
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(z_{bot}\)</span> represents the elevation of the aquifer bottom [L]. Formally, the 2D groundwater flow equation for unconfined aquifers is the same as for the confined conditions, i.e.,</p>
-<div class="math notranslate nohighlight">
-\[
+$$
+
+where $z_{bot}$ represents the elevation of the aquifer bottom [L]. Formally, the 2D groundwater flow equation for unconfined aquifers is the same as for the confined conditions, i.e.,
+
+
+
+$$
 S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\partial h}{\partial x}\bigg) + \frac{\partial }{\partial y}\bigg(T_y\frac{\partial h}{\partial y}\bigg) + N
-\]</div>
-<p>However, transmissivities are computed in a different way. The above equation is also termed <strong>Boussinesq equation</strong>.</p>
+$$
+
+
+
+However, transmissivities are computed in a different way. The above equation is also termed **Boussinesq equation**.
+</pre></div>
+</div>
 <section id="dupuit-assumptions">
 <h3><span class="section-number">6.4.1. </span>Dupuit Assumptions<a class="headerlink" href="#dupuit-assumptions" title="Permalink to this headline">#</a></h3>
-<p>The Boussinesq equation for 2D groundwater flow in unconfined aquifer is based on the following assumptions which are due to Dupuit (1863)<sup><a class="footnote-reference brackets" href="#dupuit" id="id3">1</a></sup>. The Dupuit’s work can be expressed in the figure below.</p>
+<p>The Boussinesq equation for 2D groundwater flow in unconfined aquifer is based on the following assumptions which are due to Dupuit (1863)<sup>[^Dupuit]</sup>. The Dupuit’s work can be expressed in the figure below.</p>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../../_images/L07_f7.png"><img alt="../../../_images/L07_f7.png" src="../../../_images/L07_f7.png" style="width: 474.0px; height: 322.8px;" /></a>
 <figcaption>
@@ -1214,14 +1223,18 @@ S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\par
 </figure>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<img src=" images/L07_f8.png" alt="Dupuit_pic" class="bg-primary" width="150px">
+<a class="reference internal image-reference" href="../../../_images/L07_f8.png" id="id5"><img alt="../../../_images/L07_f8.png" class="align-center" id="id5" src="../../../_images/L07_f8.png" style="width: 100px;" /></a>
 </aside>
-<p><strong>The Dupuit’s assumptions are</strong>:</p>
-<ul class="simple">
-<li><p>Groundwater flow is horizontal (no vertical flow components).</p></li>
-<li><p>The flow velocity does not vary with depth.</p></li>
-<li><p>Darcy’s law also holds at the water table.</p></li>
-</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="o">**</span><span class="n">The</span> <span class="n">Dupuit</span><span class="s1">&#39;s assumptions are**:</span>
+
+<span class="o">-</span> <span class="n">Groundwater</span> <span class="n">flow</span> <span class="ow">is</span> <span class="n">horizontal</span> <span class="p">(</span><span class="n">no</span> <span class="n">vertical</span> <span class="n">flow</span> <span class="n">components</span><span class="p">)</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">The</span> <span class="n">flow</span> <span class="n">velocity</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">vary</span> <span class="k">with</span> <span class="n">depth</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Darcy</span><span class="s1">&#39;s law also holds at the water table.</span>
+
+<span class="p">[</span><span class="o">^</span><span class="n">Dupuit</span><span class="p">]:</span> <span class="n">Dupuit</span><span class="p">,</span> <span class="n">J</span><span class="o">.</span> <span class="p">(</span><span class="mi">1863</span><span class="p">),</span> <span class="n">_Etudes</span> <span class="n">Théoriques</span> <span class="n">et</span> <span class="n">Pratiques</span> <span class="n">sur</span> <span class="n">le</span> <span class="n">mouvement</span> <span class="n">des</span> <span class="n">Eaux</span> <span class="n">dans</span> <span class="n">les</span> <span class="n">canaux</span> <span class="n">découverts</span> <span class="n">et</span> <span class="n">à</span> <span class="n">travers</span> <span class="n">les</span> <span class="n">terrains</span> <span class="n">perméables_</span> <span class="p">(</span><span class="n">Second</span> <span class="n">ed</span><span class="o">.</span><span class="p">)</span><span class="o">.</span> <span class="n">Paris</span><span class="p">:</span> <span class="n">Dunod</span><span class="o">.</span>
+</pre></div>
+</div>
 </section>
 </section>
 <section id="complete-formulation-of-groundwater-flow-problems">
@@ -1289,7 +1302,7 @@ S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\par
 <figure class="align-center" id="concept-gw-problem">
 <a class="reference internal image-reference" href="../../../_images/L07_f11.png"><img alt="../../../_images/L07_f11.png" src="../../../_images/L07_f11.png" style="width: 771.6px; height: 359.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Setting a groundwater problem (from Kinzelbach, 1986<sup><a class="footnote-reference brackets" href="#kinzelbach1986" id="id5">2</a></sup>)</span><a class="headerlink" href="#concept-gw-problem" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Setting a groundwater problem (from Kinzelbach, 1986<sup><a class="footnote-reference brackets" href="#kinzelbach1986" id="id6">1</a></sup>)</span><a class="headerlink" href="#concept-gw-problem" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The system equation including the boundary conditions makes a <strong>complete</strong> groundwater flow problem. The solution with inclusion of specific boundary conditions provides a unique or specific solution to the problem.</p>
@@ -2202,10 +2215,7 @@ if (typeof version == 'undefined') {
 </div>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="dupuit"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
-<dd><p>Dupuit, J. (1863), <em>Etudes Théoriques et Pratiques sur le mouvement des Eaux dans les canaux découverts et à travers les terrains perméables</em> (Second ed.). Paris: Dunod.</p>
-</dd>
-<dt class="label" id="kinzelbach1986"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
+<dt class="label" id="kinzelbach1986"><span class="brackets"><a class="fn-backref" href="#id6">1</a></span></dt>
 <dd><p>Kinzelbach, W. (1986), <em>Groundwater Modelling: An Introduction with Sample Programs in BASIC,</em> Elsevier.</p>
 </dd>
 </dl>

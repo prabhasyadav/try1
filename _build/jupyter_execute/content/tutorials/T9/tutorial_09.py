@@ -100,7 +100,7 @@ plt.loglog(u_1, w_u) # typ curve
 plt.loglog(i_u, W_u, "ro" ) # your data
 plt.title("The typ curve"); plt.ylim((0.1, 10)); plt.xlim(1, 1e5)
 plt.grid(True, which="both",ls="-"); plt.ylabel(r"W(u)");plt.xlabel(r"1/u"); plt.close()
-rx_2 = pn.pane.Matplotlib(figs, dpi=300); pn.Row(dfx_a, rx_2) 
+rx_2 = pn.pane.Matplotlib(figs, dpi=150); pn.Row(dfx_a, rx_2) 
 
 
 # ### Homework Problem 11 - Conservative transport ### 
@@ -192,7 +192,7 @@ plt.annotate(r't$_{84}$', xy=(145, 0.86),  xycoords='data',xytext=(0.0001, 0.81)
 plt.annotate('', xy=(145, 0.001),  xycoords='data',xytext=(0.76, 0.80), textcoords='axes fraction', 
              arrowprops=dict(facecolor='green', shrink=0.01),horizontalalignment='left', verticalalignment='bottom',)
 plt.close() # otherwise we have 2 figure
-r6_8 = pn.pane.Matplotlib(fig, dpi=300)
+r6_8 = pn.pane.Matplotlib(fig, dpi=150)
 
 r6_9 = pn.pane.LaTeX(r""" 
 From the figure:<br>
@@ -297,7 +297,7 @@ b) Where is the concentration isoline $C^\ast = 4.43$ mg/L at that time?
 .
 """,width = 600, style={'font-size': '12pt'})
 
-r22_3 = pn.pane.PNG("images/T09_TP22.png", width=380)
+r22_3 = pn.pane.PNG("images/T09_TP22.png", width=150)
 
 r22_4 = pn.Column(r22_1, r22_2)
 pn.Row(r22_4, r22_3)
