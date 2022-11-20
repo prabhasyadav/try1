@@ -1,13 +1,14 @@
 root: intro
 format: jb-book
-defaults:
-  numbered: true
+
 parts:
 - caption: Basics
+  numbered: true
   chapters:
   - file: content/background/00_general
   - file: content/background/03_basic_hydrogeology
 - caption: Flow
+  numbered: true
   chapters:
   - file: content/flow/12_subsurface_structure
   - file: content/flow/L3/13_gw_storage
@@ -17,12 +18,14 @@ parts:
   - file: content/flow/L7/17_quantify_flow
   - file: content/flow/L8/18_wells
   
-- caption: Flow
+- caption: Transport
+  numbered: true
   chapters:
   - file: content/transport/L9/21_conservative_transport
   - file: content/transport/L10/22_reactive_transport
   
 - caption: Tutorials
+  numbered: true
   chapters:
   - file: content/background/01_python
   - file: content/background/02_jupyter
@@ -34,6 +37,7 @@ parts:
   - file: content/tutorials/T8/tutorial_08
   - file: content/tutorials/T9/tutorial_09
 - caption: Tools
+  numbered: true
   chapters:
   - file: content/tools/decay
   - file: content/tools/sieve_analysis

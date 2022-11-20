@@ -87,3 +87,8 @@ html:
   comments:
     hypothesis: true
 
+###### Numbering the file system 
+
+html:
+  use_multitoc_numbering: false
+  

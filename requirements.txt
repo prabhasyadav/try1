@@ -5,3 +5,4 @@ jupyterquiz
 ghp-import
 pandas
 panel
+ipybwidgets

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>29. Simulating 1D Trench Flow* &#8212; Groundwater I</title>
+    <title>9. Simulating 1D Trench Flow* &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -42,7 +42,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
-    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -57,8 +56,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="30. Testing the code for run" href="../testcodeer.html" />
-    <link rel="prev" title="28. Simulating Kinetics and Degradation" href="Kinetics_degradation.html" />
+    <link rel="next" title="10. Testing the code for run" href="../testcodeer.html" />
+    <link rel="prev" title="8. Simulating Kinetics and Degradation" href="Kinetics_degradation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -143,54 +142,54 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/12_subsurface_structure.html">
-   3. Lecture 2 - Subsurface Structure
+   1. Lecture 2 - Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L3/13_gw_storage.html">
-   4. Lecture 3-  Groundwater as a reservoir
+   2. Lecture 3-  Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L4/14_darcy_law_K.html">
-   5. Lecture 4 - Darcy’s Law and Conductivity
+   3. Lecture 4 - Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L5/15_het_iso.html">
-   6. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L6/16_darcy_law_3D.html">
-   7. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Lecture 6: Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L7/17_quantify_flow.html">
-   8. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Lecture 07 - Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L8/18_wells.html">
-   9. Lecture 08 - Wells*
+   7. Lecture 08 - Wells*
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Flow
+  Transport
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../transport/L9/21_conservative_transport.html">
-   10. Lecture 9-  Conservative Transport
+   1. Lecture 9-  Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../transport/L10/22_reactive_transport.html">
-   11. Lecture 10:  Reactive Mass Transport
+   2. Lecture 10:  Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -202,47 +201,47 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../background/01_python.html">
-   12. Python Programming language
+   1. Python Programming language
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../background/02_jupyter.html">
-   13. JUPYTER Notebook Interface for Python
+   2. JUPYTER Notebook Interface for Python
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T3/tutorial_03.html">
-   14. Tutorial 3 - Darcy Law and Conductivity
+   3. Tutorial 3 - Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T4/tutorial_04.html">
-   15. Tutorial 4 - Effective K &amp; Recitation
+   4. Tutorial 4 - Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T5/tutorial_05.html">
-   16. Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
+   5. Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T6/tutorial_06.html">
-   17. Tutorial 6 - Tutorial Problems on Flow in Confined/Unconfined Aquifer
+   6. Tutorial 6 - Tutorial Problems on Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T7/tutorial_07.html">
-   18. Tutorial 7 - Wells
+   7. Tutorial 7 - Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T8/tutorial_08.html">
-   19. Tutorial 8 - Conservative transport
+   8. Tutorial 8 - Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T9/tutorial_09.html">
-   20. Tutorial 9 - Reactive transport
+   9. Tutorial 9 - Reactive transport
   </a>
  </li>
 </ul>
@@ -254,52 +253,52 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="decay.html">
-   21. Simulating Mass Budget
+   1. Simulating Mass Budget
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="sieve_analysis.html">
-   22. Simulating Seive Analysis
+   2. Simulating Seive Analysis
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="effective_K.html">
-   23. Simulating Effective hydraulic conductivity
+   3. Simulating Effective hydraulic conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="uniform_flow_and_well.html">
-   24. Uniform Flow and Well*
+   4. Uniform Flow and Well*
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="aniso2D.html">
-   25. Simulating the Anisotropy and flow direction
+   5. Simulating the Anisotropy and flow direction
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="type_curve_fit.html">
-   26. Type curve and fitting pumping data tool
+   6. Type curve and fitting pumping data tool
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="1D_advection_dispersion.html">
-   27. Tool for simulating 1D Conservative Transport (Laboratory Column)
+   7. Tool for simulating 1D Conservative Transport (Laboratory Column)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Kinetics_degradation.html">
-   28. Simulating Kinetics and Degradation
+   8. Simulating Kinetics and Degradation
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   29. Simulating 1D Trench Flow*
+   9. Simulating 1D Trench Flow*
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../testcodeer.html">
-   30. Testing the code for run
+   10. Testing the code for run
   </a>
  </li>
 </ul>
@@ -501,12 +500,12 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#scenario-and-equation">
-   29.1. Scenario and Equation
+   9.1. Scenario and Equation
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#how-to-use-this-tool">
-     29.1.1. How to use this tool
+     9.1.1. How to use this tool
     </a>
    </li>
   </ul>
@@ -532,12 +531,12 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#scenario-and-equation">
-   29.1. Scenario and Equation
+   9.1. Scenario and Equation
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#how-to-use-this-tool">
-     29.1.1. How to use this tool
+     9.1.1. How to use this tool
     </a>
    </li>
   </ul>
@@ -553,14 +552,14 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="simulating-1d-trench-flow">
-<h1><span class="section-number">29. </span>Simulating 1D Trench Flow*<a class="headerlink" href="#simulating-1d-trench-flow" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">9. </span>Simulating 1D Trench Flow*<a class="headerlink" href="#simulating-1d-trench-flow" title="Permalink to this headline">#</a></h1>
 <p>The tool simulates the effect on the water table due to model parameters.</p>
 <section id="scenario-and-equation">
-<h2><span class="section-number">29.1. </span>Scenario and Equation<a class="headerlink" href="#scenario-and-equation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">9.1. </span>Scenario and Equation<a class="headerlink" href="#scenario-and-equation" title="Permalink to this headline">#</a></h2>
 <figure class="align-center" id="ditch">
 <a class="reference internal image-reference" href="contents/modeling/lecture_11/images/M11_f4.png"><img alt="contents/modeling/lecture_11/images/M11_f4.png" src="contents/modeling/lecture_11/images/M11_f4.png" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 29.1 </span><span class="caption-text">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span><a class="headerlink" href="#ditch" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9.1 </span><span class="caption-text">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span><a class="headerlink" href="#ditch" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>You can calculate the steady flow in an unconfined aquifer with this Equations<sup><a class="footnote-reference brackets" href="#fetter2017" id="id1">1</a></sup> :</p>
@@ -579,7 +578,7 @@ title="Print to PDF"
 <span class="math notranslate nohighlight">\(R\)</span> = recharge rate <span class="math notranslate nohighlight">\([m/s]\)</span></p>
 <p><strong><em>Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code.</em></strong></p>
 <section id="how-to-use-this-tool">
-<h3><span class="section-number">29.1.1. </span>How to use this tool<a class="headerlink" href="#how-to-use-this-tool" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.1. </span>How to use this tool<a class="headerlink" href="#how-to-use-this-tool" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Go to the Binder by clicking the rocket button (top-right of the page)</p></li>
 <li><p>Execute the code cell with libraries and the code cell</p></li>
@@ -684,13 +683,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">28. </span>Simulating Kinetics and Degradation</p>
+            <p class="prev-next-title"><span class="section-number">8. </span>Simulating Kinetics and Degradation</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../testcodeer.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">30. </span>Testing the code for run</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Testing the code for run</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -21,14 +21,20 @@
 # 
 # <script type="text/x-thebe-config">
 #   {
-#     requestKernel: true,
-#     binderOptions: {
-#       repo: "matplotlib/ipympl",
-#       ref: "0.6.1",
+#      requestKernel: true,
+#      binderOptions: {
+#        repo: "try1",
+#        ref: "0.6.1",
 #       repoProvider: "github",
+#      kernelOptions: {
+#        kernelName: "python3",
+#       },
 #     },
 #   }
 # </script>
+# 
+# 
+# 
 # <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
 # 
 # <button id="activateButton" style="width: 120px; height: 45px; font-size: 1.5em;">
