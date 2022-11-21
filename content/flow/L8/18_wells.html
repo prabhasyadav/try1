@@ -42,6 +42,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -430,6 +431,51 @@ title="Fullscreen mode"
   </span>
 
 </button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/prabhasyadav/try1"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/prabhasyadav/try1/issues/new?title=Issue%20on%20page%20%2Fcontent/flow/L8/18_wells.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
 
 <div class="menu-dropdown menu-dropdown-download-buttons">
   <button class="headerbtn menu-dropdown__trigger"
@@ -826,7 +872,7 @@ title="Print to PDF"
 <p>Similar things can be done with regard to conductivity properties and this brings us to the geohydraulic parameter of transmissivity (<span class="math notranslate nohighlight">\(T\)</span>,  L<span class="math notranslate nohighlight">\(^2\)</span>T<span class="math notranslate nohighlight">\(^{-1}\)</span>). The idea is to neglect vertical variations of hydraulic conductivity and to use vertically averaged values instead. This procedure does not eliminate horizontal variability, so transmissivity may still depend on horizontal coordinates  <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
 <p>The vertically averaged <span class="math notranslate nohighlight">\(K\)</span> value is then multiplied by the water-saturated thickness to obtain transmissivity. The concept of water-saturated thickness (or water-saturated depth) requires to distinguish whether <em>confined</em> or <em>unconfined flow</em> conditions prevail.</p>
 <p>In general, water-saturated thickness is the distance from the aquifer bottom to a level up to which all pores are filled with water. For <em>confined aquifers,</em> this level is equal to aquifer top and water-saturated thickness is tantamount to aquifer thickness. For <em>unconfined aquifers,</em> however, water-saturated thickness corresponds to the distance between aquifer bottom and groundwater level. We will see some illustrations below when we try to quantify transmissivity.</p>
-<p>Let us have a closer look at the confined case first. The black cuboid in <a class="reference internal" href="#trans-c-2d"><span class="std std-numref">Fig. 7.1</span></a>  illustrates that water-saturated thickness extends from aquifer bottom to aquifer top. So, it is equal to aquifer thickness <span class="math notranslate nohighlight">\(m\)</span>. Transmissivity is calculated by <span class="math notranslate nohighlight">\(T_x = K_x \cdot m\)</span> and <span class="math notranslate nohighlight">\(T_y = K_y \cdot m\)</span>. Here we allow for horizontal aquifer anisotropy with different hydraulic conductivities in <span class="math notranslate nohighlight">\(x-\)</span> and <span class="math notranslate nohighlight">\(y-\)</span> direction <span class="math notranslate nohighlight">\((K_x\neq K_y)\)</span>. For horizontally isotropic aquifers <span class="math notranslate nohighlight">\((K_x = K_y = K)\)</span>, transmissivity is given by <span class="math notranslate nohighlight">\(T = K \cdot m\)</span>.</p>
+<p>Let us have a closer look at the confined case first. The black cuboid in <a class="reference internal" href="../../transport/L9/21_conservative_transport.html#trans-c-2d"><span class="std std-numref">Fig. 1.1</span></a>  illustrates that water-saturated thickness extends from aquifer bottom to aquifer top. So, it is equal to aquifer thickness <span class="math notranslate nohighlight">\(m\)</span>. Transmissivity is calculated by <span class="math notranslate nohighlight">\(T_x = K_x \cdot m\)</span> and <span class="math notranslate nohighlight">\(T_y = K_y \cdot m\)</span>. Here we allow for horizontal aquifer anisotropy with different hydraulic conductivities in <span class="math notranslate nohighlight">\(x-\)</span> and <span class="math notranslate nohighlight">\(y-\)</span> direction <span class="math notranslate nohighlight">\((K_x\neq K_y)\)</span>. For horizontally isotropic aquifers <span class="math notranslate nohighlight">\((K_x = K_y = K)\)</span>, transmissivity is given by <span class="math notranslate nohighlight">\(T = K \cdot m\)</span>.</p>
 <figure class="align-center" id="trans-c-2d">
 <a class="reference internal image-reference" href="../../../_images/L08_f1.png"><img alt="../../../_images/L08_f1.png" src="../../../_images/L08_f1.png" style="width: 392.40000000000003px; height: 222.4px;" /></a>
 <figcaption>
@@ -2498,6 +2544,13 @@ if (typeof version == 'undefined') {
     By P. K. Yadav, T. Reimann and several others<br/>
   
       &copy; Copyright .<br/>
+    <div class="extra_footer">
+      <div>
+<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a>
+    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+    </div>
 </p>
         </footer>
     </div>
