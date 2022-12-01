@@ -23,6 +23,11 @@ parts:
   chapters:
   - file: content/transport/L9/21_conservative_transport
   - file: content/transport/L10/22_reactive_transport
+- caption: Modeling
+  numbered: true
+  chapters:
+  - file: content/modeling/31_intro_modeling.ipynb
+
   
 - caption: Tutorials
   numbered: true
@@ -49,3 +54,8 @@ parts:
   - file: content/tools/Kinetics_degradation
   - file: content/tools/1D_ditchflow
   - file: content/testcodeer
+  - file: content/tester
+- caption: Previous Years Q&A
+  numbered: true
+  chapters:
+  - file: content/Q_and_A/GW_exam_2019_20

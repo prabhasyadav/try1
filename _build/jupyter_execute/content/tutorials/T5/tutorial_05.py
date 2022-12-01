@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
-# 
-
 # In[1]:
 
 
@@ -12,6 +9,9 @@ import matplotlib.pyplot as plt
 import panel as pn
 pn.extension('katex', 'mathjax') 
 
+
+# # Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
+# 
 
 # ### Tutorial Problem 12: Hydrologic Triangle
 

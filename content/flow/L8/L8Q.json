@@ -4,22 +4,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "confined aquifer",
+                "answer": "Confined aquifer",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "unconfined aquifer",
+                "answer": "Unconfined aquifer",
                 "correct": true,
                 "feedback": "Correct"
             },
             {
-                "answer": "both confined and unconfined aquifer",
+                "answer": "Both confined and unconfined aquifer",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "the layered aquifer",
+                "answer": "The layered aquifer",
                 "correct": false,
                 "feedback": "Incorrect."
             }
@@ -33,11 +33,11 @@
             {
                 "answer": "True",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
 
             {
-                "answer": "false",
+                "answer": "False",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -49,24 +49,24 @@
         "type": "many_choice",
         "answers": [
             {
-                "answer": "a fully penetrating only",
+                "answer": "A Fully penetrating only",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "a partially penetrating only",
+                "answer": "A Partially penetrating only",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
                 "answer": "Neither of the above",
                 "correct": false,
-                "feedback": "correct."
+                "feedback": "Incorrect."
             },
             {
-                "answer": "either a fully penetrating ones or partially penetrating ones",
-                "correct": false,
-                "feedback": "correct."
+                "answer": "Either a fully penetrating ones or partially penetrating ones",
+                "correct": true,
+                "feedback": "Correct."
             }
 
 
@@ -79,17 +79,17 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "drawdown",
+                "answer": "Drawdown",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "radius of influence",
+                "answer": "Radius of influence",
                 "correct": false,
-                "feedback": "correct."
+                "feedback": "Incorrect."
             },
             {
-                "answer": "confining layer thickness",
+                "answer": "Confining layer thickness",
                 "correct": false,
                 "feedback": "Incorrect."
             },
@@ -107,22 +107,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "confined aquifer",
+                "answer": "Confined aquifer",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "unconfined aquifer",
+                "answer": "Unconfined aquifer",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "for both confined and unconfined aquifer",
+                "answer": "For both confined and unconfined aquifer",
                 "correct": true,
                 "feedback": "Correct"
             },
             {
-                "answer": "for partially penetrating well",
+                "answer": "For partially penetrating well",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -137,22 +137,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "independent of radial distance from the well",
+                "answer": "Independent of radial distance from the well",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "is dependent on the radial distance from the well",
+                "answer": "Is dependent on the radial distance from the well",
                 "correct": true,
                 "feedback": "correct."
             },
             {
-                "answer": "is related to radius of influence",
+                "answer": "Is related to radius of influence",
                 "correct": false,
                 "feedback": "false."
             },
             {
-                "answer": "is equal to drawdown",
+                "answer": "Is equal to drawdown",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -164,17 +164,17 @@
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "an analytical equation to obtain radius of influence",
+                "answer": "An analytical equation to obtain radius of influence",
                 "correct": false,
                 "feedback": "Inorrect."
             },
            {
-                "answer": "is commonly used for obtaining drawdown",
+                "answer": "Is commonly used for obtaining drawdown",
                 "correct": false,
                 "feedback": "Incorrect."
             } ,
             {
-                "answer": "an empirical equation to obtain radius of influence",
+                "answer": "An empirical equation to obtain radius of influence",
                 "correct": true,
                 "feedback": "correct."
             } ,
@@ -194,17 +194,17 @@
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "hydraulic conductivity",
+                "answer": "Hydraulic conductivity",
                 "correct": false,
                 "feedback": "Incorrect"
             },
            {
-                "answer": "storativity",
+                "answer": "Storativity",
                 "correct": false,
                 "feedback": "Incorrect"
             } ,
             {
-                "answer": "transmissivity",
+                "answer": "Transmissivity",
                 "correct": false,
                 "feedback": "Incorrect."
             } ,
@@ -242,7 +242,7 @@
             {
                 "answer": "For a transient pumping rate",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             }
  
         ]
@@ -254,23 +254,23 @@
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "called a water function",
+                "answer": "Called a water function",
                 "correct": false,
                 "feedback": "Correct."
             },
            {
-                "answer": "called a well function",
+                "answer": "Called a well function",
                 "correct": true,
                 "feedback": "correct."
             } ,
             {
-                "answer": "is universal function",
+                "answer": "Is universal function",
                 "correct": false,
                 "feedback": "Incorrect."
             } ,
 
             {
-                "answer": "is a logarithmic function",
+                "answer": "Is a logarithmic function",
                 "correct": false,
                 "feedback": "Incorrect."
             }
@@ -283,23 +283,23 @@
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "is aquifer property dependent curve",
+                "answer": "Is aquifer property dependent curve",
                 "correct": true,
                 "feedback": "Correct."
             },
            {
-                "answer": "always coincides with pumping test data",
+                "answer": "Always coincides with pumping test data",
                 "correct": false,
                 "feedback": "Incorrect."
             } ,
             {
-                "answer": "relates to variation in pumping rate ",
+                "answer": "Relates to variation in pumping rate ",
                 "correct": false,
                 "feedback": "Incorrect."
             } ,
 
             {
-                "answer": "is independent of aquifer property",
+                "answer": "Is independent of aquifer property",
                 "correct": false,
                 "feedback": "Incorrect."
             }

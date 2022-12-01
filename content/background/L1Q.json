@@ -4,22 +4,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "the laws governing the movement of subterranean water",
+                "answer": "The laws governing the movement of subterranean water",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
                 "answer": "The mechanical, chemical and thermal interaction of this water with the porous solid ",
                 "correct": false,
-                "feedback": "False."
+                "feedback": "Incorrect"
             },
             {
                 "answer": "the transport of energy and chemical constituents by the flow",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
-                "answer": "none of the above",
+                "answer": "None of the above",
                 "correct": true,
                 "feedback": "Correct"
              }   
@@ -45,23 +45,23 @@
     },
     
     {
-        "question": "The hydrologic balance equation expressed as: \n\n$P = ET + R + \\Delta S$\n\nis at the **steady-state** when",
+        "question": "The hydrologic balance equation expressed as: \n\n$P = ET + R + \\Delta S$\n\nis at the steady-state when",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "change in storage, $ \\Delta S $> 0",
+                "answer": "Change in storage, $ \\Delta S $> 0",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "change in storages, $ \\Delta S = 0 $ ",
+                "answer": "Change in storages, $ \\Delta S = 0 $ ",
                 "correct": true,
                 "feedback": "Correct."
             },
             {
-                "answer": "change in storages,$ \\Delta S < 0 $ ",
+                "answer": "Change in storages,$ \\Delta S < 0 $ ",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "When P = 0",
@@ -73,18 +73,18 @@
 
 
     {
-        "question": "Volume budget equation given as:\n$\\Delta V = Q_{in} \\cdot \\Delta t - Q_{out}  \\cdot \\Delta t$\n\nIs $\\Delta V$  **time** dependent when the system is at steady-state?",
+        "question": "Volume budget equation given as:\n$\\Delta V = Q_{in} \\cdot \\Delta t - Q_{out}  \\cdot \\Delta t$\n\nIs $\\Delta V$  time dependent when the system is at steady-state?",
         "type": "multiple_choice",
         "answers": [
             {
                 "answer": "True",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "False ",
                 "correct": false,
-                "feedback": "Correct."
+                "feedback": "Incorrect."
             }
  
         ]
@@ -95,22 +95,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "if there is NO change of density with time",
+                "answer": "If there is no change of density with time",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
-                "answer": "if there IS change of density with time ",
+                "answer": "If there is change of density with time ",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "they can NEVER be equivalent",
+                "answer": "They can NEVER be equivalent",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
-                "answer": "they are ALWAYS equivalent",
+                "answer": "They are ALWAYS equivalent",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -125,12 +125,12 @@
                {
                 "answer": "True",
                 "correct": true,
-                "feedback": ""
+                "feedback": "Glad You Liked IT"
             },
             {
                 "answer": "False ",
                 "correct": false,
-                "feedback": ""
+                "feedback": "Hope You Like IT Next Time"
             }
  
         ]

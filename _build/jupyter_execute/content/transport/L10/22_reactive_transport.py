@@ -751,5 +751,21 @@ plt.text(5, 0.2, r"$x= 20$ m")
 # - comparison with measured data.
 # 
 
-# 
-# 
+# ### Chapter Quiz 
+
+# In[10]:
+
+
+from jupyterquiz import display_quiz
+import json
+with open("L9Q.json", "r") as file:
+    questions=json.load(file)
+    
+display_quiz(questions)
+
+
+# In[ ]:
+
+
+
+

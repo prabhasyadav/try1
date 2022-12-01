@@ -21,6 +21,8 @@
 # 
 # <script type="text/x-thebe-config">
 #   {
+#      bootstrap: true
+#      requestKernel: true
 #      requestKernel: true,
 #      binderOptions: {
 #        repo: "try1",

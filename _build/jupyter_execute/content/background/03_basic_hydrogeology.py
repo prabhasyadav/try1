@@ -5,7 +5,7 @@
 # 
 # _(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents were developed by Prof. Rudolf Liedl)_
 
-# In[11]:
+# In[3]:
 
 
 # required libraries 
@@ -68,7 +68,7 @@ pn.extension("katex")
 # _Computer modelling_ is often the most economical method but its usefullness rely of data obtained from _Field works_ and _Laboratory experiments._ Thus, the sequence of techniques/methods to be adopted depends on the available site information.
 # 
 
-# In[2]:
+# In[4]:
 
 
 im1 = pn.pane.PNG("images/L01_f_1c.png", width=250)
@@ -90,14 +90,14 @@ pn.Row(im1, im2, im3)
 # Groundwater extraction using well is a challenge when aquifers are located very deep from the surface, e.g., in deserts. 
 # 
 
-# In[ ]:
+# In[5]:
 
 
 video1 = pn.pane.Video("images/L01_f_2.mp4", width=600, height=400, loop=False)
 video1
 
 
-# In[4]:
+# In[6]:
 
 
 #gif_pane = pn.pane.GIF('images/L01_f_2.gif', width=500)
@@ -126,7 +126,7 @@ pn.Row(pn1, video2)
 # 
 # The water cycle provides an approach to judge the sustainability of groundwater extraction. The sustainability of extraction can be obtained if extraction rate approximately equals the replenishing rate. Often the replenishing rate of groundwater is much slower and this has led to groundwater stress in many parts of the world. 
 
-# In[2]:
+# In[7]:
 
 
 #gif_pane = pn.pane.GIF('images/L01_f_2.gif', width=500)
@@ -136,7 +136,7 @@ video3 = pn.pane.Video("images/L01_f_4.mp4", width=600, height=400, loop=False)
 video3 
 
 
-# In[3]:
+# In[8]:
 
 
 #gif_pane = pn.pane.GIF('images/L01_f_2.gif', width=500)
@@ -440,7 +440,9 @@ interactive_plot
 # 
 # + Cases with changing density have proven to be more easily tractable if the mass budget equation is used.
 
-# In[2]:
+# ### Chapter Quiz
+
+# In[4]:
 
 
 from jupyterquiz import display_quiz

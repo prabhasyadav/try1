@@ -1,52 +1,43 @@
 [  
     {
-        "question": "A control volume ",
+        "question": "The equation $ T_x = K_x  \\cdot (h-Z_{bot}) $ relates the Transmissivity of",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "has a size similar to region of investigation",
-                "correct": false,
-                "feedback": "Incorrect."
-            },
-            {
-                "answer": "Darcy's law may be valid",
+                "answer": "Confined aquifer",
                 "correct": false,
                 "feedback": "Incorrect"
             },
             {
-                "answer": "represents the real aquifer",
-                "correct": false,
-                "feedback": "Incorrect."
+                "answer": "Unconfined aquifer",
+                "correct": true,
+                "feedback": "Correct"
             },
             {
-                "answer": "is a fictitious portion of an aquifer in which Darcy's law is absolutely valid",
-                "correct": true,
-                "feedback": "Correct."
+                "answer": "Both confined and unconfined aquifer",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "The layered aquifer",
+                "correct": false,
+                "feedback": "Incorrect"
             }
  
         ]
     },
     {
-        "question": "Which is NOT a representative of Groundwater flow problem",
+        "question": "Wells are usually operated at the steady-state?",
         "type": "multiple_choice",
         "answers": [
+
             {
-                "answer": "1D, 2D or 3D transport of chemical",
+                "answer": "True",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct"
             },
             {
-                "answer": "steady-state or transient",
-                "correct": false,
-                "feedback": "Incorrect"
-            },
-            {
-                "answer": "homogeneous or heterogeneous",
-                "correct": false,
-                "feedback": "Incorrect."
-            },
-            {
-                "answer": "isotropic or anisotropic in confined or unconfined aquifer",
+                "answer": "False",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -54,23 +45,28 @@
     },
 
     {
-        "question": "Groundwater flow problems are described by which of the following principles : ",
+        "question": "A well can be (select all correct answers)",
         "type": "many_choice",
         "answers": [
             {
-                "answer": " conservation of volume",
+                "answer": "A fully penetrating only",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "Both of the above",
+                "answer": "A partially penetrating only",
+                "correct": false,
+                "feedback": "Incorrect"
+            },
+           {
+                "answer": "Neither of the above",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct"
             },
             {
-                "answer": "Darcy‘s law",
-                "correct": false,
-                "feedback": "Incorrect."
+                "answer": "either a fully penetrating ones or partially penetrating ones",
+                "correct": true,
+                "feedback": "Correct"
             }
 
 
@@ -79,26 +75,26 @@
     },
     
     {
-        "question": "In the equation water volume budget equation $ \\frac{\\Delta V_w}{\\Delta x \\Delta y \\Delta z} \\propto \\Delta h $ the proportionality constant is given by",
+        "question": "Which is NOT a component of a well set in an unconfined aquifer",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "porosity",
+                "answer": "Drawdown",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "specific storage",
+                "answer": "Transmissivity",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct"
             },
             {
-                "answer": "coefficient of conductivity",
+                "answer": "Confining layer thickness",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "aquifer thickness",
+                "answer": "Radius of influence",
                 "correct": false,
                 "feedback": "Incorrect"
             }
@@ -107,26 +103,26 @@
     },
     
     {
-        "question": "The Ground Water Flow Equation does not represent : ",
+        "question": "The discharge obtained from the equation $ Q = \\frac{2\\pi m K (H-h)}{2.3 \\log (R/r_w)} $ is for ",
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "the aquifer is heterogeneous",
+                "answer": "Unconfined aquifer",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "has the source and sink term",
+                "answer": "For both confined and unconfined aquifer",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "flow is at steady-state",
+                "answer": "Confined aquifer",
                 "correct": true,
                 "feedback": "Correct"
             },
             {
-                "answer": "for an anisotropic aquifer",
+                "answer": "For partially penetrating well",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -136,27 +132,27 @@
 
     
         {
-        "question": "In the equation $ S\\frac{\\partial h}{\\partial t} = \\frac{\\partial }{\\partial x}\\bigg(T_x\\frac{\\partial h}{\\partial x}\\bigg) + \\frac{\\partial }{\\partial y}\\bigg(T_y\\frac{\\partial h}{\\partial y}\\bigg) $ $S_s$ is replaced by $S$ because",
+        "question": "For a well in an unconfined aquifer, the hydraulic gradient is ",
         
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "Vertical flow is neglected",
+                "answer": "Independent of radial distance from the well",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct"
             },
             {
-                "answer": "aquifer has no source/sinks",
+                "answer": "Is dependent on the radial distance from the well",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "aquifer is 2D",
+                "answer": "Is related to radius of influence",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "Transmissivity (T) has to be used",
+                "answer": "Is equal to drawdown",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -164,29 +160,29 @@
     },
 
         {
-        "question": "The Transmissivity in equation $ T_x = K_x \\cdot (h-z_{bot}) $ where $Z_{bot}$ is bottom of the aquifer, represents a",
+        "question": "The equation $ R = 3000 s \\sqrt{K} $ is ",
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "transmissivity in a confined aquifer",
+                "answer": "an analytical equation to obtain radius of influence",
                 "correct": false,
-                "feedback": "Inorrect."
+                "feedback": "Inorrect"
             },
            {
-                "answer": "transmissivity  in homogeneous aquifer",
+                "answer": "is commonly used for obtaining drawdown",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             } ,
             {
-                "answer": "transmissivity  in unconfined aquifer",
+                "answer": "an empirical equation to obtain radius of influence",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct"
             } ,
 
             {
-                "answer": "transmissivity in 3D aquifer",
+                "answer": "All the above answer are correct",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             }
  
         ]
@@ -194,29 +190,29 @@
     
     
         {
-        "question": "Which among the below are **VALID** Dupuit Assumptions, which are valid only in unconfined aquifer:",
+        "question": "Which aquifer properties are estimated using pumping tests:",
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "Groundwater flow is almost horizontal",
+                "answer": "All of the following",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct"
             },
            {
-                "answer": "No vertical flow component exist",
+                "answer": "Hydraulic conductivity",
                 "correct": false,
                 "feedback": "Incorrect"
             } ,
             {
-                "answer": "Darcy's law is not valid at the water table",
+                "answer": "Storativity",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             } ,
 
             {
-                "answer": "All above are valid",
+                "answer": "Transmissivity",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             }
  
         ]
@@ -224,29 +220,34 @@
     
         
         {
-        "question": "The initial condition (IC) in the groundwater flow problem is NOT required for",
+        "question": "In which condition Theis Method CANNOT be used",
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "Anisotropic flow problems",
+                "answer": "The aquifer thickness is uniform",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
+            },
+            {
+                "answer": "The well is fully penetrating",
+                "correct": false,
+                "feedback": "Incorrect"
             },
            {
-                "answer": "Steady-State problems",
+                "answer": "For a transient pumping rate",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct"
             } ,
             {
-                "answer": "3D flow problems",
+                "answer": "The aquifer bottom is horizontal",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             } ,
 
             {
-                "answer": "Transient problems",
+                "answer": "There is no vertical flow component",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             }
  
         ]
@@ -254,58 +255,59 @@
     
     
             {
-        "question": "In the Dirichlet boundary condition",
+        "question": "In the Theis equation $ s(r,t) = \\frac{Q}{4\\pi T}\\cdot W(u) $ $W(u)$ is",
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "head gradient is specified",
+                "answer": "Called a well function",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct"
             },
            {
-                "answer": "time dependent head gradient is specified",
+                "answer": " Called a water function ",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             } ,
             {
-                "answer": "head is specified",
+                "answer": "Is universal function",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             } ,
 
             {
-                "answer": "no flow is defined",
+                "answer": "Is a logarithmic function",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             }
  
         ]
     },
     
                 {
-        "question": "The special case of Neumann boundary condition is",
+        "question": "The so-called Type curve ",
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "the no flow boundary condition",
-                "correct": true,
-                "feedback": "Correct."
+                "answer": "Is aquifer property dependent curve",
+                "correct": false,
+                "feedback": "Incorrect"
+
             },
            {
-                "answer": "the head specfied boundary condition",
+                "answer": "Always coincides with pumping test data",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             } ,
             {
-                "answer": "the Cauchy boundary condition",
+                "answer": "Relates to variation in pumping rate",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             } ,
 
             {
-                "answer": "the specified non-zero head gradient ",
-                "correct": false,
-                "feedback": "Incorrect."
+                "answer": "Is independent of aquifer property ",
+                "correct": true,
+                "feedback": "Correct"
             }
  
         ]

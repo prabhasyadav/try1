@@ -360,7 +360,7 @@ print("The maximum water rise in this tube is: {0:0.2f} 1/R cm".format(h_c))
 
 # ### Chapter Quiz 
 
-# In[5]:
+# In[1]:
 
 
 from jupyterquiz import display_quiz

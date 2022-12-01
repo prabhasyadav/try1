@@ -16,7 +16,7 @@
             {
                 "answer": "Voids may contain fluids (mostly air and/or water.",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "Voids are influential for the ability of the porous medium to store and transmit water",
@@ -33,7 +33,7 @@
             {
                 "answer": "True",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "False ",
@@ -51,7 +51,7 @@
             {
                 "answer": "A ratio of volume of voids and volume of water",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "A ratio of volume of water and volume of voids ",
@@ -61,7 +61,7 @@
             {
                 "answer": "A ratio of volume of voids and the total volume of the porous media in consideration",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "A ratio of volume of water and the total volume of the porous media in consideration",
@@ -78,7 +78,7 @@
             {
                 "answer": "Coefficient of uniformity",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "Coefficient of conformity",
@@ -88,7 +88,7 @@
             {
                 "answer": "Particle size ratio",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "Distribution coefficient",
@@ -109,7 +109,7 @@
             {
                 "answer": "Silt, Sand , Clay, Gravel",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "Silt, Clay, Gravel , Sand",
@@ -119,7 +119,7 @@
             {
                 "answer": "Clay, Gravel, Silt, Sand",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "Sand, Silt, Gravel, Clay ",
@@ -145,12 +145,12 @@
             {
                 "answer": "Adhession",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "All of the Above",
                 "correct": true,
-                "feedback": "correct"
+                "feedback": "Correct"
              }   
         ]
     },
@@ -162,12 +162,12 @@
                {
                 "answer": "True",
                 "correct": true,
-                "feedback": ""
+                "feedback": "Thank You"
             },
             {
                 "answer": "False ",
                 "correct": false,
-                "feedback": ""
+                "feedback": "Hope you Like it Next Time"
             }
  
         ]

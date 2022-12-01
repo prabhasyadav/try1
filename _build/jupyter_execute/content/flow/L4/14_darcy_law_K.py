@@ -58,13 +58,11 @@ import pandas as pd
 # 
 # Consider the figure below:
 # 
-# 
-# ```{image} images/images/L4_f1.png
-# :width: 600px
+# ```{image} images/L4_f1.png
+# :height: 600px
 # :align: center
 # :name: Hydraulic Head
 # ```
-# 
 # 
 # The pressure head: $p(z) = p_L + \rho \cdot g \cdot (L-z)$ <br>
 # The hydraulic head (piezometric head): $h(z) = \frac{p(z)}{\rho \cdot g } + z = \frac{p_L + \rho \cdot g \cdot (L-z) }{\rho \cdot g } + z = \frac{p_L}{\rho \cdot g}+ L = \text{Const}$<br>
@@ -75,15 +73,11 @@ import pandas as pd
 # 
 # Now consider the figure below
 # 
-# 
-# 
-# 
-# ```{image} images/images/L4_f2.png
-# :width: 400px
+# ```{image} images/L4_f2.png
+# :height: 600px
 # :align: center
 # :name: Hydraulic Head II
 # ```
-# 
 # 
 # Here there is clear difference between the elevation head ($z_1$ and $z_2$), which is taken from a reference level ($z=0$ in this case. Average Sea Level (ASL), is often use for this reference). Also differing are pressure heads ($p_1$ and $p_2$). Therefore, the $h(z)$ in this case are:
 # 
@@ -137,27 +131,26 @@ print("The resulting total energy head is {0:0.2f} m".format(h))
 # of water through beds of sand (Figure below shows a schematic setup). In the experiments, _area of cross section_  ($A$ [L$^2$] $= \text{Const}$) was kept constant. Constant discharge ($Q= \text{Const}$) was applied and the sand medium was fully saturated, i.e., voids between sand grains were completely filled with water.
 # 
 # 
-# 
-# ```{image} images/images/L4_f3.png
-# :width: 400px
+# ```{image} images/L4_f3.png
+# :height: 400px
 # :align: center
 # :name: Darcy's Set-up
 # ```
 
 # Darcy's law is a simple mathematical statement which neatly summarizes several
 # familiar properties that groundwater flowing in aquifers exhibits, including: 
-# > 1.  if there
+# > if there
 #  is no hydraulic gradient (difference in hydraulic head over a distance), no flow occurs
 #  (this is hydrostatic conditions), 
 # 
-# > 2. if there is a hydraulic gradient, flow will occur from
+# > if there is a hydraulic gradient, flow will occur from
 #  a high head towards a low head (opposite the direction of increasing gradient, hence the
 # negative sign in Darcy's law), 
 # 
-# > 3.  the greater the hydraulic gradient (through the same
+# > the greater the hydraulic gradient (through the same
 # aquifer material), the greater the discharge, and 
 # 
-# > 4.  the discharge may be different
+# > the discharge may be different
 # through different aquifer materials (or even through the same material, in a different
 # direction) even if the same hydraulic gradient exists.
 
@@ -336,12 +329,13 @@ print("The resulting hydraulic Conductivity at 20°C is {0:0.2e} m/s".format(K1)
 # shown in Figure the hydraulic heads at inflow and outflow of the Darcy column are
 # constant in time. As a consequence, the discharge is not changing with time. 
 # 
-# 
-# ```{image} images/images/L4_f5.png
-# :width: 200px
+# ```{image} images/L4_f5.png
+# :height: 200px
 # :align: center
 # :name: Constant-head-Permeameter
 # ```
+# 
+# 
 # The hydraulic conductivity can be obtained by observing discharge and heads and then
 # substituting in the below formula that is rearranged form of Darcy’s law from:
 # 
@@ -390,11 +384,12 @@ print("The resulting hydraulic Conductivity is {0:2.0e} cm/min".format(K1),
 # 
 # 
 # 
-# ```{image} images/images/L4_f6.png
-# :width: 250px
+# ```{image} images/L4_f6.png
+# :height: 255px
 # :align: center
 # :name: Constant-head-Permeameter
 # ```
+# 
 # 
 # As a result, the discharge also decreases with time. Rewriting Darcy's law for a small time interval
 # 
@@ -511,10 +506,8 @@ print("The resulting hydraulic conductivity at 20°C is {0:0.1e} m/s".format(K))
 # 
 # 
 # 
-# 
-# 
-# ```{image} images/images/L4_f7.png
-# :width: 700px
+# ```{image} images/L4_f7.png
+# :height: 500px
 # :align: center
 # :name: K and k
 # ```
@@ -534,9 +527,8 @@ print("The resulting hydraulic conductivity at 20°C is {0:0.1e} m/s".format(K))
 # dimensionally; hence, actual velocities can only be quantified statistically.
 # 
 # 
-# 
-# ```{image} images/images/L4_f8.png
-# :width: 300px
+# ```{image} images/L4_f8.png
+# :height: 255px
 # :align: center
 # :name: v and v_s
 # ```

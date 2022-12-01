@@ -5,24 +5,24 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "column with constant cross section",
+                "answer": "Column with constant cross section",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "saturated conditions",
+                "answer": "Saturated conditions",
                 "correct": false,
                 "feedback": "Incorrect"
             },
             {
-                "answer": "sand is the porous medium",
+                "answer": "Sand is the porous medium",
                 "correct": false,
-                "feedback": "Correct."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "All are correct statements ",
                 "correct": true,
-                "feedback": "correct"
+                "feedback": "Correct"
              }   
         ]
     },
@@ -32,22 +32,22 @@
         "type": "many_choice",
         "answers": [
             {
-                "answer": "pressure head",
+                "answer": "Pressure head",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "elevation head",
+                "answer": "Elevation head",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "sum of pressure and elevation head",
+                "answer": "Sum of pressure and elevation head",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
-                "answer": "change of pressure head",
+                "answer": "Change of pressure head",
                 "correct": false,
                 "feedback": "Incorrect."
             }
@@ -61,7 +61,7 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "discharge is  proportional to the cross-sectional area",
+                "answer": "Discharge is  proportional to the cross-sectional area",
                 "correct": false,
                 "feedback": "Incorrect."
             },
@@ -71,12 +71,12 @@
                 "feedback": "Incorrect."
             },
             {
-                "answer": "discharge and conductivity are not related",
+                "answer": "Discharge and conductivity are not related",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
-                "answer": "discharge is inversely proportional to the travel distance",
+                "answer": "Discharge is inversely proportional to the travel distance",
                 "correct": false,
                 "feedback": "Incorrect."
             }
@@ -96,17 +96,17 @@
                 "feedback": "Incorrect."
             },
             {
-                "answer": "groundwater density ",
+                "answer": "Groundwater density ",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "effective porosity",
+                "answer": "Effective porosity",
                 "correct": false,
                 "feedback": "false."
             },
             {
-                "answer": "grain size distribution",
+                "answer": "Grain size distribution",
                 "correct": false,
                 "feedback": "false."
             },
@@ -132,17 +132,17 @@
             {
                 "answer": "Using Seive Analysis",
                 "correct": false,
-                "feedback": "correct."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "Using pumping test",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "All of the Above",
                 "correct": true,
-                "feedback": "correct"
+                "feedback": "Correct"
              }   
         ]
     },
@@ -164,7 +164,7 @@
             {
                 "answer": "the viscosity of fluid  ",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "the combined properties of porous media and fluid",
@@ -180,7 +180,7 @@
         "type" : "multiple_choice",
         "answers": [
             {
-                "answer": "are not related",
+                "answer": "Are not related",
                 "correct": false,
                 "feedback": "Incorrect."
             },
@@ -192,7 +192,7 @@
             {
                 "answer": "Darcy velocity > average linear velocity",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "Darcy velocity = total porosity times the average groundwater velocity",
@@ -209,29 +209,29 @@
         "type" : "multiple_choice",
         "answers": [
             {
-                "answer": "column with constant cross section",
+                "answer": "Column with constant cross section",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "saturated conditions",
+                "answer": "Saturated conditions",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "constant discharge through the column",
+                "answer": "Constant discharge through the column",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect"
             },
             {
-                "answer": "sand is the porous medium",
+                "answer": "Sand is the porous medium",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "All of the above",
                 "correct": true,
-                "feedback": "correct"
+                "feedback": "Correct"
              }   
         ]
     },
@@ -241,22 +241,22 @@
         "type" : "multiple_choice",
         "answers": [
             {
-                "answer": "the properties of porous media only",
+                "answer": "The properties of porous media only",
                 "correct": true,
                 "feedback": "correct."
             },
             {
-                "answer": "the properties of fluid only ",
+                "answer": "The properties of fluid only ",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "the combined properties of porous media and fluid",
+                "answer": "The combined properties of porous media and fluid",
                 "correct": false,
                 "feedback": "false."
             },
             {
-                "answer": "the viscosity of fluid",
+                "answer": "The viscosity of fluid",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -271,7 +271,7 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "volume of water in a column",
+                "answer": "Volume of water in a column",
                 "correct": false,
                 "feedback": "Incorrect."
             },
@@ -286,7 +286,7 @@
                 "feedback": "Correct."
             },
             {
-                "answer": "is average groundwater flow velocity ",
+                "answer": "Is average groundwater flow velocity ",
                 "correct": false,
                 "feedback": "Incorrect."
             }

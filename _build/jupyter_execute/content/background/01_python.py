@@ -97,8 +97,6 @@ pn.Row(p4, p3)
 # A _function_ in a programming provide an ability to develop a reusable code-block with an option of several operations. This means, a function have input (or a set of input) and provide an (or a set of) output.
 # 
 # 
-# 
-# <img src="images/bg1_f5.png" alt="Defining a FUNCTION"  width="600px">
 # ```{image} images/bg1_f5.png
 # :width: 600px
 # :align: center

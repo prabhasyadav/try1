@@ -33,7 +33,7 @@
             {
                 "answer": "Homogeneous",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "Heterogeneous",
@@ -60,7 +60,7 @@
             {
                 "answer": "The maximum conductivity along horizontal flow direction",
                 "correct": false,
-                "feedback": "Correct."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "The maximum conductivity along vertical flow direction",
@@ -68,9 +68,9 @@
                 "feedback": "Incorrect."
             },
             {
-                "answer": "the average K value in the layered aquifer",
+                "answer": "The average K value in the layered aquifer",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "Is equivalent to hydraulic resistance",
@@ -87,24 +87,24 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "equals the weighted harmonic mean of layer conductivities.",
+                "answer": "Equals the weighted harmonic mean of layer conductivities.",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "equals the weighted arithmetic mean of layer conductivities.",
+                "answer": "Equals the weighted arithmetic mean of layer conductivities.",
                 "correct": true,
                 "feedback": "correct."
             },
             {
-                "answer": "is not dependent on the direction of flow",
+                "answer": "Is not dependent on the direction of flow",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "depends on arithmetic and harmonic mean",
+                "answer": "Depends on arithmetic and harmonic mean",
                 "correct": false,
-                "feedback": "correct."
+                "feedback": "Incorrect."
             }
  
         ]
@@ -115,24 +115,24 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "independent to each other",
+                "answer": "Independent to each other",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "related with other through the Darcy velocity",
+                "answer": "Related with other through the Darcy velocity",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "are related to storage coefficient. ",
+                "answer": "Are related to storage coefficient. ",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
-                "answer": "are reciprocal to each other",
+                "answer": "Are reciprocal to each other",
                 "correct": true,
-                "feedback": "correct"
+                "feedback": "Correct"
              }   
         ]
     },
@@ -144,22 +144,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "as the largest K value among the layer",
+                "answer": "As the largest K value among the layer",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
-                "answer": "as the lowest K value among the layer",
+                "answer": "As the lowest K value among the layer",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "as the reciprocal of the largest K value among the layer",
+                "answer": "As the reciprocal of the largest K value among the layer",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
-                "answer": "as a ratio of largest and lowest K value among the layer",
+                "answer": "As a ratio of largest and lowest K value among the layer",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -183,7 +183,7 @@
             {
                 "answer": "their independence to spatial and direction ",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
                 "answer": "None of the above",
@@ -218,7 +218,7 @@
             {
                 "answer": "Effective hydraulic conductivity when flow is in arbitrary direction to aquifer layers",
                 "correct": true,
-                "feedback": "Good"
+                "feedback": "Correct"
             }
   
         ]

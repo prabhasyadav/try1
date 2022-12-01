@@ -196,6 +196,18 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Modeling
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../modeling/31_intro_modeling.html">
+   1. Lecture 11:  Background of Groundwater Modeling
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Tutorials
  </span>
 </p>
@@ -300,6 +312,23 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../../testcodeer.html">
    10. Testing the code for run
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../tester.html">
+   11. NEw Run
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Previous Years Q&amp;A
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Q_and_A/GW_exam_2019_20.html">
+   1. Groundwater Exam Solution -  2019-2020
   </a>
  </li>
 </ul>
@@ -817,14 +846,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell tag_hide-input tag_remove-output docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
-</div>
-</div>
+  <div class="cell tag_hide-input tag_remove-output tag_remove-input docutils container">
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="lecture-4-darcy-s-law-and-conductivity">
 <h1><span class="section-number">3. </span>Lecture 4 - Darcy’s Law and Conductivity<a class="headerlink" href="#lecture-4-darcy-s-law-and-conductivity" title="Permalink to this headline">#</a></h1>
@@ -866,7 +888,7 @@ h = \frac{p}{\rho g}-z
 <section id="hydraulic-head-and-discharge-when-there-is-no-discharge">
 <h3><span class="section-number">3.1.1. </span>Hydraulic head and discharge - when there is no discharge<a class="headerlink" href="#hydraulic-head-and-discharge-when-there-is-no-discharge" title="Permalink to this headline">#</a></h3>
 <p>Consider the figure below:</p>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f1.png" id="hydraulic-head"><img alt="content/flow/L4/images/images/L4_f1.png" class="align-center" id="hydraulic-head" src="content/flow/L4/images/images/L4_f1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f1.png" id="hydraulic-head"><img alt="../../../_images/L4_f1.png" class="align-center" id="hydraulic-head" src="../../../_images/L4_f1.png" style="height: 600px;" /></a>
 <p>The pressure head: <span class="math notranslate nohighlight">\(p(z) = p_L + \rho \cdot g \cdot (L-z)\)</span> <br>
 The hydraulic head (piezometric head): <span class="math notranslate nohighlight">\(h(z) = \frac{p(z)}{\rho \cdot g } + z = \frac{p_L + \rho \cdot g \cdot (L-z) }{\rho \cdot g } + z = \frac{p_L}{\rho \cdot g}+ L = \text{Const}\)</span><br></p>
 <p>In the figure above the hydraulic head difference between two points (<span class="math notranslate nohighlight">\(z=0\)</span> and <span class="math notranslate nohighlight">\(z=L\)</span>) are exactly equal, i.e., <span class="math notranslate nohighlight">\(\Delta h = 0\)</span>. This refers to the system with no energy gradient and hence a <em>no flow</em> system.</p>
@@ -874,7 +896,7 @@ The hydraulic head (piezometric head): <span class="math notranslate nohighlight
 <section id="hydraulic-head-and-discharge-when-there-will-be-a-discharge">
 <h3><span class="section-number">3.1.2. </span>Hydraulic head and discharge - when there will be a discharge<a class="headerlink" href="#hydraulic-head-and-discharge-when-there-will-be-a-discharge" title="Permalink to this headline">#</a></h3>
 <p>Now consider the figure below</p>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f2.png" id="hydraulic-head-ii"><img alt="content/flow/L4/images/images/L4_f2.png" class="align-center" id="hydraulic-head-ii" src="content/flow/L4/images/images/L4_f2.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f2.png" id="hydraulic-head-ii"><img alt="../../../_images/L4_f2.png" class="align-center" id="hydraulic-head-ii" src="../../../_images/L4_f2.png" style="height: 600px;" /></a>
 <p>Here there is clear difference between the elevation head (<span class="math notranslate nohighlight">\(z_1\)</span> and <span class="math notranslate nohighlight">\(z_2\)</span>), which is taken from a reference level (<span class="math notranslate nohighlight">\(z=0\)</span> in this case. Average Sea Level (ASL), is often use for this reference). Also differing are pressure heads (<span class="math notranslate nohighlight">\(p_1\)</span> and <span class="math notranslate nohighlight">\(p_2\)</span>). Therefore, the <span class="math notranslate nohighlight">\(h(z)\)</span> in this case are:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -938,35 +960,27 @@ groundwater flow equation, one of the basic relationships of hydrogeology. It is
 used to describe oil, water, and gas flows through petroleum reservoirs.</p>
 <p>The law was formulated by Henry Darcy (Darcy, 1856) based on the results of experiments on the flow
 of water through beds of sand (Figure below shows a schematic setup). In the experiments, <em>area of cross section</em>  (<span class="math notranslate nohighlight">\(A\)</span> [L<span class="math notranslate nohighlight">\(^2\)</span>] <span class="math notranslate nohighlight">\(= \text{Const}\)</span>) was kept constant. Constant discharge (<span class="math notranslate nohighlight">\(Q= \text{Const}\)</span>) was applied and the sand medium was fully saturated, i.e., voids between sand grains were completely filled with water.</p>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f3.png" id="darcy-s-set-up"><img alt="content/flow/L4/images/images/L4_f3.png" class="align-center" id="darcy-s-set-up" src="content/flow/L4/images/images/L4_f3.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f3.png" id="darcy-s-set-up"><img alt="../../../_images/L4_f3.png" class="align-center" id="darcy-s-set-up" src="../../../_images/L4_f3.png" style="height: 400px;" /></a>
 <p>Darcy’s law is a simple mathematical statement which neatly summarizes several
 familiar properties that groundwater flowing in aquifers exhibits, including:</p>
 <blockquote>
-<div><ol class="simple">
-<li><p>if there
+<div><p>if there
 is no hydraulic gradient (difference in hydraulic head over a distance), no flow occurs
-(this is hydrostatic conditions),</p></li>
-</ol>
+(this is hydrostatic conditions),</p>
 </div></blockquote>
 <blockquote>
-<div><ol class="simple">
-<li><p>if there is a hydraulic gradient, flow will occur from
+<div><p>if there is a hydraulic gradient, flow will occur from
 a high head towards a low head (opposite the direction of increasing gradient, hence the
-negative sign in Darcy’s law),</p></li>
-</ol>
+negative sign in Darcy’s law),</p>
 </div></blockquote>
 <blockquote>
-<div><ol class="simple">
-<li><p>the greater the hydraulic gradient (through the same
-aquifer material), the greater the discharge, and</p></li>
-</ol>
+<div><p>the greater the hydraulic gradient (through the same
+aquifer material), the greater the discharge, and</p>
 </div></blockquote>
 <blockquote>
-<div><ol class="simple">
-<li><p>the discharge may be different
+<div><p>the discharge may be different
 through different aquifer materials (or even through the same material, in a different
-direction) even if the same hydraulic gradient exists.</p></li>
-</ol>
+direction) even if the same hydraulic gradient exists.</p>
 </div></blockquote>
 <p>From the experiments Darcy observed that the <em>volume of water per unit time</em> passing through a porous medium</p>
 <ul class="simple">
@@ -1170,7 +1184,7 @@ experiment.</p>
 <p>In <strong>constant-head permeameters</strong> as
 shown in Figure the hydraulic heads at inflow and outflow of the Darcy column are
 constant in time. As a consequence, the discharge is not changing with time.</p>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f5.png" id="constant-head-permeameter"><img alt="content/flow/L4/images/images/L4_f5.png" class="align-center" id="constant-head-permeameter" src="content/flow/L4/images/images/L4_f5.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f5.png" id="constant-head-permeameter"><img alt="../../../_images/L4_f5.png" class="align-center" id="constant-head-permeameter" src="../../../_images/L4_f5.png" style="height: 200px;" /></a>
 <p>The hydraulic conductivity can be obtained by observing discharge and heads and then
 substituting in the below formula that is rearranged form of Darcy’s law from:</p>
 <div class="math notranslate nohighlight">
@@ -1230,7 +1244,7 @@ and which is 2e-04 m/s
 <p>In falling-head permeameter as shown in Figure the hydraulic head at the outflow of
 the Darcy column is not changing, but the hydraulic head at the inflow is decreasing
 with time.</p>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f6.png" id="id4"><img alt="content/flow/L4/images/images/L4_f6.png" class="align-center" id="id4" src="content/flow/L4/images/images/L4_f6.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f6.png" id="id4"><img alt="../../../_images/L4_f6.png" class="align-center" id="id4" src="../../../_images/L4_f6.png" style="height: 255px;" /></a>
 <p>As a result, the discharge also decreases with time. Rewriting Darcy’s law for a small time interval</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1361,7 +1375,7 @@ highly permeable aquifers vary in the range 10<span class="math notranslate nohi
 respectively</p></li>
 <li><p>Typical value of conductivity and intrinsic permeability is  provided in the fig (from Todd and Mays, 2004) below.</p></li>
 </ul>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f7.png" id="k-and-k"><img alt="content/flow/L4/images/images/L4_f7.png" class="align-center" id="k-and-k" src="content/flow/L4/images/images/L4_f7.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f7.png" id="k-and-k"><img alt="../../../_images/L4_f7.png" class="align-center" id="k-and-k" src="../../../_images/L4_f7.png" style="height: 500px;" /></a>
 </section>
 </section>
 <section id="darcy-velocity-and-interstitial-velocity">
@@ -1376,7 +1390,7 @@ deceleration, and changes in direction. To define the <em>actual flow velocity</
 velocity</strong>, one must consider the microstructure of the rock material.</p>
 <p>For naturally occurring geologic materials, the microstructure cannot be specified three-
 dimensionally; hence, actual velocities can only be quantified statistically.</p>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f8.png" id="v-and-v-s"><img alt="content/flow/L4/images/images/L4_f8.png" class="align-center" id="v-and-v-s" src="content/flow/L4/images/images/L4_f8.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f8.png" id="v-and-v-s"><img alt="../../../_images/L4_f8.png" class="align-center" id="v-and-v-s" src="../../../_images/L4_f8.png" style="height: 255px;" /></a>
 <p>Actually, the flow is limited to the pores (white spaces in Figure) only so that the
 <em>average interstitial velocity</em> or <em>actual velocity</em> or <em>seepage velocity</em> <span class="math notranslate nohighlight">\((v_s)\)</span> through pore space
 can be determined by applying continuity equation</p>
@@ -1501,7 +1515,7 @@ the darcy velocity is 0.5 m/h
 <h2><span class="section-number">3.5. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="lhzPLdKmoUAP" data-shufflequestions="False"
+<div class="output text_html"><div id="ePDtJnBomtoe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -1663,7 +1677,7 @@ the darcy velocity is 0.5 m/h
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionslhzPLdKmoUAP=[{"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "saturated conditions", "correct": false, "feedback": "Incorrect"}, {"answer": "sand is the porous medium", "correct": false, "feedback": "Correct."}, {"answer": "All are correct statements ", "correct": true, "feedback": "correct"}]}, {"question": "Water flow in porous media requires changes of", "type": "many_choice", "answers": [{"answer": "pressure head", "correct": false, "feedback": "Incorrect."}, {"answer": "elevation head", "correct": false, "feedback": "Incorrect."}, {"answer": "sum of pressure and elevation head", "correct": true, "feedback": "correct."}, {"answer": "change of pressure head", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which is NOT true of Darcy\u00e2\u20ac\u02dcs Law", "type": "multiple_choice", "answers": [{"answer": "discharge is  proportional to the cross-sectional area", "correct": false, "feedback": "Incorrect."}, {"answer": "discharge is proportional to the difference in hydraulic head", "correct": false, "feedback": "Incorrect."}, {"answer": "discharge and conductivity are not related", "correct": true, "feedback": "correct."}, {"answer": "discharge is inversely proportional to the travel distance", "correct": false, "feedback": "Incorrect."}]}, {"question": "Hydraulic conductivity depends on", "type": "multiple_choice", "answers": [{"answer": "Groundwater viscosity", "correct": false, "feedback": "Incorrect."}, {"answer": "groundwater density ", "correct": false, "feedback": "Incorrect."}, {"answer": "effective porosity", "correct": false, "feedback": "false."}, {"answer": "grain size distribution", "correct": false, "feedback": "false."}, {"answer": "All of the Above", "correct": true, "feedback": "correct"}]}, {"question": "Hydraulic Conductivity can be measured using", "type": "multiple_choice", "answers": [{"answer": "Using Permeameter", "correct": false, "feedback": "Incorrect."}, {"answer": "Using Seive Analysis", "correct": false, "feedback": "correct."}, {"answer": "Using pumping test", "correct": false, "feedback": "false."}, {"answer": "All of the Above", "correct": true, "feedback": "correct"}]}, {"question": "In the realtion for Specific storage $S_s$ given as $ S_s $ = $\\Delta V_w $ / $V_T \\cdot \\Delta \\psi$ ", "type": "multiple_choice", "answers": [{"answer": "the properties of porous media only", "correct": true, "feedback": "Correct."}, {"answer": "the properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "the viscosity of fluid  ", "correct": true, "feedback": "correct."}, {"answer": "the combined properties of porous media and fluid", "correct": false, "feedback": "false."}]}, {"question": "Darcy velocity Q and average groundwater velocity v:", "type": "multiple_choice", "answers": [{"answer": "are not related", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity = effective porosity times the average groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity > average linear velocity", "correct": false, "feedback": "false."}, {"answer": "Darcy velocity = total porosity times the average groundwater velocity", "correct": true, "feedback": "correct"}]}, {"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "saturated conditions", "correct": false, "feedback": "Incorrect."}, {"answer": "constant discharge through the column", "correct": false, "feedback": "false."}, {"answer": "sand is the porous medium", "correct": false, "feedback": "false."}, {"answer": "All of the above", "correct": true, "feedback": "correct"}]}, {"question": "Intrinsic Permeability represents", "type": "multiple_choice", "answers": [{"answer": "the properties of porous media only", "correct": true, "feedback": "correct."}, {"answer": "the properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "the combined properties of porous media and fluid", "correct": false, "feedback": "false."}, {"answer": "the viscosity of fluid", "correct": false, "feedback": "Incorrect"}]}, {"question": "A pore volume is", "type": "multiple_choice", "answers": [{"answer": "volume of water in a column", "correct": false, "feedback": "Incorrect."}, {"answer": "Average volume of water in pores", "correct": false, "feedback": "Incorrect."}, {"answer": "The travel time", "correct": true, "feedback": "Correct."}, {"answer": "is average groundwater flow velocity ", "correct": false, "feedback": "Incorrect."}]}];
+}</style></div><script type="application/javascript">var questionsePDtJnBomtoe=[{"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "Column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "Saturated conditions", "correct": false, "feedback": "Incorrect"}, {"answer": "Sand is the porous medium", "correct": false, "feedback": "Incorrect."}, {"answer": "All are correct statements ", "correct": true, "feedback": "Correct"}]}, {"question": "Water flow in porous media requires changes of", "type": "many_choice", "answers": [{"answer": "Pressure head", "correct": false, "feedback": "Incorrect."}, {"answer": "Elevation head", "correct": false, "feedback": "Incorrect."}, {"answer": "Sum of pressure and elevation head", "correct": true, "feedback": "Correct."}, {"answer": "Change of pressure head", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which is NOT true of Darcy\u00e2\u20ac\u02dcs Law", "type": "multiple_choice", "answers": [{"answer": "Discharge is  proportional to the cross-sectional area", "correct": false, "feedback": "Incorrect."}, {"answer": "discharge is proportional to the difference in hydraulic head", "correct": false, "feedback": "Incorrect."}, {"answer": "Discharge and conductivity are not related", "correct": true, "feedback": "Correct."}, {"answer": "Discharge is inversely proportional to the travel distance", "correct": false, "feedback": "Incorrect."}]}, {"question": "Hydraulic conductivity depends on", "type": "multiple_choice", "answers": [{"answer": "Groundwater viscosity", "correct": false, "feedback": "Incorrect."}, {"answer": "Groundwater density ", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective porosity", "correct": false, "feedback": "false."}, {"answer": "Grain size distribution", "correct": false, "feedback": "false."}, {"answer": "All of the Above", "correct": true, "feedback": "correct"}]}, {"question": "Hydraulic Conductivity can be measured using", "type": "multiple_choice", "answers": [{"answer": "Using Permeameter", "correct": false, "feedback": "Incorrect."}, {"answer": "Using Seive Analysis", "correct": false, "feedback": "Incorrect."}, {"answer": "Using pumping test", "correct": false, "feedback": "Incorrect."}, {"answer": "All of the Above", "correct": true, "feedback": "Correct"}]}, {"question": "In the realtion for Specific storage $S_s$ given as $ S_s $ = $\\Delta V_w $ / $V_T \\cdot \\Delta \\psi$ ", "type": "multiple_choice", "answers": [{"answer": "the properties of porous media only", "correct": true, "feedback": "Correct."}, {"answer": "the properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "the viscosity of fluid  ", "correct": true, "feedback": "Correct."}, {"answer": "the combined properties of porous media and fluid", "correct": false, "feedback": "false."}]}, {"question": "Darcy velocity Q and average groundwater velocity v:", "type": "multiple_choice", "answers": [{"answer": "Are not related", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity = effective porosity times the average groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity > average linear velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity = total porosity times the average groundwater velocity", "correct": true, "feedback": "correct"}]}, {"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "Column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "Saturated conditions", "correct": false, "feedback": "Incorrect."}, {"answer": "Constant discharge through the column", "correct": false, "feedback": "Incorrect"}, {"answer": "Sand is the porous medium", "correct": false, "feedback": "Incorrect."}, {"answer": "All of the above", "correct": true, "feedback": "Correct"}]}, {"question": "Intrinsic Permeability represents", "type": "multiple_choice", "answers": [{"answer": "The properties of porous media only", "correct": true, "feedback": "correct."}, {"answer": "The properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "The combined properties of porous media and fluid", "correct": false, "feedback": "false."}, {"answer": "The viscosity of fluid", "correct": false, "feedback": "Incorrect"}]}, {"question": "A pore volume is", "type": "multiple_choice", "answers": [{"answer": "Volume of water in a column", "correct": false, "feedback": "Incorrect."}, {"answer": "Average volume of water in pores", "correct": false, "feedback": "Incorrect."}, {"answer": "The travel time", "correct": true, "feedback": "Correct."}, {"answer": "Is average groundwater flow velocity ", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2397,7 +2411,7 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionslhzPLdKmoUAP,  lhzPLdKmoUAP);
+        show_questions(questionsePDtJnBomtoe,  ePDtJnBomtoe);
         }
         </script></div>
 </div>

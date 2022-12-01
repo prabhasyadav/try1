@@ -31,22 +31,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "only for 2D problems",
+                "answer": "Only for 2D problems",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
-                "answer": "for 1D problems",
+                "answer": "For 1D problems",
                 "correct": false,
                 "feedback": "Incorrect"
             },
             {
-                "answer": "is similar to isosurface",
+                "answer": "Is similar to isosurface",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "based on map of ground water travel time.",
+                "answer": "Based on map of ground water travel time.",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -58,22 +58,22 @@
         "type": "many_choice",
         "answers": [
             {
-                "answer": "parallel to head isolines",
+                "answer": "Parallel to head isolines",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "are perpendicular to head isolines",
+                "answer": "Are perpendicular to head isolines",
                 "correct": true,
                 "feedback": "correct."
             },
             {
-                "answer": "are neither parallel nor perpendicular to isolines",
+                "answer": "Are neither parallel nor perpendicular to isolines",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "are isolines",
+                "answer": "Are isolines",
                 "correct": false,
                 "feedback": "Incorrect."
             }
@@ -87,22 +87,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "are independent of boundary condition",
+                "answer": "Are independent of boundary condition",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "contains curves of head isolines",
+                "answer": "Contains curves of head isolines",
                 "correct": false,
                 "feedback": "correct."
             },
             {
-                "answer": "are stream lines",
+                "answer": "Are stream lines",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "requires information of boundary condition",
+                "answer": "Requires information of boundary condition",
                 "correct": true,
                 "feedback": "correct"
             }
@@ -115,22 +115,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "curves of streamlines",
+                "answer": "Curves of streamlines",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "curves of head isolines",
+                "answer": "Curves of head isolines",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "curves of identical travel times",
+                "answer": "Curves of identical travel times",
                 "correct": true,
                 "feedback": "Correct"
             },
             {
-                "answer": "are flow lines.",
+                "answer": "Are flow lines.",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -144,19 +144,19 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "as the largest K value among the layer",
+                "answer": "As the largest K value among the layer",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
-                "answer": "as the lowest K value among the layer",
+                "answer": "As the lowest K value among the layer",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "as the reciprocal of the largest K value among the layer",
+                "answer": "As the reciprocal of the largest K value among the layer",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
                 "answer": "as a ratio of largest and lowest K value among the layer",
@@ -171,18 +171,18 @@
         "type" : "multiple_choice"  ,  
         "answers": [
             {
-                "answer": "always a scalar",
+                "answer": "Always a scalar",
                 "correct": false,
                 "feedback": "Inorrect."
             },
            {
-                "answer": "a tensor similar to isotropic case",
+                "answer": "A Tensor similar to isotropic case",
                 "correct": true,
                 "feedback": "correct."
             } ,
 
             {
-                "answer": "is direction independent quantity",
+                "answer": "Is direction independent quantity",
                 "correct": false,
                 "feedback": "Incorrect."
             }

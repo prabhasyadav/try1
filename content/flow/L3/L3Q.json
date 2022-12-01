@@ -11,7 +11,7 @@
             {
                 "answer": "False ",
                 "correct": true,
-                "feedback": "Incorrect."
+                "feedback": "Correct."
             }
  
         ]
@@ -23,12 +23,12 @@
             {
                 "answer": "That pores are completely filled",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect. Hint : Mobility of Water"
             },
             {
                 "answer": "That pores are partly filled",
                 "correct": false,
-                "feedback": "Incorrect"
+                "feedback": "Incorrect.   Hint : Mobility of Water"
             },
             {
                 "answer": "Pores are interconnected allowing mobility of water",
@@ -38,7 +38,7 @@
             {
                 "answer": "Pores may or maynot be connected",
                 "correct": false,
-                "feedback": "Incorrect"
+                "feedback": "Incorrect. Hint: Hint : Mobility of Water"
              }   
         ]
     },
@@ -84,7 +84,7 @@
             {
                 "answer": "False ",
                 "correct": true,
-                "feedback": "Incorrect."
+                "feedback": "Correct."
             }
  
         ]
@@ -95,22 +95,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "transmit groundwater",
+                "answer": "Transmit groundwater",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": " store and transmit significant (= exploitable) amounts of groundwater. ",
+                "answer": " Store and transmit significant (= exploitable) amounts of groundwater. ",
                 "correct": true,
-                "feedback": "correct."
+                "feedback": "Correct."
             },
             {
-                "answer": "can store groundwater but cannot transmit groundwater.",
+                "answer": "Can store groundwater but cannot transmit groundwater.",
                 "correct": false,
                 "feedback": "false."
             },
             {
-                "answer": "can store and transmit groundwater but to a much lesser extent than an (adjacent) aquifer",
+                "answer": "Can store and transmit groundwater but to a much lesser extent than an (adjacent) aquifer",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -124,22 +124,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "equivalent to hydrostatic pressure",
+                "answer": "Equivalent to hydrostatic pressure",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "is equal to the pressure head and unit weight of water",
+                "answer": "Is equal to the pressure head and unit weight of water",
                 "correct": true,
                 "feedback": "correct."
             },
             {
-                "answer": "is independent of hydrostatic pressure",
+                "answer": "Is independent of hydrostatic pressure",
                 "correct": false,
                 "feedback": "false."
             },
             {
-                "answer": "is nonlinearly related to the thickness of the aquifer",
+                "answer": "Is nonlinearly related to the thickness of the aquifer",
                 "correct": false,
                 "feedback": "Incorrect"
              }   
@@ -194,24 +194,24 @@
         "type" : "multiple_choice",
         "answers": [
             {
-                "answer": "ratio of specific storage and thickness of the aquifer",
+                "answer": "Ratio of specific storage and thickness of the aquifer",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "product of specific storage and hydrostatic head",
+                "answer": "Product of specific storage and hydrostatic head",
                 "correct": false,
                 "feedback": "Incorrect."
             },
             {
-                "answer": "storage property for 1D aquifer system",
+                "answer": "Storage property for 1D aquifer system",
                 "correct": false,
-                "feedback": "false."
+                "feedback": "Incorrect."
             },
             {
-                "answer": "is a product of specific storage and confining thickness of the aquifer",
+                "answer": "Is a product of specific storage and confining thickness of the aquifer",
                 "correct": true,
-                "feedback": "correct"
+                "feedback": "Correct."
              }   
         ]
     }

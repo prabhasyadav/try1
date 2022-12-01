@@ -451,7 +451,7 @@ print("\033[1mSolution:\033[0m\n\nThe resulting hydraulic conductivity is \033[1
 
 # ## Combining Heterogeneity and Anisotropy
 # 
-# The distinction between_Homogeneous, Heterogeneous, isotropic_ and _anisotropic_ aquifer or any combination of them can be more clearly understood from the figure (for vertical $x-z$ plane).
+# The distinction between_Homogeneous, Heterogeneous, isotropic and anisotropic aquifer or any combination of them can be more clearly understood from the figure (for vertical $x-z$ plane).
 # 
 # ```{figure} images/L5_f6.png
 # ---
