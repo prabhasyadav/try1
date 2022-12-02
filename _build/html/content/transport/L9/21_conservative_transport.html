@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Lecture 9- Conservative Transport &#8212; Groundwater I</title>
+    <title>1. Conservative Transport &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../../_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -57,8 +59,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="2. Lecture 10: Reactive Mass Transport" href="../L10/22_reactive_transport.html" />
-    <link rel="prev" title="7. Lecture 08 - Wells*" href="../../flow/L8/18_wells.html" />
+    <link rel="next" title="2. Reactive Mass Transport" href="../L10/22_reactive_transport.html" />
+    <link rel="prev" title="7. Wells*" href="../../flow/L8/18_wells.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../background/03_basic_hydrogeology.html">
-   2. Lecture 1 - Course Introduction/Water Cycle
+   2. Course Introduction &amp; Water Cycle
   </a>
  </li>
 </ul>
@@ -143,37 +145,37 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../flow/12_subsurface_structure.html">
-   1. Lecture 2 - Subsurface Structure
+   1. Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../flow/L3/13_gw_storage.html">
-   2. Lecture 3-  Groundwater as a reservoir
+   2. Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../flow/L4/14_darcy_law_K.html">
-   3. Lecture 4 - Darcy’s Law and Conductivity
+   3. Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../flow/L5/15_het_iso.html">
-   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../flow/L6/16_darcy_law_3D.html">
-   5. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../flow/L7/17_quantify_flow.html">
-   6. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../flow/L8/18_wells.html">
-   7. Lecture 08 - Wells*
+   7. Wells*
   </a>
  </li>
 </ul>
@@ -185,12 +187,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   1. Lecture 9-  Conservative Transport
+   1. Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L10/22_reactive_transport.html">
-   2. Lecture 10:  Reactive Mass Transport
+   2. Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -664,6 +666,11 @@ title="Print to PDF"
    1.9. Additional Tool
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapter-quiz">
+   1.10. Chapter Quiz
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -673,7 +680,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lecture 9-  Conservative Transport</h1>
+                <h1>Conservative Transport</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -774,6 +781,11 @@ title="Print to PDF"
    1.9. Additional Tool
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapter-quiz">
+   1.10. Chapter Quiz
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -784,22 +796,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sc</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">erfc</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">Math</span>
-
-<span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
-</pre></div>
+  <div class="cell tag_hide-input tag_remove-input docutils container">
 </div>
-</div>
-</div>
-<section class="tex2jax_ignore mathjax_ignore" id="lecture-9-conservative-transport">
-<h1><span class="section-number">1. </span>Lecture 9-  Conservative Transport<a class="headerlink" href="#lecture-9-conservative-transport" title="Permalink to this headline">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="conservative-transport">
+<h1><span class="section-number">1. </span>Conservative Transport<a class="headerlink" href="#conservative-transport" title="Permalink to this headline">#</a></h1>
 <hr class="docutils" />
 <section id="motivation">
 <h2><span class="section-number">1.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
@@ -1455,9 +1455,12 @@ The contribution of diffusive flow is: 1.0e-05 g/d
 <li><p>computation and graphical representation of a breakthrough curve</p></li>
 <li><p>comparison with measured data.</p></li>
 </ul>
+</section>
+<section id="chapter-quiz">
+<h2><span class="section-number">1.10. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="sFQbvxOisuPp" data-shufflequestions="False"
+<div class="output text_html"><div id="YErAkILBLzXK" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -1619,7 +1622,7 @@ The contribution of diffusive flow is: 1.0e-05 g/d
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionssFQbvxOisuPp=[{"question": "In conservative transport:", "type": "multiple_choice", "answers": [{"answer": "Groundwater velocity is not important", "correct": false, "feedback": "Incorrect."}, {"answer": "Chemical reaction is not considered", "correct": true, "feedback": "Correct"}, {"answer": "Effective porosity is never a component", "correct": false, "feedback": "Incorrect."}, {"answer": "Is only concentration dependent ", "correct": false, "feedback": "Incorrect."}]}, {"question": "Advection refers to", "type": "multiple_choice", "answers": [{"answer": "Motion of particles due to groundwater flow", "correct": true, "feedback": "correct."}, {"answer": "Motion of particles due to spread of particles", "correct": false, "feedback": "Incorrect."}, {"answer": "Motion of particles due to chemical reaction ", "correct": false, "feedback": "Incorrect."}, {"answer": "Disruption of motion of particules", "correct": false, "feedback": "Incorrect"}]}, {"question": "Mechanical dispersion is  NOT  due to", "type": "many_choice", "answers": [{"answer": "different groundwater flow velocities across each individual pore", "correct": false, "feedback": "Incorrect."}, {"answer": "due to concentration of different compounds", "correct": true, "feedback": "Correct."}, {"answer": "different groundwater flow velocities in different pores", "correct": false, "feedback": "Incorrect."}, {"answer": "the movement of water around the solids along different flowpaths.", "correct": false, "feedback": "Incorrect."}]}, {"question": "dispersive mass flow due to mechanical dispersion  is NOT", "type": "multiple_choice", "answers": [{"answer": "proportional to the cross-sectional area", "correct": false, "feedback": "Incorrect."}, {"answer": "proportional to the linear velocity,", "correct": false, "feedback": "correct."}, {"answer": "inversely proportional to the transport distance.", "correct": false, "feedback": "Incorrect."}, {"answer": "inversely proportional to the difference in concentration,                                             ", "correct": true, "feedback": "Correct"}]}, {"question": "Dispersivity is ", "type": "multiple_choice", "answers": [{"answer": "product of velocity and dispersion coefficient", "correct": false, "feedback": "Incorrect."}, {"answer": "difference between velocity and dispersion coefficient", "correct": false, "feedback": "Incorrect."}, {"answer": " ratio of dispersion coefficient and velocity", "correct": true, "feedback": "Correct"}, {"answer": "product of velocity and concentration", "correct": false, "feedback": "Incorrect"}]}, {"question": "Hydrodynamic dispersion is", "type": "multiple_choice", "answers": [{"answer": "Sum of mechanical dispersion and pore diffusion", "correct": false, "feedback": "Incorrect."}, {"answer": "Sum of mechanical dispersion and advection", "correct": true, "feedback": "correct."}, {"answer": "Sum of pore diffusion and fluid diffusion", "correct": false, "feedback": "false."}, {"answer": "product  of mechanical dispersion and pore diffusion", "correct": false, "feedback": "Incorrect"}]}, {"question": "Breakthrough curve refers to ", "type": "multiple_choice", "answers": [{"answer": "Plot of concentration versus conductivity", "correct": false, "feedback": "Inorrect."}, {"answer": "Plot of concentration versus space", "correct": false, "feedback": "Incorrect."}, {"answer": "Plot of concentration versus time", "correct": true, "feedback": "correct."}, {"answer": "Plot of concentration versus groundwater velocity", "correct": false, "feedback": "Incorrect."}]}, {"question": "Concentration profile refers to", "type": "multiple_choice", "answers": [{"answer": "Plot of concentration versus conductivity", "correct": false, "feedback": "Incorrect"}, {"answer": "Plot of concentration versus time", "correct": false, "feedback": "Incorrect"}, {"answer": "Plot of concentration versus groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Plot of concentration versus space", "correct": true, "feedback": "correct."}]}, {"question": "Diffusion is ", "type": "multiple_choice", "answers": [{"answer": "Spread of chemical due to groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Spread of chemical due to dispersivity", "correct": false, "feedback": "Incorrect."}, {"answer": "Spread of chemical due to hydraulic gradient", "correct": false, "feedback": "Incorrect."}, {"answer": "Spread of chemical due to concentration gradient     ", "correct": true, "feedback": "Correct."}]}];
+}</style></div><script type="application/javascript">var questionsYErAkILBLzXK=[{"question": "In conservative transport:", "type": "multiple_choice", "answers": [{"answer": "Groundwater velocity is not important", "correct": false, "feedback": "Incorrect."}, {"answer": "Chemical reaction is not considered", "correct": true, "feedback": "Correct"}, {"answer": "Effective porosity is never a component", "correct": false, "feedback": "Incorrect."}, {"answer": "Is only concentration dependent ", "correct": false, "feedback": "Incorrect."}]}, {"question": "Advection refers to", "type": "multiple_choice", "answers": [{"answer": "Motion of particles due to groundwater flow", "correct": true, "feedback": "correct."}, {"answer": "Motion of particles due to spread of particles", "correct": false, "feedback": "Incorrect."}, {"answer": "Motion of particles due to chemical reaction ", "correct": false, "feedback": "Incorrect."}, {"answer": "Disruption of motion of particules", "correct": false, "feedback": "Incorrect"}]}, {"question": "Mechanical dispersion is  NOT  due to", "type": "many_choice", "answers": [{"answer": "Different groundwater flow velocities across each individual pore", "correct": false, "feedback": "Incorrect."}, {"answer": "Due to concentration of different compounds", "correct": true, "feedback": "Correct."}, {"answer": "Different groundwater flow velocities in different pores", "correct": false, "feedback": "Incorrect."}, {"answer": "The movement of water around the solids along different flowpaths.", "correct": false, "feedback": "Incorrect."}]}, {"question": "Dispersive mass flow due to mechanical dispersion  is NOT", "type": "multiple_choice", "answers": [{"answer": "Proportional to the cross-sectional area", "correct": false, "feedback": "Incorrect."}, {"answer": "Proportional to the linear velocity,", "correct": false, "feedback": "correct."}, {"answer": "Inversely proportional to the transport distance.", "correct": false, "feedback": "Incorrect."}, {"answer": "Inversely proportional to the difference in concentration,                                             ", "correct": true, "feedback": "Correct"}]}, {"question": "Dispersivity is ", "type": "multiple_choice", "answers": [{"answer": "Product of velocity and dispersion coefficient", "correct": false, "feedback": "Incorrect."}, {"answer": "Difference between velocity and dispersion coefficient", "correct": false, "feedback": "Incorrect."}, {"answer": " Ratio of dispersion coefficient and velocity", "correct": true, "feedback": "Correct"}, {"answer": "Product of velocity and concentration", "correct": false, "feedback": "Incorrect"}]}, {"question": "Hydrodynamic dispersion is", "type": "multiple_choice", "answers": [{"answer": "Sum of mechanical dispersion and pore diffusion", "correct": false, "feedback": "Incorrect."}, {"answer": "Sum of mechanical dispersion and advection", "correct": true, "feedback": "correct."}, {"answer": "Sum of pore diffusion and fluid diffusion", "correct": false, "feedback": "false."}, {"answer": "Product  of mechanical dispersion and pore diffusion", "correct": false, "feedback": "Incorrect"}]}, {"question": "Breakthrough curve refers to ", "type": "multiple_choice", "answers": [{"answer": "Plot of concentration versus conductivity", "correct": false, "feedback": "Inorrect."}, {"answer": "Plot of concentration versus space", "correct": false, "feedback": "Incorrect."}, {"answer": "Plot of concentration versus time", "correct": true, "feedback": "correct."}, {"answer": "Plot of concentration versus groundwater velocity", "correct": false, "feedback": "Incorrect."}]}, {"question": "Concentration profile refers to", "type": "multiple_choice", "answers": [{"answer": "Plot of concentration versus conductivity", "correct": false, "feedback": "Incorrect"}, {"answer": "Plot of concentration versus time", "correct": false, "feedback": "Incorrect"}, {"answer": "Plot of concentration versus groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Plot of concentration versus space", "correct": true, "feedback": "correct."}]}, {"question": "Diffusion is ", "type": "multiple_choice", "answers": [{"answer": "Spread of chemical due to groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Spread of chemical due to dispersivity", "correct": false, "feedback": "Incorrect."}, {"answer": "Spread of chemical due to hydraulic gradient", "correct": false, "feedback": "Incorrect."}, {"answer": "Spread of chemical due to concentration gradient     ", "correct": true, "feedback": "Correct."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2353,7 +2356,7 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionssFQbvxOisuPp,  sFQbvxOisuPp);
+        show_questions(questionsYErAkILBLzXK,  YErAkILBLzXK);
         }
         </script></div>
 </div>
@@ -2391,13 +2394,13 @@ if (typeof version == 'undefined') {
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">7. </span>Lecture 08 - Wells*</p>
+            <p class="prev-next-title"><span class="section-number">7. </span>Wells*</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../L10/22_reactive_transport.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Lecture 10:  Reactive Mass Transport</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Reactive Mass Transport</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

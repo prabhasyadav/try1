@@ -10,7 +10,7 @@ import panel as pn
 pn.extension("katex")
 
 
-# # Lecture 08 - Wells*
+# # Wells*
 # 
 # (_The contents are based on the class lecture materials of Prof. R. Liedl. Modifications mostly to fit this specific format were done by Prof. Liedl and Dr. P. K. Yadav._)
 # 
@@ -18,7 +18,7 @@ pn.extension("katex")
 # 
 # ## Motivation
 # 
-# In the last lecture ({doc}`/contents/flow/lecture_07/17_quantify_flow` we derived system equations for different groundwater flow problems. We realized of the difficulties associated with solving flow problems specially at higher dimensions (2D/3D). Numerical methods are mostly used for solving groundwater problems but direct (analytical) solutions are also possible for some problems. 
+# In the last lecture ({doc}`/content/flow/L7/17_quantify_flow` we derived system equations for different groundwater flow problems. We realized of the difficulties associated with solving flow problems specially at higher dimensions (2D/3D). Numerical methods are mostly used for solving groundwater problems but direct (analytical) solutions are also possible for some problems. 
 # 
 # **Wells** are the most common and also most extensively used method of utilizing (or affecting) groundwater. Thus, _wells_ represent a very common groundwater problem. We can now use our understanding of aquifer properties and groundwater system equations to analyze effect of _wells_ on the natural groundwater flow. We will however restrict our extent, in this lecture, to problems that can be directly solved. After learning numerical methods (in last part of this course), we will apply it to evaluate more complex groundwater problems also associated with wells.
 # 
@@ -28,7 +28,7 @@ pn.extension("katex")
 
 # ## Transmissivity ##
 # 
-# When discussing storage properties in {doc}`/contents/flow/lecture_03/13_gw_storage`, we saw that aquifers or single layers may frequently be treated as two-dimensional systems. This is justified because the lateral extension of aquifers is usually much larger than the vertical extension. Thus, vertical variations of storage properties can be replaced by some average value without adversely affecting the quantification of groundwater storage.
+# When discussing storage properties in {doc}`/content/flow/L3/13_gw_storage`, we saw that aquifers or single layers may frequently be treated as two-dimensional systems. This is justified because the lateral extension of aquifers is usually much larger than the vertical extension. Thus, vertical variations of storage properties can be replaced by some average value without adversely affecting the quantification of groundwater storage.
 # 
 # Similar things can be done with regard to conductivity properties and this brings us to the geohydraulic parameter of transmissivity ($T$,  L$^2$T$^{-1}$). The idea is to neglect vertical variations of hydraulic conductivity and to use vertically averaged values instead. This procedure does not eliminate horizontal variability, so transmissivity may still depend on horizontal coordinates  $(x, y)$.
 # 
@@ -78,8 +78,6 @@ pn.extension("katex")
 # In[2]:
 
 
-#print("\n\033[1m Provided are:\033[0m\n") # \033[1m \033[0m bold font, \n - new line
-
 K_a = 8.5e-05 # m/s, Hydraulic conductivity 
 Z_bot = 120 # m, aquifer bottom 
 Z_top = 150 # m, aquifer top
@@ -120,13 +118,7 @@ print("The required transmissivity is {0:1.2e}".format(T_a), "m\u00b2/s")
 # 
 # Wells are very extensively used around the globe. The contents below only highlights few of the use of wells.
 # 
-# ```{margin} 
-# ```{image} images/L08_f4.png
-# :width: 300px
-# :align: center
-# :name: Difference between international and German definition of groundwater.
-# ```
-# ```
+# 
 # 
 # > Water supply: e.g., for households, agriculture, industry
 # 
@@ -226,7 +218,7 @@ print("The required transmissivity is {0:1.2e}".format(T_a), "m\u00b2/s")
 # Cone of depression in a (a) confined Aquifer and (b) unconfined aquifer (right)
 # ```
 # 
-# ```{margin} Relevant quantities in the figure:
+#  Relevant quantities in the figure:
 # + pumping rate $Q$ [L$^3$T$^{-1}$]
 # % free space
 # + aquifer thickness $m$ [L]
@@ -242,7 +234,7 @@ print("The required transmissivity is {0:1.2e}".format(T_a), "m\u00b2/s")
 # + well radius $r_w$ (incl. gravel pack!)[L]
 # % free space
 # + drawdown $s = H - h$ [L]
-# ```
+# 
 # 
 # The Radius of influence ($R$) in the figure is the distance from the well at which the drawdown becomes negligible or unobservable. Thus $R$ delineates the influence of the well on the normal groundwater flow. 
 # 
@@ -318,13 +310,13 @@ pn.Row(video1, spacer, image)
 # Q_w =  - 2\cdot \pi \cdot r \cdot m \cdot K \cdot \frac{\textrm{d} h (r)}{\textrm{d} r} \tag{C5}
 # $$
 # 
-# ```{margin} 
-# ```{image} images/L08_f.png
-# :width: 600px
+# 
+# ```{image} images/L08_f8.png
+# :width: 300px
 # :align: center
 # :name: Difference between international and German definition of groundwater.
 # ```
-# ```
+# 
 # 
 # Eq (C5) is a first-order differential equation for hydraulic head $h(r)$. It can be solved by separation of variable. Doing that eq. (C5) becomes
 # $$
@@ -382,14 +374,6 @@ pn.Row(video1, spacer, image)
 # From the provided data, calculate the transmissivity of the aquifer.
 # ```
 
-# #### Solution ####
-# 
-# For confined aquifer $T = K\cdot m$, the Thiem equation can be modified as:
-# 
-# $$
-# Q = \frac{2\cdot\pi\cdot T \cdot (H-h)}{\ln (R/r_w)}
-# $$
-
 # In[4]:
 
 
@@ -400,10 +384,29 @@ r1 = 8 # m, distance from well to point 1
 h1 = 9 # m, head at well 1
 R2 = 22 # m, distance from well to point 2
 H2 = 10 # m, head at well 2
-
 print(" The given dscharge is: {}".format(Q), "m\u00b3/min \n")
 print(" The distance to Well 1 and well 2 are: {}m and {}m  \n".format(r1, R2))
 print(" The head at Well 1 and well 2 are: {}m and {}m".format(h1, H2))
+
+
+# #### Solution ####
+# 
+# For confined aquifer $T = K\cdot m$, the Thiem equation can be modified as:
+# 
+# $$
+# Q = \frac{2\cdot\pi\cdot T \cdot (H-h)}{\ln (R/r_w)}
+# $$
+
+# In[5]:
+
+
+Q = 9 # m^3/min, Given discharge
+r1 = 8 # m, distance from well to point 1
+h1 = 9 # m, head at well 1
+R2 = 22 # m, distance from well to point 2
+H2 = 10 # m, head at well 2
+
+
 
 #interim calculation 
 Q_min = Q * 1440 # m^3/d
@@ -424,13 +427,13 @@ print("The transmissivity in the aquifer is {0:0.2f} m\u00b2/d".format(T))
 # Q_w = A \cdot v_f = - A \cdot K \frac{\textrm{d}h}{\textrm{d}r}(r) \tag{U1}
 # $$
 # 
-# ```{margin} 
-# ```{image} images/L08_f.png
-# :width: 600px
+# 
+# ```{image} images/L08_f9.png
+# :width: 300px
 # :align: center
-# :name: Difference between international and German definition of groundwater.
+# :name: Unconified Aquifer
 # ```
-# ```
+# 
 # Also in this case, the cross section area $A$ also is dependent on $r$, i.e.,
 # 
 # $$
@@ -493,7 +496,7 @@ print("The transmissivity in the aquifer is {0:0.2f} m\u00b2/d".format(T))
 # From the provided data, calculate discharge of the aquifer.
 # ```
 
-# In[5]:
+# In[6]:
 
 
 print("\n\033[1m Provided are:\033[0m\n")
@@ -548,13 +551,13 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # 
 # Pumping tests are used to estimate aquifer properties such as hydraulic conductivity $(K)$, transmissivity $(T)$ or storativity $(S)$. Pumping results in an evolving cone of depression as was discussed earlier (see {numref}`cone-con-un`). The decrease in hydraulic head (or increase in drawdown) with time is recorded in one or more observation wells (and sometimes also in the pumping well itself).
 # 
-# ```{margin}
+# 
 # ```{image} images/L08_f13.png
 # :width:200px
 # :align: center
 # :name: Difference between international and German definition of groundwater.
 # ```
-# ```
+# 
 # 
 # A variety of different schemes exist to evaluate pumping test data. The appropriate method has to be selected according to the specific setting (confined or unconfined, layered system, horizontal or inclined aquifer bottom etc.). A well known approach to derive $T$ and $S$ from pumping test data was developed by Theis (1935)<sup>[^Theis]</sup>
 # 
@@ -633,13 +636,13 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # 
 # + The logarithm of the well function $(\log W(u))$ is plotted against $\log (1/u)$ in a type curve sheet. 
 # 
-# ```{sidebar} Type Curve and Data sheet
+# 
 # ```{image} images/L08_f11.png
 # :width: 600px
 # :align: center
 # :name: Difference between international and German definition of groundwater.
 # ```
-# ```
+# 
 # 
 # + Both sheets are put on top of each other such that the data coincide with some part of the type curve.
 # 
@@ -704,7 +707,7 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 
 # ### Computer-Based Comparison of Data and Type Curve ###
 # 
-# The data in the type-curve can now easily be fitted using computer simulations. The {numref}`Type-Cur-com` is from the {doc}`/contents/tutorials/tutorial_07/tutorial_07`. The simulation tool {doc}`/contents/tools/type_curve_fit` provided can be used to fit user data to the type curve. 
+# The data in the type-curve can now easily be fitted using computer simulations. The {numref}`Type-Cur-com` is from the {doc}`/content/tutorials/T7/tutorial_07`. The simulation tool {doc}`/content/tools/type_curve_fit` provided can be used to fit user data to the type curve. 
 # 
 # ```{figure} images/L08_f15.png
 # ---
@@ -715,9 +718,9 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # Computationally fitted data to the Type curve
 # ```
 
-# ### Chapter Quiz
+# ## Chapter Quiz
 
-# In[6]:
+# In[7]:
 
 
 from jupyterquiz import display_quiz

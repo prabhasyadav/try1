@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Lecture 1 - Course Introduction/Water Cycle ## 
+# ## Course Introduction & Water Cycle ## 
 # 
 # _(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents were developed by Prof. Rudolf Liedl)_
 

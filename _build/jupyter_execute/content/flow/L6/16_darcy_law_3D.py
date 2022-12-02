@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Lecture 6: Steady-State Groundwater flow in 3D
+# # Steady-State Groundwater flow in 3D
 # 
 # _(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 # 
@@ -876,7 +876,7 @@ interact(uniform_flow,
 # ```
 # 
 # The interactive simulation on effect of anisotropy on flux and gradient can be found in: 
-# {doc}`/contents/tools/aniso2D`
+# Tools Section as Simulating Anisotropy and Flow Direction 
 
 # In[4]:
 

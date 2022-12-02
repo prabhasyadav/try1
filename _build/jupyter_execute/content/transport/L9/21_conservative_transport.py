@@ -14,7 +14,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-# # Lecture 9-  Conservative Transport #
+# # Conservative Transport #
 # ---
 # 
 # ## Motivation ##
@@ -637,7 +637,9 @@ f1(X) # evaluate
 # - computation and graphical representation of a breakthrough curve
 # - comparison with measured data.
 # 
-## Quiz Questions
+
+# ## Chapter Quiz
+
 # In[12]:
 
 

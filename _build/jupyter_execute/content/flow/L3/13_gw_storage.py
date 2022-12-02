@@ -12,7 +12,7 @@ import panel as pn
 pn.extension("katex", "mathjax")
 
 
-# ## Lecture 3-  Groundwater as a reservoir ##
+# ## Groundwater as a reservoir ##
 # 
 # _(The contents presented in this section were re-developed principally by [Prof. Peter Dietrich](https://www.ufz.de/index.php?de=37303) and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 # 
@@ -221,8 +221,7 @@ pn.Column(p9, p10, p11, p12, p13, p14, p15, p16, p17)
 # p(z) = p_L + \rho \cdot g \cdot (L - z)
 # $$
 # 
-# ```{margin} An optional title
-# with, <br>
+# ```{margin} Where, <br>
 # $\rho$ [M/L$^2$] as the fluid density, <br> 
 # $g$ the acceleration of gravity [L/T$^2$], and  <br> 
 # L [L] the length of the water column

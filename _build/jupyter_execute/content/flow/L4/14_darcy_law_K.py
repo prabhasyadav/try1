@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-# # Lecture 4 - Darcy's Law and Conductivity #
+# # Darcy's Law and Conductivity #
 # 
 # _(The contents presented in this section were re-developed principally by [Prof. B. R. Chahar](http://web.iitd.ac.in/~chahar/) and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 
@@ -59,7 +59,7 @@ import pandas as pd
 # Consider the figure below:
 # 
 # ```{image} images/L4_f1.png
-# :height: 600px
+# :height: 400px
 # :align: center
 # :name: Hydraulic Head
 # ```
@@ -74,7 +74,7 @@ import pandas as pd
 # Now consider the figure below
 # 
 # ```{image} images/L4_f2.png
-# :height: 600px
+# :height: 400px
 # :align: center
 # :name: Hydraulic Head II
 # ```
@@ -192,6 +192,17 @@ A = 10 # m², surface
 h_in = 10 # m, hydraulic head at the inlet
 h_out = 2 # m, hydraulic head at the outlet
 L = 5 #m, lenght of the column
+print("Conductivity = {} m/s\nSurface = {} m²\nHydraulic head at the inlet = {} m\nHydraulic head at the outlet = {} m\nLenght of the column = {} m".format(K, A, h_in, h_out, L), "\n")
+
+
+# In[4]:
+
+
+K = 5e-4 # m/s, conductivity
+A = 10 # m², surface
+h_in = 10 # m, hydraulic head at the inlet
+h_out = 2 # m, hydraulic head at the outlet
+L = 5 #m, lenght of the column
 
 #intermediate calculation
 I = (h_in-h_out)/L
@@ -286,7 +297,7 @@ print("Solution:\nThe resulting specific discharge is {0:0.0e} m/s".format(q), "
 # ```
 # 
 
-# In[4]:
+# In[5]:
 
 
 print("Let us find the hydraulic conductivities.\n\nProvided are:")
@@ -314,7 +325,7 @@ print("The resulting hydraulic Conductivity at 20°C is {0:0.2e} m/s".format(K1)
 # experiment. 
 # 
 # 
-# ```{image} images/images/L4_f4.png
+# ```{image} images/L4_f4.png
 # :width: 200px
 # :align: center
 # :name: Permeameter
@@ -357,7 +368,7 @@ print("The resulting hydraulic Conductivity at 20°C is {0:0.2e} m/s".format(K1)
 # A constant-head permeameter has a length of 15 cm and a cross-sectional area of $25$ cm$^2$. With a head of 5 cm, a total Volume of 100 mL of water is collected in 12 min. Determine the hydraulic conductivity.
 # ```
 
-# In[5]:
+# In[6]:
 
 
 print("Let us find the hydraulic conductivity with a constant-head permeameter.\n\nProvided are:")
@@ -463,7 +474,7 @@ print("The resulting hydraulic Conductivity is {0:2.0e} cm/min".format(K1),
 # The intrinsic permeability of a consolidated rock is $2,7 \cdot 10^{-11} cm^2$. What is the hydraulic conductivity for water at 20°C
 # ```
 
-# In[6]:
+# In[7]:
 
 
 print("Let us find the hydraulic conductivity.")
@@ -560,10 +571,19 @@ print("The resulting hydraulic conductivity at 20°C is {0:0.1e} m/s".format(K))
 # From the data below obtain the average interstitial velocity in the Darcy's column. 
 # ```
 
-# In[7]:
+# In[8]:
 
 
 print("Provided data are:\n")
+
+Q = 0.005 # Flow rate [m^3/s]
+A = 1000 # total area of soil specimen [m^2]
+ne = 0.4 # effective porosity [-] = 
+print("Flow rate = {} m\u00b3/s\ntotal area = {} m\u00b2\neffective porosity = {} ".format(Q, A, ne),"\n")
+
+
+# In[9]:
+
 
 Q = 0.005 # Flow rate [m^3/s]
 A = 1000 # total area of soil specimen [m^2]
@@ -572,8 +592,6 @@ ne = 0.4 # effective porosity [-] =
 
 #solution
 vs = Q / (ne * A)*3600*24 
-
-print("Flow rate = {} m\u00b3/s\ntotal area = {} m\u00b2\neffective porosity = {} ".format(Q, A, ne),"\n")
 print("The resulting average interstitial velocity is {} m/d".format(vs))
 
 
@@ -613,7 +631,7 @@ print("The resulting average interstitial velocity is {} m/d".format(vs))
 # In a tracer test, the breaktrought was measured after 100 h at a distance of 200 m. Determine the linear velocity and the pore volume. what is the darcy velocity, if there is an effective porosity of 0.25.
 # ```
 
-# In[8]:
+# In[10]:
 
 
 print("Provided are:\n")
@@ -634,7 +652,7 @@ print("The linear velocity is {} m/h \nthe pore volume is {} s, and \nthe darcy 
 
 # ## Chapter Quiz
 
-# In[9]:
+# In[11]:
 
 
 from jupyterquiz import display_quiz

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>4. Lecture 5. Aquifer Heterogeneity and Anisotropy &#8212; Groundwater I</title>
+    <title>4. Aquifer Heterogeneity and Anisotropy &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../../_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -57,8 +59,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="5. Lecture 6: Steady-State Groundwater flow in 3D" href="../L6/16_darcy_law_3D.html" />
-    <link rel="prev" title="3. Lecture 4 - Darcy’s Law and Conductivity" href="../L4/14_darcy_law_K.html" />
+    <link rel="next" title="5. Steady-State Groundwater flow in 3D" href="../L6/16_darcy_law_3D.html" />
+    <link rel="prev" title="3. Darcy’s Law and Conductivity" href="../L4/14_darcy_law_K.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../background/03_basic_hydrogeology.html">
-   2. Lecture 1 - Course Introduction/Water Cycle
+   2. Course Introduction &amp; Water Cycle
   </a>
  </li>
 </ul>
@@ -143,37 +145,37 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../12_subsurface_structure.html">
-   1. Lecture 2 - Subsurface Structure
+   1. Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L3/13_gw_storage.html">
-   2. Lecture 3-  Groundwater as a reservoir
+   2. Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L4/14_darcy_law_K.html">
-   3. Lecture 4 - Darcy’s Law and Conductivity
+   3. Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L6/16_darcy_law_3D.html">
-   5. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L7/17_quantify_flow.html">
-   6. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L8/18_wells.html">
-   7. Lecture 08 - Wells*
+   7. Wells*
   </a>
  </li>
 </ul>
@@ -185,12 +187,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L9/21_conservative_transport.html">
-   1. Lecture 9-  Conservative Transport
+   1. Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L10/22_reactive_transport.html">
-   2. Lecture 10:  Reactive Mass Transport
+   2. Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -680,7 +682,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lecture 5. Aquifer Heterogeneity and Anisotropy</h1>
+                <h1>Aquifer Heterogeneity and Anisotropy</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -798,8 +800,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="lecture-5-aquifer-heterogeneity-and-anisotropy">
-<h1><span class="section-number">4. </span>Lecture 5. Aquifer Heterogeneity and Anisotropy<a class="headerlink" href="#lecture-5-aquifer-heterogeneity-and-anisotropy" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="aquifer-heterogeneity-and-anisotropy">
+<h1><span class="section-number">4. </span>Aquifer Heterogeneity and Anisotropy<a class="headerlink" href="#aquifer-heterogeneity-and-anisotropy" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by <a class="reference external" href="http://web.iitd.ac.in/~chahar/">Prof. B. R. Chahar</a> and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="motivation">
@@ -911,11 +913,24 @@ K \approx \frac{\max (m_i\cdot K_i)}{m}
 <p class="admonition-title">Flow parallel to layering</p>
 <p>Calculate the effective hydraulic conductivity of the layer system consisting of 3 layers if the flow is parallel to the stratification.</p>
 </div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold"> Provided are: </span> 
+
+thickness of layer 1 = 3 m
+thickness of layer 2 = 2.5 m
+thickness of layer 3 = 1.75 m
+
+conductivity of layer 1 = 3.5e-03 m/s
+conductivity of layer 2 = 2.0e-02 m/s
+conductivity of layer 3 5.0e-04 m/s
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m Provided are: </span><span class="se">\033</span><span class="s2">[0m </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="c1">#Thickness of i-th layer [m]</span>
 <span class="n">m1</span> <span class="o">=</span> <span class="mi">3</span> 
@@ -927,30 +942,18 @@ K \approx \frac{\max (m_i\cdot K_i)}{m}
 <span class="n">K2</span> <span class="o">=</span> <span class="mf">2e-2</span>
 <span class="n">K3</span> <span class="o">=</span> <span class="mf">5e-4</span>
 
-
 <span class="c1">#intermediate calculation</span>
 <span class="n">m</span> <span class="o">=</span> <span class="n">m1</span><span class="o">+</span><span class="n">m2</span><span class="o">+</span><span class="n">m3</span>
 
 <span class="c1">#solution</span>
 <span class="n">K</span> <span class="o">=</span> <span class="p">(</span><span class="n">m1</span><span class="o">*</span><span class="n">K1</span><span class="o">+</span><span class="n">m2</span><span class="o">*</span><span class="n">K2</span><span class="o">+</span><span class="n">m3</span><span class="o">*</span><span class="n">K3</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;thickness of layer 1 = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m1</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\n</span><span class="s2">thickness of layer 2 = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m2</span><span class="p">),</span><span class="s2">&quot;m</span><span class="se">\n</span><span class="s2">thickness of layer 3 = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m3</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\n\n</span><span class="s2">conductivity of layer 1 = </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K1</span><span class="p">),</span>
-      <span class="s2">&quot;m/s</span><span class="se">\n</span><span class="s2">conductivity of layer 2 = </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K2</span><span class="p">),</span> <span class="s2">&quot;m/s</span><span class="se">\n</span><span class="s2">conductivity of layer 3 </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K3</span><span class="p">),</span> <span class="s2">&quot;m/s&quot;</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">The resulting hydraulic conductivity of the layer system is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.1e}</span><span class="s2"> m/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold"> Provided are: </span> 
-
-thickness of layer 1 = 3 m
-thickness of layer 2 = 2.5 m
-thickness of layer 3 = 1.75 m
-
-conductivity of layer 1 = 3.5e-03 m/s
-conductivity of layer 2 = 2.0e-02 m/s
-conductivity of layer 3 5.0e-04 m/s
-
-<span class=" -Color -Color-Bold">Solution:</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Solution:</span>
 The resulting hydraulic conductivity of the layer system is <span class=" -Color -Color-Bold">8.5e-03 m/s</span>.
 </pre></div>
 </div>
@@ -1012,11 +1015,23 @@ K \approx \frac{m}{{\max\big(\frac{m_i}{K_i}}\big)}
 <p class="admonition-title">Flow perpendicular to layering</p>
 <p>Calculate the effective hydraulic conductivity of the layer system consisting of 3 layers if the flow is perpendicular to the layering.</p>
 </div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold"> Provided are:</span>
+thickness of layer 1 = 3 m
+thickness of layer 2 = 2.5 m
+thickness of layer 3 = 1.75 m
+
+conductivity of layer 1 = 3.5e-03 m/s
+conductivity of layer 2 = 2.0e-02 m/s
+conductivity of layer 3 5.0e-04 m/s
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m Provided are:</span><span class="se">\033</span><span class="s2">[0m&quot;</span><span class="p">)</span>
-
-<span class="c1">#Thickness of i-th layer [m]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Thickness of i-th layer [m]</span>
 <span class="n">m1</span> <span class="o">=</span> <span class="mi">3</span> 
 <span class="n">m2</span> <span class="o">=</span> <span class="mf">2.5</span>
 <span class="n">m3</span> <span class="o">=</span> <span class="mf">1.75</span>
@@ -1032,23 +1047,13 @@ K \approx \frac{m}{{\max\big(\frac{m_i}{K_i}}\big)}
 <span class="c1">#solution</span>
 <span class="n">K</span> <span class="o">=</span> <span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">m1</span><span class="o">/</span><span class="n">K1</span><span class="o">+</span><span class="n">m2</span><span class="o">/</span><span class="n">K2</span><span class="o">+</span><span class="n">m3</span><span class="o">/</span><span class="n">K3</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;thickness of layer 1 = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m1</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\n</span><span class="s2">thickness of layer 2 = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m2</span><span class="p">),</span><span class="s2">&quot;m</span><span class="se">\n</span><span class="s2">thickness of layer 3 = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m3</span><span class="p">),</span> <span class="s2">&quot;m</span><span class="se">\n\n</span><span class="s2">conductivity of layer 1 = </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K1</span><span class="p">),</span>
-      <span class="s2">&quot;m/s</span><span class="se">\n</span><span class="s2">conductivity of layer 2 = </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K2</span><span class="p">),</span> <span class="s2">&quot;m/s</span><span class="se">\n</span><span class="s2">conductivity of layer 3 </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K3</span><span class="p">),</span> <span class="s2">&quot;m/s&quot;</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">The resulting hydraulic conductivity of the layer system is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.1e}</span><span class="s2"> m/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold"> Provided are:</span>
-thickness of layer 1 = 3 m
-thickness of layer 2 = 2.5 m
-thickness of layer 3 = 1.75 m
-
-conductivity of layer 1 = 3.5e-03 m/s
-conductivity of layer 2 = 2.0e-02 m/s
-conductivity of layer 3 5.0e-04 m/s
-
-<span class=" -Color -Color-Bold">Solution:</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Solution:</span>
 The resulting hydraulic conductivity of the layer system is <span class=" -Color -Color-Bold">1.6e-03 m/s</span>.
 </pre></div>
 </div>
@@ -1105,26 +1110,26 @@ mean of layer conductivities. This leads to Effective hydraulic resistance equal
 <p class="admonition-title">Hydraulic Resistance</p>
 <p>Find the hydraulic resistance with the given hydraulic counductivity</p>
 </div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold"> Provided are:</span> 
+
+Hydraulic conductivity = 5.0e-04 m/s
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m Provided are:</span><span class="se">\033</span><span class="s2">[0m </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, hydraulic conductivity</span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, hydraulic conductivity</span>
 <span class="c1">#solution</span>
 <span class="n">R</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">K</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hydraulic conductivity = </span><span class="si">{:02.1e}</span><span class="s2"> m/s&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n\n</span><span class="s2">The resulting hydraulic resistance is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.1e}</span><span class="s2"> s/m</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">R</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold"> Provided are:</span> 
-
-Hydraulic conductivity = 5.0e-04 m/s
-
-<span class=" -Color -Color-Bold">Solution:</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Solution:</span>
 
 The resulting hydraulic resistance is <span class=" -Color -Color-Bold">2.0e+03 s/m</span>.
 </pre></div>
@@ -1174,31 +1179,29 @@ K = \frac{1}{\frac{\cos^2\theta}{K_h}+\frac{\sin^2\theta}{K_v}}
 <p class="admonition-title">Hydraulic Resistance</p>
 <p>Find resulting hydraulic conductivity from provided horizontal and vertical conductivities.</p>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\033</span><span class="s2">[1mProvided are:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="n">Kh</span> <span class="o">=</span>  <span class="mf">1e-3</span> <span class="c1">#horizontal hydraulic conductivity [m/s]</span>
-<span class="n">Kv</span> <span class="o">=</span>  <span class="mf">1e-4</span> <span class="c1">#vertical hydraulic conductivity [m/s]</span>
-<span class="n">theta</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1">#angle between flow direction ans horizontal plane [°]</span>
-
-<span class="c1">#solution</span>
-<span class="n">K</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">Kh</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">Kv</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;horizontal hydraulic conductivity = </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Kh</span><span class="p">),</span> <span class="s2">&quot;m/s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="s2">&quot;vertical hydraulic conductivity = </span><span class="si">{:02.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Kv</span><span class="p">),</span> <span class="s2">&quot;m/s</span><span class="se">\n</span><span class="s2">&quot;</span>
-      <span class="s2">&quot;angle = </span><span class="si">{}</span><span class="s2">°</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n\n</span><span class="s2">The resulting hydraulic conductivity is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.1e}</span><span class="s2"> m/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Provided are:</span>
 
 horizontal hydraulic conductivity = 1.0e-03 m/s
 vertical hydraulic conductivity = 1.0e-04 m/s
 angle = 50°
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#solution</span>
+<span class="n">K</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">Kh</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">Kv</span><span class="p">))</span>
 
-<span class=" -Color -Color-Bold">Solution:</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n\n</span><span class="s2">The resulting hydraulic conductivity is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.1e}</span><span class="s2"> m/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Solution:</span>
 
 The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-04 m/s</span>.
 </pre></div>
@@ -1221,7 +1224,7 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
 <h2><span class="section-number">4.7. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="FBAUtrvbaAPS" data-shufflequestions="False"
+<div class="output text_html"><div id="hdOPxMpVHkgZ" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -1383,7 +1386,7 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsFBAUtrvbaAPS=[{"question": "Which aquifer property is NOT direction dependent?", "type": "multiple_choice", "answers": [{"answer": "Porosity", "correct": false, "feedback": "Incorrect."}, {"answer": "Storage Coefficient", "correct": false, "feedback": "Incorrect"}, {"answer": "Hydraulic head", "correct": true, "feedback": "Correct."}, {"answer": "Conductivity", "correct": false, "feedback": "Incorrect."}]}, {"question": "In equation $K = K(x,y,z)$ if $K_x = K_y = K_z$, then the aquifer is ", "type": "multiple_choice", "answers": [{"answer": "Homogeneous", "correct": true, "feedback": "correct."}, {"answer": "Heterogeneous", "correct": false, "feedback": "Incorrect"}, {"answer": "Can be both Homogeneous and Heterogeneous", "correct": false, "feedback": "Incorrect."}, {"answer": "Neither Homogeneous not Heterogeneous", "correct": false, "feedback": "Incorrect"}]}, {"question": "Effective Hydraulic Conductivity represents", "type": "many_choice", "answers": [{"answer": "The maximum conductivity along horizontal flow direction", "correct": false, "feedback": "Correct."}, {"answer": "The maximum conductivity along vertical flow direction", "correct": false, "feedback": "Incorrect."}, {"answer": "the average K value in the layered aquifer", "correct": true, "feedback": "correct."}, {"answer": "Is equivalent to hydraulic resistance", "correct": false, "feedback": "Incorrect."}]}, {"question": "In flow parallel to layering, the effective $K$", "type": "multiple_choice", "answers": [{"answer": "equals the weighted harmonic mean of layer conductivities.", "correct": false, "feedback": "Incorrect."}, {"answer": "equals the weighted arithmetic mean of layer conductivities.", "correct": true, "feedback": "correct."}, {"answer": "is not dependent on the direction of flow", "correct": false, "feedback": "Incorrect."}, {"answer": "depends on arithmetic and harmonic mean", "correct": false, "feedback": "correct."}]}, {"question": "Hydraulic resistance ($R$) and effective conductivity $K_{eff}$ are ", "type": "multiple_choice", "answers": [{"answer": "independent to each other", "correct": false, "feedback": "Incorrect."}, {"answer": "related with other through the Darcy velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "are related to storage coefficient. ", "correct": false, "feedback": "false."}, {"answer": "are reciprocal to each other", "correct": true, "feedback": "correct"}]}, {"question": "Effective Hydraulic Conductivty in flow parallel to layers can be estimated from the relation: $K$ = $\\frac{\\sum_{i=1}^n m_iK_i}{m}$", "type": "multiple_choice", "answers": [{"answer": "as the largest K value among the layer", "correct": true, "feedback": "correct."}, {"answer": "as the lowest K value among the layer", "correct": false, "feedback": "Incorrect."}, {"answer": "as the reciprocal of the largest K value among the layer", "correct": false, "feedback": "false."}, {"answer": "as a ratio of largest and lowest K value among the layer", "correct": false, "feedback": "Incorrect"}]}, {"question": "Anisotropy relates the aquifer properties with", "type": "multiple_choice", "answers": [{"answer": "the spatial dimension of the aquifer", "correct": false, "feedback": "Inorrect."}, {"answer": "their dependence on direction", "correct": false, "feedback": "Incorrect."}, {"answer": "their independence to spatial and direction ", "correct": true, "feedback": "correct."}, {"answer": "None of the above", "correct": false, "feedback": "Incorrect."}]}, {"question": "The relation $K = \\frac{1}{\\frac{\\cos^2\\theta}{K_h}+\\frac{\\sin^2\\theta}{K_v}}$ represents ", "type": "multiple_choice", "answers": [{"answer": "Effective hydraulic conductivity when flow is vertical to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is horizontal to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is tangential to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is in arbitrary direction to aquifer layers", "correct": true, "feedback": "Good"}]}];
+}</style></div><script type="application/javascript">var questionshdOPxMpVHkgZ=[{"question": "Which aquifer property is NOT direction dependent?", "type": "multiple_choice", "answers": [{"answer": "Porosity", "correct": false, "feedback": "Incorrect."}, {"answer": "Storage Coefficient", "correct": false, "feedback": "Incorrect"}, {"answer": "Hydraulic head", "correct": true, "feedback": "Correct."}, {"answer": "Conductivity", "correct": false, "feedback": "Incorrect."}]}, {"question": "In equation $K = K(x,y,z)$ if $K_x = K_y = K_z$, then the aquifer is ", "type": "multiple_choice", "answers": [{"answer": "Homogeneous", "correct": true, "feedback": "Correct."}, {"answer": "Heterogeneous", "correct": false, "feedback": "Incorrect"}, {"answer": "Can be both Homogeneous and Heterogeneous", "correct": false, "feedback": "Incorrect."}, {"answer": "Neither Homogeneous not Heterogeneous", "correct": false, "feedback": "Incorrect"}]}, {"question": "Effective Hydraulic Conductivity represents", "type": "many_choice", "answers": [{"answer": "The maximum conductivity along horizontal flow direction", "correct": false, "feedback": "Incorrect."}, {"answer": "The maximum conductivity along vertical flow direction", "correct": false, "feedback": "Incorrect."}, {"answer": "The average K value in the layered aquifer", "correct": true, "feedback": "Correct."}, {"answer": "Is equivalent to hydraulic resistance", "correct": false, "feedback": "Incorrect."}]}, {"question": "In flow parallel to layering, the effective $K$", "type": "multiple_choice", "answers": [{"answer": "Equals the weighted harmonic mean of layer conductivities.", "correct": false, "feedback": "Incorrect."}, {"answer": "Equals the weighted arithmetic mean of layer conductivities.", "correct": true, "feedback": "correct."}, {"answer": "Is not dependent on the direction of flow", "correct": false, "feedback": "Incorrect."}, {"answer": "Depends on arithmetic and harmonic mean", "correct": false, "feedback": "Incorrect."}]}, {"question": "Hydraulic resistance ($R$) and effective conductivity $K_{eff}$ are ", "type": "multiple_choice", "answers": [{"answer": "Independent to each other", "correct": false, "feedback": "Incorrect."}, {"answer": "Related with other through the Darcy velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Are related to storage coefficient. ", "correct": false, "feedback": "Incorrect."}, {"answer": "Are reciprocal to each other", "correct": true, "feedback": "Correct"}]}, {"question": "Effective Hydraulic Conductivty in flow parallel to layers can be estimated from the relation: $K$ = $\\frac{\\sum_{i=1}^n m_iK_i}{m}$", "type": "multiple_choice", "answers": [{"answer": "As the largest K value among the layer", "correct": true, "feedback": "Correct."}, {"answer": "As the lowest K value among the layer", "correct": false, "feedback": "Incorrect."}, {"answer": "As the reciprocal of the largest K value among the layer", "correct": false, "feedback": "Incorrect."}, {"answer": "As a ratio of largest and lowest K value among the layer", "correct": false, "feedback": "Incorrect"}]}, {"question": "Anisotropy relates the aquifer properties with", "type": "multiple_choice", "answers": [{"answer": "the spatial dimension of the aquifer", "correct": false, "feedback": "Inorrect."}, {"answer": "their dependence on direction", "correct": false, "feedback": "Incorrect."}, {"answer": "their independence to spatial and direction ", "correct": true, "feedback": "Correct."}, {"answer": "None of the above", "correct": false, "feedback": "Incorrect."}]}, {"question": "The relation $K = \\frac{1}{\\frac{\\cos^2\\theta}{K_h}+\\frac{\\sin^2\\theta}{K_v}}$ represents ", "type": "multiple_choice", "answers": [{"answer": "Effective hydraulic conductivity when flow is vertical to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is horizontal to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is tangential to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is in arbitrary direction to aquifer layers", "correct": true, "feedback": "Correct"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2117,7 +2120,7 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsFBAUtrvbaAPS,  FBAUtrvbaAPS);
+        show_questions(questionshdOPxMpVHkgZ,  hdOPxMpVHkgZ);
         }
         </script></div>
 </div>
@@ -2155,13 +2158,13 @@ if (typeof version == 'undefined') {
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">3. </span>Lecture 4 - Darcy’s Law and Conductivity</p>
+            <p class="prev-next-title"><span class="section-number">3. </span>Darcy’s Law and Conductivity</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../L6/16_darcy_law_3D.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Lecture 6: Steady-State Groundwater flow in 3D</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Steady-State Groundwater flow in 3D</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

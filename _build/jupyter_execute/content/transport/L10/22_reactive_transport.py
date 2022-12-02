@@ -12,7 +12,7 @@ import pandas as pd
 from IPython.display import Latex
 
 
-# ## Lecture 10:  Reactive Mass Transport
+# ## Reactive Mass Transport
 # 
 # _(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 # 

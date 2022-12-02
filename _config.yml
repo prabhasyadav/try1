@@ -60,7 +60,10 @@ html:
 # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     hypothesis              : true  # at the end make this true
-
+    
+ ## announcement: "Please Carry Your Laptop for Lecture on 13/12/2022"
+#html_static_path = ["_static"]
+#html_css_files = ["custom.css"] 
 
 #######################################################################################
 # Launch button settings
@@ -80,6 +83,11 @@ codemirror_theme                 : "abcdef"  # Theme for codemirror cells, for o
 
 
 #######################################################################################
+#sphinx:
+ #   config:
+  #      html_theme: pyramid
+
+
 
 ###Comments 
 

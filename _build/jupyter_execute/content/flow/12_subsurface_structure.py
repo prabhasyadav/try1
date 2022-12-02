@@ -10,7 +10,7 @@ get_ipython().run_line_magic('matplotlib', 'widget')
 import warnings; warnings.simplefilter('ignore')
 
 
-# ## Lecture 2 - Subsurface Structure ##
+# ## Subsurface Structure ##
 # 
 # _(The contents presented in this section were re-developed principally by M.Sc. Hanieh Mehrdad and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 # 
@@ -28,7 +28,7 @@ import warnings; warnings.simplefilter('ignore')
 # :name: Porus Media
 # ```
 # 
-# 1. **unconsolidated porous medium (Sediments)**: it is non-cemented porous media and the grains can be taken away. The formation of such porous media is due to deposition of solid material mostly by water.
+# 1. **Unconsolidated porous medium (Sediments)**: it is non-cemented porous media and the grains can be taken away. The formation of such porous media is due to deposition of solid material mostly by water.
 # 
 # 
 # 
@@ -173,9 +173,15 @@ print(" Total porosity is: {0:0.2f}%".format(n) )
 # 
 # As can be observed that there exist several standards. These are often based on local requirements e.g., based on countries. In Germany the DIN standards are used. 
 # 
-# :::{admonition,dropdown,tip} Click for the abbreviation
-# _USDA: United States Department of Agriculture_, _ISSS: International Soil Science Society (ISSS)_, _MIT: Massachusetts Institute of Technology_, _ASTM: American Society for Testing and Materials_, _AASHTO: American Association of State Highway and Transportation Officials_, _FAA: Federal Aviation Administration_  
-# :::
+# ```{admonition} Click for the abbreviation
+# :class: tip, dropdown
+# _USDA: United States Department of Agriculture_,
+# _ISSS: International Soil Science Society (ISSS)_, 
+# _MIT: Massachusetts Institute of Technology_, 
+# _ASTM: American Society for Testing and Materials_,
+# _AASHTO: American Association of State Highway and Transportation Officials_, 
+# _FAA: Federal Aviation Administration_
+# ```
 
 # ### Sieve analysis: ###
 # The results from a sample consist of different grain size fractions should be transferred on granulometric curve. This curve provides cumulative information; vertical axis shows the mass fraction, and horizontal axis shows the grain diameter. For example, if 1mm grain diameter has 80% of cumulative mass fraction it means that 80% of this sample contains 1mm grain diameter or less than 1 mm (see the picture below).

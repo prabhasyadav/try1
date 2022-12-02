@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Lecture 2 - Subsurface Structure &#8212; Groundwater I</title>
+    <title>1. Subsurface Structure &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -57,8 +59,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Lecture 3- Groundwater as a reservoir" href="L3/13_gw_storage.html" />
-    <link rel="prev" title="2. Lecture 1 - Course Introduction/Water Cycle" href="../background/03_basic_hydrogeology.html" />
+    <link rel="next" title="2. Groundwater as a reservoir" href="L3/13_gw_storage.html" />
+    <link rel="prev" title="2. Course Introduction &amp; Water Cycle" href="../background/03_basic_hydrogeology.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../background/03_basic_hydrogeology.html">
-   2. Lecture 1 - Course Introduction/Water Cycle
+   2. Course Introduction &amp; Water Cycle
   </a>
  </li>
 </ul>
@@ -143,37 +145,37 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   1. Lecture 2 - Subsurface Structure
+   1. Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="L3/13_gw_storage.html">
-   2. Lecture 3-  Groundwater as a reservoir
+   2. Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="L4/14_darcy_law_K.html">
-   3. Lecture 4 - Darcy’s Law and Conductivity
+   3. Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="L5/15_het_iso.html">
-   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="L6/16_darcy_law_3D.html">
-   5. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="L7/17_quantify_flow.html">
-   6. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="L8/18_wells.html">
-   7. Lecture 08 - Wells*
+   7. Wells*
   </a>
  </li>
 </ul>
@@ -185,12 +187,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../transport/L9/21_conservative_transport.html">
-   1. Lecture 9-  Conservative Transport
+   1. Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../transport/L10/22_reactive_transport.html">
-   2. Lecture 10:  Reactive Mass Transport
+   2. Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -688,7 +690,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lecture 2 - Subsurface Structure</h1>
+                <h1>Subsurface Structure</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -816,8 +818,8 @@ title="Print to PDF"
                 
   <div class="cell tag_hide-input tag_remove-input docutils container">
 </div>
-<section id="lecture-2-subsurface-structure">
-<h1><span class="section-number">1. </span>Lecture 2 - Subsurface Structure<a class="headerlink" href="#lecture-2-subsurface-structure" title="Permalink to this headline">#</a></h1>
+<section id="subsurface-structure">
+<h1><span class="section-number">1. </span>Subsurface Structure<a class="headerlink" href="#subsurface-structure" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by M.Sc. Hanieh Mehrdad and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="porous-media">
@@ -829,7 +831,7 @@ Generally voids and their properties are important to determine water storage (h
 <h2><span class="section-number">1.2. </span>Types of porous media in the subsurface<a class="headerlink" href="#types-of-porous-media-in-the-subsurface" title="Permalink to this headline">#</a></h2>
 <a class="reference internal image-reference" href="../../_images/L02_fig1.png" id="porus-media"><img alt="../../_images/L02_fig1.png" class="align-center" id="porus-media" src="../../_images/L02_fig1.png" style="height: 200px;" /></a>
 <ol class="simple">
-<li><p><strong>unconsolidated porous medium (Sediments)</strong>: it is non-cemented porous media and the grains can be taken away. The formation of such porous media is due to deposition of solid material mostly by water.</p></li>
+<li><p><strong>Unconsolidated porous medium (Sediments)</strong>: it is non-cemented porous media and the grains can be taken away. The formation of such porous media is due to deposition of solid material mostly by water.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../../_images/L02_fig3.png" id="unconsolidated-porous-medium"><img alt="../../_images/L02_fig3.png" class="align-center" id="unconsolidated-porous-medium" src="../../_images/L02_fig3.png" style="width: 500px;" /></a>
 <ol class="simple">
@@ -912,9 +914,15 @@ There are five major grain size classes (observed by increasing diameter): clay,
 <p>The diagrams below include a couple of classification schemes to define ranges of grain diameter for clay, silt, sand, and gravel:</p>
 <a class="reference internal image-reference" href="../../_images/L02_fig7.png" id="grain-size-distribution"><img alt="../../_images/L02_fig7.png" class="align-center" id="grain-size-distribution" src="../../_images/L02_fig7.png" style="width: 600px;" /></a>
 <p>As can be observed that there exist several standards. These are often based on local requirements e.g., based on countries. In Germany the DIN standards are used.</p>
-<p>:::{admonition,dropdown,tip} Click for the abbreviation
-<em>USDA: United States Department of Agriculture</em>, <em>ISSS: International Soil Science Society (ISSS)</em>, <em>MIT: Massachusetts Institute of Technology</em>, <em>ASTM: American Society for Testing and Materials</em>, <em>AASHTO: American Association of State Highway and Transportation Officials</em>, <em>FAA: Federal Aviation Administration</em><br />
-:::</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Click for the abbreviation</p>
+<p><em>USDA: United States Department of Agriculture</em>,
+<em>ISSS: International Soil Science Society (ISSS)</em>,
+<em>MIT: Massachusetts Institute of Technology</em>,
+<em>ASTM: American Society for Testing and Materials</em>,
+<em>AASHTO: American Association of State Highway and Transportation Officials</em>,
+<em>FAA: Federal Aviation Administration</em></p>
+</div>
 </section>
 <section id="sieve-analysis">
 <h2><span class="section-number">1.9. </span>Sieve analysis:<a class="headerlink" href="#sieve-analysis" title="Permalink to this headline">#</a></h2>
@@ -1993,13 +2001,13 @@ if (typeof version == 'undefined') {
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span>Lecture 1 - Course Introduction/Water Cycle</p>
+            <p class="prev-next-title"><span class="section-number">2. </span>Course Introduction &amp; Water Cycle</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="L3/13_gw_storage.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Lecture 3-  Groundwater as a reservoir</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Groundwater as a reservoir</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

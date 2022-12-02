@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Lecture 07 - Quantifying 3D Groundwater Flow 
+# # Quantifying 3D Groundwater Flow 
 # 
 # 
 # _(The contents are based on the class lecture materials of Prof. R. Lied. Modifications mostly to fit this specific were done by Dr. P. K. Yadav, and numerical examples were contributed by  Ms. Anne Pförtner and Sophie Pförtner.)_
@@ -99,7 +99,7 @@
 # $$
 # v_f = -K \cdot \text{grad}h
 # $$
-# where $K$ when the principal axes not aligned to the domain coordinates is gives as (see {doc}`/contents/flow/lecture_06/16_darcy_law_3D`)
+# where $K$ when the principal axes not aligned to the domain coordinates is gives as (see {doc}`/content/flow/L6/16_darcy_law_3D`)
 # 
 # $$
 # \begin{bmatrix}
@@ -148,7 +148,7 @@
 # -\frac{\partial v_{fz}}{\partial z}\Delta x\Delta y \Delta z 
 # \end{equation}
 # 
-# Now, as we discussed in {doc}`/contents/flow/lecture_03/13_gw_storage` it is known that change in water volume in an specific volumetric space is 
+# Now, as we discussed in {doc}`/content/flow/L3/13_gw_storage` it is known that change in water volume in an specific volumetric space is 
 # 
 # $$
 # \frac{\Delta V_w}{\Delta x \Delta y \Delta z} \propto \Delta h
@@ -225,7 +225,7 @@
 # $$
 # 
 # ```{note} 
-# Every directional $K$'s have to be considered (see {doc}`/contents/flow/lecture_06/16_darcy_law_3D`) if principal axes of anisotropy is not parallel with the considered coordinate axes.  
+# Every directional $K$'s have to be considered (see {doc}`/content/flow/L6/16_darcy_law_3D`) if principal axes of anisotropy is not parallel with the considered coordinate axes.  
 # ```
 
 # ### Special Groundwater Problems and Their System Equations
@@ -233,15 +233,6 @@
 # #### The Poisson equation ####
 # 
 # The Poisson equation deals with groundwater problem with the following condition:
-# 
-# 
-# ```{margin} 
-# ```{image} images/L07_f3a.png
-# :width: 100px
-# :align: center
-# :name: Difference between international and German definition of groundwater.
-# ```
-# ```
 # 
 # 
 # 
@@ -261,15 +252,6 @@
 # #### The Laplace equation ####
 # 
 # The Laplace equation deals with groundwater problem with the following condition:
-# 
-# 
-# ```{margin} 
-# ```{image} images/L07_f3b.png
-# :width: 100px
-# :align: center
-# :name: Difference between international and German definition of groundwater.
-# ```
-# ```
 # 
 # + Steady-state
 # + Homogeneous
@@ -327,11 +309,17 @@ print("\n\033[1mProvided are:\033[0m\n")
 
 K = 5e-4 # m/s, hydraulic conductivity
 m = 45 # m, aquifer thickness
+print("hydraulic conductivity = {} m/s\naquifer thickness = {} m\n".format(K,m),)
+
+
+# In[2]:
+
+
+K = 5e-4 # m/s, hydraulic conductivity
+m = 45 # m, aquifer thickness
 
 #solution
 T = K*m
-
-print("hydraulic conductivity = {} m/s\naquifer thickness = {} m\n".format(K,m),)
 print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m²/s\033[0m.".format(T))
 
 
@@ -341,10 +329,19 @@ print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m
 # Calculate the transmissivity for an isotropic **unconfined aquifer**.
 # ```
 
-# In[2]:
+# In[3]:
 
 
 print("\n\033[1mProvided are:\033[0m\n")
+
+K = 5e-4 # m/s, hydraulich conducticity
+h = 130 # m, hydraulic head
+z_bot = 110 # m, aquifer bottom elevatio
+print("hydraulic conductivity = {} m/s\nhydraulic head = {} m\naquifer bottom elevation = {} m\n".format(K,h,z_bot))
+
+
+# In[4]:
+
 
 K = 5e-4 # m/s, hydraulich conducticity
 h = 130 # m, hydraulic head
@@ -352,14 +349,12 @@ z_bot = 110 # m, aquifer bottom elevation
 
 #solution
 T = K*(h-z_bot)
-
-print("hydraulic conductivity = {} m/s\nhydraulic head = {} m\naquifer bottom elevation = {} m\n".format(K,h,z_bot))
 print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m²/s\033[0m.".format(T))
 
 
 # ### 2D Groundwater Flow Equations for Confined Conditions
 # 
-# As was mentioned in {doc}`/contents/flow/lecture_03/13_gw_storage`, the storage coefficient $S$ [-] is to be used instead of $S_s$ [1/L] if vertical flow components are neglected. This results in the following 2D groundwater flow equations without sources/sinks:
+# As was mentioned in {doc}`/content/flow/L3/13_gw_storage`, the storage coefficient $S$ [-] is to be used instead of $S_s$ [1/L] if vertical flow components are neglected. This results in the following 2D groundwater flow equations without sources/sinks:
 # 
 # $$
 # S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\partial h}{\partial x}\bigg) + \frac{\partial }{\partial y}\bigg(T_y\frac{\partial h}{\partial y}\bigg)
@@ -384,14 +379,6 @@ print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m
 # name: 2D-unconfined
 # ---
 # 2D- flow in unconfined aquifers
-# ```
-# 
-# ```{margin} 
-# ```{image} images/L07_f6.png
-# :width: 100px
-# :align: center
-# :name: Difference between international and German definition of groundwater.
-# ```
 # ```
 # 
 # Since the height of the control volume depends on the flow behaviour, the transmissivities are defined by using hydraulic head $h$ to account for the saturated thickness:
@@ -429,14 +416,6 @@ print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m
 # name: 2D-confined
 # ---
 # Illustration of Dupuit's assumptions
-# ```
-# 
-# ```{margin} 
-# ```{image} images/L07_f8.png
-# :width: 100px
-# :align: center
-# :name: Difference between international and German definition of groundwater.
-# ```
 # ```
 # 
 # **The Dupuit's assumptions are**:
@@ -522,7 +501,7 @@ print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m
 
 # ## Chapter Quiz 
 
-# In[3]:
+# In[5]:
 
 
 from jupyterquiz import display_quiz
