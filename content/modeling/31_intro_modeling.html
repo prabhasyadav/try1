@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -58,7 +60,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1. Python Programming language" href="../background/01_python.html" />
-    <link rel="prev" title="2. Lecture 10: Reactive Mass Transport" href="../transport/L10/22_reactive_transport.html" />
+    <link rel="prev" title="2. Reactive Mass Transport" href="../transport/L10/22_reactive_transport.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../background/03_basic_hydrogeology.html">
-   2. Lecture 1 - Course Introduction/Water Cycle
+   2. Course Introduction &amp; Water Cycle
   </a>
  </li>
 </ul>
@@ -143,37 +145,37 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/12_subsurface_structure.html">
-   1. Lecture 2 - Subsurface Structure
+   1. Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L3/13_gw_storage.html">
-   2. Lecture 3-  Groundwater as a reservoir
+   2. Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L4/14_darcy_law_K.html">
-   3. Lecture 4 - Darcy’s Law and Conductivity
+   3. Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L5/15_het_iso.html">
-   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L6/16_darcy_law_3D.html">
-   5. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L7/17_quantify_flow.html">
-   6. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L8/18_wells.html">
-   7. Lecture 08 - Wells*
+   7. Wells*
   </a>
  </li>
 </ul>
@@ -185,12 +187,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../transport/L9/21_conservative_transport.html">
-   1. Lecture 9-  Conservative Transport
+   1. Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../transport/L10/22_reactive_transport.html">
-   2. Lecture 10:  Reactive Mass Transport
+   2. Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -744,17 +746,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">scipy.special</span> <span class="k">as</span> <span class="nn">sci</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span> <span class="c1"># linregress</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Latex</span>
-</pre></div>
-</div>
-</div>
+  <div class="cell tag_hide-input tag_remove-input docutils container">
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="lecture-11-background-of-groundwater-modeling">
 <h1><span class="section-number">1. </span>Lecture 11:  Background of Groundwater Modeling<a class="headerlink" href="#lecture-11-background-of-groundwater-modeling" title="Permalink to this headline">#</a></h1>
@@ -1091,7 +1083,7 @@ The resulting head with head is 8.91 m
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span>Lecture 10:  Reactive Mass Transport</p>
+            <p class="prev-next-title"><span class="section-number">2. </span>Reactive Mass Transport</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../background/01_python.html" title="next page">

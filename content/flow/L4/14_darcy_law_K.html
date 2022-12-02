@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>3. Lecture 4 - Darcy’s Law and Conductivity &#8212; Groundwater I</title>
+    <title>3. Darcy’s Law and Conductivity &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../../_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -57,8 +59,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="4. Lecture 5. Aquifer Heterogeneity and Anisotropy" href="../L5/15_het_iso.html" />
-    <link rel="prev" title="2. Lecture 3- Groundwater as a reservoir" href="../L3/13_gw_storage.html" />
+    <link rel="next" title="4. Aquifer Heterogeneity and Anisotropy" href="../L5/15_het_iso.html" />
+    <link rel="prev" title="2. Groundwater as a reservoir" href="../L3/13_gw_storage.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../background/03_basic_hydrogeology.html">
-   2. Lecture 1 - Course Introduction/Water Cycle
+   2. Course Introduction &amp; Water Cycle
   </a>
  </li>
 </ul>
@@ -143,37 +145,37 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../12_subsurface_structure.html">
-   1. Lecture 2 - Subsurface Structure
+   1. Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L3/13_gw_storage.html">
-   2. Lecture 3-  Groundwater as a reservoir
+   2. Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   3. Lecture 4 - Darcy’s Law and Conductivity
+   3. Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L5/15_het_iso.html">
-   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L6/16_darcy_law_3D.html">
-   5. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L7/17_quantify_flow.html">
-   6. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L8/18_wells.html">
-   7. Lecture 08 - Wells*
+   7. Wells*
   </a>
  </li>
 </ul>
@@ -185,12 +187,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L9/21_conservative_transport.html">
-   1. Lecture 9-  Conservative Transport
+   1. Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L10/22_reactive_transport.html">
-   2. Lecture 10:  Reactive Mass Transport
+   2. Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -704,7 +706,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lecture 4 - Darcy’s Law and Conductivity</h1>
+                <h1>Darcy’s Law and Conductivity</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -848,8 +850,8 @@ title="Print to PDF"
                 
   <div class="cell tag_hide-input tag_remove-output tag_remove-input docutils container">
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="lecture-4-darcy-s-law-and-conductivity">
-<h1><span class="section-number">3. </span>Lecture 4 - Darcy’s Law and Conductivity<a class="headerlink" href="#lecture-4-darcy-s-law-and-conductivity" title="Permalink to this headline">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="darcy-s-law-and-conductivity">
+<h1><span class="section-number">3. </span>Darcy’s Law and Conductivity<a class="headerlink" href="#darcy-s-law-and-conductivity" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by <a class="reference external" href="http://web.iitd.ac.in/~chahar/">Prof. B. R. Chahar</a> and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <section id="energy-and-hydraulic-head">
 <h2><span class="section-number">3.1. </span>Energy and hydraulic head<a class="headerlink" href="#energy-and-hydraulic-head" title="Permalink to this headline">#</a></h2>
@@ -888,7 +890,7 @@ h = \frac{p}{\rho g}-z
 <section id="hydraulic-head-and-discharge-when-there-is-no-discharge">
 <h3><span class="section-number">3.1.1. </span>Hydraulic head and discharge - when there is no discharge<a class="headerlink" href="#hydraulic-head-and-discharge-when-there-is-no-discharge" title="Permalink to this headline">#</a></h3>
 <p>Consider the figure below:</p>
-<a class="reference internal image-reference" href="../../../_images/L4_f1.png" id="hydraulic-head"><img alt="../../../_images/L4_f1.png" class="align-center" id="hydraulic-head" src="../../../_images/L4_f1.png" style="height: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f1.png" id="hydraulic-head"><img alt="../../../_images/L4_f1.png" class="align-center" id="hydraulic-head" src="../../../_images/L4_f1.png" style="height: 400px;" /></a>
 <p>The pressure head: <span class="math notranslate nohighlight">\(p(z) = p_L + \rho \cdot g \cdot (L-z)\)</span> <br>
 The hydraulic head (piezometric head): <span class="math notranslate nohighlight">\(h(z) = \frac{p(z)}{\rho \cdot g } + z = \frac{p_L + \rho \cdot g \cdot (L-z) }{\rho \cdot g } + z = \frac{p_L}{\rho \cdot g}+ L = \text{Const}\)</span><br></p>
 <p>In the figure above the hydraulic head difference between two points (<span class="math notranslate nohighlight">\(z=0\)</span> and <span class="math notranslate nohighlight">\(z=L\)</span>) are exactly equal, i.e., <span class="math notranslate nohighlight">\(\Delta h = 0\)</span>. This refers to the system with no energy gradient and hence a <em>no flow</em> system.</p>
@@ -896,7 +898,7 @@ The hydraulic head (piezometric head): <span class="math notranslate nohighlight
 <section id="hydraulic-head-and-discharge-when-there-will-be-a-discharge">
 <h3><span class="section-number">3.1.2. </span>Hydraulic head and discharge - when there will be a discharge<a class="headerlink" href="#hydraulic-head-and-discharge-when-there-will-be-a-discharge" title="Permalink to this headline">#</a></h3>
 <p>Now consider the figure below</p>
-<a class="reference internal image-reference" href="../../../_images/L4_f2.png" id="hydraulic-head-ii"><img alt="../../../_images/L4_f2.png" class="align-center" id="hydraulic-head-ii" src="../../../_images/L4_f2.png" style="height: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f2.png" id="hydraulic-head-ii"><img alt="../../../_images/L4_f2.png" class="align-center" id="hydraulic-head-ii" src="../../../_images/L4_f2.png" style="height: 400px;" /></a>
 <p>Here there is clear difference between the elevation head (<span class="math notranslate nohighlight">\(z_1\)</span> and <span class="math notranslate nohighlight">\(z_2\)</span>), which is taken from a reference level (<span class="math notranslate nohighlight">\(z=0\)</span> in this case. Average Sea Level (ASL), is often use for this reference). Also differing are pressure heads (<span class="math notranslate nohighlight">\(p_1\)</span> and <span class="math notranslate nohighlight">\(p_2\)</span>). Therefore, the <span class="math notranslate nohighlight">\(h(z)\)</span> in this case are:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1007,11 +1009,22 @@ resistance</p>
 <p class="admonition-title">Darcy’s Law</p>
 <p>Calculate the specific discharge and the flow rate passing through the surface with the given parameters.</p>
 </div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Provided are:
+
+Conductivity = 0.0005 m/s
+Surface = 10 m²
+Hydraulic head at the inlet = 10 m
+Hydraulic head at the outlet = 2 m
+Lenght of the column = 5 m 
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Provided are:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, conductivity</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, conductivity</span>
 <span class="n">A</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># m², surface</span>
 <span class="n">h_in</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># m, hydraulic head at the inlet</span>
 <span class="n">h_out</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># m, hydraulic head at the outlet</span>
@@ -1030,9 +1043,7 @@ resistance</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Provided are:
-
-Conductivity = 0.0005 m/s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Conductivity = 0.0005 m/s
 Surface = 10 m²
 Hydraulic head at the inlet = 10 m
 Hydraulic head at the outlet = 2 m
@@ -1175,7 +1186,7 @@ and the resulting hydraulic conductivity at 25°C is 2.25e-04 m/s
 <p><strong>Permeameter</strong> is an instrument used to determine hydraulic conductivity of soil samples
 in the laboratory as <em>direct method</em>. The design of permeameters is based on Darcy‘s
 experiment.</p>
-<a class="reference internal image-reference" href="content/flow/L4/images/images/L4_f4.png" id="permeameter"><img alt="content/flow/L4/images/images/L4_f4.png" class="align-center" id="permeameter" src="content/flow/L4/images/images/L4_f4.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L4_f4.png" id="permeameter"><img alt="../../../_images/L4_f4.png" class="align-center" id="permeameter" src="../../../_images/L4_f4.png" style="width: 200px;" /></a>
 <p>There are mainly two types of permeameters</p>
 <ol class="simple">
 <li><p>Constant-head permeameter, and</p></li>
@@ -1415,31 +1426,32 @@ water in the pore space is termed <em>linear velocity</em>.</p>
 <p class="admonition-title">Interstitial velocity</p>
 <p>From the data below obtain the average interstitial velocity in the Darcy’s column.</p>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Provided data are:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="n">Q</span> <span class="o">=</span> <span class="mf">0.005</span> <span class="c1"># Flow rate [m^3/s]</span>
-<span class="n">A</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># total area of soil specimen [m^2]</span>
-<span class="n">ne</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="c1"># effective porosity [-] = </span>
-
-
-<span class="c1">#solution</span>
-<span class="n">vs</span> <span class="o">=</span> <span class="n">Q</span> <span class="o">/</span> <span class="p">(</span><span class="n">ne</span> <span class="o">*</span> <span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="o">*</span><span class="mi">24</span> 
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Flow rate = </span><span class="si">{}</span><span class="s2"> m</span><span class="se">\u00b3</span><span class="s2">/s</span><span class="se">\n</span><span class="s2">total area = </span><span class="si">{}</span><span class="s2"> m</span><span class="se">\u00b2\n</span><span class="s2">effective porosity = </span><span class="si">{}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">ne</span><span class="p">),</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The resulting average interstitial velocity is </span><span class="si">{}</span><span class="s2"> m/d&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vs</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Provided data are:
 
 Flow rate = 0.005 m³/s
 total area = 1000 m²
 effective porosity = 0.4  
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Q</span> <span class="o">=</span> <span class="mf">0.005</span> <span class="c1"># Flow rate [m^3/s]</span>
+<span class="n">A</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># total area of soil specimen [m^2]</span>
+<span class="n">ne</span> <span class="o">=</span> <span class="mf">0.4</span> <span class="c1"># effective porosity [-] = </span>
 
-The resulting average interstitial velocity is 1.08 m/d
+
+<span class="c1">#solution</span>
+<span class="n">vs</span> <span class="o">=</span> <span class="n">Q</span> <span class="o">/</span> <span class="p">(</span><span class="n">ne</span> <span class="o">*</span> <span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="mi">3600</span><span class="o">*</span><span class="mi">24</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The resulting average interstitial velocity is </span><span class="si">{}</span><span class="s2"> m/d&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vs</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The resulting average interstitial velocity is 1.08 m/d
 </pre></div>
 </div>
 </div>
@@ -1515,7 +1527,7 @@ the darcy velocity is 0.5 m/h
 <h2><span class="section-number">3.5. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ePDtJnBomtoe" data-shufflequestions="False"
+<div class="output text_html"><div id="RtKBnSywHwQv" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -1677,7 +1689,7 @@ the darcy velocity is 0.5 m/h
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsePDtJnBomtoe=[{"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "Column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "Saturated conditions", "correct": false, "feedback": "Incorrect"}, {"answer": "Sand is the porous medium", "correct": false, "feedback": "Incorrect."}, {"answer": "All are correct statements ", "correct": true, "feedback": "Correct"}]}, {"question": "Water flow in porous media requires changes of", "type": "many_choice", "answers": [{"answer": "Pressure head", "correct": false, "feedback": "Incorrect."}, {"answer": "Elevation head", "correct": false, "feedback": "Incorrect."}, {"answer": "Sum of pressure and elevation head", "correct": true, "feedback": "Correct."}, {"answer": "Change of pressure head", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which is NOT true of Darcy\u00e2\u20ac\u02dcs Law", "type": "multiple_choice", "answers": [{"answer": "Discharge is  proportional to the cross-sectional area", "correct": false, "feedback": "Incorrect."}, {"answer": "discharge is proportional to the difference in hydraulic head", "correct": false, "feedback": "Incorrect."}, {"answer": "Discharge and conductivity are not related", "correct": true, "feedback": "Correct."}, {"answer": "Discharge is inversely proportional to the travel distance", "correct": false, "feedback": "Incorrect."}]}, {"question": "Hydraulic conductivity depends on", "type": "multiple_choice", "answers": [{"answer": "Groundwater viscosity", "correct": false, "feedback": "Incorrect."}, {"answer": "Groundwater density ", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective porosity", "correct": false, "feedback": "false."}, {"answer": "Grain size distribution", "correct": false, "feedback": "false."}, {"answer": "All of the Above", "correct": true, "feedback": "correct"}]}, {"question": "Hydraulic Conductivity can be measured using", "type": "multiple_choice", "answers": [{"answer": "Using Permeameter", "correct": false, "feedback": "Incorrect."}, {"answer": "Using Seive Analysis", "correct": false, "feedback": "Incorrect."}, {"answer": "Using pumping test", "correct": false, "feedback": "Incorrect."}, {"answer": "All of the Above", "correct": true, "feedback": "Correct"}]}, {"question": "In the realtion for Specific storage $S_s$ given as $ S_s $ = $\\Delta V_w $ / $V_T \\cdot \\Delta \\psi$ ", "type": "multiple_choice", "answers": [{"answer": "the properties of porous media only", "correct": true, "feedback": "Correct."}, {"answer": "the properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "the viscosity of fluid  ", "correct": true, "feedback": "Correct."}, {"answer": "the combined properties of porous media and fluid", "correct": false, "feedback": "false."}]}, {"question": "Darcy velocity Q and average groundwater velocity v:", "type": "multiple_choice", "answers": [{"answer": "Are not related", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity = effective porosity times the average groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity > average linear velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity = total porosity times the average groundwater velocity", "correct": true, "feedback": "correct"}]}, {"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "Column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "Saturated conditions", "correct": false, "feedback": "Incorrect."}, {"answer": "Constant discharge through the column", "correct": false, "feedback": "Incorrect"}, {"answer": "Sand is the porous medium", "correct": false, "feedback": "Incorrect."}, {"answer": "All of the above", "correct": true, "feedback": "Correct"}]}, {"question": "Intrinsic Permeability represents", "type": "multiple_choice", "answers": [{"answer": "The properties of porous media only", "correct": true, "feedback": "correct."}, {"answer": "The properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "The combined properties of porous media and fluid", "correct": false, "feedback": "false."}, {"answer": "The viscosity of fluid", "correct": false, "feedback": "Incorrect"}]}, {"question": "A pore volume is", "type": "multiple_choice", "answers": [{"answer": "Volume of water in a column", "correct": false, "feedback": "Incorrect."}, {"answer": "Average volume of water in pores", "correct": false, "feedback": "Incorrect."}, {"answer": "The travel time", "correct": true, "feedback": "Correct."}, {"answer": "Is average groundwater flow velocity ", "correct": false, "feedback": "Incorrect."}]}];
+}</style></div><script type="application/javascript">var questionsRtKBnSywHwQv=[{"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "Column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "Saturated conditions", "correct": false, "feedback": "Incorrect"}, {"answer": "Sand is the porous medium", "correct": false, "feedback": "Incorrect."}, {"answer": "All are correct statements ", "correct": true, "feedback": "Correct"}]}, {"question": "Water flow in porous media requires changes of", "type": "many_choice", "answers": [{"answer": "Pressure head", "correct": false, "feedback": "Incorrect."}, {"answer": "Elevation head", "correct": false, "feedback": "Incorrect."}, {"answer": "Sum of pressure and elevation head", "correct": true, "feedback": "Correct."}, {"answer": "Change of pressure head", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which is NOT true of Darcy\u00e2\u20ac\u02dcs Law", "type": "multiple_choice", "answers": [{"answer": "Discharge is  proportional to the cross-sectional area", "correct": false, "feedback": "Incorrect."}, {"answer": "discharge is proportional to the difference in hydraulic head", "correct": false, "feedback": "Incorrect."}, {"answer": "Discharge and conductivity are not related", "correct": true, "feedback": "Correct."}, {"answer": "Discharge is inversely proportional to the travel distance", "correct": false, "feedback": "Incorrect."}]}, {"question": "Hydraulic conductivity depends on", "type": "multiple_choice", "answers": [{"answer": "Groundwater viscosity", "correct": false, "feedback": "Incorrect."}, {"answer": "Groundwater density ", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective porosity", "correct": false, "feedback": "false."}, {"answer": "Grain size distribution", "correct": false, "feedback": "false."}, {"answer": "All of the Above", "correct": true, "feedback": "correct"}]}, {"question": "Hydraulic Conductivity can be measured using", "type": "multiple_choice", "answers": [{"answer": "Using Permeameter", "correct": false, "feedback": "Incorrect."}, {"answer": "Using Seive Analysis", "correct": false, "feedback": "Incorrect."}, {"answer": "Using pumping test", "correct": false, "feedback": "Incorrect."}, {"answer": "All of the Above", "correct": true, "feedback": "Correct"}]}, {"question": "In the realtion for Specific storage $S_s$ given as $ S_s $ = $\\Delta V_w $ / $V_T \\cdot \\Delta \\psi$ ", "type": "multiple_choice", "answers": [{"answer": "the properties of porous media only", "correct": true, "feedback": "Correct."}, {"answer": "the properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "the viscosity of fluid  ", "correct": true, "feedback": "Correct."}, {"answer": "the combined properties of porous media and fluid", "correct": false, "feedback": "false."}]}, {"question": "Darcy velocity Q and average groundwater velocity v:", "type": "multiple_choice", "answers": [{"answer": "Are not related", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity = effective porosity times the average groundwater velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity > average linear velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy velocity = total porosity times the average groundwater velocity", "correct": true, "feedback": "correct"}]}, {"question": "In the original Darcy's experiment, which is INCORRECT", "type": "multiple_choice", "answers": [{"answer": "Column with constant cross section", "correct": false, "feedback": "Incorrect."}, {"answer": "Saturated conditions", "correct": false, "feedback": "Incorrect."}, {"answer": "Constant discharge through the column", "correct": false, "feedback": "Incorrect"}, {"answer": "Sand is the porous medium", "correct": false, "feedback": "Incorrect."}, {"answer": "All of the above", "correct": true, "feedback": "Correct"}]}, {"question": "Intrinsic Permeability represents", "type": "multiple_choice", "answers": [{"answer": "The properties of porous media only", "correct": true, "feedback": "correct."}, {"answer": "The properties of fluid only ", "correct": false, "feedback": "Incorrect."}, {"answer": "The combined properties of porous media and fluid", "correct": false, "feedback": "false."}, {"answer": "The viscosity of fluid", "correct": false, "feedback": "Incorrect"}]}, {"question": "A pore volume is", "type": "multiple_choice", "answers": [{"answer": "Volume of water in a column", "correct": false, "feedback": "Incorrect."}, {"answer": "Average volume of water in pores", "correct": false, "feedback": "Incorrect."}, {"answer": "The travel time", "correct": true, "feedback": "Correct."}, {"answer": "Is average groundwater flow velocity ", "correct": false, "feedback": "Incorrect."}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2411,7 +2423,7 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsePDtJnBomtoe,  ePDtJnBomtoe);
+        show_questions(questionsRtKBnSywHwQv,  RtKBnSywHwQv);
         }
         </script></div>
 </div>
@@ -2449,13 +2461,13 @@ if (typeof version == 'undefined') {
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span>Lecture 3-  Groundwater as a reservoir</p>
+            <p class="prev-next-title"><span class="section-number">2. </span>Groundwater as a reservoir</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../L5/15_het_iso.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Lecture 5. Aquifer Heterogeneity and Anisotropy</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Aquifer Heterogeneity and Anisotropy</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

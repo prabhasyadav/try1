@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>6. Lecture 07 - Quantifying 3D Groundwater Flow &#8212; Groundwater I</title>
+    <title>6. Quantifying 3D Groundwater Flow &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,6 +44,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../../_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -57,8 +59,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="7. Lecture 08 - Wells*" href="../L8/18_wells.html" />
-    <link rel="prev" title="5. Lecture 6: Steady-State Groundwater flow in 3D" href="../L6/16_darcy_law_3D.html" />
+    <link rel="next" title="7. Wells*" href="../L8/18_wells.html" />
+    <link rel="prev" title="5. Steady-State Groundwater flow in 3D" href="../L6/16_darcy_law_3D.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../background/03_basic_hydrogeology.html">
-   2. Lecture 1 - Course Introduction/Water Cycle
+   2. Course Introduction &amp; Water Cycle
   </a>
  </li>
 </ul>
@@ -143,37 +145,37 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../12_subsurface_structure.html">
-   1. Lecture 2 - Subsurface Structure
+   1. Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L3/13_gw_storage.html">
-   2. Lecture 3-  Groundwater as a reservoir
+   2. Groundwater as a reservoir
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L4/14_darcy_law_K.html">
-   3. Lecture 4 - Darcy’s Law and Conductivity
+   3. Darcy’s Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L5/15_het_iso.html">
-   4. Lecture 5. Aquifer Heterogeneity and Anisotropy
+   4. Aquifer Heterogeneity and Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L6/16_darcy_law_3D.html">
-   5. Lecture 6: Steady-State Groundwater flow in 3D
+   5. Steady-State Groundwater flow in 3D
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   6. Lecture 07 - Quantifying 3D Groundwater Flow
+   6. Quantifying 3D Groundwater Flow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L8/18_wells.html">
-   7. Lecture 08 - Wells*
+   7. Wells*
   </a>
  </li>
 </ul>
@@ -185,12 +187,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L9/21_conservative_transport.html">
-   1. Lecture 9-  Conservative Transport
+   1. Conservative Transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../transport/L10/22_reactive_transport.html">
-   2. Lecture 10:  Reactive Mass Transport
+   2. Reactive Mass Transport
   </a>
  </li>
 </ul>
@@ -644,6 +646,11 @@ title="Print to PDF"
        6.2.8.1. The Poisson equation
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-laplace-equation">
+       6.2.8.2. The Laplace equation
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -718,7 +725,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lecture 07 - Quantifying 3D Groundwater Flow</h1>
+                <h1>Quantifying 3D Groundwater Flow</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -799,6 +806,11 @@ title="Print to PDF"
        6.2.8.1. The Poisson equation
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-laplace-equation">
+       6.2.8.2. The Laplace equation
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -874,8 +886,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="lecture-07-quantifying-3d-groundwater-flow">
-<h1><span class="section-number">6. </span>Lecture 07 - Quantifying 3D Groundwater Flow<a class="headerlink" href="#lecture-07-quantifying-3d-groundwater-flow" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="quantifying-3d-groundwater-flow">
+<h1><span class="section-number">6. </span>Quantifying 3D Groundwater Flow<a class="headerlink" href="#quantifying-3d-groundwater-flow" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents are based on the class lecture materials of Prof. R. Lied. Modifications mostly to fit this specific were done by Dr. P. K. Yadav, and numerical examples were contributed by  Ms. Anne Pförtner and Sophie Pförtner.)</em></p>
 <hr class="docutils" />
 <section id="motivation">
@@ -976,7 +988,7 @@ title="Print to PDF"
 \[
 v_f = -K \cdot \text{grad}h
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(K\)</span> when the principal axes not aligned to the domain coordinates is gives as (see <span class="xref std std-doc">/contents/flow/lecture_06/16_darcy_law_3D</span>)</p>
+<p>where <span class="math notranslate nohighlight">\(K\)</span> when the principal axes not aligned to the domain coordinates is gives as (see <a class="reference internal" href="../L6/16_darcy_law_3D.html"><span class="doc">Steady-State Groundwater flow in 3D</span></a>)</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{bmatrix}
@@ -1014,7 +1026,7 @@ Q_{in}-Q_{out}=-\frac{\partial v_{fx}}{\partial x}\Delta x\Delta y \Delta z
 -\frac{\partial v_{fy}}{\partial y}\Delta x\Delta y \Delta z<br />
 -\frac{\partial v_{fz}}{\partial z}\Delta x\Delta y \Delta z
 \end{equation}</p>
-<p>Now, as we discussed in <span class="xref std std-doc">/contents/flow/lecture_03/13_gw_storage</span> it is known that change in water volume in an specific volumetric space is</p>
+<p>Now, as we discussed in <a class="reference internal" href="../L3/13_gw_storage.html"><span class="doc">Groundwater as a reservoir</span></a> it is known that change in water volume in an specific volumetric space is</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\Delta V_w}{\Delta x \Delta y \Delta z} \propto \Delta h
@@ -1083,7 +1095,7 @@ S_s\frac{\partial h}{\partial t} = \frac{\partial }{\partial x} \bigg(K_x \frac{
 \]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Every directional <span class="math notranslate nohighlight">\(K\)</span>’s have to be considered (see <span class="xref std std-doc">/contents/flow/lecture_06/16_darcy_law_3D</span>) if principal axes of anisotropy is not parallel with the considered coordinate axes.</p>
+<p>Every directional <span class="math notranslate nohighlight">\(K\)</span>’s have to be considered (see <a class="reference internal" href="../L6/16_darcy_law_3D.html"><span class="doc">Steady-State Groundwater flow in 3D</span></a>) if principal axes of anisotropy is not parallel with the considered coordinate axes.</p>
 </div>
 </section>
 </section>
@@ -1092,52 +1104,34 @@ S_s\frac{\partial h}{\partial t} = \frac{\partial }{\partial x} \bigg(K_x \frac{
 <section id="the-poisson-equation">
 <h4><span class="section-number">6.2.8.1. </span>The Poisson equation<a class="headerlink" href="#the-poisson-equation" title="Permalink to this headline">#</a></h4>
 <p>The Poisson equation deals with groundwater problem with the following condition:</p>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<a class="reference internal image-reference" href="../../../_images/L07_f3a.png" id="difference-between-international-and-german-definition-of-groundwater"><img alt="../../../_images/L07_f3a.png" class="align-center" id="difference-between-international-and-german-definition-of-groundwater" src="../../../_images/L07_f3a.png" style="width: 100px;" /></a>
-</aside>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-
-
-+ Steady-state
-+ Homogeneous
-+ Isotropic
-+ Confined
-+ Sources/sinks
-
-The equation is given as
-
-$$
+<ul class="simple">
+<li><p>Steady-state</p></li>
+<li><p>Homogeneous</p></li>
+<li><p>Isotropic</p></li>
+<li><p>Confined</p></li>
+<li><p>Sources/sinks</p></li>
+</ul>
+<p>The equation is given as</p>
+<div class="math notranslate nohighlight">
+\[
 \frac{\partial^2 h }{\partial x^2} + \frac{\partial^2 h}{\partial y^2} + \frac{\partial^2 h}{\partial z^2} = -\frac{q}{K} 
-$$
-
-
-#### The Laplace equation ####
-
-The Laplace equation deals with groundwater problem with the following condition:
-
-
-```{margin} 
-```{image} images/L07_f3b.png
-:width: 100px
-:align: center
-:name: Difference between international and German definition of groundwater.
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-+ Steady-state
-+ Homogeneous
-+ Isotropic
-+ Confined
-+ Without sources/sinks
-
-The equation is given as
-
-$$
+\]</div>
+</section>
+<section id="the-laplace-equation">
+<h4><span class="section-number">6.2.8.2. </span>The Laplace equation<a class="headerlink" href="#the-laplace-equation" title="Permalink to this headline">#</a></h4>
+<p>The Laplace equation deals with groundwater problem with the following condition:</p>
+<ul class="simple">
+<li><p>Steady-state</p></li>
+<li><p>Homogeneous</p></li>
+<li><p>Isotropic</p></li>
+<li><p>Confined</p></li>
+<li><p>Without sources/sinks</p></li>
+</ul>
+<p>The equation is given as</p>
+<div class="math notranslate nohighlight">
+\[
 \frac{\partial^2 h }{\partial x^2} + \frac{\partial^2 h}{\partial y^2} + \frac{\partial^2 h}{\partial z^2} = 0 
-$$
-</pre></div>
-</div>
+\]</div>
 </section>
 </section>
 </section>
@@ -1177,12 +1171,7 @@ T = K\cdot m
 
 <span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, hydraulic conductivity</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1"># m, aquifer thickness</span>
-
-<span class="c1">#solution</span>
-<span class="n">T</span> <span class="o">=</span> <span class="n">K</span><span class="o">*</span><span class="n">m</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hydraulic conductivity = </span><span class="si">{}</span><span class="s2"> m/s</span><span class="se">\n</span><span class="s2">aquifer thickness = </span><span class="si">{}</span><span class="s2"> m</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">,</span><span class="n">m</span><span class="p">),)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">The resulting transmissivity is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.4}</span><span class="s2"> m²/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1191,8 +1180,23 @@ T = K\cdot m
 
 hydraulic conductivity = 0.0005 m/s
 aquifer thickness = 45 m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, hydraulic conductivity</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">45</span> <span class="c1"># m, aquifer thickness</span>
 
-<span class=" -Color -Color-Bold">Solution:</span>
+<span class="c1">#solution</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">K</span><span class="o">*</span><span class="n">m</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">The resulting transmissivity is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.4}</span><span class="s2"> m²/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Solution:</span>
 The resulting transmissivity is <span class=" -Color -Color-Bold">0.0225 m²/s</span>.
 </pre></div>
 </div>
@@ -1205,30 +1209,31 @@ The resulting transmissivity is <span class=" -Color -Color-Bold">0.0225 m²/s</
 <p class="admonition-title">Hydraulic gradient in 2D</p>
 <p>Calculate the transmissivity for an isotropic <strong>unconfined aquifer</strong>.</p>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\033</span><span class="s2">[1mProvided are:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, hydraulich conducticity</span>
-<span class="n">h</span> <span class="o">=</span> <span class="mi">130</span> <span class="c1"># m, hydraulic head</span>
-<span class="n">z_bot</span> <span class="o">=</span> <span class="mi">110</span> <span class="c1"># m, aquifer bottom elevation</span>
-
-<span class="c1">#solution</span>
-<span class="n">T</span> <span class="o">=</span> <span class="n">K</span><span class="o">*</span><span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">z_bot</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hydraulic conductivity = </span><span class="si">{}</span><span class="s2"> m/s</span><span class="se">\n</span><span class="s2">hydraulic head = </span><span class="si">{}</span><span class="s2"> m</span><span class="se">\n</span><span class="s2">aquifer bottom elevation = </span><span class="si">{}</span><span class="s2"> m</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">K</span><span class="p">,</span><span class="n">h</span><span class="p">,</span><span class="n">z_bot</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">The resulting transmissivity is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.4}</span><span class="s2"> m²/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Provided are:</span>
 
 hydraulic conductivity = 0.0005 m/s
 hydraulic head = 130 m
 aquifer bottom elevation = 110 m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K</span> <span class="o">=</span> <span class="mf">5e-4</span> <span class="c1"># m/s, hydraulich conducticity</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mi">130</span> <span class="c1"># m, hydraulic head</span>
+<span class="n">z_bot</span> <span class="o">=</span> <span class="mi">110</span> <span class="c1"># m, aquifer bottom elevation</span>
 
-<span class=" -Color -Color-Bold">Solution:</span>
+<span class="c1">#solution</span>
+<span class="n">T</span> <span class="o">=</span> <span class="n">K</span><span class="o">*</span><span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">z_bot</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1mSolution:</span><span class="se">\033</span><span class="s2">[0m</span><span class="se">\n</span><span class="s2">The resulting transmissivity is </span><span class="se">\033</span><span class="s2">[1m</span><span class="si">{:02.4}</span><span class="s2"> m²/s</span><span class="se">\033</span><span class="s2">[0m.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Solution:</span>
 The resulting transmissivity is <span class=" -Color -Color-Bold">0.01 m²/s</span>.
 </pre></div>
 </div>
@@ -1237,7 +1242,7 @@ The resulting transmissivity is <span class=" -Color -Color-Bold">0.01 m²/s</sp
 </section>
 <section id="d-groundwater-flow-equations-for-confined-conditions">
 <h3><span class="section-number">6.3.3. </span>2D Groundwater Flow Equations for Confined Conditions<a class="headerlink" href="#d-groundwater-flow-equations-for-confined-conditions" title="Permalink to this headline">#</a></h3>
-<p>As was mentioned in <span class="xref std std-doc">/contents/flow/lecture_03/13_gw_storage</span>, the storage coefficient <span class="math notranslate nohighlight">\(S\)</span> [-] is to be used instead of <span class="math notranslate nohighlight">\(S_s\)</span> [1/L] if vertical flow components are neglected. This results in the following 2D groundwater flow equations without sources/sinks:</p>
+<p>As was mentioned in <a class="reference internal" href="../L3/13_gw_storage.html"><span class="doc">Groundwater as a reservoir</span></a>, the storage coefficient <span class="math notranslate nohighlight">\(S\)</span> [-] is to be used instead of <span class="math notranslate nohighlight">\(S_s\)</span> [1/L] if vertical flow components are neglected. This results in the following 2D groundwater flow equations without sources/sinks:</p>
 <div class="math notranslate nohighlight">
 \[
 S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\partial h}{\partial x}\bigg) + \frac{\partial }{\partial y}\bigg(T_y\frac{\partial h}{\partial y}\bigg)
@@ -1259,57 +1264,36 @@ S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\par
 <p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">2D- flow in unconfined aquifers</span><a class="headerlink" href="#d-unconfined" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<a class="reference internal image-reference" href="../../../_images/L07_f6.png" id="id3"><img alt="../../../_images/L07_f6.png" class="align-center" id="id3" src="../../../_images/L07_f6.png" style="width: 100px;" /></a>
-</aside>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-Since the height of the control volume depends on the flow behaviour, the transmissivities are defined by using hydraulic head $h$ to account for the saturated thickness:
-
-$$
+<p>Since the height of the control volume depends on the flow behaviour, the transmissivities are defined by using hydraulic head <span class="math notranslate nohighlight">\(h\)</span> to account for the saturated thickness:</p>
+<div class="math notranslate nohighlight">
+\[
 T_x = K_x \cdot (h-z_{bot})
-$$
-
-$$
+\]</div>
+<div class="math notranslate nohighlight">
+\[
 T_y = K_y \cdot (h-z_{bot})
-$$
-
-where $z_{bot}$ represents the elevation of the aquifer bottom [L]. Formally, the 2D groundwater flow equation for unconfined aquifers is the same as for the confined conditions, i.e.,
-
-
-
-$$
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(z_{bot}\)</span> represents the elevation of the aquifer bottom [L]. Formally, the 2D groundwater flow equation for unconfined aquifers is the same as for the confined conditions, i.e.,</p>
+<div class="math notranslate nohighlight">
+\[
 S\frac{\partial h}{\partial t} = \frac{\partial }{\partial x}\bigg(T_x\frac{\partial h}{\partial x}\bigg) + \frac{\partial }{\partial y}\bigg(T_y\frac{\partial h}{\partial y}\bigg) + N
-$$
-
-
-
-However, transmissivities are computed in a different way. The above equation is also termed **Boussinesq equation**.
-</pre></div>
-</div>
+\]</div>
+<p>However, transmissivities are computed in a different way. The above equation is also termed <strong>Boussinesq equation</strong>.</p>
 <section id="dupuit-assumptions">
 <h3><span class="section-number">6.4.1. </span>Dupuit Assumptions<a class="headerlink" href="#dupuit-assumptions" title="Permalink to this headline">#</a></h3>
-<p>The Boussinesq equation for 2D groundwater flow in unconfined aquifer is based on the following assumptions which are due to Dupuit (1863)<sup>[^Dupuit]</sup>. The Dupuit’s work can be expressed in the figure below.</p>
+<p>The Boussinesq equation for 2D groundwater flow in unconfined aquifer is based on the following assumptions which are due to Dupuit (1863)<sup><a class="footnote-reference brackets" href="#dupuit" id="id3">1</a></sup>. The Dupuit’s work can be expressed in the figure below.</p>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../../_images/L07_f7.png"><img alt="../../../_images/L07_f7.png" src="../../../_images/L07_f7.png" style="width: 474.0px; height: 322.8px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">Illustration of Dupuit’s assumptions</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<a class="reference internal image-reference" href="../../../_images/L07_f8.png" id="id5"><img alt="../../../_images/L07_f8.png" class="align-center" id="id5" src="../../../_images/L07_f8.png" style="width: 100px;" /></a>
-</aside>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="o">**</span><span class="n">The</span> <span class="n">Dupuit</span><span class="s1">&#39;s assumptions are**:</span>
-
-<span class="o">-</span> <span class="n">Groundwater</span> <span class="n">flow</span> <span class="ow">is</span> <span class="n">horizontal</span> <span class="p">(</span><span class="n">no</span> <span class="n">vertical</span> <span class="n">flow</span> <span class="n">components</span><span class="p">)</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">The</span> <span class="n">flow</span> <span class="n">velocity</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">vary</span> <span class="k">with</span> <span class="n">depth</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">Darcy</span><span class="s1">&#39;s law also holds at the water table.</span>
-
-<span class="p">[</span><span class="o">^</span><span class="n">Dupuit</span><span class="p">]:</span> <span class="n">Dupuit</span><span class="p">,</span> <span class="n">J</span><span class="o">.</span> <span class="p">(</span><span class="mi">1863</span><span class="p">),</span> <span class="n">_Etudes</span> <span class="n">Théoriques</span> <span class="n">et</span> <span class="n">Pratiques</span> <span class="n">sur</span> <span class="n">le</span> <span class="n">mouvement</span> <span class="n">des</span> <span class="n">Eaux</span> <span class="n">dans</span> <span class="n">les</span> <span class="n">canaux</span> <span class="n">découverts</span> <span class="n">et</span> <span class="n">à</span> <span class="n">travers</span> <span class="n">les</span> <span class="n">terrains</span> <span class="n">perméables_</span> <span class="p">(</span><span class="n">Second</span> <span class="n">ed</span><span class="o">.</span><span class="p">)</span><span class="o">.</span> <span class="n">Paris</span><span class="p">:</span> <span class="n">Dunod</span><span class="o">.</span>
-</pre></div>
-</div>
+<p><strong>The Dupuit’s assumptions are</strong>:</p>
+<ul class="simple">
+<li><p>Groundwater flow is horizontal (no vertical flow components).</p></li>
+<li><p>The flow velocity does not vary with depth.</p></li>
+<li><p>Darcy’s law also holds at the water table.</p></li>
+</ul>
 </section>
 </section>
 <section id="complete-formulation-of-groundwater-flow-problems">
@@ -1377,7 +1361,7 @@ However, transmissivities are computed in a different way. The above equation is
 <figure class="align-center" id="concept-gw-problem">
 <a class="reference internal image-reference" href="../../../_images/L07_f11.png"><img alt="../../../_images/L07_f11.png" src="../../../_images/L07_f11.png" style="width: 771.6px; height: 359.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Setting a groundwater problem (from Kinzelbach, 1986<sup><a class="footnote-reference brackets" href="#kinzelbach1986" id="id6">1</a></sup>)</span><a class="headerlink" href="#concept-gw-problem" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Setting a groundwater problem (from Kinzelbach, 1986<sup><a class="footnote-reference brackets" href="#kinzelbach1986" id="id5">2</a></sup>)</span><a class="headerlink" href="#concept-gw-problem" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The system equation including the boundary conditions makes a <strong>complete</strong> groundwater flow problem. The solution with inclusion of specific boundary conditions provides a unique or specific solution to the problem.</p>
@@ -1388,7 +1372,7 @@ However, transmissivities are computed in a different way. The above equation is
 <h2><span class="section-number">6.6. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="NbuSGFNDbxWo" data-shufflequestions="False"
+<div class="output text_html"><div id="agcCXFirwRkp" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -1550,7 +1534,7 @@ However, transmissivities are computed in a different way. The above equation is
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsNbuSGFNDbxWo=[{"question": "A control volume ", "type": "multiple_choice", "answers": [{"answer": "has a size similar to region of investigation", "correct": false, "feedback": "Incorrect."}, {"answer": "Darcy's law may be valid", "correct": false, "feedback": "Incorrect"}, {"answer": "represents the real aquifer", "correct": false, "feedback": "Incorrect."}, {"answer": "is a fictitious portion of an aquifer in which Darcy's law is absolutely valid", "correct": true, "feedback": "Correct."}]}, {"question": "Which is NOT a representative of Groundwater flow problem", "type": "multiple_choice", "answers": [{"answer": "1D, 2D or 3D transport of chemical", "correct": true, "feedback": "correct."}, {"answer": "steady-state or transient", "correct": false, "feedback": "Incorrect"}, {"answer": "homogeneous or heterogeneous", "correct": false, "feedback": "Incorrect."}, {"answer": "isotropic or anisotropic in confined or unconfined aquifer", "correct": false, "feedback": "Incorrect"}]}, {"question": "Groundwater flow problems are described by which of the following principles : ", "type": "many_choice", "answers": [{"answer": " conservation of volume", "correct": false, "feedback": "Incorrect."}, {"answer": "Both of the above", "correct": true, "feedback": "correct."}, {"answer": "Darcy\u00e2\u20ac\u02dcs law", "correct": false, "feedback": "Incorrect."}]}, {"question": "In the equation water volume budget equation $ \\frac{\\Delta V_w}{\\Delta x \\Delta y \\Delta z} \\propto \\Delta h $ the proportionality constant is given by", "type": "multiple_choice", "answers": [{"answer": "porosity", "correct": false, "feedback": "Incorrect."}, {"answer": "specific storage", "correct": true, "feedback": "correct."}, {"answer": "coefficient of conductivity", "correct": false, "feedback": "Incorrect."}, {"answer": "aquifer thickness", "correct": false, "feedback": "Incorrect"}]}, {"question": "The Ground Water Flow Equation does not represent : ", "type": "multiple_choice", "answers": [{"answer": "the aquifer is heterogeneous", "correct": false, "feedback": "Incorrect."}, {"answer": "has the source and sink term", "correct": false, "feedback": "Incorrect."}, {"answer": "flow is at steady-state", "correct": true, "feedback": "Correct"}, {"answer": "for an anisotropic aquifer", "correct": false, "feedback": "Incorrect"}]}, {"question": "In the equation $ S\\frac{\\partial h}{\\partial t} = \\frac{\\partial }{\\partial x}\\bigg(T_x\\frac{\\partial h}{\\partial x}\\bigg) + \\frac{\\partial }{\\partial y}\\bigg(T_y\\frac{\\partial h}{\\partial y}\\bigg) $ $S_s$ is replaced by $S$ because", "type": "multiple_choice", "answers": [{"answer": "Vertical flow is neglected", "correct": true, "feedback": "correct."}, {"answer": "aquifer has no source/sinks", "correct": false, "feedback": "Incorrect."}, {"answer": "aquifer is 2D", "correct": false, "feedback": "false."}, {"answer": "Transmissivity (T) has to be used", "correct": false, "feedback": "Incorrect"}]}, {"question": "The Transmissivity in equation $ T_x = K_x \\cdot (h-z_{bot}) $ where $Z_{bot}$ is bottom of the aquifer, represents a", "type": "multiple_choice", "answers": [{"answer": "transmissivity in a confined aquifer", "correct": false, "feedback": "Inorrect."}, {"answer": "transmissivity  in homogeneous aquifer", "correct": false, "feedback": "Incorrect."}, {"answer": "transmissivity  in unconfined aquifer", "correct": true, "feedback": "correct."}, {"answer": "transmissivity in 3D aquifer", "correct": false, "feedback": "Incorrect."}]}, {"question": "Which among the below are **VALID** Dupuit Assumptions, which are valid only in unconfined aquifer:", "type": "multiple_choice", "answers": [{"answer": "Groundwater flow is almost horizontal", "correct": true, "feedback": "Correct."}, {"answer": "No vertical flow component exist", "correct": false, "feedback": "Incorrect"}, {"answer": "Darcy's law is not valid at the water table", "correct": false, "feedback": "Incorrect."}, {"answer": "All above are valid", "correct": false, "feedback": "Incorrect."}]}, {"question": "The initial condition (IC) in the groundwater flow problem is NOT required for", "type": "multiple_choice", "answers": [{"answer": "Anisotropic flow problems", "correct": false, "feedback": "Incorrect."}, {"answer": "Steady-State problems", "correct": true, "feedback": "correct."}, {"answer": "3D flow problems", "correct": false, "feedback": "Incorrect."}, {"answer": "Transient problems", "correct": false, "feedback": "Incorrect."}]}, {"question": "In the Dirichlet boundary condition", "type": "multiple_choice", "answers": [{"answer": "head gradient is specified", "correct": true, "feedback": "Correct."}, {"answer": "time dependent head gradient is specified", "correct": false, "feedback": "Incorrect."}, {"answer": "head is specified", "correct": false, "feedback": "Incorrect."}, {"answer": "no flow is defined", "correct": false, "feedback": "Incorrect."}]}, {"question": "The special case of Neumann boundary condition is", "type": "multiple_choice", "answers": [{"answer": "the no flow boundary condition", "correct": true, "feedback": "Correct."}, {"answer": "the head specfied boundary condition", "correct": false, "feedback": "Incorrect."}, {"answer": "the Cauchy boundary condition", "correct": false, "feedback": "Incorrect."}, {"answer": "the specified non-zero head gradient ", "correct": false, "feedback": "Incorrect."}]}];
+}</style></div><script type="application/javascript">var questionsagcCXFirwRkp=[{"question": "The equation $ T_x = K_x  \\cdot (h-Z_{bot}) $ relates the Transmissivity of", "type": "multiple_choice", "answers": [{"answer": "Confined aquifer", "correct": false, "feedback": "Incorrect"}, {"answer": "Unconfined aquifer", "correct": true, "feedback": "Correct"}, {"answer": "Both confined and unconfined aquifer", "correct": false, "feedback": "Incorrect"}, {"answer": "The layered aquifer", "correct": false, "feedback": "Incorrect"}]}, {"question": "Wells are usually operated at the steady-state?", "type": "multiple_choice", "answers": [{"answer": "True", "correct": true, "feedback": "Correct"}, {"answer": "False", "correct": false, "feedback": "Incorrect"}]}, {"question": "A well can be (select all correct answers)", "type": "many_choice", "answers": [{"answer": "A fully penetrating only", "correct": false, "feedback": "Incorrect"}, {"answer": "A partially penetrating only", "correct": false, "feedback": "Incorrect"}, {"answer": "Neither of the above", "correct": true, "feedback": "Correct"}, {"answer": "either a fully penetrating ones or partially penetrating ones", "correct": true, "feedback": "Correct"}]}, {"question": "Which is NOT a component of a well set in an unconfined aquifer", "type": "multiple_choice", "answers": [{"answer": "Drawdown", "correct": false, "feedback": "Incorrect"}, {"answer": "Transmissivity", "correct": true, "feedback": "Correct"}, {"answer": "Confining layer thickness", "correct": false, "feedback": "Incorrect"}, {"answer": "Radius of influence", "correct": false, "feedback": "Incorrect"}]}, {"question": "The discharge obtained from the equation $ Q = \\frac{2\\pi m K (H-h)}{2.3 \\log (R/r_w)} $ is for ", "type": "multiple_choice", "answers": [{"answer": "Unconfined aquifer", "correct": false, "feedback": "Incorrect"}, {"answer": "For both confined and unconfined aquifer", "correct": false, "feedback": "Incorrect"}, {"answer": "Confined aquifer", "correct": true, "feedback": "Correct"}, {"answer": "For partially penetrating well", "correct": false, "feedback": "Incorrect"}]}, {"question": "For a well in an unconfined aquifer, the hydraulic gradient is ", "type": "multiple_choice", "answers": [{"answer": "Independent of radial distance from the well", "correct": true, "feedback": "Correct"}, {"answer": "Is dependent on the radial distance from the well", "correct": false, "feedback": "Incorrect"}, {"answer": "Is related to radius of influence", "correct": false, "feedback": "Incorrect"}, {"answer": "Is equal to drawdown", "correct": false, "feedback": "Incorrect"}]}, {"question": "The equation $ R = 3000 s \\sqrt{K} $ is ", "type": "multiple_choice", "answers": [{"answer": "an analytical equation to obtain radius of influence", "correct": false, "feedback": "Inorrect"}, {"answer": "is commonly used for obtaining drawdown", "correct": false, "feedback": "Incorrect"}, {"answer": "an empirical equation to obtain radius of influence", "correct": true, "feedback": "Correct"}, {"answer": "All the above answer are correct", "correct": false, "feedback": "Incorrect"}]}, {"question": "Which aquifer properties are estimated using pumping tests:", "type": "multiple_choice", "answers": [{"answer": "All of the following", "correct": true, "feedback": "Correct"}, {"answer": "Hydraulic conductivity", "correct": false, "feedback": "Incorrect"}, {"answer": "Storativity", "correct": false, "feedback": "Incorrect"}, {"answer": "Transmissivity", "correct": false, "feedback": "Incorrect"}]}, {"question": "In which condition Theis Method CANNOT be used", "type": "multiple_choice", "answers": [{"answer": "The aquifer thickness is uniform", "correct": false, "feedback": "Incorrect"}, {"answer": "The well is fully penetrating", "correct": false, "feedback": "Incorrect"}, {"answer": "For a transient pumping rate", "correct": true, "feedback": "Correct"}, {"answer": "The aquifer bottom is horizontal", "correct": false, "feedback": "Incorrect"}, {"answer": "There is no vertical flow component", "correct": false, "feedback": "Incorrect"}]}, {"question": "In the Theis equation $ s(r,t) = \\frac{Q}{4\\pi T}\\cdot W(u) $ $W(u)$ is", "type": "multiple_choice", "answers": [{"answer": "Called a well function", "correct": true, "feedback": "Correct"}, {"answer": " Called a water function ", "correct": false, "feedback": "Incorrect"}, {"answer": "Is universal function", "correct": false, "feedback": "Incorrect"}, {"answer": "Is a logarithmic function", "correct": false, "feedback": "Incorrect"}]}, {"question": "The so-called Type curve ", "type": "multiple_choice", "answers": [{"answer": "Is aquifer property dependent curve", "correct": false, "feedback": "Incorrect"}, {"answer": "Always coincides with pumping test data", "correct": false, "feedback": "Incorrect"}, {"answer": "Relates to variation in pumping rate", "correct": false, "feedback": "Incorrect"}, {"answer": "Is independent of aquifer property ", "correct": true, "feedback": "Correct"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -2284,13 +2268,16 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsNbuSGFNDbxWo,  NbuSGFNDbxWo);
+        show_questions(questionsagcCXFirwRkp,  agcCXFirwRkp);
         }
         </script></div>
 </div>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="kinzelbach1986"><span class="brackets"><a class="fn-backref" href="#id6">1</a></span></dt>
+<dt class="label" id="dupuit"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>Dupuit, J. (1863), <em>Etudes Théoriques et Pratiques sur le mouvement des Eaux dans les canaux découverts et à travers les terrains perméables</em> (Second ed.). Paris: Dunod.</p>
+</dd>
+<dt class="label" id="kinzelbach1986"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
 <dd><p>Kinzelbach, W. (1986), <em>Groundwater Modelling: An Introduction with Sample Programs in BASIC,</em> Elsevier.</p>
 </dd>
 </dl>
@@ -2328,13 +2315,13 @@ if (typeof version == 'undefined') {
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5. </span>Lecture 6: Steady-State Groundwater flow in 3D</p>
+            <p class="prev-next-title"><span class="section-number">5. </span>Steady-State Groundwater flow in 3D</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../L8/18_wells.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Lecture 08 - Wells*</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Wells*</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
