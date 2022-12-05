@@ -21,7 +21,7 @@ import numpy as np
 import pandas as pd 
 import matplotlib.pyplot as plt
 from xlrd import *
-import ipysheet as ips
+#import ipysheet as ips
 import panel as pn
 %matplotlib inline 
 from scipy import stats 
@@ -34,7 +34,7 @@ Input [1;32mIn [1][0m, in [0;36m<cell line: 4>[1;34m()[0m
 [0;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m 
 [0;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
 [1;32m----> 4[0m [38;5;28;01mfrom[39;00m [38;5;21;01mxlrd[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m
-[0;32m      5[0m [38;5;28;01mimport[39;00m [38;5;21;01mipysheet[39;00m [38;5;28;01mas[39;00m [38;5;21;01mips[39;00m
+[0;32m      5[0m [38;5;66;03m#import ipysheet as ips[39;00m
 [0;32m      6[0m [38;5;28;01mimport[39;00m [38;5;21;01mpanel[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpn[39;00m
 
 [1;31mModuleNotFoundError[0m: No module named 'xlrd'

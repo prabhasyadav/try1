@@ -80,7 +80,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
+<div class="announcement header-item noprint">Please Carry Your Laptop for Lecture on 13/12/2022</div>
 <div class="header header-item noprint"></div>
 
     
@@ -698,7 +698,7 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id6">
+      <a class="reference internal nav-link" href="#id5">
        7.6.4.1. Solution
       </a>
      </li>
@@ -858,7 +858,7 @@ title="Print to PDF"
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id6">
+      <a class="reference internal nav-link" href="#id5">
        7.6.4.1. Solution
       </a>
      </li>
@@ -905,7 +905,7 @@ title="Print to PDF"
 <p>Similar things can be done with regard to conductivity properties and this brings us to the geohydraulic parameter of transmissivity (<span class="math notranslate nohighlight">\(T\)</span>,  L<span class="math notranslate nohighlight">\(^2\)</span>T<span class="math notranslate nohighlight">\(^{-1}\)</span>). The idea is to neglect vertical variations of hydraulic conductivity and to use vertically averaged values instead. This procedure does not eliminate horizontal variability, so transmissivity may still depend on horizontal coordinates  <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
 <p>The vertically averaged <span class="math notranslate nohighlight">\(K\)</span> value is then multiplied by the water-saturated thickness to obtain transmissivity. The concept of water-saturated thickness (or water-saturated depth) requires to distinguish whether <em>confined</em> or <em>unconfined flow</em> conditions prevail.</p>
 <p>In general, water-saturated thickness is the distance from the aquifer bottom to a level up to which all pores are filled with water. For <em>confined aquifers,</em> this level is equal to aquifer top and water-saturated thickness is tantamount to aquifer thickness. For <em>unconfined aquifers,</em> however, water-saturated thickness corresponds to the distance between aquifer bottom and groundwater level. We will see some illustrations below when we try to quantify transmissivity.</p>
-<p>Let us have a closer look at the confined case first. The black cuboid in <a class="reference internal" href="../../transport/L9/21_conservative_transport.html#trans-c-2d"><span class="std std-numref">Fig. 1.1</span></a>  illustrates that water-saturated thickness extends from aquifer bottom to aquifer top. So, it is equal to aquifer thickness <span class="math notranslate nohighlight">\(m\)</span>. Transmissivity is calculated by <span class="math notranslate nohighlight">\(T_x = K_x \cdot m\)</span> and <span class="math notranslate nohighlight">\(T_y = K_y \cdot m\)</span>. Here we allow for horizontal aquifer anisotropy with different hydraulic conductivities in <span class="math notranslate nohighlight">\(x-\)</span> and <span class="math notranslate nohighlight">\(y-\)</span> direction <span class="math notranslate nohighlight">\((K_x\neq K_y)\)</span>. For horizontally isotropic aquifers <span class="math notranslate nohighlight">\((K_x = K_y = K)\)</span>, transmissivity is given by <span class="math notranslate nohighlight">\(T = K \cdot m\)</span>.</p>
+<p>Let us have a closer look at the confined case first. The black cuboid in <a class="reference internal" href="#trans-c-2d"><span class="std std-numref">Fig. 7.1</span></a>  illustrates that water-saturated thickness extends from aquifer bottom to aquifer top. So, it is equal to aquifer thickness <span class="math notranslate nohighlight">\(m\)</span>. Transmissivity is calculated by <span class="math notranslate nohighlight">\(T_x = K_x \cdot m\)</span> and <span class="math notranslate nohighlight">\(T_y = K_y \cdot m\)</span>. Here we allow for horizontal aquifer anisotropy with different hydraulic conductivities in <span class="math notranslate nohighlight">\(x-\)</span> and <span class="math notranslate nohighlight">\(y-\)</span> direction <span class="math notranslate nohighlight">\((K_x\neq K_y)\)</span>. For horizontally isotropic aquifers <span class="math notranslate nohighlight">\((K_x = K_y = K)\)</span>, transmissivity is given by <span class="math notranslate nohighlight">\(T = K \cdot m\)</span>.</p>
 <figure class="align-center" id="trans-c-2d">
 <a class="reference internal image-reference" href="../../../_images/L08_f1.png"><img alt="../../../_images/L08_f1.png" src="../../../_images/L08_f1.png" style="width: 392.40000000000003px; height: 222.4px;" /></a>
 <figcaption>
@@ -1495,12 +1495,12 @@ u = \frac{Sr^2}{4Tt} \tag{T2}
 <section id="manual-comparison-of-data-and-type-curve">
 <h3><span class="section-number">7.6.3. </span>Manual Comparison of Data and Type Curve<a class="headerlink" href="#manual-comparison-of-data-and-type-curve" title="Permalink to this headline">#</a></h3>
 <p>Theis (1935) provides a graphical approach to use the  Theis equation. The following steps are to be followed for using the graphical approach:</p>
+<aside class="sidebar">
+<a class="reference internal image-reference" href="../../../_images/L08_f11.png" id="type-curve-fitting"><img alt="../../../_images/L08_f11.png" class="align-center" id="type-curve-fitting" src="../../../_images/L08_f11.png" style="width: 900px;" /></a>
+</aside>
 <ul class="simple">
 <li><p>The logarithm of drawdown (<span class="math notranslate nohighlight">\(\log s\)</span>) is plotted against the <span class="math notranslate nohighlight">\(\log(t/r^2)\)</span> in the data sheet</p></li>
 <li><p>The logarithm of the well function <span class="math notranslate nohighlight">\((\log W(u))\)</span> is plotted against <span class="math notranslate nohighlight">\(\log (1/u)\)</span> in a type curve sheet.</p></li>
-</ul>
-<a class="reference internal image-reference" href="../../../_images/L08_f11.png" id="id5"><img alt="../../../_images/L08_f11.png" class="align-center" id="id5" src="../../../_images/L08_f11.png" style="width: 600px;" /></a>
-<ul class="simple">
 <li><p>Both sheets are put on top of each other such that the data coincide with some part of the type curve.</p></li>
 <li><p>The shifts along the vertical and the horizontal axes correspond to the constant terms in the equations</p></li>
 </ul>
@@ -1527,11 +1527,11 @@ u = \frac{Sr^2}{4Tt} \tag{T2}
 <p class="admonition-title">Using Type curve</p>
 <p>For the provided pumping data, find the Transmissivity and Storage coefficient when the steady-discharge was 26.7 L/s.</p>
 </div>
-<section id="id6">
-<h4><span class="section-number">7.6.4.1. </span>Solution<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h4>
+<section id="id5">
+<h4><span class="section-number">7.6.4.1. </span>Solution<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
 <p>The practical application of the Theis method is facilitated by selecting a match point in the range of the data such that corresponding values <span class="math notranslate nohighlight">\(W_A\)</span>
 and <span class="math notranslate nohighlight">\(1/u_A\)</span> are “simple”.</p>
-<a class="reference internal image-reference" href="../../../_images/L08_f14.png" id="id7"><img alt="../../../_images/L08_f14.png" class="align-center" id="id7" src="../../../_images/L08_f14.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/L08_f14.png" id="id6"><img alt="../../../_images/L08_f14.png" class="align-center" id="id6" src="../../../_images/L08_f14.png" style="width: 600px;" /></a>
 <p>In the example:</p>
 <div class="math notranslate nohighlight">
 \[
