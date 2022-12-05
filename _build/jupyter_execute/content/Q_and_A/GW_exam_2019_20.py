@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[10]:
+# In[1]:
 
 
 import numpy as np
 import pandas as pd 
 import matplotlib.pyplot as plt
 from xlrd import *
-import ipysheet as ips
+#import ipysheet as ips
 import panel as pn
 get_ipython().run_line_magic('matplotlib', 'inline')
 from scipy import stats 
@@ -48,12 +48,13 @@ pn.extension('katex')
 # 1. The essential feature of confined aquifer is provided in the figure above.
 # 
 
-# In[60]:
+# In[5]:
 
 
 cards='''
 ## Q1 Aquifier Types
-Q1 Aquifier Types ewneovnervno
+Q1 Aquifier Types
+
 
 (5 pts)
 ---
@@ -94,12 +95,11 @@ img: "figs/Q1b_2019-20.png"
 '''
 
 
-# In[61]:
+# In[6]:
 
 
 from jupytercards import md2json, display_flashcards
 myjson=md2json(cards , "cards.json")
-#print(myjson)
 display_flashcards(myjson)
 
 
@@ -233,7 +233,6 @@ $\Delta h = \\alpha_{pm}\cdot\rho_w \cdot g \cdot h \cdot  \Delta \psi$, with $\
 
 from jupytercards import md2json, display_flashcards
 myjson=md2json(cards , "cards.json")
-#print(myjson)
 display_flashcards(myjson)
 
 

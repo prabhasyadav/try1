@@ -139,18 +139,18 @@ print("The resulting total energy head is {0:0.2f} m".format(h))
 
 # Darcy's law is a simple mathematical statement which neatly summarizes several
 # familiar properties that groundwater flowing in aquifers exhibits, including: 
-# > if there
+# > If there
 #  is no hydraulic gradient (difference in hydraulic head over a distance), no flow occurs
 #  (this is hydrostatic conditions), 
 # 
-# > if there is a hydraulic gradient, flow will occur from
+# > If there is a hydraulic gradient, flow will occur from
 #  a high head towards a low head (opposite the direction of increasing gradient, hence the
 # negative sign in Darcy's law), 
 # 
-# > the greater the hydraulic gradient (through the same
+# > The greater the hydraulic gradient (through the same
 # aquifer material), the greater the discharge, and 
 # 
-# > the discharge may be different
+# > The discharge may be different
 # through different aquifer materials (or even through the same material, in a different
 # direction) even if the same hydraulic gradient exists.
 

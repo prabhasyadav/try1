@@ -28,7 +28,7 @@ import warnings; warnings.simplefilter('ignore')
 # :name: Porus Media
 # ```
 # 
-# 1. **Unconsolidated porous medium (Sediments)**: it is non-cemented porous media and the grains can be taken away. The formation of such porous media is due to deposition of solid material mostly by water.
+# **Unconsolidated porous medium (Sediments)**: it is non-cemented porous media and the grains can be taken away. The formation of such porous media is due to deposition of solid material mostly by water.
 # 
 # 
 # 
@@ -39,7 +39,7 @@ import warnings; warnings.simplefilter('ignore')
 # :name: Unconsolidated porous medium
 # ```
 # 
-# 2. **Consolidated porous medium (Rocks)**: the formation is due to increased pressure acting together with thermal and chemical processes. It has two types:
+# **Consolidated porous medium (Rocks)**: the formation is due to increased pressure acting together with thermal and chemical processes. It has two types:
 # 
 # > Fractured porous media 
 # 

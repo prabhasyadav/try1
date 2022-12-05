@@ -1,6 +1,21 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[1]:
+
+
+from IPython.display import display, HTML, YouTubeVideo
+from IPython.display import Video
+
+
+# In[2]:
+
+
+display(YouTubeVideo("AM-NrQoRIYY",
+                     width=350,height=200,title="Argo Online School",
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen"))
+
+
 # ## Simulating Seive Analysis ##
 # 
 # #### How to use the tool? ####
@@ -13,13 +28,16 @@
 # 6. Click the exectute button.
 # 7. For re-simulations - changes the input values in the boxes and click the "**run interact**" button. 
 # 
+# 
+# 
+# 
 # This tool can also be downloaded and run locally. For that download the _deacy.ipynb_ file and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The code may also be executed in the book page. 
 # 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 
-# In[1]:
+# In[3]:
 
 
 # used Python library
@@ -110,7 +128,7 @@ Inter=widgets.interact_manual(SA,
 
 
 
-# In[2]:
+# In[4]:
 
 
 # used Python library
@@ -202,7 +220,7 @@ Inter=widgets.interact_manual(SA,
 
 
 
-# In[3]:
+# In[5]:
 
 
 print(Inter)
@@ -210,7 +228,7 @@ print(Inter)
 
 # **The plot shown is interactive use the pointer and others tools in the graph to obtain d10 and d60 for the next step**
 
-# In[4]:
+# In[6]:
 
 
 def SA2(d10, d60, t):

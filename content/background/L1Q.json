@@ -6,17 +6,17 @@
             {
                 "answer": "The laws governing the movement of subterranean water",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
                 "answer": "The mechanical, chemical and thermal interaction of this water with the porous solid ",
                 "correct": false,
-                "feedback": "Incorrect"
+                "feedback": "Incorrect Feedback :"
             },
             {
                 "answer": "the transport of energy and chemical constituents by the flow",
                 "correct": false,
-                "feedback": "Incorrect."
+                "feedback": "Incorrect"
             },
             {
                 "answer": "None of the above",

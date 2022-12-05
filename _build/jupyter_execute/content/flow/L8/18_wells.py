@@ -555,7 +555,7 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # ```{image} images/L08_f13.png
 # :width:200px
 # :align: center
-# :name: Difference between international and German definition of groundwater.
+# :name: Pumping Tests
 # ```
 # 
 # 
@@ -632,17 +632,16 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # 
 # Theis (1935) provides a graphical approach to use the  Theis equation. The following steps are to be followed for using the graphical approach:
 # 
+# ```{sidebar}
+# ```{image} images/L08_f11.png
+# :width: 900px
+# :align: center
+# :name: Type Curve Fitting 
+# ``` 
+# 
 # + The logarithm of drawdown ($\log s$) is plotted against the $\log(t/r^2)$ in the data sheet
 # 
 # + The logarithm of the well function $(\log W(u))$ is plotted against $\log (1/u)$ in a type curve sheet. 
-# 
-# 
-# ```{image} images/L08_f11.png
-# :width: 600px
-# :align: center
-# :name: Difference between international and German definition of groundwater.
-# ```
-# 
 # 
 # + Both sheets are put on top of each other such that the data coincide with some part of the type curve.
 # 
