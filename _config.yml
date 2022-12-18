@@ -21,8 +21,8 @@ url: "https://vibhubatheja.github.io" # the base hostname & protocol for your si
 #######################################################################################
 # Book settings
 title                       : Groundwater I  # The title of the book. Will be placed in the left navbar.
-author                      : P. K. Yadav, T. Reimann and several others  # The author of the book
-copyright                   : ""  # Copyright year to be placed in the footer
+author                      : Dr Prabhas K. Yadav # The author of the book
+copyright                   : "2022"  # Copyright year to be placed in the footer
 logo                        : logo.jpg  # A path to the book logo
 exclude_patterns            : [_build, recycle,]  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 textbook_logo_link        : https://prabhasyadav.github.io/iGW-I/  # A link for the logo.
@@ -54,14 +54,15 @@ html:
   #baseurl                   : https://prabhasyadav.github.io/iGW-I/   
   extra_footer : |
       <div>
-      <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a>
-          All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+       All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
       </div>
+      
+      
 # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     hypothesis              : true  # at the end make this true
     
-  announcement: "Please Carry Your Laptop for Lecture on 13/12/2022"
+  #announcement: "Please Carry Your Laptop for Lecture on 13/12/2022"
 #html_static_path = ["_static"]
 #html_css_files = ["custom.css"] 
 

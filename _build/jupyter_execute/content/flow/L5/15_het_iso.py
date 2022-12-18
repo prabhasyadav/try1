@@ -499,6 +499,14 @@ print("\033[1mSolution:\033[0m\n\nThe resulting hydraulic conductivity is \033[1
 # Heterogeneity and Anisotropy in aquifer
 # ```
 
+# ## Additional Material
+
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSV04S9lhhZF2brpVIleI_UJYLVbrErYTtzE_XAY97ypV4QsGUpzkqxJ0BB3AZhpA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# 
+# ```
+
 # ## Chapter Quiz
 
 # In[9]:

@@ -15,7 +15,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-# # Tutorial 9 - Reactive transport #
+# # Reactive transport #
 # 
 # 
 # <br>
@@ -480,7 +480,7 @@ plt.plot(d23_Ceq, pred, 'r', label='y={:.2E}x+{:.2E}'.format(slope,intercept)) ;
 plt.xlabel(r"Equilibrium concentration,$C_{eq} $ (mg/L)"); plt.ylabel(r"Mass Ratio, $C_{a} $ (mg/L)");
 plt.grid(); plt.legend(fontsize=11);  plt.text(20, 0.30,'$R^2 = %0.2f$' % r_value)
 plt.close() # otherwise we have 2 figure
-r23_8 = pn.pane.Matplotlib(fig, dpi=300)
+r23_8 = pn.pane.Matplotlib(fig, dpi=150)
 
 pn.Row(r23_7, r23_8) 
 
@@ -621,7 +621,7 @@ plt.plot(log_Ceq, log_Ca, 'o', label=' provided data');
 plt.xlabel(r"Equilibrium concentration,$\log C_{eq} $ (mg/L)"); plt.ylabel(r"Mass Ratio, $\log C_{a} $ (mg/L)");
 plt.legend(fontsize=11);
 plt.close() # otherwise we have 2 figure only when using pn.
-r24_3 = pn.pane.Matplotlib(fig1, dpi=300)
+r24_3 = pn.pane.Matplotlib(fig1, dpi=150)
 
 
 # Linear fit we use scipy.stats.linregress library
@@ -635,7 +635,7 @@ plt.plot(log_Ceq, pred, 'r', label='y={:.2E}x+{:.2E}'.format(slope,intercept)) ;
 plt.xlabel(r"Equilibrium concentration,$\log C_{eq} $ (mg/L)"); plt.ylabel(r"Mass Ratio, $\log C_{a} $ (mg/L)");
 plt.grid(); plt.legend(fontsize=11);  plt.text(1.20, -0.60,'$R^2 = %0.2f$' % r_value)
 plt.close() # otherwise we have 2 figure
-r24_4 = pn.pane.Matplotlib(fig2, dpi=300)
+r24_4 = pn.pane.Matplotlib(fig2, dpi=150)
 
 # solution 10.2
 

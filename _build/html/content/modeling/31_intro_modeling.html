@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Lecture 11: Background of Groundwater Modeling &#8212; Groundwater I</title>
+    <title>1. Background of Groundwater Modeling &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -80,7 +78,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Please Carry Your Laptop for Lecture on 13/12/2022</div>
+<div class="announcement header-item noprint"></div>
 <div class="header header-item noprint"></div>
 
     
@@ -204,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   1. Lecture 11:  Background of Groundwater Modeling
+   1. Background of Groundwater Modeling
   </a>
  </li>
 </ul>
@@ -226,37 +224,37 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T3/tutorial_03.html">
-   3. Tutorial 3 - Darcy Law and Conductivity
+   3. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T4/tutorial_04.html">
-   4. Tutorial 4 - Effective K &amp; Recitation
+   4. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T5/tutorial_05.html">
-   5. Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
+   5. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T6/tutorial_06.html">
-   6. Tutorial 6 - Tutorial Problems on Flow in Confined/Unconfined Aquifer
+   6. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T7/tutorial_07.html">
-   7. Tutorial 7 - Wells
+   7. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T8/tutorial_08.html">
-   8. Tutorial 8 - Conservative transport
+   8. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T9/tutorial_09.html">
-   9. Tutorial 9 - Reactive transport
+   9. Reactive transport
   </a>
  </li>
 </ul>
@@ -314,11 +312,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../testcodeer.html">
    10. Testing the code for run
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../tester.html">
-   11. NEw Run
   </a>
  </li>
 </ul>
@@ -655,7 +648,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lecture 11:  Background of Groundwater Modeling</h1>
+                <h1>Background of Groundwater Modeling</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -748,8 +741,8 @@ title="Print to PDF"
                 
   <div class="cell tag_hide-input tag_remove-input docutils container">
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="lecture-11-background-of-groundwater-modeling">
-<h1><span class="section-number">1. </span>Lecture 11:  Background of Groundwater Modeling<a class="headerlink" href="#lecture-11-background-of-groundwater-modeling" title="Permalink to this headline">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="background-of-groundwater-modeling">
+<h1><span class="section-number">1. </span>Background of Groundwater Modeling<a class="headerlink" href="#background-of-groundwater-modeling" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="motivation">
@@ -862,7 +855,7 @@ title="Print to PDF"
 </section>
 <section id="example-of-an-analytical-solution">
 <h3><span class="section-number">1.2.3. </span>Example of an Analytical Solution<a class="headerlink" href="#example-of-an-analytical-solution" title="Permalink to this headline">#</a></h3>
-<p>Consider a conceptual model presented in the Figure <a class="reference internal" href="../tools/1D_ditchflow.html#ditch"><span class="std std-ref">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span></a>. The unconfined aquifer separates two surface exposed water bodies. The water body in the left has a higher hydraulic head (<span class="math notranslate nohighlight">\(h_0\)</span>, [L]) compared to that on the right (<span class="math notranslate nohighlight">\(h_u\)</span>). Thus the flow of water is from left water body to the right one along the separating aquifer. In this scenario one of the problem to address will be to understand how the aquifer reacts to change in heads of water bodies. Additionally, how additional water, e.g., from precipitation/recharge (<span class="math notranslate nohighlight">\(N\)</span>, [L/T]), will effect the aquifer water.</p>
+<p>Consider a conceptual model presented in the Figure <a class="reference internal" href="#ditch"><span class="std std-ref">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span></a>. The unconfined aquifer separates two surface exposed water bodies. The water body in the left has a higher hydraulic head (<span class="math notranslate nohighlight">\(h_0\)</span>, [L]) compared to that on the right (<span class="math notranslate nohighlight">\(h_u\)</span>). Thus the flow of water is from left water body to the right one along the separating aquifer. In this scenario one of the problem to address will be to understand how the aquifer reacts to change in heads of water bodies. Additionally, how additional water, e.g., from precipitation/recharge (<span class="math notranslate nohighlight">\(N\)</span>, [L/T]), will effect the aquifer water.</p>
 <figure class="align-center" id="ditch">
 <a class="reference internal image-reference" href="../../_images/M11_f4.png"><img alt="../../_images/M11_f4.png" src="../../_images/M11_f4.png" style="width: 456.40000000000003px; height: 172.60000000000002px;" /></a>
 <figcaption>
@@ -1100,13 +1093,12 @@ The resulting head with head is 8.91 m
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By P. K. Yadav, T. Reimann and several others<br/>
+    By Dr Prabhas K. Yadav<br/>
   
-      &copy; Copyright .<br/>
+      &copy; Copyright 2022.<br/>
     <div class="extra_footer">
       <div>
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a>
-    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+ All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
 </div>
 
     </div>

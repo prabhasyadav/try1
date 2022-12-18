@@ -499,6 +499,14 @@ print("\033[1mSolution:\033[0m\nThe resulting transmissivity is \033[1m{:02.4} m
 # [^Kinzelbach1986]: Kinzelbach, W. (1986), _Groundwater Modelling: An Introduction with Sample Programs in BASIC,_ Elsevier.
 # 
 
+# ## Additional Material
+
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQezZciHmBczLlVQb-Wtg51_3dCDS4xUN7Xpqv4bpnScuwIQ5WXfAlBpKubemXEqw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# 
+# ```
+
 # ## Chapter Quiz 
 
 # In[5]:

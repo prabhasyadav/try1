@@ -10,7 +10,7 @@ import panel as pn
 pn.extension('katex', 'mathjax') 
 
 
-# # Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
+# # Aquifer Heterogeneity/Anisotropy
 # 
 
 # ### Tutorial Problem 12: Hydrologic Triangle
@@ -229,4 +229,10 @@ r11_3= pn.pane.Markdown("""
  """, width = 900, style={'font-size': '13pt'})
 
 pn.Column(r11_1, r11_2, r11_3)
+
+
+# In[ ]:
+
+
+
 

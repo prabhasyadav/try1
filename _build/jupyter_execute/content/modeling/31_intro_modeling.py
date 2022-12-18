@@ -12,7 +12,7 @@ import pandas as pd
 from IPython.display import Latex
 
 
-# # Lecture 11:  Background of Groundwater Modeling
+# # Background of Groundwater Modeling
 # 
 # 
 # _(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_

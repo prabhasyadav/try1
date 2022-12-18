@@ -11,7 +11,7 @@ import panel as pn
 pn.extension('katex') 
 
 
-# # Tutorial 4 - Effective K & Recitation #
+# # Effective K & Recitation #
 # 
 # + **solutions for homework problems 1 – 4**
 # 

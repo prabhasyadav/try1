@@ -364,6 +364,14 @@ h_c=(2*sigma)/(rho*g)
 print("The maximum water rise in this tube is: {0:0.2f} 1/R cm".format(h_c))
 
 
+# ### Additional Material
+
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_8vqwCApfSxuUedcQtX1z_JVEJc6aE7l7Tp33g4SsQN89g6XHKnVQmeFGVWTDjQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# 
+# ```
+
 # ### Chapter Quiz 
 
 # In[1]:

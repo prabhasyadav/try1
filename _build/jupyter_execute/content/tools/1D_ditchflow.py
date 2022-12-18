@@ -7,7 +7,7 @@
 # 
 # ## Scenario and Equation
 # 
-# ```{figure} /contents/modeling/lecture_11/images/M11_f4.png
+# ```{figure} images/M11_f4.png
 # ---
 # scale: 20%
 # align: center

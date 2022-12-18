@@ -440,6 +440,14 @@ interactive_plot
 # 
 # + Cases with changing density have proven to be more easily tractable if the mass budget equation is used.
 
+# ### Additional Material
+
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQgt0Lrx2PMinUb-IEakvlMQ69VvqLzaxUizmhvJpkAiw6FDVA11xyuJZ8cHHY70FiFaoI8hFvCiZn/embed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# 
+# ```
+
 # ### Chapter Quiz
 
 # In[4]:
@@ -451,10 +459,4 @@ with open("L1Q.json", "r") as file:
     questions=json.load(file)
     
 display_quiz(questions)
-
-
-# In[ ]:
-
-
-
 

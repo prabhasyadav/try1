@@ -48,7 +48,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+from statistics import mean
 # specific libraries
 from ipywidgets import interactive, widgets, Layout # for interactive plot with slider
 from scipy.special import expi # for well function
@@ -100,17 +100,50 @@ df.head(5) # change 5 to larger number if you want to see more data in the table
 def W(u):  
     return  -expi(-u) # provides the well function
 
+def fitapprx(a,b,y) :
+    cod=[]
+    z=W(1/a) 
+    rsq=0
+    #print(z,b)
+    meanreg=mean(z)
+    meanpoint=mean(b)
+    yb_y=0
+    y_y=0
+    lencntr=0
+    for j in range (len(b)) :
+        
+
+        yb_y=yb_y+((z[j]-b[j])**2)
+        y_y=y_y+((b[j]-meanpoint)**2)
+        
+        lencntr=lencntr+z[j]-b[j]
+        
+    lencntr=(lencntr/len(b))
+    rsq=1-(yb_y/y_y)
+    print("R Square=","%.2f"  % rsq)
+    #if (rsq<0.8) :
+       # if (lencentr<0) :
+            
+         # print("Shift the Points more the Avg Distance between Curve and Points =",lencentr)
+    
+    
+    return(rsq)
+    
+    
+    #Increase Transmisivity Shifts Up same with storage coifficent 
+    
+
 def well_f(T, S_c, r, Q): # provides the fit curve for given r and Q
     
         
     # calculated function see L07-slide 31
     u_1d = 4*T*t_s/(S_c*r**2) # calculating 1/u
     w_ud = 4*np.pi*s_m*T/Q   # well function
-
+    
     # plots
     u_1 = np.logspace(10,-1,250, base=10.0)
     w_u =W(1/u_1) 
-    
+    apprxm=fitapprx(u_1d,w_ud,w_u)
     plt.figure(figsize=(9,6));
     plt.loglog(u_1, w_u, label = "Type curve"); 
     plt.loglog(u_1d, w_ud, "o", color="red", label = "data")

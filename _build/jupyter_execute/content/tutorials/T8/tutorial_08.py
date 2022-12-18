@@ -11,7 +11,7 @@ import panel as pn
 pn.extension('katex') 
 
 
-# # Tutorial 8 - Conservative transport #
+# # Conservative transport #
 # 
 # 
 # <br>

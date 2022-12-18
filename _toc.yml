@@ -53,8 +53,7 @@ parts:
   - file: content/tools/1D_advection_dispersion
   - file: content/tools/Kinetics_degradation
   - file: content/tools/1D_ditchflow
-  - file: content/testcodeer
-  - file: content/tester
+  - file: content/testcodeer 
 - caption: Previous Years Q&A
   numbered: true
   chapters:

@@ -11,7 +11,7 @@ import panel as pn
 pn.extension("katex") 
 
 
-# # Tutorial 3 - Darcy Law and Conductivity #
+# # Darcy Law and Conductivity #
 # 
 # _(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 # 
@@ -511,4 +511,10 @@ plt.grid(axis='y', linestyle='--')
 plt.xlim((0, 1800)); plt.ylim((0,0.7)) 
 plt.xlabel("t(s)", fontsize=12 )
 plt.ylabel(r"ln($\Delta h(0)/\Delta h(t)$)(-)", fontsize=12); 
+
+
+# In[ ]:
+
+
+
 

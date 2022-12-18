@@ -41,7 +41,11 @@ pn.extension('katex')
 # 
 # &nbsp;
 # 
-# <img src="figs/Q1b_2019-20.png" alt = "Question 5" class="bg-primary" width =  "1000px"> 
+# ```{image} figs/Q1b_2019-20.png
+# :height: 400px
+# :align: center
+# :name: F1
+# ```
 # 
 # **Confined Aquifer**
 # 
@@ -309,7 +313,13 @@ print("The water abstraction volume is {0:0.2f}".format(d_h), "m")
 # 
 # &nbsp;
 # 
-# <img src="figs/Q3a_2019-20.png" alt="Question 3a" class="bg-primary" width= "500px"> 
+# ```{image} figs/Q3a_2019-20.png
+# :height: 300px
+# :align: center
+# :name: Q3a
+# ```
+# 
+#  
 # 
 
 # In[4]:
@@ -434,7 +444,14 @@ plt.ylabel('grain fraction < d ins % of total mass');
 # Water levels in m a.s.l. were measured at three observation wells (see figure).
 # 
 # 
-# <img src="figs/Q5_2019-2020.png" alt = "Question 5" class="bg-primary" width = "300px"> 
+# 
+# ```{image} figs/Q5_2019-2020.png
+# :height: 300px
+# :align: center
+# :name: Question 5
+# ```
+# 
+# 
 # 
 # a. Sketch hydraulic head isolines for increments of 0.5 m. (ca. 3 points.)
 # 
@@ -452,8 +469,11 @@ plt.ylabel('grain fraction < d ins % of total mass');
 # 
 # The isolines and flow direction is provided in the figure below.
 # 
-# 
-# <img src="figs/Q5a_2019-2020.png" alt = "Question 5a" class="bg-primary" width ="300px"> 
+# ```{image} figs/Q5a_2019-2020.png
+# :height: 300px
+# :align: center
+# :name: Question 5a
+# ```
 
 # In[8]:
 
@@ -507,7 +527,11 @@ print("The effective vertical conductivity of the aquifer is {0:0.2E}".format(K_
 # Figure below presents the scenario of a well in an _unconfined_ aquifer.
 # 
 # 
-# <img src="figs/Q6_2019-2020.png" alt = "Question 7b" class="bg-primary" width ="500px"> 
+# ```{image} figs/Q6_2019-2020.png
+# :height: 300px
+# :align: center
+# :name: Question 7b
+# ```
 # 
 
 # In[9]:
@@ -562,7 +586,11 @@ print("The drawdown in the well is {0:0.2f}".format(s_6), "m")
 # 
 # The sketch below distinguish between advective and dispersive fluxes. The figure in the left is of advective process and that in the right results to dispersive flux.
 # 
-# <img src="figs/Q7b_2019-2020.png" alt = "Question 7b" class="bg-primary" width ="500px"> 
+# ```{image} figs/Q7b_2019-2020.png
+# :height: 300px
+# :align: center
+# :name: Question 7b
+# ```
 
 # In[10]:
 
@@ -702,8 +730,11 @@ plt.text(2.2, 0.012,'$C_a = K_{d}\cdot C_{eq}$');
 
 # **Solution 9b** - (L14/12)
 # 
-# 
-# <img src="figs/Q9b_2019-2020.png" alt="Question 9b" class="bg-primary" width = "500px">
+# ```{image} figs/Q9b_2019-2020.png
+# :height: 300px
+# :align: center
+# :name: Question 9b
+# ```
 
 # **Solution 9c**
 # (L13/16)

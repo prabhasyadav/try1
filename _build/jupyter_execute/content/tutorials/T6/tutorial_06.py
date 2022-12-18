@@ -12,7 +12,7 @@ from scipy import stats
 pn.extension('katex', 'mathjax') 
 
 
-# # Tutorial 6 - Tutorial Problems on Flow in Confined/Unconfined Aquifer #
+# # Flow in Confined/Unconfined Aquifer #
 # 
 # + **solutions for homework problems 3 – 4**
 # 
@@ -32,7 +32,7 @@ pn.extension('katex', 'mathjax')
 
 # ### Homework Problem 3 ###
 
-# In[3]:
+# In[2]:
 
 
 #
@@ -47,13 +47,13 @@ passed the sample during an experimental period of 36 s. <br> <br>
 **C**. Which material could be contained in the sample?
 """, style={'font-size': '12pt'})
 spacer2=pn.Spacer(width=50)
-r3_2 = pn.pane.PNG("images/T06_TH3.png", width=500)
+r3_2 = pn.pane.PNG("T06_TH3.png", width=500)
 pn.Row(r3_1,spacer2, r3_2)  
 
 
 # ### Solution of the Homework Problem 3 ###
 
-# In[6]:
+# In[3]:
 
 
 #
@@ -101,7 +101,7 @@ r3_2.object = "images/T06_TH3a.png"
 pn.Column(r3_3, r3_4, C1, r3_7)  
 
 
-# In[2]:
+# In[4]:
 
 
 # Problem 3b, Given are:
@@ -133,7 +133,7 @@ pn.Row(r3_8)
 
 # ### Homework Problem 4 ###
 
-# In[10]:
+# In[5]:
 
 
 # given data - you may change the number
@@ -159,7 +159,7 @@ spacer2=pn.Spacer(width=50)
 pn.Column(r_h4,spacer2, df1)
 
 
-# In[11]:
+# In[6]:
 
 
 #
@@ -171,7 +171,7 @@ r_h4c = pn.pane.Markdown("""
 **D.** Determine intrinsic permeability k.<br>
 """, width=500, style={'font-size': '12pt'})
 
-r_h4e = pn.pane.PNG("images/T06_TH4b.png", width=350)
+r_h4e = pn.pane.PNG("T06_TH4b.png", width=350)
 spacer2=pn.Spacer(width=50)
 
 
@@ -180,7 +180,7 @@ pn.Row(r_h4c, spacer2, r_h4e)
 
 # ### Solution of Homework Problem 4 ### 
 
-# In[5]:
+# In[7]:
 
 
 #
@@ -199,7 +199,7 @@ r4_1
  
 
 
-# In[12]:
+# In[8]:
 
 
 #Caclulation
@@ -230,7 +230,7 @@ r4_2 = pn.pane.Matplotlib(fig, dpi=300)
 pn.Row(df2,spacer2,r4_2)  
 
 
-# In[13]:
+# In[9]:
 
 
 #Solution of 4C
@@ -265,7 +265,7 @@ print("The permeability of the media in Darcy's unit is: {0:1.2f}".format(k_D), 
 # 
 # ### Tutorial Problem 16- flow in confined aquifer ###
 
-# In[14]:
+# In[10]:
 
 
 #
@@ -280,7 +280,7 @@ is 1.5 m/d (figure is not to the scale).
 and 1 km from well $h_2$?
 """,width = 600, style={'font-size': '12pt'})  
 
-r16_3 = pn.pane.PNG("images/T06_TP16.png", width=350)
+r16_3 = pn.pane.PNG("T06_TP16.png", width=350)
 
 r16_4 = pn.pane.Markdown("""
 ### Solution of Problem 20:###
@@ -292,7 +292,7 @@ pn.Row(r16_2, r16_3)
 
 # ### Solution of Problem 16 ###
 
-# In[15]:
+# In[11]:
 
 
 # solution
@@ -316,7 +316,7 @@ where $x$ is the distance from $h_1$
 r16_6
 
 
-# In[21]:
+# In[12]:
 
 
 # Given are:
@@ -350,7 +350,7 @@ print("The head at 0.5 Km from well 1 is : {0:1.2f}".format(h_y1), "m")
 
 # ### Tutorial Problem 17- flow in unconfined aquifer ###
 
-# In[22]:
+# In[13]:
 
 
 #
@@ -360,14 +360,14 @@ is to be obtained. Other information available are that the aquifer is 30 m wide
 $K = 5 \times 10^{-6}$ m/s. Also known are that the Duipuit assumptions applies to this unconfined aquifer. 
 """,width = 500, style={'font-size': '12pt'})  
 
-r17_2 = pn.pane.PNG("images/T06_TP17.png", width=400)
+r17_2 = pn.pane.PNG("T06_TP17.png", width=400)
 
 pn.Row(r17_1, r17_2) 
 
 
 # ### Solution Tutorial Problem 17 ###
 
-# In[23]:
+# In[14]:
 
 
 #
@@ -402,7 +402,7 @@ $$
 r17_4
 
 
-# In[29]:
+# In[15]:
 
 
 #Solution of Tutorial Problem 22:
@@ -438,7 +438,7 @@ print(K4)
 # 
 # ### Homework Problem 8 - confined aquifer ###
 
-# In[31]:
+# In[16]:
 
 
 #
@@ -448,7 +448,7 @@ The aquifer is confined and of variable thickness across the cross-section. It h
 $5.6 \times 10^{-5}$ m/s. The total Discharge from the aquifer of width 500 m is required to be obtained.
 """,width = 400, style={'font-size': '12pt'})  
 
-rh8_3 = pn.pane.PNG("images/T06_HP8.png", width=500)
+rh8_3 = pn.pane.PNG("T06_HP8.png", width=500)
 
 pn.Row(rh8_2, rh8_3)
 
@@ -456,7 +456,7 @@ pn.Row(rh8_2, rh8_3)
 # ### Homework Problem 9 - unconfined aquifer ### 
 # 
 
-# In[33]:
+# In[17]:
 
 
 #
@@ -470,7 +470,7 @@ b) What will the head at the same location when aquifer receives no recharge.
 
 """,width = 900, style={'font-size': '12pt'})  
 
-rh9_3 = pn.pane.PNG("images/T06_HP9.png", width=450)
+rh9_3 = pn.pane.PNG("T06_HP9.png", width=450)
 
 pn.Column(rh9_2, rh9_3)
 

@@ -717,6 +717,14 @@ print("Discharge from the well is {0:0.2f} m\u00b3/d".format(Q_1))
 # Computationally fitted data to the Type curve
 # ```
 
+# ## Additional Material
+
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRxhZiKC5URIF2lCzGeOb9lGaFmTntnPrQNI9oBxM1GkRKltNAu9EUAml0ZU31Kcg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# 
+# ```
+
 # ## Chapter Quiz
 
 # In[7]:
