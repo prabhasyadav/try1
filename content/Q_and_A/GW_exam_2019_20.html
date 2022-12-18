@@ -53,13 +53,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="11. NEw Run" href="../tester.html" />
+    <link rel="prev" title="10. Testing the code for run" href="../testcodeer.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -79,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Please Carry Your Laptop for Lecture on 13/12/2022</div>
+<div class="announcement header-item noprint"></div>
 <div class="header header-item noprint"></div>
 
     
@@ -225,37 +223,37 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T3/tutorial_03.html">
-   3. Tutorial 3 - Darcy Law and Conductivity
+   3. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T4/tutorial_04.html">
-   4. Tutorial 4 - Effective K &amp; Recitation
+   4. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T5/tutorial_05.html">
-   5. Tutorial 5 - Tutorial problems aquifer heterogeneity/anisotropy
+   5. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T6/tutorial_06.html">
-   6. Tutorial 6 - Tutorial Problems on Flow in Confined/Unconfined Aquifer
+   6. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T7/tutorial_07.html">
-   7. Tutorial 7 - Wells
+   7. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T8/tutorial_08.html">
-   8. Tutorial 8 - Conservative transport
+   8. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T9/tutorial_09.html">
-   9. Tutorial 9 - Reactive transport
+   9. Reactive transport
   </a>
  </li>
 </ul>
@@ -313,11 +311,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../testcodeer.html">
    10. Testing the code for run
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../tester.html">
-   11. NEw Run
   </a>
  </li>
 </ul>
@@ -576,7 +569,439 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell tag_remove-output tag_remove-input docutils container">
+  <div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/javascript">(function(root) {
+  function now() {
+    return new Date();
+  }
+
+  var force = true;
+
+  if (typeof root._bokeh_onload_callbacks === "undefined" || force === true) {
+    root._bokeh_onload_callbacks = [];
+    root._bokeh_is_loading = undefined;
+  }
+
+  if (typeof (root._bokeh_timeout) === "undefined" || force === true) {
+    root._bokeh_timeout = Date.now() + 5000;
+    root._bokeh_failed_load = false;
+  }
+
+  function run_callbacks() {
+    try {
+      root._bokeh_onload_callbacks.forEach(function(callback) {
+        if (callback != null)
+          callback();
+      });
+    } finally {
+      delete root._bokeh_onload_callbacks
+    }
+    console.debug("Bokeh: all callbacks have finished");
+  }
+
+  function load_libs(css_urls, js_urls, js_modules, callback) {
+    if (css_urls == null) css_urls = [];
+    if (js_urls == null) js_urls = [];
+    if (js_modules == null) js_modules = [];
+
+    root._bokeh_onload_callbacks.push(callback);
+    if (root._bokeh_is_loading > 0) {
+      console.debug("Bokeh: BokehJS is being loaded, scheduling callback at", now());
+      return null;
+    }
+    if (js_urls.length === 0 && js_modules.length === 0) {
+      run_callbacks();
+      return null;
+    }
+    console.debug("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
+
+    function on_load() {
+      root._bokeh_is_loading--;
+      if (root._bokeh_is_loading === 0) {
+        console.debug("Bokeh: all BokehJS libraries/stylesheets loaded");
+        run_callbacks()
+      }
+    }
+
+    function on_error() {
+      console.error("failed to load " + url);
+    }
+
+    for (var i = 0; i < css_urls.length; i++) {
+      var url = css_urls[i];
+      const element = document.createElement("link");
+      element.onload = on_load;
+      element.onerror = on_error;
+      element.rel = "stylesheet";
+      element.type = "text/css";
+      element.href = url;
+      console.debug("Bokeh: injecting link tag for BokehJS stylesheet: ", url);
+      document.body.appendChild(element);
+    }
+
+    var skip = [];
+    if (window.requirejs) {
+      window.requirejs.config({'packages': {}, 'paths': {'katex': 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min', 'autoLoad': 'https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min', 'gridstack': 'https://cdn.jsdelivr.net/npm/gridstack@4.2.5/dist/gridstack-h5', 'notyf': 'https://cdn.jsdelivr.net/npm/notyf@3/notyf.min'}, 'shim': {'gridstack': {'exports': 'GridStack'}}});
+      require(["katex"], function(katex) {
+	window.katex = katex
+	on_load()
+      })
+      require(["autoLoad"], function(renderMathInElement) {
+	window.renderMathInElement = renderMathInElement
+	on_load()
+      })
+      require(["gridstack"], function(GridStack) {
+	window.GridStack = GridStack
+	on_load()
+      })
+      require(["notyf"], function() {
+	on_load()
+      })
+      root._bokeh_is_loading = css_urls.length + 4;
+    } else {
+      root._bokeh_is_loading = css_urls.length + js_urls.length + js_modules.length;
+    }    if (((window['katex'] !== undefined) && (!(window['katex'] instanceof HTMLElement))) || window.requirejs) {
+      var urls = ['https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js'];
+      for (var i = 0; i < urls.length; i++) {
+        skip.push(urls[i])
+      }
+    }    if (((window['renderMathInElement'] !== undefined) && (!(window['renderMathInElement'] instanceof HTMLElement))) || window.requirejs) {
+      var urls = ['https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js'];
+      for (var i = 0; i < urls.length; i++) {
+        skip.push(urls[i])
+      }
+    }    if (((window['GridStack'] !== undefined) && (!(window['GridStack'] instanceof HTMLElement))) || window.requirejs) {
+      var urls = ['https://cdn.holoviz.org/panel/0.14.0/dist/bundled/gridstack/gridstack@4.2.5/dist/gridstack-h5.js'];
+      for (var i = 0; i < urls.length; i++) {
+        skip.push(urls[i])
+      }
+    }    if (((window['Notyf'] !== undefined) && (!(window['Notyf'] instanceof HTMLElement))) || window.requirejs) {
+      var urls = ['https://cdn.holoviz.org/panel/0.14.0/dist/bundled/notificationarea/notyf@3/notyf.min.js'];
+      for (var i = 0; i < urls.length; i++) {
+        skip.push(urls[i])
+      }
+    }    for (var i = 0; i < js_urls.length; i++) {
+      var url = js_urls[i];
+      if (skip.indexOf(url) >= 0) {
+	if (!window.requirejs) {
+	  on_load();
+	}
+	continue;
+      }
+      var element = document.createElement('script');
+      element.onload = on_load;
+      element.onerror = on_error;
+      element.async = false;
+      element.src = url;
+      console.debug("Bokeh: injecting script tag for BokehJS library: ", url);
+      document.head.appendChild(element);
+    }
+    for (var i = 0; i < js_modules.length; i++) {
+      var url = js_modules[i];
+      if (skip.indexOf(url) >= 0) {
+	if (!window.requirejs) {
+	  on_load();
+	}
+	continue;
+      }
+      var element = document.createElement('script');
+      element.onload = on_load;
+      element.onerror = on_error;
+      element.async = false;
+      element.src = url;
+      element.type = "module";
+      console.debug("Bokeh: injecting script tag for BokehJS library: ", url);
+      document.head.appendChild(element);
+    }
+    if (!js_urls.length && !js_modules.length) {
+      on_load()
+    }
+  };
+
+  function inject_raw_css(css) {
+    const element = document.createElement("style");
+    element.appendChild(document.createTextNode(css));
+    document.body.appendChild(element);
+  }
+
+  var js_urls = ["https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js", "https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.3.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.3.min.js", "https://unpkg.com/@holoviz/panel@0.14.0/dist/panel.min.js"];
+  var js_modules = [];
+  var css_urls = ["https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/alerts.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/card.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/dataframe.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/debugger.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/json.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/loading.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/markdown.css", "https://cdn.holoviz.org/panel/0.14.0/dist/css/widgets.css"];
+  var inline_js = [    function(Bokeh) {
+      inject_raw_css("\n    .bk.pn-loading.arc:before {\n      background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJtYXJnaW46IGF1dG87IGJhY2tncm91bmQ6IG5vbmU7IGRpc3BsYXk6IGJsb2NrOyBzaGFwZS1yZW5kZXJpbmc6IGF1dG87IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPiAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzNjM2MzIiBzdHJva2Utd2lkdGg9IjEwIiByPSIzNSIgc3Ryb2tlLWRhc2hhcnJheT0iMTY0LjkzMzYxNDMxMzQ2NDE1IDU2Ljk3Nzg3MTQzNzgyMTM4Ij4gICAgPGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBkdXI9IjFzIiB2YWx1ZXM9IjAgNTAgNTA7MzYwIDUwIDUwIiBrZXlUaW1lcz0iMDsxIj48L2FuaW1hdGVUcmFuc2Zvcm0+ICA8L2NpcmNsZT48L3N2Zz4=\");\n      background-size: auto calc(min(50%, 400px));\n    }\n    ");
+    },    function(Bokeh) {
+      Bokeh.set_log_level("info");
+    },
+function(Bokeh) {} // ensure no trailing comma for IE
+  ];
+
+  function run_inline_js() {
+    if ((root.Bokeh !== undefined) || (force === true)) {
+      for (var i = 0; i < inline_js.length; i++) {
+        inline_js[i].call(root, root.Bokeh);
+      }} else if (Date.now() < root._bokeh_timeout) {
+      setTimeout(run_inline_js, 100);
+    } else if (!root._bokeh_failed_load) {
+      console.log("Bokeh: BokehJS failed to load within specified timeout.");
+      root._bokeh_failed_load = true;
+    }
+  }
+
+  if (root._bokeh_is_loading === 0) {
+    console.debug("Bokeh: BokehJS loaded, going straight to plotting");
+    run_inline_js();
+  } else {
+    load_libs(css_urls, js_urls, js_modules, function() {
+      console.debug("Bokeh: BokehJS plotting callback run at", now());
+      run_inline_js();
+    });
+  }
+}(window));</script><script type="application/javascript">
+if ((window.PyViz === undefined) || (window.PyViz instanceof HTMLElement)) {
+  window.PyViz = {comms: {}, comm_status:{}, kernels:{}, receivers: {}, plot_index: []}
+}
+
+
+    function JupyterCommManager() {
+    }
+
+    JupyterCommManager.prototype.register_target = function(plot_id, comm_id, msg_handler) {
+      if (window.comm_manager || ((window.Jupyter !== undefined) && (Jupyter.notebook.kernel != null))) {
+        var comm_manager = window.comm_manager || Jupyter.notebook.kernel.comm_manager;
+        comm_manager.register_target(comm_id, function(comm) {
+          comm.on_msg(msg_handler);
+        });
+      } else if ((plot_id in window.PyViz.kernels) && (window.PyViz.kernels[plot_id])) {
+        window.PyViz.kernels[plot_id].registerCommTarget(comm_id, function(comm) {
+          comm.onMsg = msg_handler;
+        });
+      } else if (typeof google != 'undefined' && google.colab.kernel != null) {
+        google.colab.kernel.comms.registerTarget(comm_id, (comm) => {
+          var messages = comm.messages[Symbol.asyncIterator]();
+          function processIteratorResult(result) {
+            var message = result.value;
+            console.log(message)
+            var content = {data: message.data, comm_id};
+            var buffers = []
+            for (var buffer of message.buffers || []) {
+              buffers.push(new DataView(buffer))
+            }
+            var metadata = message.metadata || {};
+            var msg = {content, buffers, metadata}
+            msg_handler(msg);
+            return messages.next().then(processIteratorResult);
+          }
+          return messages.next().then(processIteratorResult);
+        })
+      }
+    }
+
+    JupyterCommManager.prototype.get_client_comm = function(plot_id, comm_id, msg_handler) {
+      if (comm_id in window.PyViz.comms) {
+        return window.PyViz.comms[comm_id];
+      } else if (window.comm_manager || ((window.Jupyter !== undefined) && (Jupyter.notebook.kernel != null))) {
+        var comm_manager = window.comm_manager || Jupyter.notebook.kernel.comm_manager;
+        var comm = comm_manager.new_comm(comm_id, {}, {}, {}, comm_id);
+        if (msg_handler) {
+          comm.on_msg(msg_handler);
+        }
+      } else if ((plot_id in window.PyViz.kernels) && (window.PyViz.kernels[plot_id])) {
+        var comm = window.PyViz.kernels[plot_id].connectToComm(comm_id);
+        comm.open();
+        if (msg_handler) {
+          comm.onMsg = msg_handler;
+        }
+      } else if (typeof google != 'undefined' && google.colab.kernel != null) {
+        var comm_promise = google.colab.kernel.comms.open(comm_id)
+        comm_promise.then((comm) => {
+          window.PyViz.comms[comm_id] = comm;
+          if (msg_handler) {
+            var messages = comm.messages[Symbol.asyncIterator]();
+            function processIteratorResult(result) {
+              var message = result.value;
+              var content = {data: message.data};
+              var metadata = message.metadata || {comm_id};
+              var msg = {content, metadata}
+              msg_handler(msg);
+              return messages.next().then(processIteratorResult);
+            }
+            return messages.next().then(processIteratorResult);
+          }
+        }) 
+        var sendClosure = (data, metadata, buffers, disposeOnDone) => {
+          return comm_promise.then((comm) => {
+            comm.send(data, metadata, buffers, disposeOnDone);
+          });
+        };
+        var comm = {
+          send: sendClosure
+        };
+      }
+      window.PyViz.comms[comm_id] = comm;
+      return comm;
+    }
+    window.PyViz.comm_manager = new JupyterCommManager();
+    
+
+
+var JS_MIME_TYPE = 'application/javascript';
+var HTML_MIME_TYPE = 'text/html';
+var EXEC_MIME_TYPE = 'application/vnd.holoviews_exec.v0+json';
+var CLASS_NAME = 'output';
+
+/**
+ * Render data to the DOM node
+ */
+function render(props, node) {
+  var div = document.createElement("div");
+  var script = document.createElement("script");
+  node.appendChild(div);
+  node.appendChild(script);
+}
+
+/**
+ * Handle when a new output is added
+ */
+function handle_add_output(event, handle) {
+  var output_area = handle.output_area;
+  var output = handle.output;
+  if ((output.data == undefined) || (!output.data.hasOwnProperty(EXEC_MIME_TYPE))) {
+    return
+  }
+  var id = output.metadata[EXEC_MIME_TYPE]["id"];
+  var toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
+  if (id !== undefined) {
+    var nchildren = toinsert.length;
+    var html_node = toinsert[nchildren-1].children[0];
+    html_node.innerHTML = output.data[HTML_MIME_TYPE];
+    var scripts = [];
+    var nodelist = html_node.querySelectorAll("script");
+    for (var i in nodelist) {
+      if (nodelist.hasOwnProperty(i)) {
+        scripts.push(nodelist[i])
+      }
+    }
+
+    scripts.forEach( function (oldScript) {
+      var newScript = document.createElement("script");
+      var attrs = [];
+      var nodemap = oldScript.attributes;
+      for (var j in nodemap) {
+        if (nodemap.hasOwnProperty(j)) {
+          attrs.push(nodemap[j])
+        }
+      }
+      attrs.forEach(function(attr) { newScript.setAttribute(attr.name, attr.value) });
+      newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+      oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
+    if (JS_MIME_TYPE in output.data) {
+      toinsert[nchildren-1].children[1].textContent = output.data[JS_MIME_TYPE];
+    }
+    output_area._hv_plot_id = id;
+    if ((window.Bokeh !== undefined) && (id in Bokeh.index)) {
+      window.PyViz.plot_index[id] = Bokeh.index[id];
+    } else {
+      window.PyViz.plot_index[id] = null;
+    }
+  } else if (output.metadata[EXEC_MIME_TYPE]["server_id"] !== undefined) {
+    var bk_div = document.createElement("div");
+    bk_div.innerHTML = output.data[HTML_MIME_TYPE];
+    var script_attrs = bk_div.children[0].attributes;
+    for (var i = 0; i < script_attrs.length; i++) {
+      toinsert[toinsert.length - 1].childNodes[1].setAttribute(script_attrs[i].name, script_attrs[i].value);
+    }
+    // store reference to server id on output_area
+    output_area._bokeh_server_id = output.metadata[EXEC_MIME_TYPE]["server_id"];
+  }
+}
+
+/**
+ * Handle when an output is cleared or removed
+ */
+function handle_clear_output(event, handle) {
+  var id = handle.cell.output_area._hv_plot_id;
+  var server_id = handle.cell.output_area._bokeh_server_id;
+  if (((id === undefined) || !(id in PyViz.plot_index)) && (server_id !== undefined)) { return; }
+  var comm = window.PyViz.comm_manager.get_client_comm("hv-extension-comm", "hv-extension-comm", function () {});
+  if (server_id !== null) {
+    comm.send({event_type: 'server_delete', 'id': server_id});
+    return;
+  } else if (comm !== null) {
+    comm.send({event_type: 'delete', 'id': id});
+  }
+  delete PyViz.plot_index[id];
+  if ((window.Bokeh !== undefined) & (id in window.Bokeh.index)) {
+    var doc = window.Bokeh.index[id].model.document
+    doc.clear();
+    const i = window.Bokeh.documents.indexOf(doc);
+    if (i > -1) {
+      window.Bokeh.documents.splice(i, 1);
+    }
+  }
+}
+
+/**
+ * Handle kernel restart event
+ */
+function handle_kernel_cleanup(event, handle) {
+  delete PyViz.comms["hv-extension-comm"];
+  window.PyViz.plot_index = {}
+}
+
+/**
+ * Handle update_display_data messages
+ */
+function handle_update_output(event, handle) {
+  handle_clear_output(event, {cell: {output_area: handle.output_area}})
+  handle_add_output(event, handle)
+}
+
+function register_renderer(events, OutputArea) {
+  function append_mime(data, metadata, element) {
+    // create a DOM node to render to
+    var toinsert = this.create_output_subarea(
+    metadata,
+    CLASS_NAME,
+    EXEC_MIME_TYPE
+    );
+    this.keyboard_manager.register_events(toinsert);
+    // Render to node
+    var props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
+    render(props, toinsert[0]);
+    element.append(toinsert);
+    return toinsert
+  }
+
+  events.on('output_added.OutputArea', handle_add_output);
+  events.on('output_updated.OutputArea', handle_update_output);
+  events.on('clear_output.CodeCell', handle_clear_output);
+  events.on('delete.Cell', handle_clear_output);
+  events.on('kernel_ready.Kernel', handle_kernel_cleanup);
+
+  OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
+    safe: true,
+    index: 0
+  });
+}
+
+if (window.Jupyter !== undefined) {
+  try {
+    var events = require('base/js/events');
+    var OutputArea = require('notebook/js/outputarea').OutputArea;
+    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
+      register_renderer(events, OutputArea);
+    }
+  } catch(err) {
+  }
+}
+</script><div class="output text_html"><style>.bk-root, .bk-root .bk:before, .bk-root .bk:after {
+  font-family: var(--jp-ui-font-size1);
+  font-size: var(--jp-ui-font-size1);
+  color: var(--jp-ui-font-color1);
+}
+</style></div></div>
 </div>
 <section id="groundwater-exam-solution-2019-2020">
 <h1><span class="section-number">1. </span>Groundwater Exam Solution -  2019-2020<a class="headerlink" href="#groundwater-exam-solution-2019-2020" title="Permalink to this headline">#</a></h1>
@@ -591,7 +1016,7 @@ title="Print to PDF"
 <p>An <strong>aquiclude</strong> can store groundwater but cannot transmit groundwater.</p>
 <p><strong>Solution 1b</strong> - (L03/11)</p>
 <p> </p>
-<img src="figs/Q1b_2019-20.png" alt = "Question 5" class="bg-primary" width =  "1000px"> 
+<a class="reference internal image-reference" href="../../_images/Q1b_2019-20.png" id="f1"><img alt="../../_images/Q1b_2019-20.png" class="align-center" id="f1" src="../../_images/Q1b_2019-20.png" style="height: 400px;" /></a>
 <p><strong>Confined Aquifer</strong></p>
 <ol class="simple">
 <li><p>The essential feature of confined aquifer is provided in the figure above.</p></li>
@@ -1978,7 +2403,7 @@ density of water at 20°C: 1000 kg/m<sup>3</sup>;                               
 <p><strong>Solution 3</strong> -</p>
 <p><strong>Solution 3a</strong> (L05/15)</p>
 <p> </p>
-<img src="figs/Q3a_2019-20.png" alt="Question 3a" class="bg-primary" width= "500px"> 
+<a class="reference internal image-reference" href="../../_images/Q3a_2019-20.png" id="q3a"><img alt="../../_images/Q3a_2019-20.png" class="align-center" id="q3a" src="../../_images/Q3a_2019-20.png" style="height: 300px;" /></a>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 3b** (L05/15)</span>
@@ -2213,7 +2638,7 @@ The permeability of the sample is 2.62E-09 m²
 <p>The sample can be considered uniformly distributed as over 70% of sample falls in the sand size (0.2 mm-2 mm). Therefore, the sample can be considered sandy.</p>
 <p><strong>Q5. Aquifer characterization</strong> (ca. 8 pts.)</p>
 <p>Water levels in m a.s.l. were measured at three observation wells (see figure).</p>
-<img src="figs/Q5_2019-2020.png" alt = "Question 5" class="bg-primary" width = "300px"> 
+<a class="reference internal image-reference" href="../../_images/Q5_2019-2020.png" id="question-5"><img alt="../../_images/Q5_2019-2020.png" class="align-center" id="question-5" src="../../_images/Q5_2019-2020.png" style="height: 300px;" /></a>
 <p>a. Sketch hydraulic head isolines for increments of 0.5 m. (ca. 3 points.)</p>
 <p>b. Gravel layer (thickness (t1) = 1.5 m, and conductivity (K1) = 3.7 10-3 is embedded between two sandy layers (t2 = 2 m, K2 = 3·10-4 m/s; and t3 = 3 m, K3 = 4·10-4 m/s). If the hydraulic gradient is 1% and overall discharge is 1 m3/d per unit width of the aquifer, find the effective hydraulic conductivity considering a parallelly layered aquifer.</p>
 <p>(Hint: <span class="math notranslate nohighlight">\(K_{eff} = \frac{m}{\sum_{i=1}^n \frac{m_i}{K_i}}\)</span> or <span class="math notranslate nohighlight">\(K_{eff} =  \sum_{i=1}^n\frac{m_i\cdot K_i}{m}\)</span>  ) (ca. 2 points)</p>
@@ -2221,7 +2646,8 @@ The permeability of the sample is 2.62E-09 m²
 <p><strong>Solution 5a</strong>
 (L07/08-09)</p>
 <p>The isolines and flow direction is provided in the figure below.</p>
-<img src="figs/Q5a_2019-2020.png" alt = "Question 5a" class="bg-primary" width ="300px"> <div class="cell docutils container">
+<a class="reference internal image-reference" href="../../_images/Q5a_2019-2020.png" id="question-5a"><img alt="../../_images/Q5a_2019-2020.png" class="align-center" id="question-5a" src="../../_images/Q5a_2019-2020.png" style="height: 300px;" /></a>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution 5b (L06/08-13)</span>
 
@@ -2267,7 +2693,7 @@ The effective vertical conductivity of the aquifer is 4.46E-04 m/s
 <p><strong>Solution 6a</strong>
 (L08/16)</p>
 <p>Figure below presents the scenario of a well in an <em>unconfined</em> aquifer.</p>
-<img src="figs/Q6_2019-2020.png" alt = "Question 7b" class="bg-primary" width ="500px"> 
+<a class="reference internal image-reference" href="../../_images/Q6_2019-2020.png" id="question-7b"><img alt="../../_images/Q6_2019-2020.png" class="align-center" id="question-7b" src="../../_images/Q6_2019-2020.png" style="height: 300px;" /></a>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 6b</span>
@@ -2314,7 +2740,8 @@ The drawdown in the well is 18650.97 m
 <p>When either of the above are part of the groundwater, the transport process is reactive.</p>
 <p><strong>Solution 7b</strong> (L09/09)</p>
 <p>The sketch below distinguish between advective and dispersive fluxes. The figure in the left is of advective process and that in the right results to dispersive flux.</p>
-<img src="figs/Q7b_2019-2020.png" alt = "Question 7b" class="bg-primary" width ="500px"> <div class="cell docutils container">
+<a class="reference internal image-reference" href="../../_images/Q7b_2019-2020.png" id="id1"><img alt="../../_images/Q7b_2019-2020.png" class="align-center" id="id1" src="../../_images/Q7b_2019-2020.png" style="height: 300px;" /></a>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Solution 7c</span>
 
@@ -2513,7 +2940,8 @@ R = 1+ \frac{1-n_e}{n_e}\rho_s K_d
 <p><em>Analytical solution</em> : These are exact mathematical expressions solving the model equations.</p>
 <p><em>Emperical solution</em> : These are solution based on experimental results.</p>
 <p><strong>Solution 9b</strong> - (L14/12)</p>
-<img src="figs/Q9b_2019-2020.png" alt="Question 9b" class="bg-primary" width = "500px"><p><strong>Solution 9c</strong>
+<a class="reference internal image-reference" href="../../_images/Q9b_2019-2020.png" id="question-9b"><img alt="../../_images/Q9b_2019-2020.png" class="align-center" id="question-9b" src="../../_images/Q9b_2019-2020.png" style="height: 300px;" /></a>
+<p><strong>Solution 9c</strong>
 (L13/16)</p>
 <p>A no-flow boundary condition is special case of second type or Neumann boundary condition. For no flow condition head gradient is equated to zero, i.e., there is no gradient and thus no flow (water flows from high to low head). Mathematically, this is:</p>
 <p><span class="math notranslate nohighlight">\(\frac{dh}{dx} = 0 \)</span> for no-flow along <span class="math notranslate nohighlight">\(x-\)</span>axis, with <span class="math notranslate nohighlight">\(h\)</span> representing head.</p>
@@ -2547,11 +2975,11 @@ R = 1+ \frac{1-n_e}{n_e}\rho_s K_d
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../tester.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../testcodeer.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">11. </span>NEw Run</p>
+            <p class="prev-next-title"><span class="section-number">10. </span>Testing the code for run</p>
         </div>
     </a>
 </div>
@@ -2561,13 +2989,12 @@ R = 1+ \frac{1-n_e}{n_e}\rho_s K_d
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By P. K. Yadav, T. Reimann and several others<br/>
+    By Dr Prabhas K. Yadav<br/>
   
-      &copy; Copyright .<br/>
+      &copy; Copyright 2022.<br/>
     <div class="extra_footer">
       <div>
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"></a>
-    All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+ All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
 </div>
 
     </div>
