@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>7. Wells &#8212; Groundwater I</title>
+    <title>8. Wells &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,12 +53,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="8. Conservative transport" href="../T8/tutorial_08.html" />
-    <link rel="prev" title="6. Flow in Confined/Unconfined Aquifer" href="../T6/tutorial_06.html" />
+    <link rel="next" title="9. Conservative transport" href="../T8/tutorial_08.html" />
+    <link rel="prev" title="7. Flow in Confined/Unconfined Aquifer" href="../T6/tutorial_06.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -202,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../modeling/31_intro_modeling.html">
-   1. Lecture 11:  Background of Groundwater Modeling
+   1. Background of Groundwater Modeling
   </a>
  </li>
 </ul>
@@ -223,38 +225,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../T3/tutorial_03.html">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T5/tutorial_05.html">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T8/tutorial_08.html">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -570,75 +577,75 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-5-effective-hydraulic-conductivity">
-   7.1. Homework Problem 5: Effective Hydraulic Conductivity
+   8.1. Homework Problem 5: Effective Hydraulic Conductivity
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution">
-     7.1.1. Solution
+     8.1.1. Solution
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-6-flow-net-using-triangulation">
-   7.2. Homework Problem 6: Flow net using triangulation
+   8.2. Homework Problem 6: Flow net using triangulation
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-homework-problem-6">
-     7.2.1. Solution of Homework Problem 6
+     8.2.1. Solution of Homework Problem 6
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-7-flow-nets-wells">
-   7.3. Homework Problem 7: Flow Nets wells
+   8.3. Homework Problem 7: Flow Nets wells
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-homework-problem-7">
-     7.3.1. Solution of Homework Problem 7
+     8.3.1. Solution of Homework Problem 7
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problems-on-wells">
-   7.4. Tutorial Problems on Wells
+   8.4. Tutorial Problems on Wells
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-18">
-     7.4.1. Tutorial Problem 18
+     8.4.1. Tutorial Problem 18
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-problem-18">
-     7.4.2. Solution of Problem 18
+     8.4.2. Solution of Problem 18
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-19">
-     7.4.3. Tutorial Problem 19
+     8.4.3. Tutorial Problem 19
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-problem-19">
-     7.4.4. Solution of Problem 19
+     8.4.4. Solution of Problem 19
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#home-work-problems">
-   7.5. HOME WORK PROBLEMS
+   8.5. HOME WORK PROBLEMS
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-10">
-     7.5.1. Homework Problem 10
+     8.5.1. Homework Problem 10
     </a>
    </li>
   </ul>
@@ -664,75 +671,75 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-5-effective-hydraulic-conductivity">
-   7.1. Homework Problem 5: Effective Hydraulic Conductivity
+   8.1. Homework Problem 5: Effective Hydraulic Conductivity
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution">
-     7.1.1. Solution
+     8.1.1. Solution
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-6-flow-net-using-triangulation">
-   7.2. Homework Problem 6: Flow net using triangulation
+   8.2. Homework Problem 6: Flow net using triangulation
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-homework-problem-6">
-     7.2.1. Solution of Homework Problem 6
+     8.2.1. Solution of Homework Problem 6
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-7-flow-nets-wells">
-   7.3. Homework Problem 7: Flow Nets wells
+   8.3. Homework Problem 7: Flow Nets wells
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-homework-problem-7">
-     7.3.1. Solution of Homework Problem 7
+     8.3.1. Solution of Homework Problem 7
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problems-on-wells">
-   7.4. Tutorial Problems on Wells
+   8.4. Tutorial Problems on Wells
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-18">
-     7.4.1. Tutorial Problem 18
+     8.4.1. Tutorial Problem 18
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-problem-18">
-     7.4.2. Solution of Problem 18
+     8.4.2. Solution of Problem 18
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-19">
-     7.4.3. Tutorial Problem 19
+     8.4.3. Tutorial Problem 19
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-problem-19">
-     7.4.4. Solution of Problem 19
+     8.4.4. Solution of Problem 19
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#home-work-problems">
-   7.5. HOME WORK PROBLEMS
+   8.5. HOME WORK PROBLEMS
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-10">
-     7.5.1. Homework Problem 10
+     8.5.1. Homework Problem 10
     </a>
    </li>
   </ul>
@@ -1191,7 +1198,7 @@ if (window.Jupyter !== undefined) {
 </style></div></div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="wells">
-<h1><span class="section-number">7. </span>Wells<a class="headerlink" href="#wells" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">8. </span>Wells<a class="headerlink" href="#wells" title="Permalink to this headline">#</a></h1>
 <br>
 <ol class="simple">
 <li><p><strong>Solution of Homework Problems 5 -6</strong>
@@ -1202,7 +1209,7 @@ if (window.Jupyter !== undefined) {
 </ol>
 <br>
 <section id="homework-problem-5-effective-hydraulic-conductivity">
-<h2><span class="section-number">7.1. </span>Homework Problem 5: Effective Hydraulic Conductivity<a class="headerlink" href="#homework-problem-5-effective-hydraulic-conductivity" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">8.1. </span>Homework Problem 5: Effective Hydraulic Conductivity<a class="headerlink" href="#homework-problem-5-effective-hydraulic-conductivity" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r9_1</span><span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">pane</span><span class="o">.</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -1259,7 +1266,7 @@ if (window.Jupyter !== undefined) {
 })(window);</script></div></div>
 </div>
 <section id="solution">
-<h3><span class="section-number">7.1.1. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.1.1. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this headline">#</a></h3>
 <p>The given problem can be visualized as:</p>
 <a class="reference internal image-reference" href="../../../_images/T07_fH5.png" id="wells-1"><img alt="../../../_images/T07_fH5.png" class="align-center" id="wells-1" src="../../../_images/T07_fH5.png" style="width: 350px;" /></a>
 <p>We will use Darcy’s law for the homogeneous system, which is given as</p>
@@ -1383,7 +1390,7 @@ The effective conductivity when the discharge is 30 degree inclined is 8.55e-04 
 </section>
 </section>
 <section id="homework-problem-6-flow-net-using-triangulation">
-<h2><span class="section-number">7.2. </span>Homework Problem 6: Flow net using triangulation<a class="headerlink" href="#homework-problem-6-flow-net-using-triangulation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">8.2. </span>Homework Problem 6: Flow net using triangulation<a class="headerlink" href="#homework-problem-6-flow-net-using-triangulation" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r10_1</span><span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">pane</span><span class="o">.</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -1439,7 +1446,7 @@ The effective conductivity when the discharge is 30 degree inclined is 8.55e-04 
 })(window);</script></div></div>
 </div>
 <section id="solution-of-homework-problem-6">
-<h3><span class="section-number">7.2.1. </span>Solution of Homework Problem 6<a class="headerlink" href="#solution-of-homework-problem-6" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.2.1. </span>Solution of Homework Problem 6<a class="headerlink" href="#solution-of-homework-problem-6" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># solution</span>
@@ -1496,7 +1503,7 @@ The effective conductivity when the discharge is 30 degree inclined is 8.55e-04 
 </section>
 </section>
 <section id="homework-problem-7-flow-nets-wells">
-<h2><span class="section-number">7.3. </span>Homework Problem 7: Flow Nets wells<a class="headerlink" href="#homework-problem-7-flow-nets-wells" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">8.3. </span>Homework Problem 7: Flow Nets wells<a class="headerlink" href="#homework-problem-7-flow-nets-wells" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
@@ -1555,15 +1562,15 @@ The effective conductivity when the discharge is 30 degree inclined is 8.55e-04 
 })(window);</script></div></div>
 </div>
 <section id="solution-of-homework-problem-7">
-<h3><span class="section-number">7.3.1. </span>Solution of Homework Problem 7<a class="headerlink" href="#solution-of-homework-problem-7" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.3.1. </span>Solution of Homework Problem 7<a class="headerlink" href="#solution-of-homework-problem-7" title="Permalink to this headline">#</a></h3>
 <p>The flow-net of the above scenario can be as shown in the figure below:</p>
 <a class="reference internal image-reference" href="../../../_images/T07_fH8.png" id="wells2"><img alt="../../../_images/T07_fH8.png" class="align-center" id="wells2" src="../../../_images/T07_fH8.png" style="width: 600px;" /></a>
 </section>
 </section>
 <section id="tutorial-problems-on-wells">
-<h2><span class="section-number">7.4. </span>Tutorial Problems on Wells<a class="headerlink" href="#tutorial-problems-on-wells" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">8.4. </span>Tutorial Problems on Wells<a class="headerlink" href="#tutorial-problems-on-wells" title="Permalink to this headline">#</a></h2>
 <section id="tutorial-problem-18">
-<h3><span class="section-number">7.4.1. </span>Tutorial Problem 18<a class="headerlink" href="#tutorial-problem-18" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.4.1. </span>Tutorial Problem 18<a class="headerlink" href="#tutorial-problem-18" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
@@ -1626,7 +1633,7 @@ The effective conductivity when the discharge is 30 degree inclined is 8.55e-04 
 </div>
 </section>
 <section id="solution-of-problem-18">
-<h3><span class="section-number">7.4.2. </span>Solution of Problem 18<a class="headerlink" href="#solution-of-problem-18" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.4.2. </span>Solution of Problem 18<a class="headerlink" href="#solution-of-problem-18" title="Permalink to this headline">#</a></h3>
 <p><strong>See L08 - slides 29-33 for more information on this problem</strong></p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1792,7 +1799,7 @@ The Observation well location, r =  9.85 m
 </div>
 </section>
 <section id="tutorial-problem-19">
-<h3><span class="section-number">7.4.3. </span>Tutorial Problem 19<a class="headerlink" href="#tutorial-problem-19" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.4.3. </span>Tutorial Problem 19<a class="headerlink" href="#tutorial-problem-19" title="Permalink to this headline">#</a></h3>
 <p>A pumping test is conducted in a confined aquifer with thickness <em>m</em> = 14.65 m.
 The pumping rate is kept constant at <em>Q</em> = 50 m<sup>3</sup>/h and the corresponding drawdown
 <em>S</em> is recorded in an observation well at a distance <em>r</em> = 251.32 m from the pumping well (see table).</p>
@@ -1806,7 +1813,7 @@ the Theis method (graphical solution).<br><br></p></li>
 </ol>
 </section>
 <section id="solution-of-problem-19">
-<h3><span class="section-number">7.4.4. </span>Solution of Problem 19<a class="headerlink" href="#solution-of-problem-19" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.4.4. </span>Solution of Problem 19<a class="headerlink" href="#solution-of-problem-19" title="Permalink to this headline">#</a></h3>
 <p><strong>See L07 - slides 29-33 for more information on this problem</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2049,14 +2056,14 @@ The radius of influence is is: 411.83 m
 </section>
 </section>
 <section id="home-work-problems">
-<h2><span class="section-number">7.5. </span>HOME WORK PROBLEMS<a class="headerlink" href="#home-work-problems" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">8.5. </span>HOME WORK PROBLEMS<a class="headerlink" href="#home-work-problems" title="Permalink to this headline">#</a></h2>
 <p><strong>Effective Conductivity and Wells</strong></p>
 <p><br><br></p>
 <p><font size="4" color="red">There is no obligation to submit the homework</font></p>
 <br>
 <p><strong>Pls. submit within two weeks if you wish to.</strong></p>
 <section id="homework-problem-10">
-<h3><span class="section-number">7.5.1. </span>Homework Problem 10<a class="headerlink" href="#homework-problem-10" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">8.5.1. </span>Homework Problem 10<a class="headerlink" href="#homework-problem-10" title="Permalink to this headline">#</a></h3>
 <p>A pumping test is conducted to determine hydraulic properties (storage coefficient <span class="math notranslate nohighlight">\(S\)</span>, the transmissivity <span class="math notranslate nohighlight">\(T\)</span> and the hydraulic conductivity <span class="math notranslate nohighlight">\(K\)</span>) of
 the aquifer. of a confined aquifer. For this purpose, a constant
 pumping rate of 1219 m<sup>3</sup>/d is established and drawdown is recorded in an observation well. This problem is to be
@@ -2191,13 +2198,13 @@ solved with the Theis method implemented in the code below.<br><br></p>
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">6. </span>Flow in Confined/Unconfined Aquifer</p>
+            <p class="prev-next-title"><span class="section-number">7. </span>Flow in Confined/Unconfined Aquifer</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../T8/tutorial_08.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">8. </span>Conservative transport</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Conservative transport</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

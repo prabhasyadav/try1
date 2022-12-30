@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>4. Uniform Flow and Well* &#8212; Groundwater I</title>
+    <title>4. Uniform Flow and Well &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,6 +53,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -173,7 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L8/18_wells.html">
-   7. Wells*
+   7. Wells
   </a>
  </li>
 </ul>
@@ -202,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../modeling/31_intro_modeling.html">
-   1. Lecture 11:  Background of Groundwater Modeling
+   1. Background of Groundwater Modeling
   </a>
  </li>
 </ul>
@@ -223,38 +225,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T3/tutorial_03.html">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T5/tutorial_05.html">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T7/tutorial_07.html">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T8/tutorial_08.html">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -281,7 +288,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   4. Uniform Flow and Well*
+   4. Uniform Flow and Well
   </a>
  </li>
  <li class="toctree-l1">
@@ -306,7 +313,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="1D_ditchflow.html">
-   9. Simulating 1D Trench Flow*
+   9. Simulating 1D Trench Flow
   </a>
  </li>
  <li class="toctree-l1">
@@ -558,7 +565,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Uniform Flow and Well*</h1>
+                <h1>Uniform Flow and Well</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -571,7 +578,8 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="uniform-flow-and-well">
-<h1><span class="section-number">4. </span>Uniform Flow and Well*<a class="headerlink" href="#uniform-flow-and-well" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">4. </span>Uniform Flow and Well<a class="headerlink" href="#uniform-flow-and-well" title="Permalink to this headline">#</a></h1>
+<p><strong><em>Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code.</em></strong></p>
 <p>The worksheet addresses the superposition of uniform and radial steady-state groundwater flow <br>
 in a homogeneous, confined aquifer of uniform thickness without recharge. <br>
 The radial flow component may represent an extraction or injection well. <br></p>
@@ -615,7 +623,7 @@ Three travel time values representing isochrones can be selected by the user. <b
 </table>
 <p><span class="math notranslate nohighlight">\(*\)</span> Positive or negative numbers correspond to uniform flow in parallel with or antiparallel to the x-axis, resp. <br>
 <span class="math notranslate nohighlight">\(**\)</span> Positive or negative numbers correspond to water extraction or injection, resp.</p>
-<p><strong><em>Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code.</em></strong></p>
+<p>This tool can also be downloaded and run locally. For that download the <strong>uniform_flow_and_well.ipynb</strong> file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.</p>
 <p>The codes are licensed under CC by 4.0 <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.en">(use anyways, but acknowledge the original work)</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

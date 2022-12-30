@@ -44,3 +44,35 @@
 # * Additional tools: The course provides several simulation tools- e.g., sieve analysis, effective conductivity, Advection-dispersion etc. These tools (also _Python_) provide high-level interactivity. These tools should be used to enhance learning.
 # 
 # * Question banks/exam questions should be used to self-check the level of understanding.
+
+# ### How to use The `Interactive` Ground Water Book 
+# 
+# The Main Goal of developing the **Interactive GroundWater** Book is to enable the process of _Learning through Coding_, which can in future assist the students in developing their own applications and take a step towards automatizing research by providing aid for solving complex mathematical equations as well as simulating various scenarios. With the help of this book we hope to enable a _spark of interest in the young minds_ towards the **Ground Water field** as well as displaying the _practical application of Python_ to  to solve complex Questions.
+# 
+# ### Featurs of the The `Interactive` Ground Water Book
+# 
+# #### [Hypothes](https://web.hypothes.is/) - Highlighting and Annotating Content 
+# 
+# * Users can use Hypothes to highlight content on the web page, by simply using you mouse to highlight the lines you want to highlight and then Hyprothes would give an option to the user if they want to Highlight the Content or Annotate the content
+# 
+# * It is recommended that while using Hypothes the user creates their own Hypotheis account and when Highlighting the content they create their own Private Group inside of the Hypotheis sidebar so that the notes they make are private to them.
+#  
+#  
+# #### Running Codes Available
+# 
+# To run the Codes available on the Web Page there are 3 options available to the user **Google Collab**, **Live Code** and **My Binder**. 
+# 
+# To use any of these Code Runners press on the Rocket Button on the top right corner and select the preferable code runner you want to use. 
+# 
+# Even Though there are plenty of options available to run the code, we would recommend the user to use **Google Collab** as it is one of the quickest running options and is easy to use, inside Google Collab the user just needs to press _run_ on the code cell they want to _execute_.
+# 
+# In case of Live Code the Codes can be directly run on the web page itself instead of redirecting to a third party service, but due to server connection issues the loading time for Live Code is too high. 
+# 
+# #### Additional Resources 
+# 
+# * Quizzes Available at the End of Each Chapter 
+# * Lecture Slides 
+# * Short Videos explaining some Key Concepts 
+# 
+#  
+# 

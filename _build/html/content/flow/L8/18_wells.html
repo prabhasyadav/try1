@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>7. Wells* &#8212; Groundwater I</title>
+    <title>7. Wells &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -175,7 +173,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   7. Wells*
+   7. Wells
   </a>
  </li>
 </ul>
@@ -225,38 +223,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../../tutorials/T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T3/tutorial_03.html">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T5/tutorial_05.html">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T7/tutorial_07.html">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T8/tutorial_08.html">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -308,7 +311,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/1D_ditchflow.html">
-   9. Simulating 1D Trench Flow*
+   9. Simulating 1D Trench Flow
   </a>
  </li>
  <li class="toctree-l1">
@@ -725,7 +728,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Wells*</h1>
+                <h1>Wells</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -894,7 +897,7 @@ title="Print to PDF"
   <div class="cell tag_hide-input tag_remove-output tag_remove-input docutils container">
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="wells">
-<h1><span class="section-number">7. </span>Wells*<a class="headerlink" href="#wells" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">7. </span>Wells<a class="headerlink" href="#wells" title="Permalink to this headline">#</a></h1>
 <p>(<em>The contents are based on the class lecture materials of Prof. R. Liedl. Modifications mostly to fit this specific format were done by Prof. Liedl and Dr. P. K. Yadav.</em>)</p>
 <hr class="docutils" />
 <section id="motivation">
@@ -902,7 +905,6 @@ title="Print to PDF"
 <p>In the last lecture (<a class="reference internal" href="../L7/17_quantify_flow.html"><span class="doc">Quantifying 3D Groundwater Flow</span></a> we derived system equations for different groundwater flow problems. We realized of the difficulties associated with solving flow problems specially at higher dimensions (2D/3D). Numerical methods are mostly used for solving groundwater problems but direct (analytical) solutions are also possible for some problems.</p>
 <p><strong>Wells</strong> are the most common and also most extensively used method of utilizing (or affecting) groundwater. Thus, <em>wells</em> represent a very common groundwater problem. We can now use our understanding of aquifer properties and groundwater system equations to analyze effect of <em>wells</em> on the natural groundwater flow. We will however restrict our extent, in this lecture, to problems that can be directly solved. After learning numerical methods (in last part of this course), we will apply it to evaluate more complex groundwater problems also associated with wells.</p>
 <p>We begin this lecture recalling groundwater storage property <em>transmissivity.</em> Introducing <em>wells</em> we then derive few relations that can help us understand the effect of wells in groundwater flow. To conclude, we will use the <em>wells</em> to characterize aquifers, i.e., using so called pumping test.</p>
-<p>(<strong><em>The contents are based on the class lecture materials of Prof. R. Liedl. Modifications mostly to fit this specific format were done by Prof. Liedl and Dr. P. K. Yadav.</em></strong>)</p>
 </section>
 <section id="transmissivity">
 <h2><span class="section-number">7.2. </span>Transmissivity<a class="headerlink" href="#transmissivity" title="Permalink to this headline">#</a></h2>
@@ -910,7 +912,7 @@ title="Print to PDF"
 <p>Similar things can be done with regard to conductivity properties and this brings us to the geohydraulic parameter of transmissivity (<span class="math notranslate nohighlight">\(T\)</span>,  L<span class="math notranslate nohighlight">\(^2\)</span>T<span class="math notranslate nohighlight">\(^{-1}\)</span>). The idea is to neglect vertical variations of hydraulic conductivity and to use vertically averaged values instead. This procedure does not eliminate horizontal variability, so transmissivity may still depend on horizontal coordinates  <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
 <p>The vertically averaged <span class="math notranslate nohighlight">\(K\)</span> value is then multiplied by the water-saturated thickness to obtain transmissivity. The concept of water-saturated thickness (or water-saturated depth) requires to distinguish whether <em>confined</em> or <em>unconfined flow</em> conditions prevail.</p>
 <p>In general, water-saturated thickness is the distance from the aquifer bottom to a level up to which all pores are filled with water. For <em>confined aquifers,</em> this level is equal to aquifer top and water-saturated thickness is tantamount to aquifer thickness. For <em>unconfined aquifers,</em> however, water-saturated thickness corresponds to the distance between aquifer bottom and groundwater level. We will see some illustrations below when we try to quantify transmissivity.</p>
-<p>Let us have a closer look at the confined case first. The black cuboid in <a class="reference internal" href="../../transport/L9/21_conservative_transport.html#trans-c-2d"><span class="std std-numref">Fig. 1.1</span></a>  illustrates that water-saturated thickness extends from aquifer bottom to aquifer top. So, it is equal to aquifer thickness <span class="math notranslate nohighlight">\(m\)</span>. Transmissivity is calculated by <span class="math notranslate nohighlight">\(T_x = K_x \cdot m\)</span> and <span class="math notranslate nohighlight">\(T_y = K_y \cdot m\)</span>. Here we allow for horizontal aquifer anisotropy with different hydraulic conductivities in <span class="math notranslate nohighlight">\(x-\)</span> and <span class="math notranslate nohighlight">\(y-\)</span> direction <span class="math notranslate nohighlight">\((K_x\neq K_y)\)</span>. For horizontally isotropic aquifers <span class="math notranslate nohighlight">\((K_x = K_y = K)\)</span>, transmissivity is given by <span class="math notranslate nohighlight">\(T = K \cdot m\)</span>.</p>
+<p>Let us have a closer look at the confined case first. The black cuboid in <a class="reference internal" href="#trans-c-2d"><span class="std std-numref">Fig. 7.1</span></a>  illustrates that water-saturated thickness extends from aquifer bottom to aquifer top. So, it is equal to aquifer thickness <span class="math notranslate nohighlight">\(m\)</span>. Transmissivity is calculated by <span class="math notranslate nohighlight">\(T_x = K_x \cdot m\)</span> and <span class="math notranslate nohighlight">\(T_y = K_y \cdot m\)</span>. Here we allow for horizontal aquifer anisotropy with different hydraulic conductivities in <span class="math notranslate nohighlight">\(x-\)</span> and <span class="math notranslate nohighlight">\(y-\)</span> direction <span class="math notranslate nohighlight">\((K_x\neq K_y)\)</span>. For horizontally isotropic aquifers <span class="math notranslate nohighlight">\((K_x = K_y = K)\)</span>, transmissivity is given by <span class="math notranslate nohighlight">\(T = K \cdot m\)</span>.</p>
 <figure class="align-center" id="trans-c-2d">
 <a class="reference internal image-reference" href="../../../_images/L08_f1.png"><img alt="../../../_images/L08_f1.png" src="../../../_images/L08_f1.png" style="width: 392.40000000000003px; height: 222.4px;" /></a>
 <figcaption>

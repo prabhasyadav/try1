@@ -3,6 +3,8 @@
 
 # ## Tool for simulating 1D Conservative Transport (Laboratory Column) ##
 
+# **_Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code._**
+# 
 # ### Info on the tool ###
 # 
 # The worksheet addresses **1D conservative transport** of a solute through a porous medium, e.g. in a laboratory column. <br>
@@ -27,8 +29,8 @@
 # starting time		    |   [T]	        |   enter non-negative number	
 # 
 # 
+# This tool can also be downloaded and run locally. For that download the **_1D_advection_dispersion.ipynb** file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
-# **_Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code._**
 # 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 

@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Uniform Flow and Well*
+# # Uniform Flow and Well
+# 
+# 
+# **_Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code._**
 # 
 # The worksheet addresses the superposition of uniform and radial steady-state groundwater flow <br>
 # in a homogeneous, confined aquifer of uniform thickness without recharge. <br>
@@ -26,7 +29,8 @@
 # $**$ Positive or negative numbers correspond to water extraction or injection, resp.
 # 
 # 
-# **_Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code._**
+# 
+# This tool can also be downloaded and run locally. For that download the **uniform_flow_and_well.ipynb** file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 

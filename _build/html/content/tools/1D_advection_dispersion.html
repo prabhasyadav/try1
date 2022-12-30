@@ -53,6 +53,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="8. Simulating Kinetics and Degradation" href="Kinetics_degradation.html" />
@@ -171,7 +173,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../flow/L8/18_wells.html">
-   7. Wells*
+   7. Wells
   </a>
  </li>
 </ul>
@@ -200,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../modeling/31_intro_modeling.html">
-   1. Lecture 11:  Background of Groundwater Modeling
+   1. Background of Groundwater Modeling
   </a>
  </li>
 </ul>
@@ -221,38 +223,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../tutorials/T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T3/tutorial_03.html">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T5/tutorial_05.html">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T7/tutorial_07.html">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T8/tutorial_08.html">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorials/T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -279,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="uniform_flow_and_well.html">
-   4. Uniform Flow and Well*
+   4. Uniform Flow and Well
   </a>
  </li>
  <li class="toctree-l1">
@@ -304,7 +311,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="1D_ditchflow.html">
-   9. Simulating 1D Trench Flow*
+   9. Simulating 1D Trench Flow
   </a>
  </li>
  <li class="toctree-l1">
@@ -711,6 +718,7 @@ title="Print to PDF"
                 
   <section id="tool-for-simulating-1d-conservative-transport-laboratory-column">
 <h1><span class="section-number">7. </span>Tool for simulating 1D Conservative Transport (Laboratory Column)<a class="headerlink" href="#tool-for-simulating-1d-conservative-transport-laboratory-column" title="Permalink to this headline">#</a></h1>
+<p><strong><em>Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code.</em></strong></p>
 <section id="info-on-the-tool">
 <h2><span class="section-number">7.1. </span>Info on the tool<a class="headerlink" href="#info-on-the-tool" title="Permalink to this headline">#</a></h2>
 <p>The worksheet addresses <strong>1D conservative transport</strong> of a solute through a porous medium, e.g. in a laboratory column. <br>
@@ -769,7 +777,7 @@ Computations are based on analytical solutions involving the complementary error
 </tr>
 </tbody>
 </table>
-<p><strong><em>Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code.</em></strong></p>
+<p>This tool can also be downloaded and run locally. For that download the <strong>_1D_advection_dispersion.ipynb</strong> file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.</p>
 <p>The codes are licensed under CC by 4.0 <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.en">(use anyways, but acknowledge the original work)</a></p>
 <section id="python-libraries-cell">
 <h3><span class="section-number">7.1.1. </span>Python <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> Cell<a class="headerlink" href="#python-libraries-cell" title="Permalink to this headline">#</a></h3>

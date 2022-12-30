@@ -52,61 +52,6 @@ pn.extension('katex')
 # 1. The essential feature of confined aquifer is provided in the figure above.
 # 
 
-# In[5]:
-
-
-cards='''
-## Q1 Aquifier Types
-Q1 Aquifier Types
-
-
-(5 pts)
----
-a. Differentiate between Aquifer, Aquitard and Aquiclude (3 points)
-
-
-b. Schematically present a confined aquifer (vertical cross-section) providing essential features with their legends (2 points)
-
-### Part A 
-
-Solution Part A
-
-See slide: L03/08
----
-
-
-An aquifer or a groundwater reservoir can store and transmit significant (= exploitable) amounts of groundwater.
-An aquitard can store and transmit groundwater but to a much lesser extent than an (adjacent) aquifer.
-An aquiclude can store groundwater but cannot transmit groundwater.
-
-
-### Part B
-
-Solution Part B 
----
-The Figure Shows the essential feature of conified Aquifer 
-
-img: "figs/Q1b_2019-20.png" 
-
-<img src="figs/Q1b_2019-20.png" alt = "Question 5" class="bg-primary" width =  "1000px">
-
-```{image} figs/Q1b_2019-20.png
-:width: 600px
-:align: center
-:name: Solution 1B
-```
-
-'''
-
-
-# In[6]:
-
-
-from jupytercards import md2json, display_flashcards
-myjson=md2json(cards , "cards.json")
-display_flashcards(myjson)
-
-
 # **Q2. Groundwater storage (3 pts.)**
 # 
 # Dry season in Dresden (2018-19) led to intense extraction of groundawater in rural areas. At one location in a confined aquifer (storage coeff. 4·10<sup>-4</sup>, total porosity = 30%),  the pressure head was lowered by 150 m. The thickness of the aquifer was measured to be 90 m before the beginning of extraction and the compressibility of the porous medium in that region is estimated 6·10<sup>-8</sup> m<sup>2</sup>/N. Density of water can be assumed to be 1000 kg/m<sup>3</sup>.

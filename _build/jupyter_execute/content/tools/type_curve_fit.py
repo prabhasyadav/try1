@@ -29,6 +29,8 @@
 # 
 # + Follow steps 4-7 from above. {doc}`/contents/flow/lecture_03/13_gw_storage` 
 # 
+# This tool can also be downloaded and run locally. For that download the **type_curve_fit.ipynb** file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
+# 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 # 
 
@@ -121,16 +123,18 @@ def fitapprx(a,b,y) :
     lencntr=(lencntr/len(b))
     rsq=1-(yb_y/y_y)
     print("R Square=","%.2f"  % rsq)
+    
+    ################### Using Conditional Statements to Give Opnion on Fits 
     #if (rsq<0.8) :
        # if (lencentr<0) :
             
-         # print("Shift the Points more the Avg Distance between Curve and Points =",lencentr)
-    
+          # print("Shift the Points more the Avg Distance between Curve and Points =",lencentr)
+          #Increase Transmisivity Shifts Up same with storage coifficent
     
     return(rsq)
     
     
-    #Increase Transmisivity Shifts Up same with storage coifficent 
+     
     
 
 def well_f(T, S_c, r, Q): # provides the fit curve for given r and Q

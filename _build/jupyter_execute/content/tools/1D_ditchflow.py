@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Simulating 1D Trench Flow*
+# # Simulating 1D Trench Flow
 # 
 # The tool simulates the effect on the water table due to model parameters.
+# 
+# 
+# **_Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code._**
 # 
 # ## Scenario and Equation
 # 
@@ -33,8 +36,6 @@
 # $R$ = recharge rate $[m/s]$
 # 
 # [^Fetter2017]: C. W. Fetter, Thomas Boving, David Kreamer (2017), _Contaminant Hydrogeology_: Third Edition, Waveland Press
-# 
-# **_Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code._**
 
 # 
 # ### How to use this tool ###
@@ -44,6 +45,8 @@
 # 2. Execute the code cell with libraries and the code cell
 # 
 # 3. Interact with the sliders.
+# 
+# This tool can also be downloaded and run locally. For that download the **1D_ditchflow.ipynb** file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 

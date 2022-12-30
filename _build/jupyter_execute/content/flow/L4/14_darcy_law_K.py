@@ -13,6 +13,13 @@ import pandas as pd
 # 
 # _(The contents presented in this section were re-developed principally by [Prof. B. R. Chahar](http://web.iitd.ac.in/~chahar/) and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 
+# ```{sidebar} Additional Material : Lecture Slides
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRCUFNuu7UtEDluZ7aQB1B2mrKZjmkMqnvnypcijPvAYEpHCIWoyHeIVY_h4R3r7g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# ``` ```
+# 
+
 # ## Energy and hydraulic head  ##
 # 
 # In the last section we learned that _hydrostatic pressure difference_ $p(z)$ will not allow the fully quantify water flow. In fact in addition to $p(z)$ other form of energy must also be considered. 

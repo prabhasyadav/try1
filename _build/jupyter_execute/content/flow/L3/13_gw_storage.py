@@ -12,6 +12,13 @@ import panel as pn
 pn.extension("katex", "mathjax")
 
 
+# ```{sidebar} Additional Material : Lecture Slides
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSyZDEHwdlOMs4DMg73kfTW72awRMn_xbRMPeBo8htqYdOnG4drQLoQBpEOipyHqg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# ``` ```
+# 
+
 # ## Groundwater as a reservoir ##
 # 
 # _(The contents presented in this section were re-developed principally by [Prof. Peter Dietrich](https://www.ufz.de/index.php?de=37303) and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
@@ -35,6 +42,14 @@ pn.extension("katex", "mathjax")
 # ```
 # 
 # The difference between the international and the German definition of groundwater is the consideration of the adhesive water. Adhesive water does not participate in water movement. The same is true for water in isolated pores or in dead-end pores. All subterranean water not participating in water movement is summarized as immobile water. In contrast, the mobile water is the subterranean water participating in water movement.
+
+# ```{sidebar} Additional Material
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSyZDEHwdlOMs4DMg73kfTW72awRMn_xbRMPeBo8htqYdOnG4drQLoQBpEOipyHqg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# ``` ```
+# 
+# 
 
 # In[2]:
 

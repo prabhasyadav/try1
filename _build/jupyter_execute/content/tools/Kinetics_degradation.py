@@ -17,6 +17,8 @@
 # 
 # 3. Interact with the sliders.
 # 
+# This tool can also be downloaded and run locally. For that download the **Kinetics_degradation.ipynb** file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
+# 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 
 # In[1]:

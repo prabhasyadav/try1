@@ -131,6 +131,7 @@
  
     {
         "question": "Which are the force acting on the subterranean water",
+        "type": "multiple_choice",
         "answers": [
             {
                 "answer": "Cohesion",

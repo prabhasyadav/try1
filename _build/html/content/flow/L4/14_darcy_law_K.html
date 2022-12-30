@@ -53,8 +53,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -175,7 +173,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../L8/18_wells.html">
-   7. Wells*
+   7. Wells
   </a>
  </li>
 </ul>
@@ -225,38 +223,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../../tutorials/T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T3/tutorial_03.html">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T5/tutorial_05.html">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T7/tutorial_07.html">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T8/tutorial_08.html">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tutorials/T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -308,7 +311,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../tools/1D_ditchflow.html">
-   9. Simulating 1D Trench Flow*
+   9. Simulating 1D Trench Flow
   </a>
  </li>
  <li class="toctree-l1">
@@ -858,6 +861,13 @@ title="Print to PDF"
 <section class="tex2jax_ignore mathjax_ignore" id="darcy-s-law-and-conductivity">
 <h1><span class="section-number">3. </span>Darcy’s Law and Conductivity<a class="headerlink" href="#darcy-s-law-and-conductivity" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by <a class="reference external" href="http://web.iitd.ac.in/~chahar/">Prof. B. R. Chahar</a> and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
+<aside class="sidebar">
+<p class="sidebar-title">Additional Material : Lecture Slides</p>
+<div class="toggle docutils container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRCUFNuu7UtEDluZ7aQB1B2mrKZjmkMqnvnypcijPvAYEpHCIWoyHeIVY_h4R3r7g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+``` ```
+</div>
+</aside>
 <section id="energy-and-hydraulic-head">
 <h2><span class="section-number">3.1. </span>Energy and hydraulic head<a class="headerlink" href="#energy-and-hydraulic-head" title="Permalink to this headline">#</a></h2>
 <p>In the last section we learned that <em>hydrostatic pressure difference</em> <span class="math notranslate nohighlight">\(p(z)\)</span> will not allow the fully quantify water flow. In fact in addition to <span class="math notranslate nohighlight">\(p(z)\)</span> other form of energy must also be considered.</p>

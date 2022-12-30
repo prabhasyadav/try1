@@ -10,7 +10,7 @@ import panel as pn
 pn.extension("katex")
 
 
-# # Wells*
+# # Wells
 # 
 # (_The contents are based on the class lecture materials of Prof. R. Liedl. Modifications mostly to fit this specific format were done by Prof. Liedl and Dr. P. K. Yadav._)
 # 
@@ -23,8 +23,6 @@ pn.extension("katex")
 # **Wells** are the most common and also most extensively used method of utilizing (or affecting) groundwater. Thus, _wells_ represent a very common groundwater problem. We can now use our understanding of aquifer properties and groundwater system equations to analyze effect of _wells_ on the natural groundwater flow. We will however restrict our extent, in this lecture, to problems that can be directly solved. After learning numerical methods (in last part of this course), we will apply it to evaluate more complex groundwater problems also associated with wells.
 # 
 # We begin this lecture recalling groundwater storage property _transmissivity._ Introducing _wells_ we then derive few relations that can help us understand the effect of wells in groundwater flow. To conclude, we will use the _wells_ to characterize aquifers, i.e., using so called pumping test.
-# 
-# (**_The contents are based on the class lecture materials of Prof. R. Liedl. Modifications mostly to fit this specific format were done by Prof. Liedl and Dr. P. K. Yadav._**)
 
 # ## Transmissivity ##
 # 
