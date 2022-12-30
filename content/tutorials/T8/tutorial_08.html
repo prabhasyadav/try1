@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>8. Conservative transport &#8212; Groundwater I</title>
+    <title>9. Conservative transport &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,12 +53,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="9. Reactive transport" href="../T9/tutorial_09.html" />
-    <link rel="prev" title="7. Wells" href="../T7/tutorial_07.html" />
+    <link rel="next" title="10. Reactive transport" href="../T9/tutorial_09.html" />
+    <link rel="prev" title="8. Wells" href="../T7/tutorial_07.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -202,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../modeling/31_intro_modeling.html">
-   1. Lecture 11:  Background of Groundwater Modeling
+   1. Background of Groundwater Modeling
   </a>
  </li>
 </ul>
@@ -223,38 +225,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../T3/tutorial_03.html">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T5/tutorial_05.html">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T7/tutorial_07.html">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -570,47 +577,47 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-8-flow-in-confined-aquifer">
-   8.1. Homework Problem 8: Flow in confined aquifer
+   9.1. Homework Problem 8: Flow in confined aquifer
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-homework-problem-8">
-     8.1.1. Solution Homework Problem 8
+     9.1.1. Solution Homework Problem 8
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-9-unconfined-aquifer">
-     8.1.2. Homework Problem 9 - Unconfined aquifer
+     9.1.2. Homework Problem 9 - Unconfined aquifer
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-homework-problem-9">
-     8.1.3. Solution of Homework Problem 9
+     9.1.3. Solution of Homework Problem 9
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-20">
-     8.1.4. Tutorial Problem 20
+     9.1.4. Tutorial Problem 20
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-tutorial-problem-20">
-     8.1.5. Solution of Tutorial Problem 20
+     9.1.5. Solution of Tutorial Problem 20
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-21">
-     8.1.6. Tutorial Problem 21
+     9.1.6. Tutorial Problem 21
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-problem-21">
-     8.1.7. Solution Problem 21
+     9.1.7. Solution Problem 21
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem">
-     8.1.8. Homework Problem
+     9.1.8. Homework Problem
     </a>
    </li>
   </ul>
@@ -636,47 +643,47 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-8-flow-in-confined-aquifer">
-   8.1. Homework Problem 8: Flow in confined aquifer
+   9.1. Homework Problem 8: Flow in confined aquifer
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-homework-problem-8">
-     8.1.1. Solution Homework Problem 8
+     9.1.1. Solution Homework Problem 8
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-9-unconfined-aquifer">
-     8.1.2. Homework Problem 9 - Unconfined aquifer
+     9.1.2. Homework Problem 9 - Unconfined aquifer
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-homework-problem-9">
-     8.1.3. Solution of Homework Problem 9
+     9.1.3. Solution of Homework Problem 9
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-20">
-     8.1.4. Tutorial Problem 20
+     9.1.4. Tutorial Problem 20
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-of-tutorial-problem-20">
-     8.1.5. Solution of Tutorial Problem 20
+     9.1.5. Solution of Tutorial Problem 20
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-21">
-     8.1.6. Tutorial Problem 21
+     9.1.6. Tutorial Problem 21
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#solution-problem-21">
-     8.1.7. Solution Problem 21
+     9.1.7. Solution Problem 21
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem">
-     8.1.8. Homework Problem
+     9.1.8. Homework Problem
     </a>
    </li>
   </ul>
@@ -1135,7 +1142,7 @@ if (window.Jupyter !== undefined) {
 </style></div></div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="conservative-transport">
-<h1><span class="section-number">8. </span>Conservative transport<a class="headerlink" href="#conservative-transport" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">9. </span>Conservative transport<a class="headerlink" href="#conservative-transport" title="Permalink to this headline">#</a></h1>
 <br>
 <ol class="simple">
 <li><p><strong>Solution of Homework Problems 8 - 9</strong>
@@ -1146,7 +1153,7 @@ if (window.Jupyter !== undefined) {
 </ol>
 <br>
 <section id="homework-problem-8-flow-in-confined-aquifer">
-<h2><span class="section-number">8.1. </span>Homework Problem 8: Flow in confined aquifer<a class="headerlink" href="#homework-problem-8-flow-in-confined-aquifer" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">9.1. </span>Homework Problem 8: Flow in confined aquifer<a class="headerlink" href="#homework-problem-8-flow-in-confined-aquifer" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rh8_1</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">pane</span><span class="o">.</span><span class="n">LaTeX</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot; </span>
@@ -1200,7 +1207,7 @@ if (window.Jupyter !== undefined) {
 })(window);</script></div></div>
 </div>
 <section id="solution-homework-problem-8">
-<h3><span class="section-number">8.1.1. </span>Solution Homework Problem 8<a class="headerlink" href="#solution-homework-problem-8" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.1. </span>Solution Homework Problem 8<a class="headerlink" href="#solution-homework-problem-8" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#solution Homework problem 8</span>
@@ -1384,7 +1391,7 @@ Discharge from the given width of aquifer is: 6.98e-04 m³/s
 </div>
 </section>
 <section id="homework-problem-9-unconfined-aquifer">
-<h3><span class="section-number">8.1.2. </span>Homework Problem 9 - Unconfined aquifer<a class="headerlink" href="#homework-problem-9-unconfined-aquifer" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.2. </span>Homework Problem 9 - Unconfined aquifer<a class="headerlink" href="#homework-problem-9-unconfined-aquifer" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rh9_1</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">pane</span><span class="o">.</span><span class="n">LaTeX</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
@@ -1443,7 +1450,7 @@ Discharge from the given width of aquifer is: 6.98e-04 m³/s
 </div>
 </section>
 <section id="solution-of-homework-problem-9">
-<h3><span class="section-number">8.1.3. </span>Solution of Homework Problem 9<a class="headerlink" href="#solution-of-homework-problem-9" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.3. </span>Solution of Homework Problem 9<a class="headerlink" href="#solution-of-homework-problem-9" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution of Homework Problem 9</span>
@@ -1553,14 +1560,14 @@ The water table at the required  location (x) without recharge is: 28.63564 m
 </div>
 </section>
 <section id="tutorial-problem-20">
-<h3><span class="section-number">8.1.4. </span>Tutorial Problem 20<a class="headerlink" href="#tutorial-problem-20" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.4. </span>Tutorial Problem 20<a class="headerlink" href="#tutorial-problem-20" title="Permalink to this headline">#</a></h3>
 <p>A column (<span class="math notranslate nohighlight">\(L = 1\)</span> m and <span class="math notranslate nohighlight">\(\oslash= 5\)</span> cm) was packed with sandy soil (<span class="math notranslate nohighlight">\(n_e= 35\%\)</span>,  <span class="math notranslate nohighlight">\(K= 0.0002\)</span> m/s). The hydraulic head at the inlet and the outlet was set to 235 m and 230 m, respectively. The NaCl solution with concentration 10 mg/L was steadily introduced to the column after saturating it with distilled water. The experiment condition was such that the diffusive flow could be neglected.</p>
 <p><strong>A.</strong> Determine the advective mass flow and the mass flux entering the column?</p>
 <p><strong>B.</strong> What will be the concentration at the outlet of the column when only advective flow is considered? Consider the NaCl conc. = 0 at the outlet initially.</p>
 <p><strong>C.</strong> What will be the dispersion coefficient assuming dispersivity is 0.001 m?</p>
 </section>
 <section id="solution-of-tutorial-problem-20">
-<h3><span class="section-number">8.1.5. </span>Solution of Tutorial Problem 20<a class="headerlink" href="#solution-of-tutorial-problem-20" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.5. </span>Solution of Tutorial Problem 20<a class="headerlink" href="#solution-of-tutorial-problem-20" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solution Tutorial Problem 20 A.</span>
@@ -1637,7 +1644,7 @@ C_{in} = C_{out}
 </div>
 </section>
 <section id="tutorial-problem-21">
-<h3><span class="section-number">8.1.6. </span>Tutorial Problem 21<a class="headerlink" href="#tutorial-problem-21" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.6. </span>Tutorial Problem 21<a class="headerlink" href="#tutorial-problem-21" title="Permalink to this headline">#</a></h3>
 <p>A 1 m long column (<span class="math notranslate nohighlight">\(\oslash\)</span> = 5 cm) is packed (<span class="math notranslate nohighlight">\(n_e= 30\%\)</span>). The NaCl solution with concentration 70 mg/L is introduced to the column at the flow rate of 100 mL/min. The following NaCl concentrations were measured at the outlet at different times:</p>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -1746,7 +1753,7 @@ C_{in} = C_{out}
 <p><strong>E.</strong> Find breakthrough time and number of flushing required to obtain a breakthrough concentration.</p>
 </section>
 <section id="solution-problem-21">
-<h3><span class="section-number">8.1.7. </span>Solution Problem 21<a class="headerlink" href="#solution-problem-21" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.7. </span>Solution Problem 21<a class="headerlink" href="#solution-problem-21" title="Permalink to this headline">#</a></h3>
 <p><strong>21. A &amp; B</strong></p>
 <p>To normalize with initial concentration, we divide the outlet concentration with the initial concentration = 70 mg/L, we get:</p>
 <div class="cell tag_full-width docutils container">
@@ -2021,7 +2028,7 @@ N_{Pv} = V_{vol}\times t/V
 <p>After 510 minutes and 27 pore volumes of the input concentration the breakthrough concentration is obtained at the outlet</p>
 </section>
 <section id="homework-problem">
-<h3><span class="section-number">8.1.8. </span>Homework Problem<a class="headerlink" href="#homework-problem" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">9.1.8. </span>Homework Problem<a class="headerlink" href="#homework-problem" title="Permalink to this headline">#</a></h3>
 <p><strong>Homework Problem 11</strong> - Conservative transport</p>
 <div class="cell tag_hide-input tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -2131,13 +2138,13 @@ N_{Pv} = V_{vol}\times t/V
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">7. </span>Wells</p>
+            <p class="prev-next-title"><span class="section-number">8. </span>Wells</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../T9/tutorial_09.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">9. </span>Reactive transport</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Reactive transport</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

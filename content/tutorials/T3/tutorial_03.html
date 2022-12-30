@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>3. Darcy Law and Conductivity &#8212; Groundwater I</title>
+    <title>4. Darcy Law and Conductivity &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,12 +53,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="4. Effective K &amp; Recitation" href="../T4/tutorial_04.html" />
-    <link rel="prev" title="2. JUPYTER Notebook Interface for Python" href="../../background/02_jupyter.html" />
+    <link rel="next" title="5. Effective K &amp; Recitation" href="../T4/tutorial_04.html" />
+    <link rel="prev" title="3. Aquifer and Storage Properties" href="../T2/tutorial_02.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -202,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../modeling/31_intro_modeling.html">
-   1. Lecture 11:  Background of Groundwater Modeling
+   1. Background of Groundwater Modeling
   </a>
  </li>
 </ul>
@@ -222,39 +224,44 @@ const thebe_selector_output = ".output, .cell_output"
    2. JUPYTER Notebook Interface for Python
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T5/tutorial_05.html">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T7/tutorial_07.html">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T8/tutorial_08.html">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -570,56 +577,56 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problems-on">
-   3.1. Tutorial Problems on
+   4.1. Tutorial Problems on
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-7-flow-direction-and-hydraulic-gradient">
-   3.2. Tutorial Problem 7: Flow Direction and Hydraulic Gradient
+   4.2. Tutorial Problem 7: Flow Direction and Hydraulic Gradient
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-7-solution">
-     3.2.1. Tutorial Problem 7 – Solution
+     4.2.1. Tutorial Problem 7 – Solution
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-8">
-   3.3. Tutorial Problem 8
+   4.3. Tutorial Problem 8
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-8-solution">
-     3.3.1. Tutorial Problem 8  - Solution
+     4.3.1. Tutorial Problem 8  - Solution
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-9-constant-head-permeameter">
-   3.4. Tutorial Problem 9: Constant-Head Permeameter
+   4.4. Tutorial Problem 9: Constant-Head Permeameter
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-10-falling-head-permeameter">
-   3.5. Tutorial Problem 10: Falling-Head Permeameter
+   4.5. Tutorial Problem 10: Falling-Head Permeameter
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#home-work-problems">
-   3.6. HOME WORK PROBLEMS
+   4.6. HOME WORK PROBLEMS
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-3">
-   3.7. Homework Problem 3
+   4.7. Homework Problem 3
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-4">
-   3.8. Homework Problem 4
+   4.8. Homework Problem 4
   </a>
  </li>
 </ul>
@@ -643,56 +650,56 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problems-on">
-   3.1. Tutorial Problems on
+   4.1. Tutorial Problems on
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-7-flow-direction-and-hydraulic-gradient">
-   3.2. Tutorial Problem 7: Flow Direction and Hydraulic Gradient
+   4.2. Tutorial Problem 7: Flow Direction and Hydraulic Gradient
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-7-solution">
-     3.2.1. Tutorial Problem 7 – Solution
+     4.2.1. Tutorial Problem 7 – Solution
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-8">
-   3.3. Tutorial Problem 8
+   4.3. Tutorial Problem 8
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tutorial-problem-8-solution">
-     3.3.1. Tutorial Problem 8  - Solution
+     4.3.1. Tutorial Problem 8  - Solution
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-9-constant-head-permeameter">
-   3.4. Tutorial Problem 9: Constant-Head Permeameter
+   4.4. Tutorial Problem 9: Constant-Head Permeameter
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-10-falling-head-permeameter">
-   3.5. Tutorial Problem 10: Falling-Head Permeameter
+   4.5. Tutorial Problem 10: Falling-Head Permeameter
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#home-work-problems">
-   3.6. HOME WORK PROBLEMS
+   4.6. HOME WORK PROBLEMS
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-3">
-   3.7. Homework Problem 3
+   4.7. Homework Problem 3
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problem-4">
-   3.8. Homework Problem 4
+   4.8. Homework Problem 4
   </a>
  </li>
 </ul>
@@ -1149,24 +1156,24 @@ if (window.Jupyter !== undefined) {
 </style></div></div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="darcy-law-and-conductivity">
-<h1><span class="section-number">3. </span>Darcy Law and Conductivity<a class="headerlink" href="#darcy-law-and-conductivity" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">4. </span>Darcy Law and Conductivity<a class="headerlink" href="#darcy-law-and-conductivity" title="Permalink to this headline">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <ul class="simple">
 <li><p><strong>tutorial problems on Darcy’s law and intrinsic permeability</strong></p></li>
 <li><p><strong>homework problems on Darcy’s law and intrinsic permeability</strong></p></li>
 </ul>
 <section id="tutorial-problems-on">
-<h2><span class="section-number">3.1. </span>Tutorial Problems on<a class="headerlink" href="#tutorial-problems-on" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.1. </span>Tutorial Problems on<a class="headerlink" href="#tutorial-problems-on" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Darcy’s Law and</p></li>
 <li><p>Intrinsic Permeability</p></li>
 </ul>
 </section>
 <section id="tutorial-problem-7-flow-direction-and-hydraulic-gradient">
-<h2><span class="section-number">3.2. </span>Tutorial Problem 7: Flow Direction and Hydraulic Gradient<a class="headerlink" href="#tutorial-problem-7-flow-direction-and-hydraulic-gradient" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.2. </span>Tutorial Problem 7: Flow Direction and Hydraulic Gradient<a class="headerlink" href="#tutorial-problem-7-flow-direction-and-hydraulic-gradient" title="Permalink to this headline">#</a></h2>
 <p>Indicate the direction of flow shown in the figure in next slides, and determine the hydraulic gradient for a Darcy column with length L = 50 cm! (Figures not to scale.)</p>
 <section id="tutorial-problem-7-solution">
-<h3><span class="section-number">3.2.1. </span>Tutorial Problem 7 – Solution<a class="headerlink" href="#tutorial-problem-7-solution" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.2.1. </span>Tutorial Problem 7 – Solution<a class="headerlink" href="#tutorial-problem-7-solution" title="Permalink to this headline">#</a></h3>
 <p><strong>The relevant topic is covered in Lecture 04, slide 8</strong></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -1437,11 +1444,11 @@ Hydraulic gradient: -0.2
 </section>
 </section>
 <section id="tutorial-problem-8">
-<h2><span class="section-number">3.3. </span>Tutorial Problem 8<a class="headerlink" href="#tutorial-problem-8" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.3. </span>Tutorial Problem 8<a class="headerlink" href="#tutorial-problem-8" title="Permalink to this headline">#</a></h2>
 <p>The hydraulic conductivity of a fine sand sample was found to be equal to <span class="math notranslate nohighlight">\(1.36\times 10^{-5}\)</span> m/s in a Darcy experiment using water at a temperature of <span class="math notranslate nohighlight">\(20^\circ\)</span>C. What is the intrinsic permeability of this sample? Give results in cm<span class="math notranslate nohighlight">\(^2\)</span> and D.
 (density of water at <span class="math notranslate nohighlight">\(20^\circ\)</span>C: 998.2 kg/m<span class="math notranslate nohighlight">\(^3\)</span>; dynamic viscosity of water at <span class="math notranslate nohighlight">\(20^\circ\)</span>C: <span class="math notranslate nohighlight">\(1.0087 \times 10^{-3}\)</span> Pa<span class="math notranslate nohighlight">\(\cdot\)</span>s;  1 D = <span class="math notranslate nohighlight">\(0.987\times 10^{-12}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>)</p>
 <section id="tutorial-problem-8-solution">
-<h3><span class="section-number">3.3.1. </span>Tutorial Problem 8  - Solution<a class="headerlink" href="#tutorial-problem-8-solution" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.3.1. </span>Tutorial Problem 8  - Solution<a class="headerlink" href="#tutorial-problem-8-solution" title="Permalink to this headline">#</a></h3>
 <p><strong>Relevant topics are covered in Lecture 04 slides 18-20.</strong></p>
 <p>Relationship between hydraulic conductivity <span class="math notranslate nohighlight">\(K\)</span> and intrinsic permeability <span class="math notranslate nohighlight">\(k\)</span> from lecture notes:
 $<span class="math notranslate nohighlight">\(
@@ -1481,7 +1488,7 @@ The permeability in Darcy unite is: 1.41 D
 </section>
 </section>
 <section id="tutorial-problem-9-constant-head-permeameter">
-<h2><span class="section-number">3.4. </span>Tutorial Problem 9: Constant-Head Permeameter<a class="headerlink" href="#tutorial-problem-9-constant-head-permeameter" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4. </span>Tutorial Problem 9: Constant-Head Permeameter<a class="headerlink" href="#tutorial-problem-9-constant-head-permeameter" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1015'>
@@ -1631,7 +1638,7 @@ $<span class="math notranslate nohighlight">\(\frac{K_{water}}{K_{diesel}} = \fr
 </div>
 </section>
 <section id="tutorial-problem-10-falling-head-permeameter">
-<h2><span class="section-number">3.5. </span>Tutorial Problem 10: Falling-Head Permeameter<a class="headerlink" href="#tutorial-problem-10-falling-head-permeameter" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5. </span>Tutorial Problem 10: Falling-Head Permeameter<a class="headerlink" href="#tutorial-problem-10-falling-head-permeameter" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1025'>
@@ -1786,13 +1793,13 @@ Silt or silty sand
 </div>
 </section>
 <section id="home-work-problems">
-<h2><span class="section-number">3.6. </span>HOME WORK PROBLEMS<a class="headerlink" href="#home-work-problems" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.6. </span>HOME WORK PROBLEMS<a class="headerlink" href="#home-work-problems" title="Permalink to this headline">#</a></h2>
 <p><strong>Darcy’s Law and Intrinsic Permeability</strong></p>
 <p><em>There is no obligation to solve homework problems!</em></p>
 <p><strong>Try to submit within next 2 weeks.</strong></p>
 </section>
 <section id="homework-problem-3">
-<h2><span class="section-number">3.7. </span>Homework Problem 3<a class="headerlink" href="#homework-problem-3" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.7. </span>Homework Problem 3<a class="headerlink" href="#homework-problem-3" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1039'>
@@ -1834,7 +1841,7 @@ Silt or silty sand
 </div>
 </section>
 <section id="homework-problem-4">
-<h2><span class="section-number">3.8. </span>Homework Problem 4<a class="headerlink" href="#homework-problem-4" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.8. </span>Homework Problem 4<a class="headerlink" href="#homework-problem-4" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1044'>
@@ -1919,17 +1926,17 @@ Silt or silty sand
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../../background/02_jupyter.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../T2/tutorial_02.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span>JUPYTER Notebook Interface for Python</p>
+            <p class="prev-next-title"><span class="section-number">3. </span>Aquifer and Storage Properties</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../T4/tutorial_04.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Effective K &amp; Recitation</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Effective K &amp; Recitation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

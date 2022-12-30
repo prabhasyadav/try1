@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>5. Aquifer Heterogeneity/Anisotropy &#8212; Groundwater I</title>
+    <title>6. Aquifer Heterogeneity/Anisotropy &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,12 +53,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="6. Flow in Confined/Unconfined Aquifer" href="../T6/tutorial_06.html" />
-    <link rel="prev" title="4. Effective K &amp; Recitation" href="../T4/tutorial_04.html" />
+    <link rel="next" title="7. Flow in Confined/Unconfined Aquifer" href="../T6/tutorial_06.html" />
+    <link rel="prev" title="5. Effective K &amp; Recitation" href="../T4/tutorial_04.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -202,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../modeling/31_intro_modeling.html">
-   1. Lecture 11:  Background of Groundwater Modeling
+   1. Background of Groundwater Modeling
   </a>
  </li>
 </ul>
@@ -223,38 +225,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../T3/tutorial_03.html">
-   3. Darcy Law and Conductivity
+   4. Darcy Law and Conductivity
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T4/tutorial_04.html">
-   4. Effective K &amp; Recitation
+   5. Effective K &amp; Recitation
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   5. Aquifer Heterogeneity/Anisotropy
+   6. Aquifer Heterogeneity/Anisotropy
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T6/tutorial_06.html">
-   6. Flow in Confined/Unconfined Aquifer
+   7. Flow in Confined/Unconfined Aquifer
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T7/tutorial_07.html">
-   7. Wells
+   8. Wells
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T8/tutorial_08.html">
-   8. Conservative transport
+   9. Conservative transport
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../T9/tutorial_09.html">
-   9. Reactive transport
+   10. Reactive transport
   </a>
  </li>
 </ul>
@@ -570,57 +577,57 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-12-hydrologic-triangle">
-   5.1. Tutorial Problem 12: Hydrologic Triangle
+   6.1. Tutorial Problem 12: Hydrologic Triangle
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-tutotrial-problem-12">
-   5.2. Solution of Tutotrial Problem 12
+   6.2. Solution of Tutotrial Problem 12
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-13-flow-nets">
-   5.3. Tutorial Problem 13: Flow Nets
+   6.3. Tutorial Problem 13: Flow Nets
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-tutorial-problem">
-   5.4. Solution of Tutorial Problem
+   6.4. Solution of Tutorial Problem
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-14-special-topic">
-   5.5. Tutorial Problem 14 (special topic)
+   6.5. Tutorial Problem 14 (special topic)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-tutorial-problem-14">
-   5.6. Solution of Tutorial Problem 14
+   6.6. Solution of Tutorial Problem 14
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-15">
-   5.7. Tutorial Problem 15
+   6.7. Tutorial Problem 15
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-tutorial-problem-15">
-   5.8. Solution Tutorial Problem 15
+   6.8. Solution Tutorial Problem 15
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problems">
-   5.9. Homework Problems
+   6.9. Homework Problems
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-6-hydrologic-triangle">
-     5.9.1. Homework Problem 6: Hydrologic Triangle
+     6.9.1. Homework Problem 6: Hydrologic Triangle
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-7-flow-nets">
-     5.9.2. Homework Problem 7: Flow Nets
+     6.9.2. Homework Problem 7: Flow Nets
     </a>
    </li>
   </ul>
@@ -646,57 +653,57 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-12-hydrologic-triangle">
-   5.1. Tutorial Problem 12: Hydrologic Triangle
+   6.1. Tutorial Problem 12: Hydrologic Triangle
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-tutotrial-problem-12">
-   5.2. Solution of Tutotrial Problem 12
+   6.2. Solution of Tutotrial Problem 12
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-13-flow-nets">
-   5.3. Tutorial Problem 13: Flow Nets
+   6.3. Tutorial Problem 13: Flow Nets
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-tutorial-problem">
-   5.4. Solution of Tutorial Problem
+   6.4. Solution of Tutorial Problem
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-14-special-topic">
-   5.5. Tutorial Problem 14 (special topic)
+   6.5. Tutorial Problem 14 (special topic)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-of-tutorial-problem-14">
-   5.6. Solution of Tutorial Problem 14
+   6.6. Solution of Tutorial Problem 14
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tutorial-problem-15">
-   5.7. Tutorial Problem 15
+   6.7. Tutorial Problem 15
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solution-tutorial-problem-15">
-   5.8. Solution Tutorial Problem 15
+   6.8. Solution Tutorial Problem 15
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework-problems">
-   5.9. Homework Problems
+   6.9. Homework Problems
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-6-hydrologic-triangle">
-     5.9.1. Homework Problem 6: Hydrologic Triangle
+     6.9.1. Homework Problem 6: Hydrologic Triangle
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#homework-problem-7-flow-nets">
-     5.9.2. Homework Problem 7: Flow Nets
+     6.9.2. Homework Problem 7: Flow Nets
     </a>
    </li>
   </ul>
@@ -1162,9 +1169,9 @@ if (window.Jupyter !== undefined) {
 </style></div></div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="aquifer-heterogeneity-anisotropy">
-<h1><span class="section-number">5. </span>Aquifer Heterogeneity/Anisotropy<a class="headerlink" href="#aquifer-heterogeneity-anisotropy" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">6. </span>Aquifer Heterogeneity/Anisotropy<a class="headerlink" href="#aquifer-heterogeneity-anisotropy" title="Permalink to this headline">#</a></h1>
 <section id="tutorial-problem-12-hydrologic-triangle">
-<h2><span class="section-number">5.1. </span>Tutorial Problem 12: Hydrologic Triangle<a class="headerlink" href="#tutorial-problem-12-hydrologic-triangle" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.1. </span>Tutorial Problem 12: Hydrologic Triangle<a class="headerlink" href="#tutorial-problem-12-hydrologic-triangle" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_full-width tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1002'>
@@ -1206,7 +1213,7 @@ if (window.Jupyter !== undefined) {
 </div>
 </section>
 <section id="solution-of-tutotrial-problem-12">
-<h2><span class="section-number">5.2. </span>Solution of Tutotrial Problem 12<a class="headerlink" href="#solution-of-tutotrial-problem-12" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.2. </span>Solution of Tutotrial Problem 12<a class="headerlink" href="#solution-of-tutotrial-problem-12" title="Permalink to this headline">#</a></h2>
 <p>The following 4 steps are to be performed:</p>
 <ul class="simple">
 <li><p><strong>Step I</strong>   : Connects all the points</p></li>
@@ -1255,7 +1262,7 @@ if (window.Jupyter !== undefined) {
 </div>
 </section>
 <section id="tutorial-problem-13-flow-nets">
-<h2><span class="section-number">5.3. </span>Tutorial Problem 13: Flow Nets<a class="headerlink" href="#tutorial-problem-13-flow-nets" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.3. </span>Tutorial Problem 13: Flow Nets<a class="headerlink" href="#tutorial-problem-13-flow-nets" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_full-width tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1020'>
@@ -1297,11 +1304,11 @@ if (window.Jupyter !== undefined) {
 </div>
 </section>
 <section id="solution-of-tutorial-problem">
-<h2><span class="section-number">5.4. </span>Solution of Tutorial Problem<a class="headerlink" href="#solution-of-tutorial-problem" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4. </span>Solution of Tutorial Problem<a class="headerlink" href="#solution-of-tutorial-problem" title="Permalink to this headline">#</a></h2>
 <p>This is to be sketched and demonstrated.</p>
 </section>
 <section id="tutorial-problem-14-special-topic">
-<h2><span class="section-number">5.5. </span>Tutorial Problem 14 (special topic)<a class="headerlink" href="#tutorial-problem-14-special-topic" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.5. </span>Tutorial Problem 14 (special topic)<a class="headerlink" href="#tutorial-problem-14-special-topic" title="Permalink to this headline">#</a></h2>
 <p>From the laboratory test the degree of saturation(<span class="math notranslate nohighlight">\(\theta\)</span>) of the unsaturated core (temperature = 9<span class="math notranslate nohighlight">\(^\circ C\)</span>) sample was
 found to be 30% and relative permeability (<span class="math notranslate nohighlight">\(k_r\)</span>) is assumed to be 0.1.  From the grain analysis the sample was determined to be predominantly
 medium sand (intrinsic permeability, <span class="math notranslate nohighlight">\(k = 1.61 \times 10^{-7}\)</span> cm<span class="math notranslate nohighlight">\(^2\)</span>). Provided that density (<span class="math notranslate nohighlight">\(\rho\)</span>) and dynamic
@@ -1309,7 +1316,7 @@ viscosity of water (<span class="math notranslate nohighlight">\(\mu\)</span>) a
 sample. What will be the conductivity of the same sample when the moisture content is 1% (<span class="math notranslate nohighlight">\(k_r \approx 0.001\)</span>) and 80% (<span class="math notranslate nohighlight">\(k_r \approx 0.4\)</span>). Explain the effect of moisture content on the sample.</p>
 </section>
 <section id="solution-of-tutorial-problem-14">
-<h2><span class="section-number">5.6. </span>Solution of Tutorial Problem 14<a class="headerlink" href="#solution-of-tutorial-problem-14" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.6. </span>Solution of Tutorial Problem 14<a class="headerlink" href="#solution-of-tutorial-problem-14" title="Permalink to this headline">#</a></h2>
 <p><strong>Lecture contents on the topic in L02- slides 02, 22 &amp; 26</strong></p>
 <p>Hydraulic conductivity of the unsaturated sample (<span class="math notranslate nohighlight">\(\theta &lt; 100\%\)</span>) can be obtained from the following expression:</p>
 <div class="math notranslate nohighlight">
@@ -1358,7 +1365,7 @@ The conductivity of media increases very rapidly with increase of moisture conte
 </div>
 </section>
 <section id="tutorial-problem-15">
-<h2><span class="section-number">5.7. </span>Tutorial Problem 15<a class="headerlink" href="#tutorial-problem-15" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.7. </span>Tutorial Problem 15<a class="headerlink" href="#tutorial-problem-15" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_full-width tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1031'>
@@ -1400,7 +1407,7 @@ The conductivity of media increases very rapidly with increase of moisture conte
 </div>
 </section>
 <section id="solution-tutorial-problem-15">
-<h2><span class="section-number">5.8. </span>Solution Tutorial Problem 15<a class="headerlink" href="#solution-tutorial-problem-15" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.8. </span>Solution Tutorial Problem 15<a class="headerlink" href="#solution-tutorial-problem-15" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given</span>
@@ -1440,9 +1447,9 @@ The negative sign indicates the direction opposite to increase in z.
 </div>
 </section>
 <section id="homework-problems">
-<h2><span class="section-number">5.9. </span>Homework Problems<a class="headerlink" href="#homework-problems" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.9. </span>Homework Problems<a class="headerlink" href="#homework-problems" title="Permalink to this headline">#</a></h2>
 <section id="homework-problem-6-hydrologic-triangle">
-<h3><span class="section-number">5.9.1. </span>Homework Problem 6: Hydrologic Triangle<a class="headerlink" href="#homework-problem-6-hydrologic-triangle" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">6.9.1. </span>Homework Problem 6: Hydrologic Triangle<a class="headerlink" href="#homework-problem-6-hydrologic-triangle" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_full-width tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1035'>
@@ -1484,7 +1491,7 @@ The negative sign indicates the direction opposite to increase in z.
 </div>
 </section>
 <section id="homework-problem-7-flow-nets">
-<h3><span class="section-number">5.9.2. </span>Homework Problem 7: Flow Nets<a class="headerlink" href="#homework-problem-7-flow-nets" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">6.9.2. </span>Homework Problem 7: Flow Nets<a class="headerlink" href="#homework-problem-7-flow-nets" title="Permalink to this headline">#</a></h3>
 <div class="cell tag_full-width tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='1039'>
@@ -1559,13 +1566,13 @@ The negative sign indicates the direction opposite to increase in z.
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">4. </span>Effective K &amp; Recitation</p>
+            <p class="prev-next-title"><span class="section-number">5. </span>Effective K &amp; Recitation</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../T6/tutorial_06.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Flow in Confined/Unconfined Aquifer</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Flow in Confined/Unconfined Aquifer</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
