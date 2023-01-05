@@ -10,7 +10,7 @@
 # 3. Change the values of different quantities in the box.
 # 4. For re-simulations - changes the input values in the boxes. 
 # 
-# This tool can also be downloaded and run locally. For that download the _aniso2D.ipynb_ file and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
+# This tool can also be downloaded and run locally. For that download the [_aniso2D.ipynb_](https://github.com/prabhasyadav/try1/blob/main/content/tools/aniso2D.ipynb) file and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The code may also be executed in the book page. 
 # 

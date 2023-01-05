@@ -45,11 +45,11 @@
 # 
 # * Question banks/exam questions should be used to self-check the level of understanding.
 
-# ### How to use The `Interactive` Ground Water Book 
+# ### How to use the Book 
 # 
 # The Main Goal of developing the **Interactive GroundWater** Book is to enable the process of _Learning through Coding_, which can in future assist the students in developing their own applications and take a step towards automatizing research by providing aid for solving complex mathematical equations as well as simulating various scenarios. With the help of this book we hope to enable a _spark of interest in the young minds_ towards the **Ground Water field** as well as displaying the _practical application of Python_ to  to solve complex Questions.
 # 
-# ### Featurs of the The `Interactive` Ground Water Book
+# ### Featurs of the Book
 # 
 # #### [Hypothes](https://web.hypothes.is/) - Highlighting and Annotating Content 
 # 

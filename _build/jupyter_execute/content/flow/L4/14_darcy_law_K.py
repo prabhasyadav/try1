@@ -9,16 +9,16 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-# # Darcy's Law and Conductivity #
-# 
-# _(The contents presented in this section were re-developed principally by [Prof. B. R. Chahar](http://web.iitd.ac.in/~chahar/) and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
-
 # ```{sidebar} Additional Material : Lecture Slides
 # ```{toggle} Additional Material
 # 
 # <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRCUFNuu7UtEDluZ7aQB1B2mrKZjmkMqnvnypcijPvAYEpHCIWoyHeIVY_h4R3r7g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 # ``` ```
 # 
+
+# # Darcy's Law and Conductivity #
+# 
+# _(The contents presented in this section were re-developed principally by [Prof. B. R. Chahar](http://web.iitd.ac.in/~chahar/) and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
 
 # ## Energy and hydraulic head  ##
 # 
@@ -656,14 +656,6 @@ v = vs * ne
 print("travel time of water = {} s\nLength = {} m\u00b2\neffective porosity = {} ".format(t, L, ne),"\n")
 print("The linear velocity is {} m/h \nthe pore volume is {} s, and \nthe darcy velocity is {} m/h".format(vs, PV, v))
 
-
-# ## Additional Material
-
-# ```{toggle} Additional Material
-# 
-# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRCUFNuu7UtEDluZ7aQB1B2mrKZjmkMqnvnypcijPvAYEpHCIWoyHeIVY_h4R3r7g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-# 
-# ```
 
 # ## Chapter Quiz
 

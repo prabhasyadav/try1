@@ -32,6 +32,7 @@ The contents are developed by (not in any order):
 - Prof Charles Werth (Uni-Texas Austin, US)
 - Dr. Ing. Thomas Reimann (TU Dresden)
 - M.Sc. Hanieh Mehrdad (Student Assistant/Numerical contents- TU Dresden)
+- Vibhu Batheja (Student Assistnant - TU Dresden)
 
 and several students: Anton, Abhiral, Anne, Sophie, Alexander
 

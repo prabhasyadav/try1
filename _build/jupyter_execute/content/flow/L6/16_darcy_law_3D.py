@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# ```{sidebar} Additional Material : Lecture Slides
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRbJsq-fmsGS00qvMtzDd-obfCs1d_7J0nonXtcA4lfWbZUhc7DdHxyk05K0OW9yA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# ``` ```
+
 # # Steady-State Groundwater flow in 3D
 # 
 # _(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
@@ -987,14 +993,6 @@ interactive(aniso,
          ani_r=widgets.BoundedIntText(value=1, min=1, max=100, step=1, description='K<sub>h</sub>/K<sub>v</sub>', disabled=False),)
     
 
-
-# ## Additional Material
-
-# ```{toggle} Additional Material
-# 
-# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRbJsq-fmsGS00qvMtzDd-obfCs1d_7J0nonXtcA4lfWbZUhc7DdHxyk05K0OW9yA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-# 
-# ```
 
 # ## Chapter Quiz
 

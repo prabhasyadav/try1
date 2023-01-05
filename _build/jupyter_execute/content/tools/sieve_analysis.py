@@ -31,7 +31,7 @@ display(YouTubeVideo("AM-NrQoRIYY",
 # 
 # 
 # 
-# This tool can also be downloaded and run locally. For that download the _deacy.ipynb_ file and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
+# This tool can also be downloaded and run locally. For that download the [_deacy.ipynb_](https://github.com/prabhasyadav/try1/blob/main/content/tools/sieve_analysis.ipynb) file and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The code may also be executed in the book page. 
 # 
@@ -80,6 +80,9 @@ def SA(mu, m1, m2, m3, m4, ml,perdat):
     y.sort()
     x.sort()
     interp_func = interp1d(y,x)
+    
+    ######## Other Interpolation Functions #############
+    
     #interp_func=interpolate.splev(y,x, der=0)
     #interp_func = UnivariateSpline(y, x)
     #interp_func = CubicSpline(y, x)

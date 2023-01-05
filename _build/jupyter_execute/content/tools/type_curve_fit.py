@@ -29,7 +29,7 @@
 # 
 # + Follow steps 4-7 from above. {doc}`/contents/flow/lecture_03/13_gw_storage` 
 # 
-# This tool can also be downloaded and run locally. For that download the **type_curve_fit.ipynb** file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
+# This tool can also be downloaded and run locally. For that download the [**type_curve_fit.ipynb**](https://github.com/prabhasyadav/try1/blob/main/content/tools/type_curve_fit.ipynb) file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 # 

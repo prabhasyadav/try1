@@ -10,6 +10,13 @@ get_ipython().run_line_magic('matplotlib', 'widget')
 import warnings; warnings.simplefilter('ignore')
 
 
+# ```{sidebar} Additional Material : Lecture Slides
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_8vqwCApfSxuUedcQtX1z_JVEJc6aE7l7Tp33g4SsQN89g6XHKnVQmeFGVWTDjQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# ``` ```
+# 
+
 # ## Subsurface Structure ##
 # 
 # _(The contents presented in this section were re-developed principally by M.Sc. Hanieh Mehrdad and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)_
@@ -23,7 +30,7 @@ import warnings; warnings.simplefilter('ignore')
 # ### Types of porous media in the subsurface ###
 # 
 # ```{image} images/L02_fig1.png
-# :height: 200px
+# :height: 250px
 # :align: center
 # :name: Porus Media
 # ```
@@ -337,7 +344,7 @@ print("The degree of saturation of the sample is: {0:.0%}".format(S))
 # 
 # 
 # ```{image} images/L02_fig14.png
-# :width: 200px
+# :width: 300px
 # :align: center
 # :name: capillary action in the subsurfac
 # ```
@@ -363,14 +370,6 @@ h_c=(2*sigma)/(rho*g)
 #output
 print("The maximum water rise in this tube is: {0:0.2f} 1/R cm".format(h_c))
 
-
-# ### Additional Material
-
-# ```{toggle} Additional Material
-# 
-# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_8vqwCApfSxuUedcQtX1z_JVEJc6aE7l7Tp33g4SsQN89g6XHKnVQmeFGVWTDjQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-# 
-# ```
 
 # ### Chapter Quiz 
 

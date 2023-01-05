@@ -11,7 +11,7 @@
 # 2. Execute the code cell
 # 3. Change the values of different quantities in the box.
 # 
-# This tool can also be downloaded and run locally. For that download the _deacy.ipynb_ file and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
+# This tool can also be downloaded and run locally. For that download the [_deacy.ipynb_](https://github.com/prabhasyadav/try1/blob/main/content/tools/decay.ipynb) file and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The code may also be executed in the book page.
 # 

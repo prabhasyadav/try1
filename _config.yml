@@ -22,8 +22,8 @@ url: "https://vibhubatheja.github.io" # the base hostname & protocol for your si
 # Book settings
 title                       : Groundwater I  # The title of the book. Will be placed in the left navbar.
 author                      : Dr Prabhas K. Yadav # The author of the book
-copyright                   : "2022"  # Copyright year to be placed in the footer
-logo                        : logo.jpg  # A path to the book logo
+#copyright                   : ""  # Copyright year to be placed in the footer
+logo                        : logonew.jpeg  # A path to the book logo
 exclude_patterns            : [_build, recycle,]  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 textbook_logo_link        : https://prabhasyadav.github.io/iGW-I/  # A link for the logo.
 #collapse_inactive_chapters: False  # Whether to collapse the inactive chapters in the sidebar

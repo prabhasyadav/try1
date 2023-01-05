@@ -43,14 +43,6 @@ pn.extension("katex", "mathjax")
 # 
 # The difference between the international and the German definition of groundwater is the consideration of the adhesive water. Adhesive water does not participate in water movement. The same is true for water in isolated pores or in dead-end pores. All subterranean water not participating in water movement is summarized as immobile water. In contrast, the mobile water is the subterranean water participating in water movement.
 
-# ```{sidebar} Additional Material
-# ```{toggle} Additional Material
-# 
-# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSyZDEHwdlOMs4DMg73kfTW72awRMn_xbRMPeBo8htqYdOnG4drQLoQBpEOipyHqg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-# ``` ```
-# 
-# 
-
 # In[2]:
 
 
@@ -451,14 +443,6 @@ print("The compressibility of porous media in aquifer {0:0.2e} m\u00b2/KN.".form
 # Actually, **unconfined** aquifers are always treated as 2D systems. As a consequence, storativity is used to quantify water storage properties. The definition of storativity remains unchanged in principle but the considered aquifer volume now extends from the aquifer bottom up to the water table. For _unconfined aquifers_, storativity values correspond to _effective porosities_. This is explained by the free groundwater table. In this case a pressure changes simply lead to filling or emptying of voids. This is fundamentally different from the storage properties of confined aquifers discussed before.                                                                            
 # 
 # In **confined** aquifers all voids remain filled with groundwater during pressure changes and storage properties depend on the compressibilities of water and the porous medium.
-
-# ### Additional Material
-
-# ```{toggle} Additional Material
-# 
-# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSyZDEHwdlOMs4DMg73kfTW72awRMn_xbRMPeBo8htqYdOnG4drQLoQBpEOipyHqg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-# 
-# ```
 
 # ### Chapter Quiz  
 

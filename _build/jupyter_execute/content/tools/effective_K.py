@@ -11,7 +11,7 @@
 # 3. Change the values of different quantities (layer thickness and corresponding conductivity) in the box and click the **run interact**.
 # 4. For re-simulations - changes the input values in the boxes and click the "**run interact**" button. 
 # 
-# This tool can also be downloaded and run locally. For that download the **_effective_K.ipynb_** file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
+# This tool can also be downloaded and run locally. For that download the [**_effective_K.ipynb_**](https://github.com/prabhasyadav/try1/blob/main/content/tools/effective_K.ipynb) file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.
 # 
 # The codes are licensed under CC by 4.0 [(use anyways, but acknowledge the original work)](https://creativecommons.org/licenses/by/4.0/deed.en)
 

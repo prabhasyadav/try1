@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# ```{sidebar} Additional Material : Lecture Slides
+# ```{toggle} Additional Material
+# 
+# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSqv6pVW3kiG8Ng2pI7xDiD4I1anDqQZuiT1ktWscurKWfGrk9k-PGZ-2866XWgBA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+# ``` ```
+
 # In[1]:
 
 
@@ -637,14 +643,6 @@ f1(X) # evaluate
 # - computation and graphical representation of a breakthrough curve
 # - comparison with measured data.
 # 
-
-# ## Additional Material
-
-# ```{toggle} Additional Material
-# 
-# <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSqv6pVW3kiG8Ng2pI7xDiD4I1anDqQZuiT1ktWscurKWfGrk9k-PGZ-2866XWgBA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-# 
-# ```
 
 # ## Chapter Quiz
 
