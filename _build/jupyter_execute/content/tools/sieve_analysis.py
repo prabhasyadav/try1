@@ -13,8 +13,15 @@ from IPython.display import Video
 
 display(YouTubeVideo("AM-NrQoRIYY",
                      width=350,height=200,title="Argo Online School",
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen"))
 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen"))
+
+
+# ```{margin} Note
+# ```{toggle} Note
+# The Following Video Content Belongs to the Youtube Channel Elementry Engineering and Can be used by students for learning purpose
+# ``` ```
+# 
 
 # ## Simulating Seive Analysis ##
 # 
